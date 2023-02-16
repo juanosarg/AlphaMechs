@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KHNgQBoJIRcEAILZ7rGlTzmyUAjhp3YapRls8IKQZJpDUP7dLAGMDKypqtET49DHXmCtp1rut4mhNM9xKahaPA==",
+  "success": true,
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMechs\\1.4\\Source\\AlphaMechs\\AlphaMechs\\AlphaMechs.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sarg\\.nuget\\packages\\lib.harmony\\2.2.2\\lib.harmony.2.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}
