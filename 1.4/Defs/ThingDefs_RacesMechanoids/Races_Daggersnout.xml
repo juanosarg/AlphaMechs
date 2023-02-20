@@ -48,9 +48,9 @@
   </ThingDef>
 
   <PawnKindDef ParentName="BaseMechanoidKind">
-    <defName>AA_Daggersnout</defName>
+    <defName>AM_Daggersnout</defName>
     <label>daggersnout</label>
-    <race>AA_Daggersnout</race>
+    <race>AM_Daggersnout</race>
     <combatPower>95</combatPower>
     <lifeStages>
       <li>
