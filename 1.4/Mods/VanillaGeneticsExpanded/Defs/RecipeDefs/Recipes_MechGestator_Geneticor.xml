@@ -5,9 +5,9 @@
 
 
   <RecipeDef ParentName="LightMechanoidRecipe">
-    <defName>AM_Gestate_Angler</defName>
-    <label>gestate angler</label>
-    <description>Gestate an angler mechanoid.</description>
+    <defName>AM_Gestate_Geneticor</defName>
+    <label>gestate geneticor</label>
+    <description>Gestate a geneticor mechanoid.</description>
     <researchPrerequisite>AM_WorkerStandardMechtech</researchPrerequisite>
 	<recipeUsers><li>MechGestator</li></recipeUsers>
     <ingredients Inherit="False">
@@ -29,10 +29,10 @@
       </li>
     </ingredients>
     <products>
-      <AM_Mech_Angler>1</AM_Mech_Angler>
+      <AM_Mech_Geneticor>1</AM_Mech_Geneticor>
     </products>
     <descriptionHyperlinks>
-      <ThingDef>AM_Mech_Angler</ThingDef>
+      <ThingDef>AM_Mech_Geneticor</ThingDef>
     </descriptionHyperlinks>
   </RecipeDef>
 

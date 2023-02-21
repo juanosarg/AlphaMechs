@@ -6,6 +6,10 @@
 		<li>1.4</li>
 		<li IfModActive="VanillaExpanded.VCEF">1.4/Mods/VanillaFishingExpanded</li>	
 		<li IfModActive="VanillaExpanded.VCEF_copy">1.4/Mods/VanillaFishingExpanded</li>
+		<li IfModActive="sarg.rimbees">1.4/Mods/AlphaBees</li>	
+		<li IfModActive="sarg.rimbees_copy">1.4/Mods/AlphaBees</li>
+		<li IfModActive="VanillaExpanded.VGeneticsE">1.4/Mods/VanillaGeneticsExpanded</li>	
+		<li IfModActive="VanillaExpanded.VGeneticsE_copy">1.4/Mods/VanillaGeneticsExpanded</li>
 	
 	</v1.4>
 </loadFolders>

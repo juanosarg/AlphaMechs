@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectDef Abstract="True" Name="AM_MechtechBase">
+		<techLevel>Industrial</techLevel>
+		<requiresMechanitor>true</requiresMechanitor>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="AM_MechtechBase">
+		<defName>AM_WorkerStandardMechtech</defName>
+		<label>worker alpha mechs</label>
+		<description>Specialized worker mechs that can do work types from other mods.</description>
+		<baseCost>500</baseCost>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<prerequisites>
+			<li>StandardMechtech</li>
+		</prerequisites>
+		<tab>AM_AlphaMechs</tab>
+	</ResearchProjectDef>
+</Defs>
