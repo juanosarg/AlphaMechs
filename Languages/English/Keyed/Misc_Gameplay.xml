@@ -5,9 +5,13 @@
 
 	<!-- Misc -->
 	
-
-
-
+<AM_allowAura>Allow Aura</AM_allowAura>
+<AM_allowDaggersnout>Allow Daggersnout</AM_allowDaggersnout>
+<AM_allowDemolisher>Allow Demolisher</AM_allowDemolisher>
+<AM_allowFireworm>Allow Fireworm</AM_allowFireworm>
+<AM_allowGoliath>Allow Goliath</AM_allowGoliath>
+<AM_allowPhalanx>Allow Phalanx</AM_allowPhalanx>
+<AM_allowSiegebreaker>Allow Siegebreaker</AM_allowSiegebreaker>
 
 
 

@@ -16,7 +16,7 @@
         </capacities>
         <power>6</power>
         <cooldownTime>1</cooldownTime>
-        <linkedBodyPartsGroup>AA_NoseBlade</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>AM_NoseBlade</linkedBodyPartsGroup>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
       </li>
       
@@ -33,13 +33,14 @@
       </li>
     </tools>
 	<comps>
-			<li Class="AlphaBehavioursAndEvents.CompProperties_ChangeDef">
-				<!-- Change to this pawn if Allow Alpha mechanoids is disabled in options -->
+			 <li Class="AlphaMechs.CompProperties_ChangeDef">
+				<factionToChangeTo>Mechanoid</factionToChangeTo>
 				<defToChangeTo>Mech_Scyther</defToChangeTo>
 			</li>
+			
 		</comps>
     <race>
-      <body>AA_DaggerSnoutBody</body>
+      <body>AM_DaggerSnoutBody</body>
       <baseHealthScale>0.8</baseHealthScale>
       <soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
@@ -55,7 +56,21 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Mechanoid/AA_Daggersnout/AA_Daggersnout</texPath>
+          <texPath>Things/Pawn/Mechanoid/AM_MechDaggersnout/AM_MechDaggersnoutClean</texPath>
+		  <maskPath>Things/Pawn/Mechanoid/AM_MechDaggersnout/AllegianceOverlays/AM_MechDaggersnoutOverlay</maskPath>
+		<shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/AM_MechDaggersnout/AM_MechDaggersnout</texPath>
+		  <maskPath>Things/Pawn/Mechanoid/AM_MechDaggersnout/AllegianceOverlays/AM_MechDaggersnoutOverlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2.5</drawSize>
           <shadowData>

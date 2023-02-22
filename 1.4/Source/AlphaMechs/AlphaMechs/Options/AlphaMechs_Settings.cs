@@ -1,9 +1,9 @@
-﻿using RimWorld;
-using UnityEngine;
+﻿using System.Collections.Generic;
 using Verse;
-using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 using System;
+
 
 
 namespace AlphaMechs
@@ -11,16 +11,15 @@ namespace AlphaMechs
     public class AlphaMechs_Settings : ModSettings
 
     {
- 
 
 
-        public bool flagAura = true;
-        public bool flagDaggersnout = true;
-        public bool flagDemolisher = true;
-        public bool flagFireworm = true;
-        public bool flagGoliath = true;
-        public bool flagPhalanx = true;
-        public bool flagSiegebreaker = true;
+        public static bool flagAura = true;
+        public static bool flagDaggersnout = true;
+        public static bool flagDemolisher = true;
+        public static bool flagFireworm = true;
+        public static bool flagGoliath = true;
+        public static bool flagPhalanx = true;
+        public static bool flagSiegebreaker = true;
       
       
 
@@ -30,14 +29,15 @@ namespace AlphaMechs
         {
             base.ExposeData();
 
-            Scribe_Values.Look(ref flagAura, "flagAura", true, true);
-            Scribe_Values.Look(ref flagDaggersnout, "flagDaggersnout", true, true);
-            Scribe_Values.Look(ref flagDemolisher, "flagDemolisher", true, true);
-            Scribe_Values.Look(ref flagFireworm, "flagFireworm", true, true);
-            Scribe_Values.Look(ref flagGoliath, "flagGoliath", true, true);
-            Scribe_Values.Look(ref flagPhalanx, "flagPhalanx", true, true);
-            Scribe_Values.Look(ref flagSiegebreaker, "flagSiegebreaker", true, true);
-           
+  
+             Scribe_Values.Look(ref flagAura, "flagAura", true, true);
+             Scribe_Values.Look(ref flagDaggersnout, "flagDaggersnout", true, true);
+             Scribe_Values.Look(ref flagDemolisher, "flagDemolisher", true, true);
+             Scribe_Values.Look(ref flagFireworm, "flagFireworm", true, true);
+             Scribe_Values.Look(ref flagGoliath, "flagGoliath", true, true);
+             Scribe_Values.Look(ref flagPhalanx, "flagPhalanx", true, true);
+             Scribe_Values.Look(ref flagSiegebreaker, "flagSiegebreaker", true, true);
+
 
 
 
@@ -45,7 +45,7 @@ namespace AlphaMechs
 
         }
 
-        public void DoWindowContents(Rect inRect)
+        public static  void DoWindowContents(Rect inRect)
         {
             Listing_Standard ls = new Listing_Standard();
 

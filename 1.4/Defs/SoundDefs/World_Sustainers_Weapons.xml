@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <SoundDef>
+    <defName>AM_HellsphereCannon_Aiming</defName>
+    <sustain>true</sustain>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>AM_Hellsphere_Cannon_Warmup</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.8~1.2</pitchRange>
+        <volumeRange>40</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+</Defs>

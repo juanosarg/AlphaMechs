@@ -41,10 +41,8 @@
       <HintPath>..\..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="System.Core" />
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data" />
     <Reference Include="UnityEngine">
       <HintPath>..\..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
       <Private>False</Private>
@@ -289,19 +287,22 @@
       <HintPath>..\..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.XRModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="VFECore">
-      <HintPath>References\VFECore.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comps\CompChangeDef.cs" />
+    <Compile Include="Comps\CompTargetingBeamBlue.cs" />
     <Compile Include="Comps\Properties\CompProperties_ChangeDef.cs" />
+    <Compile Include="Comps\Properties\CompProperties_TargetingBeamBlue.cs" />
+    <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Options\AlphaMechs_Settings.cs" />
     <Compile Include="Options\AlphaMechs_SettingsController.cs" />
+    <Compile Include="Projectiles\Projectile_Bombardment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Krafs.Rimworld.Ref">
+      <Version>1.4.3641</Version>
+    </PackageReference>
     <PackageReference Include="Lib.Harmony">
       <Version>2.2.2</Version>
       <ExcludeAssets>runtime</ExcludeAssets>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+
+
+  <ThingDef ParentName="MoteBase">
+    <defName>AM_Mote_HellsphereCannon_Aim</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.15</fadeInTime>
+      <fadeOutTime>0.3</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+      <fadeOutUnmaintained>True</fadeOutUnmaintained>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/AM_MoteRings</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteHellfireCannon_Aim</shaderType>
+      <shaderParameters>
+        <_DistortionTex>/Things/Mote/Cloudy_C</_DistortionTex>
+        <_NumFrames>10</_NumFrames>
+        <_FramesPerSec>1.35</_FramesPerSec>
+        <_DistortionScrollSpeed>1.35</_DistortionScrollSpeed>
+        <_Intensity>3</_Intensity>
+        <_DistortionScale>0.082</_DistortionScale>
+      </shaderParameters>
+      <drawSize>(3, 0.9)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+    <ThingDef ParentName="MoteBase">
+    <defName>AM_Mote_HellsphereCannon_Target</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.5</fadeInTime>
+      <fadeOutTime>0.3</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/AM_MoteHellfireCannon_Target</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteHellfireCannon_Target</shaderType>
+      <shaderParameters>
+        <_ScanTex>/Things/Mote/AM_MoteHellfireCannon_Target_Scan</_ScanTex>
+        <_ScanMask>/Things/Mote/MoteHellfireCannon_Target_Scan_Mask</_ScanMask>
+      </shaderParameters>
+      <drawSize>(12, 12)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+ 
+</Defs>

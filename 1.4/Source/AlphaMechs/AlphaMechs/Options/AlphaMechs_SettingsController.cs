@@ -11,17 +11,17 @@ namespace AlphaMechs
 
     public class AlphaMechs_Mod : Mod
     {
-        public static AlphaMechs_Settings settings;
+        
 
         public AlphaMechs_Mod(ModContentPack content) : base(content)
         {
-            settings = GetSettings<AlphaMechs_Settings>();
+            GetSettings<AlphaMechs_Settings>();
         }
         public override string SettingsCategory() => "Alpha Mechs";
 
         public override void DoSettingsWindowContents(Rect inRect)
         {
-            settings.DoWindowContents(inRect);
+            AlphaMechs_Settings.DoWindowContents(inRect);
         }
     }
 

@@ -25,10 +25,13 @@
 			</li>
 		</tools>
 		<comps>
-			<!-- <li Class="AlphaBehavioursAndEvents.CompProperties_ChangeDef"> -->
-			<!-- <defToChangeTo>Mech_Pikeman</defToChangeTo> -->
-			<!-- </li> -->
+			 <li Class="AlphaMechs.CompProperties_ChangeDef">
+				<factionToChangeTo>Mechanoid</factionToChangeTo>
+				<defToChangeTo>Mech_Pikeman</defToChangeTo>
+			</li>
+			
 		</comps>
+		
 		<race>
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Mechanoid</thinkTreeMain>

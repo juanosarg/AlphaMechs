@@ -29,10 +29,10 @@
 			</li>
 		</tools>
 		<comps>
-			<!-- <li Class="AlphaMechs.CompProperties_ChangeDef"> -->
-				
-				<!-- <defToChangeTo>Mech_Scyther</defToChangeTo> -->
-			<!-- </li> -->
+			 <li Class="AlphaMechs.CompProperties_ChangeDef">
+				<factionToChangeTo>Mechanoid</factionToChangeTo>
+				<defToChangeTo>Mech_Scyther</defToChangeTo>
+			</li>
 			<li Class="AnimalBehaviours.CompProperties_Regeneration">
 				<rateInTicks>30</rateInTicks>
 			</li>

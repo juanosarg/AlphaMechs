@@ -10,11 +10,12 @@
 			<xpath>/Defs/ThingDef[defName = "MechAssembler"]/comps/li[@Class = "CompProperties_SpawnerPawn"]/spawnablePawnKinds</xpath>
 			<value>
 				<li>AM_Aura</li>
+				<li>AM_Daggersnout</li>
+				<li>AM_Fireworm</li>
 				<!--<li>AA_Goliath</li>
 				
 				<li>AA_Siegebreaker</li>
-				<li>AA_Daggersnout</li>
-				<li>AA_Fireworm</li>
+				
 				<li>AA_Phalanx</li>-->
 			</value>
 		</match>
@@ -29,6 +30,7 @@
 			<value>
 				<li>AM_Aura</li>
 				<li>AM_Fireworm</li>
+				<li>AM_Daggersnout</li>
 				<!--<li>AA_Goliath</li>
 				
 				<li>AA_Siegebreaker</li>
@@ -47,6 +49,7 @@
 
 			<AM_Aura>10</AM_Aura>
 			<AM_Fireworm>10</AM_Fireworm>
+			<AM_Daggersnout>10</AM_Daggersnout>
 			<!-- <AA_Goliath>10</AA_Goliath>		 -->
 			<!-- <AA_Siegebreaker>10</AA_Siegebreaker> -->
 			<!-- <AA_Daggersnout>10</AA_Daggersnout> -->
@@ -64,7 +67,7 @@
 				<commonality>30</commonality>
 				<options>        
 					<!-- <AA_Goliath>5</AA_Goliath> -->
-					<!-- <AA_Daggersnout>10</AA_Daggersnout> -->
+					<AM_Daggersnout>10</AM_Daggersnout>
 
 					<AM_Aura>7</AM_Aura>
 					<Mech_Scyther>10</Mech_Scyther>
