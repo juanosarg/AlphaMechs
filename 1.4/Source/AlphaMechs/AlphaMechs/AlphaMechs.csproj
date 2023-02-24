@@ -293,10 +293,12 @@
     <Compile Include="Comps\CompTargetingBeamBlue.cs" />
     <Compile Include="Comps\Properties\CompProperties_ChangeDef.cs" />
     <Compile Include="Comps\Properties\CompProperties_TargetingBeamBlue.cs" />
+    <Compile Include="DamageWorkers\DamageWorker_Siege.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Options\AlphaMechs_Settings.cs" />
     <Compile Include="Options\AlphaMechs_SettingsController.cs" />
     <Compile Include="Projectiles\Projectile_Bombardment.cs" />
+    <Compile Include="Projectiles\Siege_Projectile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

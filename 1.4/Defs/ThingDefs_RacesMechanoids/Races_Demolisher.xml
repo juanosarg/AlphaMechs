@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<ThingDef ParentName="BaseMechanoid">
+		<defName>AM_Demolisher</defName>
+		<label>demolisher</label>
+		<description>The strange demolisher mechanoid looks like a weird amalgamation of a deep sea crab, a star-nosed mole and an armoured combat vehicle. Demolishers are armed with a very dangerous short range turret that fires demolisher charges, capable of blowing up even the strongest walls in two or three hits. Once they have ruptured a colony's outer defenses, their enormous plasteel reinforced claws can make short work of anyone foolish enough to stay in their way.\n\nNOTE: all Alpha Mechanoids can be disabled from raids, ships and clusters by Mod Options. This can be used even if they have already spawned. In any case, they have very similar stats to base game mechanoids, so don't let their appearance intimidate you into thinking they are much harder!</description>
+		<statBases>
+			<MoveSpeed>2.5</MoveSpeed>
+			 <ArmorRating_Blunt>0.22</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.56</ArmorRating_Sharp>
+			<PsychicSensitivity>0.75</PsychicSensitivity>
+		</statBases>
+		<tools>
+			<li>
+				<label>mechanoid claws</label>
+				<capacities>
+					<li>Cut</li>
+					<li>AM_SiegeBlunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>AM_MechaClaws</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>false</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<comps>
+			<li Class="AlphaMechs.CompProperties_ChangeDef">
+				<factionToChangeTo>Mechanoid</factionToChangeTo>
+				<defToChangeTo>Mech_Termite_Breach</defToChangeTo>
+			</li>
+		</comps>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<body>AM_DemolisherBody</body>
+			<baseBodySize>4</baseBodySize>
+			<baseHealthScale>3</baseHealthScale>
+			<lifeStageAges>
+			<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+						<soundWounded>AM_Siegebreaker_Wounded</soundWounded>
+					<soundDeath>AM_Siegebreaker_Death</soundDeath>
+					<soundCall>AM_Siegebreaker_Call</soundCall>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+						<soundWounded>AM_Siegebreaker_Wounded</soundWounded>
+					<soundDeath>AM_Siegebreaker_Death</soundDeath>
+					<soundCall>AM_Siegebreaker_Call</soundCall>
+				</li>
+			
+			
+				
+			</lifeStageAges>
+			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+			 <mechWeightClass>Heavy</mechWeightClass>
+		</race>
+		<butcherProducts>
+			<Steel>50</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</butcherProducts>
+	</ThingDef>
+
+
+
+
+
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>AM_Demolisher</defName>
+		<label>demolisher</label>
+		<race>AM_Demolisher</race>
+		<combatPower>400</combatPower>
+	  <isGoodBreacher>true</isGoodBreacher>
+	  
+	  <lifeStages>
+			<li MayRequire="Ludeon.Rimworld.Biotech">
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_MechDemolisher/AM_MechDemolisherClean</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_MechDemolisher/AllegianceOverlays/AM_MechDemolisherOverlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_MechDemolisher/AM_MechDemolisher</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_MechDemolisher/AllegianceOverlays/AM_MechDemolisherOverlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	  
+		
+		<weaponMoney>9999~9999</weaponMoney>
+		<weaponTags>
+			<li>AM_MechanoidDemolisherCharges</li>
+		</weaponTags>
+	</PawnKindDef>
+
+
+
+
+</Defs>

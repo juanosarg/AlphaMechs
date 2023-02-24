@@ -1,7 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
-
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Royalty</li>
@@ -12,15 +10,12 @@
 				<li>AM_Aura</li>
 				<li>AM_Daggersnout</li>
 				<li>AM_Fireworm</li>
-				<!--<li>AA_Goliath</li>
-				
-				<li>AA_Siegebreaker</li>
-				
-				<li>AA_Phalanx</li>-->
+				<li>AM_Goliath</li>
+				<li>AM_Phalanx</li>
+				<li>AM_Siegebreaker</li>
 			</value>
 		</match>
 	</Operation>
-
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Royalty</li>
@@ -31,33 +26,23 @@
 				<li>AM_Aura</li>
 				<li>AM_Fireworm</li>
 				<li>AM_Daggersnout</li>
-				<!--<li>AA_Goliath</li>
-				
-				<li>AA_Siegebreaker</li>
-				<li>AA_Daggersnout</li>
-				
-				<li>AA_Phalanx</li>-->
+				<li>AM_Goliath</li>
+				<li>AM_Phalanx</li>
+				<li>AM_Siegebreaker</li>
 			</value>
 		</match>
 	</Operation>
-
-	
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[defName = "Mechanoid"]/pawnGroupMakers/li[1]/options</xpath>
 		<value>
-
 			<AM_Aura>10</AM_Aura>
 			<AM_Fireworm>10</AM_Fireworm>
 			<AM_Daggersnout>10</AM_Daggersnout>
-			<!-- <AA_Goliath>10</AA_Goliath>		 -->
-			<!-- <AA_Siegebreaker>10</AA_Siegebreaker> -->
-			<!-- <AA_Daggersnout>10</AA_Daggersnout> -->
-			<!-- <AA_Fireworm>10</AA_Fireworm> -->
-			<!-- <AA_Phalanx>10</AA_Phalanx> -->
+			<AM_Goliath>10</AM_Goliath>
+			<AM_Siegebreaker>10</AM_Siegebreaker>
+			<AM_Phalanx>10</AM_Phalanx>
 		</value>
-	</Operation> 
-
+	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[defName = "Mechanoid"]/pawnGroupMakers</xpath>
 		<value>
@@ -65,19 +50,16 @@
 				<!-- All types-->
 				<kindDef>Combat</kindDef>
 				<commonality>30</commonality>
-				<options>        
-					<!-- <AA_Goliath>5</AA_Goliath> -->
+				<options>
+					<AM_Goliath>5</AM_Goliath>
 					<AM_Daggersnout>10</AM_Daggersnout>
-
 					<AM_Aura>7</AM_Aura>
 					<Mech_Scyther>10</Mech_Scyther>
 					<Mech_Lancer>10</Mech_Lancer>
 					<Mech_CentipedeBlaster>10</Mech_CentipedeBlaster>
-					<!-- <AA_Phalanx>3</AA_Phalanx> -->
+					<AM_Phalanx>3</AM_Phalanx>
 				</options>
 			</li>
-
 		</value>
-	</Operation> 
-
+	</Operation>
 </Patch>

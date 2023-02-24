@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName = "Mechanoid"]/pawnGroupMakers</xpath>
+		<value>
+			<li>
+				<!-- breach raids -->
+				<kindDef>Combat</kindDef>
+				<commonality>0.5</commonality>
+				<options>
+					<Mech_Pikeman>10</Mech_Pikeman>
+					<Mech_Scyther>10</Mech_Scyther>
+					<Mech_Lancer>10</Mech_Lancer>
+					<Mech_CentipedeBlaster>10</Mech_CentipedeBlaster>
+					<AM_Demolisher>1</AM_Demolisher>
+					<Mech_Militor MayRequire="Ludeon.RimWorld.Biotech">20</Mech_Militor>
+				</options>
+			</li>
+		</value>
+	</Operation>
+</Patch>

@@ -90,7 +90,23 @@ namespace AlphaMechs
             {
                 return AlphaMechs_Settings.flagFireworm;
             }
-            
+            else if (parent.def == InternalDefOf.AM_Goliath)
+            {
+                return AlphaMechs_Settings.flagGoliath;
+            }
+            else if (parent.def == InternalDefOf.AM_Phalanx)
+            {
+                return AlphaMechs_Settings.flagPhalanx;
+            }
+            else if (parent.def == InternalDefOf.AM_Siegebreaker)
+            {
+                return AlphaMechs_Settings.flagSiegebreaker;
+            }
+            else if (parent.def == InternalDefOf.AM_Demolisher)
+            {
+                return AlphaMechs_Settings.flagDemolisher;
+            }
+
 
             return true;
 
