@@ -6,13 +6,55 @@
 	</ResearchProjectDef>
 	<ResearchProjectDef ParentName="AM_MechtechBase">
 		<defName>AM_WorkerStandardMechtech</defName>
-		<label>worker alpha mechs</label>
-		<description>Specialized worker mechs that can do work types from other mods.</description>
-		<baseCost>500</baseCost>
+		<label>light alpha mechs</label>
+		<description>Light specialized worker mechs that can do work types from other mods, as well as light attack mechanoids.</description>
+		<baseCost>100</baseCost>
 		<researchViewX>0.00</researchViewX>
 		<researchViewY>0.00</researchViewY>
 		<prerequisites>
+			<li>BasicMechtech</li>
+		</prerequisites>
+		<tab>AM_AlphaMechs</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="AM_MechtechBase">
+		<defName>AM_StandardMechtech</defName>
+		<label>standard alpha mechs</label>
+		<description>The technology needed for your mechanitor to create and control standard-tier mechanoids.\n\nYou can get signal chips by using a mechanitor to summon a diabolus threat.</description>
+		<baseCost>500</baseCost>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<prerequisites>
 			<li>StandardMechtech</li>
+			<li>AM_WorkerStandardMechtech</li>
+		</prerequisites>
+		<tab>AM_AlphaMechs</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="AM_MechtechBase">
+		<defName>AM_HeavyMechtech</defName>
+		<label>heavy alpha mechs</label>
+		<description>Specialized worker mechs that can do work types from other mods.</description>
+		<baseCost>1000</baseCost>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<prerequisites>
+			<li>HighMechtech</li>
+			<li>AM_StandardMechtech</li>
+		</prerequisites>
+		<tab>AM_AlphaMechs</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="AM_MechtechBase">
+		<defName>AM_UltraHeavyMechtech</defName>
+		<label>ultra-heavy alpha mechs</label>
+		<description>Specialized worker mechs that can do work types from other mods.</description>
+		<baseCost>2500</baseCost>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<prerequisites>
+			<li>UltraMechtech</li>
+			<li>AM_HeavyMechtech</li>
 		</prerequisites>
 		<tab>AM_AlphaMechs</tab>
 	</ResearchProjectDef>
