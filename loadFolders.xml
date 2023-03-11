@@ -12,6 +12,7 @@
 		<li IfModActive="VanillaExpanded.VGeneticsE_copy">1.4/Mods/VanillaGeneticsExpanded</li>
 		<li IfModActive="VanillaExpanded.VBooksE">1.4/Mods/VanillaBooksExpanded</li>	
 		<li IfModActive="VanillaExpanded.VBooksE_copy">1.4/Mods/VanillaBooksExpanded</li>
+		<li IfModActive="Ludeon.RimWorld.Biotech">1.4/Mods/Biotech</li>	
 	</v1.4>
 </loadFolders>
 

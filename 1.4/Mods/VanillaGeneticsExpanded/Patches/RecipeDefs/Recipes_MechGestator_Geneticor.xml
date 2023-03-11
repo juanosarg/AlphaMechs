@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoidRecipe">
+					<defName>AM_Gestate_Geneticor</defName>
+					<label>gestate geneticor</label>
+					<description>Gestate a geneticor mechanoid.</description>
+					<researchPrerequisite>AM_WorkerStandardMechtech</researchPrerequisite>
+					<recipeUsers>
+						<li>MechGestator</li>
+					</recipeUsers>
+					<ingredients Inherit="False">
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Steel</li>
+								</thingDefs>
+							</filter>
+							<count>100</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>SubcoreHigh</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<products>
+						<AM_Mech_Geneticor>1</AM_Mech_Geneticor>
+					</products>
+					<descriptionHyperlinks>
+						<ThingDef>AM_Mech_Geneticor</ThingDef>
+					</descriptionHyperlinks>
+				</RecipeDef>
+			</value>
+		</match>
+	</Operation>
+</Patch>

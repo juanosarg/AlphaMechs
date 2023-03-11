@@ -54,7 +54,7 @@
     <race>AM_Daggersnout</race>
     <combatPower>95</combatPower>
     <lifeStages>
-      <li>
+      <li MayRequire="Ludeon.Rimworld.Biotech">
         <bodyGraphicData>
           <texPath>Things/Pawn/Mechanoid/AM_MechDaggersnout/AM_MechDaggersnoutClean</texPath>
 		  <maskPath>Things/Pawn/Mechanoid/AM_MechDaggersnout/AllegianceOverlays/AM_MechDaggersnoutOverlay</maskPath>

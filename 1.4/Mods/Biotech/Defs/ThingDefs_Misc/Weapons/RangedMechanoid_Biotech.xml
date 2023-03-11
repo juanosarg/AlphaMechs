@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Orbital strike targetter -->
+	<ThingDef ParentName="BaseGun">
+		<defName>AM_Gun_HellsphereOrbital</defName>
+		<label>orbital strike targetter</label>
+		<description>A targetting beam that will select a certain position in the ground for a strike from an orbital missile platform. Very, very slow to select its targets, but with a significant area of effect.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Weapon/AM_OrbitalBeamTargetter</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>20</Mass>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>1</AccuracyShort>
+			<AccuracyMedium>1</AccuracyMedium>
+			<AccuracyLong>1</AccuracyLong>
+			<RangedWeapon_Cooldown>30</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>AM_Gun_HellsphereOrbital</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AM_Bullet_HellsphereCannonGun</defaultProjectile>
+				<warmupTime>15.5</warmupTime>
+				<range>30</range>
+				<soundCast>Shot_HellsphereCannonGun</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
+				<ai_RangedAlawaysShootGroundBelowTarget>true</ai_RangedAlawaysShootGroundBelowTarget>
+				<ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_TargetHasRangedAttackScoreOffset>50</ai_TargetHasRangedAttackScoreOffset>
+				<minRange>15</minRange>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+					<canTargetPawns>false</canTargetPawns>
+				</targetParams>
+				<aimingLineMote>AM_Mote_HellsphereCannon_Aim</aimingLineMote>
+				<aimingChargeMote>Mote_HellsphereCannon_Charge</aimingChargeMote>
+				<aimingChargeMoteOffset>1.07</aimingChargeMoteOffset>
+				<aimingLineMoteFixedLength>18.9</aimingLineMoteFixedLength>
+				<aimingTargetMote>AM_Mote_HellsphereCannon_Target</aimingTargetMote>
+				<burstShotCount>1</burstShotCount>
+				<beamTargetsGround>true</beamTargetsGround>
+				<soundAiming>AM_HellsphereCannon_Aiming</soundAiming>
+				<canGoWild>false</canGoWild>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AM_Bullet_HellsphereCannonGun</defName>
+		<label>hellsphere cannon shot</label>
+		<thingClass>AlphaMechs.Projectile_Bombardment</thingClass>
+		<graphicData>
+			<texPath>UI/Invisible</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>(1.5, 3)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Vaporize</damageDef>
+			<speed>75</speed>
+			<explosionRadius>1</explosionRadius>
+			<screenShakeFactor>1.5</screenShakeFactor>
+		</projectile>
+	</ThingDef>
+	
+	<!--========== Coil lance ============-->
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>AM_Gun_CoilLance</defName>
+		<label>coil lance</label>
+		<description>A mechanoid lance that electromagnetically accelerates piercing metal shards to enormous speeds.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Weapon/AM_CoilLance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		
+		<statBases>
+			<WorkToMake>45000</WorkToMake>
+			<Mass>5</Mass>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.64</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+		</statBases>
+		
+		<costList>
+			<Steel>80</Steel>
+			<Uranium>20</Uranium>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		
+		<weaponTags>
+			<li>AM_Gun_CoilLance</li>
+    
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AM_Gun_CoilLance_Projectile</defaultProjectile>
+				<warmupTime>2.0</warmupTime>
+				<range>30.9</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+          <canTargetPawns>true</canTargetPawns>
+          <canTargetBuildings>true</canTargetBuildings>
+        </targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0.35,0,0)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(0.35,0,0)</drawOffset>
+					</east>
+					<south>
+						<drawOffset>(-0.35,0,0)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.35,0,0)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>AM_Gun_CoilLance_Projectile</defName>
+		<label>coil lance shard</label>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<armorPenetrationBase>0.50</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>150</speed>
+		</projectile>
+		<thingClass>VFECore.GaussProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/Proj_CoilgunFadeIn</texPath>
+			<texPathFadeOut>Things/Projectiles/Proj_CoilgunFadeOut</texPathFadeOut>
+		</graphicData>
+		<reachMaxRangeAlways>true</reachMaxRangeAlways>
+		<minDistanceToAffect>1.9</minDistanceToAffect>
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>50</lifeTimeDuration>
+		<widthScaleFactor>0.10</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(0,0,-1)</startingPositionOffset>
+		<totalSizeScale>0.8</totalSizeScale>
+		<tickFrameRate>2</tickFrameRate>
+		<finalTickFrameRate>2</finalTickFrameRate>
+		<tickDamageRate>5</tickDamageRate>
+		<dealsDamageOnce>true</dealsDamageOnce>
+		<disableVanillaDamageMethod>true</disableVanillaDamageMethod>
+		<stopWhenHit>false</stopWhenHit>
+		<stopWhenHitAt>
+			<li>CollapsedRocks</li>
+			<li>MineableSteel</li>
+			<li>MineableSilver</li>
+			<li>MineableGold</li>
+			<li>MineableUranium</li>
+			<li>MineablePlasteel</li>
+			<li>MineableJade</li>
+			<li>MineableComponentsIndustrial</li>
+			<li>RaisedRocks</li>
+			<li>Sandstone</li>
+			<li>SmoothedSandstone</li>
+			<li>Granite</li>
+			<li>SmoothedGranite</li>
+			<li>Limestone</li>
+			<li>SmoothedLimestone</li>
+			<li>Slate</li>
+			<li>SmoothedSlate</li>
+			<li>Marble</li>
+			<li>SmoothedMarble</li>
+		</stopWhenHitAt>
+	</VFECore.ExpandableProjectileDef>
+	
+</Defs>
