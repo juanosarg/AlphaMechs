@@ -72,4 +72,21 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+		<!-- ======================== Red Charge ======================== -->
+
+	  <SoundDef>
+    <defName>AM_Shot_ChargeBlaster_Red</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>AM_ChargeShot_Red</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>1.4~1.6</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
 </Defs>

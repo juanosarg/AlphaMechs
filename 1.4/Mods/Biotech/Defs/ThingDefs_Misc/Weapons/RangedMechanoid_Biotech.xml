@@ -228,4 +228,90 @@
 		</stopWhenHitAt>
 	</VFECore.ExpandableProjectileDef>
 	
+	<!-- Super Heavy blaster -->
+	<ThingDef ParentName="BaseGun">
+		<label>super heavy charge blaster</label>
+		<defName>AM_Gun_SuperHeavyChargeBlaster</defName>
+		<description>A meaner, stronger version of the charge blaster. Fires more burst shots that are slightly more damaging.</description>
+		<graphicData>
+			<texPath>Things/Weapon/AM_SuperHeavyBlaster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>22</Mass>
+			<AccuracyTouch>0.18</AccuracyTouch>
+			<AccuracyShort>0.26</AccuracyShort>
+			<AccuracyMedium>0.26</AccuracyMedium>
+			<AccuracyLong>0.18</AccuracyLong>
+			<RangedWeapon_Cooldown>7.4</RangedWeapon_Cooldown>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11.7</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<relicChance>0</relicChance>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AM_Bullet_ChargeBlasterHeavy_Red</defaultProjectile>
+				<warmupTime>1.25</warmupTime>
+				<range>17.9</range>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<burstShotCount>32</burstShotCount>
+				<soundCast>AM_Shot_ChargeBlaster_Red</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>AM_Gun_SuperHeavyChargeBlaster</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0.75,0,0)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(-0.75,0,0)</drawOffset>
+					</east>
+					<south>
+						<drawOffset>(-0.75,0,0)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0.75,0,0)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	  <ThingDef ParentName="BaseBullet">
+    <defName>AM_Bullet_ChargeBlasterHeavy_Red</defName>
+    <label>charge blaster shot</label>
+    <graphicData>
+      <texPath>Things/Projectiles/AM_RedPlasma_Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>17</damageAmountBase>
+      <speed>90</speed>
+    </projectile>
+  </ThingDef>
+	
 </Defs>

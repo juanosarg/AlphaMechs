@@ -295,11 +295,14 @@
     <Compile Include="Comps\Properties\CompProperties_TargetingBeamBlue.cs" />
     <Compile Include="DamageWorkers\DamageWorker_Siege.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
+    <Compile Include="Harmony\CompProjectileInterceptor_PostDraw.cs" />
+    <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Options\AlphaMechs_Settings.cs" />
     <Compile Include="Options\AlphaMechs_SettingsController.cs" />
     <Compile Include="Projectiles\Projectile_Bombardment.cs" />
     <Compile Include="Projectiles\Siege_Projectile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReflectionCache\ReflectionCache.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">

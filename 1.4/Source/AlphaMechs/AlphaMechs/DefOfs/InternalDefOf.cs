@@ -16,7 +16,8 @@ namespace AlphaMechs
         public static ThingDef AM_Siegebreaker;
         public static ThingDef AM_Demolisher;
 
-
+        [MayRequireBiotech]
+        public static ThingDef AM_Mech_Legate;
 
         static InternalDefOf()
         {
