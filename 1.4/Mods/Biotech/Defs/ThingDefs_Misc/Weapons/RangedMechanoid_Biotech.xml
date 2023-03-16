@@ -85,9 +85,7 @@
 			<screenShakeFactor>1.5</screenShakeFactor>
 		</projectile>
 	</ThingDef>
-	
 	<!--========== Coil lance ============-->
-
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>AM_Gun_CoilLance</defName>
 		<label>coil lance</label>
@@ -97,7 +95,6 @@
 			<texPath>Things/Weapon/AM_CoilLance</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		
 		<statBases>
 			<WorkToMake>45000</WorkToMake>
 			<Mass>5</Mass>
@@ -107,16 +104,13 @@
 			<AccuracyLong>0.50</AccuracyLong>
 			<RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
 		</statBases>
-		
 		<costList>
 			<Steel>80</Steel>
 			<Uranium>20</Uranium>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
-		
 		<weaponTags>
 			<li>AM_Gun_CoilLance</li>
-    
 		</weaponTags>
 		<verbs>
 			<li>
@@ -130,11 +124,11 @@
 				<soundCast>Shot_ChargeRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-          <canTargetPawns>true</canTargetPawns>
-          <canTargetBuildings>true</canTargetBuildings>
-        </targetParams>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+					<canTargetPawns>true</canTargetPawns>
+					<canTargetBuildings>true</canTargetBuildings>
+				</targetParams>
 			</li>
 		</verbs>
 		<tools>
@@ -175,7 +169,6 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
 	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>AM_Gun_CoilLance_Projectile</defName>
 		<label>coil lance shard</label>
@@ -227,7 +220,6 @@
 			<li>SmoothedMarble</li>
 		</stopWhenHitAt>
 	</VFECore.ExpandableProjectileDef>
-	
 	<!-- Super Heavy blaster -->
 	<ThingDef ParentName="BaseGun">
 		<label>super heavy charge blaster</label>
@@ -299,19 +291,98 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	  <ThingDef ParentName="BaseBullet">
-    <defName>AM_Bullet_ChargeBlasterHeavy_Red</defName>
-    <label>charge blaster shot</label>
-    <graphicData>
-      <texPath>Things/Projectiles/AM_RedPlasma_Bullet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPostLight</shaderType>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>17</damageAmountBase>
-      <speed>90</speed>
-    </projectile>
-  </ThingDef>
-	
+	<ThingDef ParentName="BaseBullet">
+		<defName>AM_Bullet_ChargeBlasterHeavy_Red</defName>
+		<label>charge blaster shot</label>
+		<graphicData>
+			<texPath>Things/Projectiles/AM_RedPlasma_Bullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>17</damageAmountBase>
+			<speed>90</speed>
+		</projectile>
+	</ThingDef>
+	<!-- Acid spewer -->
+	<ThingDef ParentName="BaseGun">
+		<defName>AM_Gun_AcidSpewer</defName>
+		<label>acid spewer</label>
+		<description>A mechanoid-built gun that fires toxin-infused metal needles. It can fire long distances and will poison the target in addition to doing physical damage.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Weapon/AM_AcidSpewer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>2.6</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.92</AccuracyLong>
+			<RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>AM_Gun_AcidSpewer</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+			<li>LongShots</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AM_Bullet_AcidSpewer</defaultProjectile>
+				<warmupTime>1.85</warmupTime>
+				<range>25</range>
+				<soundCast>AM_PoisonBreath</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>AM_Bullet_AcidSpewer</defName>
+		<label>acid</label>
+		<thingClass>VFECore.ExpandableProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Proj_LiquidStream</texPath>
+			<texPathFadeOut>Things/Projectile/Proj_LiquidStream</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>50</lifeTimeDuration>
+		<widthScaleFactor>0.65</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(0, 0, 0)</startingPositionOffset>
+		<totalSizeScale>2</totalSizeScale>
+		<tickFrameRate>4</tickFrameRate>
+		<finalTickFrameRate>5</finalTickFrameRate>
+		<tickDamageRate>20</tickDamageRate>
+		<dealsDamageOnce>true</dealsDamageOnce>
+		<minDistanceToAffect>2</minDistanceToAffect>
+		<projectile>
+			<damageDef>AM_AcidSpit</damageDef>
+			<flyOverhead>false</flyOverhead>
+			<damageAmountBase>15</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>20</speed>
+		</projectile>
+	</VFECore.ExpandableProjectileDef>
 </Defs>
