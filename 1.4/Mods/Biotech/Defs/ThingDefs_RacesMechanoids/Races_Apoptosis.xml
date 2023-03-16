@@ -136,25 +136,25 @@
 				<defaultProjectile>AM_Bullet_SoulDrain</defaultProjectile>
 				<range>35</range>
 				<soundCast>AM_SoulDrain</soundCast>
-				
 				<muzzleFlashScale>9</muzzleFlashScale>
 				<defaultCooldownTime>2.5</defaultCooldownTime>
 				<ticksBetweenBurstShots>150</ticksBetweenBurstShots>
 			</li>
 		</verbs>
 	</ThingDef>
-	  <ThingDef ParentName="BaseBullet">
-    <defName>AM_Bullet_SoulDrain</defName>
-    <label>apoptosis</label>
-    <graphicData>
-      <texPath>Things/Projectiles/AM_SoulDrain</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPostLight</shaderType>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>15</damageAmountBase>
-      <speed>90</speed>
-    </projectile>
-  </ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AM_Bullet_SoulDrain</defName>
+		<label>soul drain</label>
+		<thingClass>AlphaMechs.Projectile_NonMech</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/AM_SoulDrain</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>AM_SoulDrain</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<speed>90</speed>
+		</projectile>
+	</ThingDef>
 </Defs>

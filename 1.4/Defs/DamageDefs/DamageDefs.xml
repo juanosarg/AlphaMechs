@@ -33,4 +33,26 @@
 		<armorCategory>Heat</armorCategory>
 	</DamageDef>
 	
+	<DamageDef>
+		<defName>AM_SoulDrain</defName>
+		<label>apoptosis</label>
+		<workerClass>DamageWorker_Blunt</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been drained.</deathMessage>
+		<hediff>Crush</hediff>
+		<hediffSkin>Shredded</hediffSkin>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Blunt</armorCategory>
+		<additionalHediffs>
+			<li>
+				<hediff>AM_SoulDrain</hediff>
+				<severityPerDamageDealt>0.2</severityPerDamageDealt>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+	
 </Defs>
