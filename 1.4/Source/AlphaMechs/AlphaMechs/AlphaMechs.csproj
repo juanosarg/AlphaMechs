@@ -289,6 +289,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\CompDetonate.cs" />
+    <Compile Include="Abilities\Comps\CompProperties_Detonate.cs" />
     <Compile Include="Comps\CompChangeDef.cs" />
     <Compile Include="Comps\CompTargetingBeamBlue.cs" />
     <Compile Include="Comps\Properties\CompProperties_ChangeDef.cs" />

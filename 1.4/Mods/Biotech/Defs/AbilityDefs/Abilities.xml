@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityDef>
+		<defName>AM_Detonate</defName>
+		<label>detonate</label>
+		<description>Detonates the mechanoid, instantly destroying it and damaging those nearby, friend or foe.</description>
+		<jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
+		<iconPath>UI/Abilities/AM_Detonation</iconPath>
+		<cooldownTicksRange>2700</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+		<targetRequired>false</targetRequired>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<showCastingProgressBar>true</showCastingProgressBar>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupEffecter>Fire_Burst_Warmup</warmupEffecter>
+			<warmupTime>0.5</warmupTime>
+			<requireLineOfSight>false</requireLineOfSight>
+			<range>5.9</range>
+			<drawAimPie>false</drawAimPie>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="AlphaMechs.CompProperties_Detonate">
+				<radius>3.9</radius>
+				<damageType>Bomb</damageType>
+				<damageAmount>30</damageAmount>
+				<soundCreated>MortarIncendiary_Explode</soundCreated>
+				<chanceToStartFire>0.5</chanceToStartFire>
+				<killUser>true</killUser>
+			</li>
+		</comps>
+	</AbilityDef>
+</Defs>
