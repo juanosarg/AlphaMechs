@@ -299,7 +299,6 @@
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Options\AlphaMechs_Settings.cs" />
     <Compile Include="Options\AlphaMechs_SettingsController.cs" />
-    <Compile Include="Projectiles\Projectile_NonMech.cs" />
     <Compile Include="Projectiles\Projectile_Bombardment.cs" />
     <Compile Include="Projectiles\Siege_Projectile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
