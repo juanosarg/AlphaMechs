@@ -48,7 +48,9 @@
 		<additionalHediffs>
 			<li>
 				<hediff>AM_SoulDrain</hediff>
-				<severityPerDamageDealt>0.2</severityPerDamageDealt>
+				<severityPerDamageDealt>0.02</severityPerDamageDealt>
+				 <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
 				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
 
 			</li>

@@ -14,7 +14,7 @@ using System.Security.Cryptography;
 
 namespace AlphaMechs
 {
-
+    [StaticConstructorOnStartup]
     [HarmonyPatch(typeof(CompProjectileInterceptor))]
     [HarmonyPatch("PostDraw")]
     public static class AlphaMechs_CompProjectileInterceptor_PostDraw_Patch

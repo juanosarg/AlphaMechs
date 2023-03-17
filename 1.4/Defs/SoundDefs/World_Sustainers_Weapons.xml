@@ -116,7 +116,7 @@
 			</li>
 		</subSounds>
 	</SoundDef>
-	<!-- ======================== Breath ======================== -->
+	<!-- ======================== Soul Drain ======================== -->
 	<SoundDef>
 		<defName>AM_SoulDrain</defName>
 		<context>MapOnly</context>
@@ -126,6 +126,34 @@
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>AM_SoulDrain</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>25</min>
+					<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<!-- ======================== Shot ======================== -->
+	<SoundDef>
+		<defName>AM_Shot</defName>
+		<context>MapOnly</context>
+		<eventNames/>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AM_Shot</clipPath>
 					</li>
 				</grains>
 				<volumeRange>

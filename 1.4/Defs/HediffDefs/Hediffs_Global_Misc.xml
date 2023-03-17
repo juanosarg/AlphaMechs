@@ -6,7 +6,7 @@
 	<HediffDef ParentName="DiseaseBase">
 		<defName>AM_SoulDrain</defName>
 		<description>.</description>
-		<label>apoptosis</label>
+		<label>soul drain</label>
 		<lethalSeverity>1</lethalSeverity>
 		<makesSickThought>true</makesSickThought>
 		<isBad>false</isBad>
@@ -29,7 +29,7 @@
 				</capMods>
 			</li>
 			<li>
-				<label>stiff joints</label>
+				<label>faint headed</label>
 				<minSeverity>0.2</minSeverity>
 
 				<capMods>
@@ -45,7 +45,7 @@
 				</capMods>
 			</li>
 			<li>
-				<label>rocky skin</label>
+				<label>throbbing headache</label>
 				<minSeverity>0.5</minSeverity>
 
 				<capMods>
@@ -60,7 +60,7 @@
 				</capMods>
 			</li>
 			<li>
-				<label>brittle bones</label>
+				<label>blacking out</label>
 				<minSeverity>0.8</minSeverity>
 
 				<capMods>

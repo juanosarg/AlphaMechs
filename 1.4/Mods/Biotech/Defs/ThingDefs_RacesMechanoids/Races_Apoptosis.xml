@@ -145,11 +145,12 @@
 	<ThingDef ParentName="BaseBullet">
 		<defName>AM_Bullet_SoulDrain</defName>
 		<label>soul drain</label>
-		<thingClass>AlphaMechs.Projectile_NonMech</thingClass>
+		
 		<graphicData>
 			<texPath>Things/Projectiles/AM_SoulDrain</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<projectile>
 			<damageDef>AM_SoulDrain</damageDef>
