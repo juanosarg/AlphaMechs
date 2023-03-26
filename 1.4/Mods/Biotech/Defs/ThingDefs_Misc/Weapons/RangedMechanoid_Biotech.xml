@@ -385,4 +385,147 @@
 			<speed>20</speed>
 		</projectile>
 	</VFECore.ExpandableProjectileDef>
+	<!-- Heavy Laser -->
+	<!--<ThingDef ParentName="BaseBullet">
+    <defName>AM_Bullet_LaserRifle</defName>
+    <label>laser shot</label>
+    <graphicData>
+      <texPath>Things/Projectiles/AM_RedLaser</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+		<damageDef>Bullet</damageDef>
+		<damageAmountBase>13</damageAmountBase>
+		<armorPenetrationBase>0.66</armorPenetrationBase>
+		<stoppingPower>0.5</stoppingPower>
+		<speed>85</speed>
+    </projectile>
+  </ThingDef>-->
+	<ThingDef Abstract="True" Name="AM_Bullet_LaserGeneric" ParentName="BaseBullet">
+		<thingClass>VanillaWeaponsExpandedLaser.LaserBeam</thingClass>
+		<drawOffscreen>true</drawOffscreen>
+		<beamGraphic>AM_BeamGraphic</beamGraphic>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Charge_Small</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<explosionEffect>AM_LaserImpact</explosionEffect>
+		<hitLivingEffect>AM_LaserLivingImpact</hitLivingEffect>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<speed>10000</speed>
+		</projectile>
+		<seam>0.25</seam>
+	</ThingDef>
+	<ThingDef ParentName="AM_Bullet_LaserGeneric" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+		<defName>AM_Bullet_LaserRifle</defName>
+		<label>laser shot</label>
+		<description>A focused laser beam.</description>
+		<textures>
+			<li>Things/Projectiles/AM_RedLaser</li>
+		</textures>
+		<seam>0</seam>
+		<causefireChance>0.1</causefireChance>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<armorPenetrationBase>0.60</armorPenetrationBase>
+			<stoppingPower>1.5</stoppingPower>
+		</projectile>
+	</ThingDef>
+	<ThingDef>
+		<defName>AM_BeamGraphic</defName>
+		<thingClass>VanillaWeaponsExpandedLaser.LaserBeamGraphic</thingClass>
+		<drawOffscreen>true</drawOffscreen>
+		<label>laser beam</label>
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+	</ThingDef>
+	<ThingDef ParentName="BaseGun">
+		<defName>AM_Gun_HeavyLaser</defName>
+		<label>heavy laser</label>
+		<description>.</description>
+		<techLevel>Spacer</techLevel>
+		<thingClass>VanillaWeaponsExpandedLaser.LaserGun</thingClass>
+		<graphicData>
+			<texPath>Things/Weapon/AM_HeavyLaser</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<equippedAngleOffset>50</equippedAngleOffset>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<Mass>2.6</Mass>
+			<AccuracyTouch>0.70</AccuracyTouch>
+			<AccuracyShort>0.83</AccuracyShort>
+			<AccuracyMedium>0.86</AccuracyMedium>
+			<AccuracyLong>0.72</AccuracyLong>
+			<RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>AM_Gun_HeavyLaser</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+			<li>LongShots</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<label>Standard</label>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AM_Bullet_LaserRifle</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<range>32.9</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>2</burstShotCount>
+				<soundCast>AM_HeavyLaser</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="VanillaWeaponsExpandedLaser.CompProperties_LaserCapacitor">
+				<UiIconPath>UI/AM_EnableWarmup</UiIconPath>
+				<WarmUpReductionPerShot>0.225</WarmUpReductionPerShot>
+				<Overheats>true</Overheats>
+				<OverheatDestroys>false</OverheatDestroys>
+				
+			<OverheatBlastDamageDef>Burn</OverheatBlastDamageDef>
+			<OverheatBlastExtraDamage>8</OverheatBlastExtraDamage>
+			<OverheatBlastRadius>1.5</OverheatBlastRadius>
+			<OverheatChance>0.1</OverheatChance>
+			<OverheatMoteThrown>AM_HeatGlow</OverheatMoteThrown>
+			<OverheatMoteSize>1</OverheatMoteSize>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.9</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
 </Defs>

@@ -1,58 +1,103 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
-
-
-  <ThingDef ParentName="MoteBase">
-    <defName>AM_Mote_HellsphereCannon_Aim</defName>
-    <thingClass>MoteDualAttached</thingClass>
-    <altitudeLayer>MoteOverhead</altitudeLayer>
-    <mote>
-      <fadeInTime>0.15</fadeInTime>
-      <fadeOutTime>0.3</fadeOutTime>
-      <solidTime>999999</solidTime>
-      <needsMaintenance>True</needsMaintenance>
-      <rotateTowardsTarget>True</rotateTowardsTarget>
-      <scaleToConnectTargets>True</scaleToConnectTargets>
-      <fadeOutUnmaintained>True</fadeOutUnmaintained>
-    </mote>
-    <graphicData>
-      <texPath>Things/Mote/AM_MoteRings</texPath>
-      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
-      <shaderType>MoteHellfireCannon_Aim</shaderType>
-      <shaderParameters>
-        <_DistortionTex>/Things/Mote/Cloudy_C</_DistortionTex>
-        <_NumFrames>10</_NumFrames>
-        <_FramesPerSec>1.35</_FramesPerSec>
-        <_DistortionScrollSpeed>1.35</_DistortionScrollSpeed>
-        <_Intensity>3</_Intensity>
-        <_DistortionScale>0.082</_DistortionScale>
-      </shaderParameters>
-      <drawSize>(3, 0.9)</drawSize>
-    </graphicData>
-  </ThingDef>
-  
-    <ThingDef ParentName="MoteBase">
-    <defName>AM_Mote_HellsphereCannon_Target</defName>
-    <thingClass>MoteAttached</thingClass>
-    <altitudeLayer>MoteOverhead</altitudeLayer>
-    <mote>
-      <fadeInTime>0.5</fadeInTime>
-      <fadeOutTime>0.3</fadeOutTime>
-      <solidTime>999999</solidTime>
-      <needsMaintenance>True</needsMaintenance>
-    </mote>
-    <graphicData>
-      <texPath>Things/Mote/AM_MoteHellfireCannon_Target</texPath>
-      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
-      <shaderType>MoteHellfireCannon_Target</shaderType>
-      <shaderParameters>
-        <_ScanTex>/Things/Mote/AM_MoteHellfireCannon_Target_Scan</_ScanTex>
-        <_ScanMask>/Things/Mote/MoteHellfireCannon_Target_Scan_Mask</_ScanMask>
-      </shaderParameters>
-      <drawSize>(12, 12)</drawSize>
-    </graphicData>
-  </ThingDef>
-
- 
+	<ThingDef ParentName="MoteBase">
+		<defName>AM_Mote_HellsphereCannon_Aim</defName>
+		<thingClass>MoteDualAttached</thingClass>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.15</fadeInTime>
+			<fadeOutTime>0.3</fadeOutTime>
+			<solidTime>999999</solidTime>
+			<needsMaintenance>True</needsMaintenance>
+			<rotateTowardsTarget>True</rotateTowardsTarget>
+			<scaleToConnectTargets>True</scaleToConnectTargets>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<texPath>Things/Mote/AM_MoteRings</texPath>
+			<graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+			<shaderType>MoteHellfireCannon_Aim</shaderType>
+			<shaderParameters>
+				<_DistortionTex>/Things/Mote/Cloudy_C</_DistortionTex>
+				<_NumFrames>10</_NumFrames>
+				<_FramesPerSec>1.35</_FramesPerSec>
+				<_DistortionScrollSpeed>1.35</_DistortionScrollSpeed>
+				<_Intensity>3</_Intensity>
+				<_DistortionScale>0.082</_DistortionScale>
+			</shaderParameters>
+			<drawSize>(3, 0.9)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>AM_Mote_HellsphereCannon_Target</defName>
+		<thingClass>MoteAttached</thingClass>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.5</fadeInTime>
+			<fadeOutTime>0.3</fadeOutTime>
+			<solidTime>999999</solidTime>
+			<needsMaintenance>True</needsMaintenance>
+		</mote>
+		<graphicData>
+			<texPath>Things/Mote/AM_MoteHellfireCannon_Target</texPath>
+			<graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+			<shaderType>MoteHellfireCannon_Target</shaderType>
+			<shaderParameters>
+				<_ScanTex>/Things/Mote/AM_MoteHellfireCannon_Target_Scan</_ScanTex>
+				<_ScanMask>/Things/Mote/MoteHellfireCannon_Target_Scan_Mask</_ScanMask>
+			</shaderParameters>
+			<drawSize>(12, 12)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>AM_Mote_BloodPuff</defName>
+		<graphicData>
+			<texPath>Things/Mote/BloodSplash</texPath>
+			<color>(131, 34, 34, 180)</color>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.04</fadeInTime>
+			<solidTime>0.25</solidTime>
+			<fadeOutTime>0.1</fadeOutTime>
+		</mote>
+	</ThingDef>
+	<FleckDef ParentName="FleckBase">
+		<defName>AM_MicroSparksFast</defName>
+		<graphicData>
+			<texPath>Things/Mote/MicroSparks</texPath>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.15</fadeInTime>
+		<solidTime>0.3</solidTime>
+		<fadeOutTime>0.45</fadeOutTime>
+		<collide>true</collide>
+	</FleckDef>
+	<FleckDef ParentName="FleckBase">
+		<defName>AM_SparkThrownFast</defName>
+		<graphicData>
+			<texPath>Things/Mote/SparkThrown</texPath>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<fadeInTime>0.03</fadeInTime>
+		<solidTime>0.04</solidTime>
+		<fadeOutTime>0.13</fadeOutTime>
+		<collide>true</collide>
+	</FleckDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>AM_HeatGlow</defName>
+		<graphicData>
+			<texPath>Things/Mote/FireGlow</texPath>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>2.6</fadeInTime>
+			<solidTime>1.5</solidTime>
+			<fadeOutTime>3.3</fadeOutTime>
+		</mote>
+	</ThingDef>
 </Defs>
