@@ -16,7 +16,7 @@
 			</li>
 		</tools>
 		<race>
-			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
+			<deathActionWorkerClass>AlphaMechs.DeathActionWorker_BlitzkriegExplosion</deathActionWorkerClass>
 			<lifeStageAges>
 				<li>
 					<def>MechanoidFullyFormed</def>

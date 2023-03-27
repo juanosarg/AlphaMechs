@@ -5,7 +5,7 @@
 
     <!-- Infernus -->
     <ThingDef ParentName="SuperHeavyMechanoid">
-      <defName>AM_Mech_Infernus</defName>
+      <defName>AM_Infernus</defName>
       <label>infernus</label>
       <description>An ultra-heavy mechanoid with an ultra-powerful hellsphere cannon. Made for siegebreaking, its hellsphere cannon takes time to charge up a shot, but can melt concrete and vaporize bone. The diabolus dissipates the hellsphere cannon's waste power in a heat column mounted on its back, which can pulse to ignite flammable objects nearby.\n\nThis mech's name comes from a thousand-year-old poem written by a Haspian monk who survived the erasure of his monastery. His religiously-tinged work describes a razor-bodied fiend pulsing with flesh-searing heat as it crushed scorched bodies under massive claws. The few who have faced a diabolus and survived tend to agree with this depiction.</description>
       <race>
@@ -59,9 +59,9 @@
     </ThingDef>
     
     <PawnKindDef ParentName="HeavyMechanoidKind">
-      <defName>AM_Mech_Infernus</defName>
+      <defName>AM_Infernus</defName>
       <label>infernus</label>
-      <race>AM_Mech_Infernus</race>
+      <race>AM_Infernus</race>
       <combatPower>750</combatPower>
       <maxPerGroup>2</maxPerGroup>
       <allowInMechClusters>false</allowInMechClusters>

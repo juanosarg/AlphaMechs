@@ -89,14 +89,10 @@
       "Lib.Harmony/2.2.2": {
         "type": "package",
         "compile": {
-          "lib/net472/0Harmony.dll": {
-            "related": ".xml"
-          }
+          "lib/net472/0Harmony.dll": {}
         },
         "runtime": {
-          "lib/net472/_._": {
-            "related": ".xml"
-          }
+          "lib/net472/_._": {}
         }
       }
     },
@@ -188,14 +184,10 @@
       "Lib.Harmony/2.2.2": {
         "type": "package",
         "compile": {
-          "lib/net472/0Harmony.dll": {
-            "related": ".xml"
-          }
+          "lib/net472/0Harmony.dll": {}
         },
         "runtime": {
-          "lib/net472/_._": {
-            "related": ".xml"
-          }
+          "lib/net472/_._": {}
         }
       }
     },
@@ -287,14 +279,10 @@
       "Lib.Harmony/2.2.2": {
         "type": "package",
         "compile": {
-          "lib/net472/0Harmony.dll": {
-            "related": ".xml"
-          }
+          "lib/net472/0Harmony.dll": {}
         },
         "runtime": {
-          "lib/net472/_._": {
-            "related": ".xml"
-          }
+          "lib/net472/_._": {}
         }
       }
     },
@@ -386,14 +374,10 @@
       "Lib.Harmony/2.2.2": {
         "type": "package",
         "compile": {
-          "lib/net472/0Harmony.dll": {
-            "related": ".xml"
-          }
+          "lib/net472/0Harmony.dll": {}
         },
         "runtime": {
-          "lib/net472/_._": {
-            "related": ".xml"
-          }
+          "lib/net472/_._": {}
         }
       }
     }

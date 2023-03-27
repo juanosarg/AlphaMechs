@@ -18,6 +18,12 @@ namespace AlphaMechs
 
         [MayRequireBiotech]
         public static ThingDef AM_Mech_Legate;
+        [MayRequireBiotech]
+        public static ThingDef AM_Apoptosis;
+        [MayRequireBiotech]
+        public static ThingDef AM_Infernus;
+        [MayRequireBiotech]
+        public static ThingDef AM_WarEmpress;
 
         static InternalDefOf()
         {

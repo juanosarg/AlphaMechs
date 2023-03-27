@@ -2,7 +2,7 @@
 <Defs>
 	<!-- Apoptosis -->
 	<ThingDef ParentName="BaseMechanoidWalker">
-		<defName>AM_Mech_Apoptosis</defName>
+		<defName>AM_Apoptosis</defName>
 		<label>apoptosis</label>
 		<description>A mechanoid commander designed to coordinate and motivate other mechs during long extermination campaigns. Its most obvious power is its ability to resurrect recently-killed mechs by supercharging their self-repair processes. Less obviously, it is intelligent and psychically present, radiating hatred into the minds of anyone in a wide radius. It can also move quickly with its built-in jump launcher.\n\nWhile all mechanoids have a dim psychically-present intelligence, only the apocriton and a few others truly feel hatred for their victims and understand the suffering they inflict.</description>
 		<statBases>
@@ -76,9 +76,9 @@
 		</comps>
 	</ThingDef>
 	<PawnKindDef ParentName="BaseMechanoidKind">
-		<defName>AM_Mech_Apoptosis</defName>
+		<defName>AM_Apoptosis</defName>
 		<label>apoptosis</label>
-		<race>AM_Mech_Apoptosis</race>
+		<race>AM_Apoptosis</race>
 		<combatPower>750</combatPower>
 		<maxPerGroup>3</maxPerGroup>
 		<allowInMechClusters>false</allowInMechClusters>

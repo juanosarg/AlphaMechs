@@ -362,45 +362,33 @@
 		<label>acid</label>
 		<thingClass>VFECore.ExpandableProjectile</thingClass>
 		<graphicData>
-			<texPath>Things/Projectiles/Proj_LiquidStream</texPath>
-			<texPathFadeOut>Things/Projectiles/Proj_LiquidStream</texPathFadeOut>
+			<texPath>Things/Projectiles/Proj_AcidStream</texPath>
+			<texPathFadeOut>Things/Projectiles/Proj_AcidStreamFadeOut</texPathFadeOut>
+			
 			<shaderType>MoteGlow</shaderType>
 		</graphicData>
 		<drawOffscreen>true</drawOffscreen>
 		<lifeTimeDuration>50</lifeTimeDuration>
 		<widthScaleFactor>0.5</widthScaleFactor>
 		<heightScaleFactor>1</heightScaleFactor>
-		<startingPositionOffset>(0, 0, 0)</startingPositionOffset>
-		<totalSizeScale>2</totalSizeScale>
-		<tickFrameRate>4</tickFrameRate>
+		<startingPositionOffset>(0, 0, -1)</startingPositionOffset>
+		<totalSizeScale>1.15</totalSizeScale>
+		<tickFrameRate>2</tickFrameRate>		
 		<finalTickFrameRate>5</finalTickFrameRate>
 		<tickDamageRate>20</tickDamageRate>
 		<dealsDamageOnce>true</dealsDamageOnce>
 		<minDistanceToAffect>2</minDistanceToAffect>
+		<reachMaxRangeAlways>true</reachMaxRangeAlways>
 		<projectile>
 			<damageDef>AM_AcidSpit</damageDef>
 			<flyOverhead>false</flyOverhead>
-			<damageAmountBase>15</damageAmountBase>
+			<damageAmountBase>25</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
-			<speed>20</speed>
+			<speed>40</speed>
 		</projectile>
 	</VFECore.ExpandableProjectileDef>
 	<!-- Heavy Laser -->
-	<!--<ThingDef ParentName="BaseBullet">
-    <defName>AM_Bullet_LaserRifle</defName>
-    <label>laser shot</label>
-    <graphicData>
-      <texPath>Things/Projectiles/AM_RedLaser</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-		<damageDef>Bullet</damageDef>
-		<damageAmountBase>13</damageAmountBase>
-		<armorPenetrationBase>0.66</armorPenetrationBase>
-		<stoppingPower>0.5</stoppingPower>
-		<speed>85</speed>
-    </projectile>
-  </ThingDef>-->
+	
 	<ThingDef Abstract="True" Name="AM_Bullet_LaserGeneric" ParentName="BaseBullet">
 		<thingClass>VanillaWeaponsExpandedLaser.LaserBeam</thingClass>
 		<drawOffscreen>true</drawOffscreen>
@@ -528,4 +516,92 @@
 			</li>
 		</tools>
 	</ThingDef>
+	
+	<!-- Siegemelter firethrower -->
+	<ThingDef ParentName="BaseGun">
+		<defName>AM_SiegemelterTurret</defName>
+		<label>siegemelter firethrower</label>
+		<description>A gigantic flamethrower mounted on top of a siegebreaker chassis. Its fire reaches incredibly high temperatures.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>UI/Invisible</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>2.6</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.92</AccuracyLong>
+			<RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>AM_SiegemelterTurret</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+			<li>LongShots</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AM_Bullet_Firethrower</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<range>15</range>
+
+				<soundCast>AM_PoisonBreath</soundCast>
+				<muzzleFlashScale>2</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>AM_Bullet_Firethrower</defName>
+		<label>fire</label>
+		<thingClass>VFECore.ExpandableProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/Proj_Flamethrower</texPath>
+			<texPathFadeOut>Things/Projectiles/FadeOut_Flamethrower</texPathFadeOut>
+		
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>100</lifeTimeDuration>
+		<widthScaleFactor>1</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(1, 0, -1.8)</startingPositionOffset>
+		<tickFrameRate>2</tickFrameRate>
+		<finalTickFrameRate>5</finalTickFrameRate>
+		<tickDamageRate>5</tickDamageRate>
+		<dealsDamageOnce>true</dealsDamageOnce>
+		<minDistanceToAffect>2</minDistanceToAffect>
+		<totalSizeScale>1.15</totalSizeScale>
+		<reachMaxRangeAlways>true</reachMaxRangeAlways>
+		<projectile>
+			<damageDef>Flame</damageDef>		
+			<flyOverhead>false</flyOverhead>
+			<damageAmountBase>10</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>0.8</preExplosionSpawnChance>
+			<speed>40</speed>
+		</projectile>
+	</VFECore.ExpandableProjectileDef>
 </Defs>

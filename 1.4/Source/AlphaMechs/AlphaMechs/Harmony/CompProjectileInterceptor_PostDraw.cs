@@ -24,6 +24,7 @@ namespace AlphaMechs
         private static readonly MaterialPropertyBlock MatPropertyBlock = new MaterialPropertyBlock();
         private static readonly Material ForceFieldMat = MaterialPool.MatFrom("Things/Mote/AM_ShieldBubble", ShaderDatabase.MoteGlow);
         private static readonly Material ForceFieldConeMat = MaterialPool.MatFrom("Other/ForceFieldCone", ShaderDatabase.MoteGlow);
+        private static List<ThingDef> mechsList = new List<ThingDef>() { InternalDefOf.AM_Mech_Legate,InternalDefOf.AM_WarEmpress,InternalDefOf.AM_Infernus,InternalDefOf.AM_Apoptosis};
 
         [HarmonyPrefix]
         public static bool ChangeShieldColour(CompProjectileInterceptor __instance, float ___lastInterceptAngle)
@@ -32,7 +33,7 @@ namespace AlphaMechs
 
             if (ModsConfig.BiotechActive) {
 
-                if (__instance.parent.def == InternalDefOf.AM_Mech_Legate)
+                if (mechsList.Contains(__instance.parent.def) )
                 {
                     Vector3 drawPos = __instance.parent.DrawPos;
                     drawPos.y = AltitudeLayer.MoteOverhead.AltitudeFor();

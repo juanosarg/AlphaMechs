@@ -5,7 +5,7 @@
 
   <!-- War empress -->
   <ThingDef ParentName="SuperHeavyMechanoid">
-    <defName>AM_Mech_WarEmpress</defName>
+    <defName>AM_WarEmpress</defName>
     <label>war empress</label>
     <description>An ultra-heavy mech with a built-in mech gestator. Fed with appropriate resources, the war queen can form small war urchin combat mechs within its massive carapace and deploy them into combat.\n\nEven more than other mechanoids, the war queen resembles a giant, living insect. All war mechs can be terrifying, but humans tend to find the war queen disturbing on a deeper level.</description>
     <statBases>
@@ -74,10 +74,10 @@
   </ThingDef>
 
   <PawnKindDef Name="MechWarqueenKind" ParentName="HeavyMechanoidKind">
-    <defName>AM_Mech_WarEmpress</defName>
+    <defName>AM_WarEmpress</defName>
     <label>war empress</label>
   
-    <race>AM_Mech_WarEmpress</race>
+    <race>AM_WarEmpress</race>
     <combatPower>850</combatPower>
     <maxPerGroup>1</maxPerGroup>
     <allowInMechClusters>false</allowInMechClusters>

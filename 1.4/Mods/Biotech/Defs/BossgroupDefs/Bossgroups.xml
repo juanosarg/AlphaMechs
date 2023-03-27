@@ -7,7 +7,7 @@
 
   <BossDef>
     <defName>AM_BossDefInfernus</defName>
-    <kindDef>AM_Mech_Infernus</kindDef>
+    <kindDef>AM_Infernus</kindDef>
     <appearAfterTicks>57600000</appearAfterTicks><!-- 8 years -->
   </BossDef>
 
@@ -18,8 +18,14 @@
       <li> <!-- 0 -->
         <bossCount>1</bossCount>
         <escorts>
-          <Mech_Militor>3</Mech_Militor>
+          <AM_Mech_Munifex>2</AM_Mech_Munifex>
+		  <AM_Goliath>1</AM_Goliath>
         </escorts>
+		 <bossApparel>
+          <li>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
+          </li>
+        </bossApparel>
       </li>
       <li> <!-- 1 -->
         <bossCount>1</bossCount>
@@ -27,6 +33,11 @@
           <Mech_Militor>4</Mech_Militor>
           <Mech_Pikeman>2</Mech_Pikeman>
         </escorts>
+		 <bossApparel>
+          <li>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
+          </li>
+        </bossApparel>
       </li>
       <li> <!-- 2 - Repeat starts here -->
         <bossCount>1</bossCount>
@@ -37,7 +48,7 @@
         </escorts>
         <bossApparel>
           <li>
-            <thing>Apparel_HeavyShield</thing>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
           </li>
         </bossApparel>
       </li>
@@ -50,7 +61,7 @@
         </escorts>
         <bossApparel>
           <li>
-            <thing>Apparel_HeavyShield</thing>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
           </li>
         </bossApparel>
       </li>
@@ -63,7 +74,7 @@
         </escorts>
         <bossApparel>
           <li>
-            <thing>Apparel_HeavyShield</thing>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
           </li>
         </bossApparel>
       </li>
@@ -77,7 +88,7 @@
         </escorts>
         <bossApparel>
           <li>
-            <thing>Apparel_HeavyShield</thing>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
           </li>
         </bossApparel>
       </li>
@@ -90,7 +101,7 @@
         </escorts>
         <bossApparel>
           <li>
-            <thing>Apparel_HeavyShield</thing>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
           </li>
         </bossApparel>
       </li>
@@ -104,12 +115,12 @@
         </escorts>
         <bossApparel>
           <li>
-            <thing>Apparel_HeavyShield</thing>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
           </li>
         </bossApparel>
       </li>
     </waves>
-    <leaderDescription>The {LEADERKIND_label} is equipped with a concrete-melting hellsphere cannon. It is slow to charge, but when it fires it will annihilate anything in the blast circle.</leaderDescription>
+    <leaderDescription>The {LEADERKIND_label} is equipped with an incredibly dangerous orbital strike targetter. It is very slow to charge, but once fired it will blanket a huge area in explosions.</leaderDescription>
     <rewardDef>SignalChip</rewardDef>
   </BossgroupDef>
 

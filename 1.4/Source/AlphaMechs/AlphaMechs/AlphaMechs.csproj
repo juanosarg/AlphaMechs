@@ -296,7 +296,9 @@
     <Compile Include="Comps\Properties\CompProperties_ChangeDef.cs" />
     <Compile Include="Comps\Properties\CompProperties_TargetingBeamBlue.cs" />
     <Compile Include="DamageWorkers\DamageWorker_Siege.cs" />
+    <Compile Include="DeathActionWorkers\DeathActionWorker_BlitzkriegExplosion.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
+    <Compile Include="Harmony\CompShield_Draw.cs" />
     <Compile Include="Harmony\CompProjectileInterceptor_PostDraw.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Options\AlphaMechs_Settings.cs" />

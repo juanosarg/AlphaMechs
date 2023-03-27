@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Master Chef -->
+	<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoid">
+		<defName>AM_Mech_MasterChef</defName>
+		<label>master chef</label>
+		<description>A small mechanoid adept at cooking tasks. Very inefficient in combat.</description>
+		<race>
+			<body>Mech_Light</body>
+			<mechEnabledWorkTypes>
+				<li>Cooking</li>
+			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Cooking>1</Cooking>
+			</mechWorkTypePriorities>
+			<mechFixedSkillLevel>15</mechFixedSkillLevel>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Fabricor_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Fabricor_Death</soundDeath>
+					<soundCall>Pawn_Mech_Fabricor_Call</soundCall>
+				</li>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Fabricor_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Fabricor_Death</soundDeath>
+					<soundCall>Pawn_Mech_Fabricor_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+	</ThingDef>
+	<PawnKindDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="NonCombatLightMechanoidKind">
+		<defName>AM_Mech_MasterChef</defName>
+		<label>master chef</label>
+		<race>AM_Mech_MasterChef</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_MasterChef/AM_MasterChef_Clean</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_MasterChef/AllegianceOverlays/AM_MasterChef_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_MasterChef/AM_MasterChef</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_MasterChef/AllegianceOverlays/AM_MasterChef_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>
