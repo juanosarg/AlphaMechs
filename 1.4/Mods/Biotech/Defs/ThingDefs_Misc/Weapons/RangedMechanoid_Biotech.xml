@@ -604,4 +604,88 @@
 			<speed>40</speed>
 		</projectile>
 	</VFECore.ExpandableProjectileDef>
+	
+	<!-- Tesla gun -->
+	<ThingDef ParentName="BaseGun">
+		<defName>AM_TeslaGun</defName>
+		<label>chain tesla gun</label>
+		<description>.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Weapon/AM_TeslaGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>2.6</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.92</AccuracyLong>
+			<RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>AM_TeslaGun</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+			<li>LongShots</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AM_Bullet_Tesla</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<range>15</range>
+
+				<soundCast>AM_Zap</soundCast>
+				<muzzleFlashScale>2</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AM_Bullet_Tesla</defName>
+		<label>chain tesla bolt</label>
+		<thingClass>VFEMech.TeslaProjectile</thingClass>
+		<drawOffscreen>true</drawOffscreen>
+		<graphicData>
+			<texPath>Things/Projectiles/Proj_Bolt</texPath>
+			<graphicClass>Graphic_Flicker</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>EMP</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<speed>140</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VFEMech.TeslaChainingProps">
+				<maxBounceCount>5</maxBounceCount>
+				<damageDef>EMP</damageDef>
+				<explosionDamageDef>EMP</explosionDamageDef>
+				<impactRadius>1.9</impactRadius>
+				<targetFriendly>false</targetFriendly>
+				<addFire>true</addFire>
+				<bounceRange>8</bounceRange>
+				<maxLifetime>50</maxLifetime>
+				<impactSound>AM_Zap</impactSound>
+			</li>
+		</modExtensions>
+	</ThingDef>
 </Defs>

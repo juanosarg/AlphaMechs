@@ -172,6 +172,34 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+	<!-- ======================== Zap ======================== -->
+	<SoundDef>
+		<defName>AM_Zap</defName>
+		<context>MapOnly</context>
+		<eventNames/>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AM_Zap</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>25</min>
+					<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
 	<!-- ======================== Laser ======================== -->
 	<SoundDef>
 		<defName>AM_HeavyLaser</defName>
