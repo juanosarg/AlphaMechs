@@ -24,6 +24,8 @@ namespace AlphaMechs
         public static ThingDef AM_Infernus;
         [MayRequireBiotech]
         public static ThingDef AM_WarEmpress;
+        [MayRequireBiotech]
+        public static ThingDef AM_PristineStrider;
 
         static InternalDefOf()
         {

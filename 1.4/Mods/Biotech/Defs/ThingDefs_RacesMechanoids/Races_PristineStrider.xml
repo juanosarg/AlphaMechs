@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Pristine strider -->
+	<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoid">
+		<defName>AM_PristineStrider</defName>
+		<label>pristine strider</label>
+		<description>A more advanced, mechanite-grown version of the autostrider, the pristine strider has a large carrying capacity, making it perfect as a partner on long caravan trips. Can also be ridden by pawns to increase travel speed.</description>
+		<statBases>
+			<MoveSpeed>2.1</MoveSpeed>
+			<CaravanRidingSpeedFactor>1.5</CaravanRidingSpeedFactor>
+		</statBases>
+		<race>
+			<body>MechanicalTermite</body>
+			<mechEnabledWorkTypes>
+				<li>Hauling</li>
+			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Hauling>1</Hauling>
+			</mechWorkTypePriorities>
+			<lifeStageAges>
+				<li>
+					<def>AM_RideableMechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Termite_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Termite_Death</soundDeath>
+					<soundCall>Pawn_Mech_Termite_Call</soundCall>
+				</li>
+				<li>
+					<def>AM_RideableMechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Termite_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Termite_Death</soundDeath>
+					<soundCall>Pawn_Mech_Termite_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+	</ThingDef>
+	<PawnKindDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="NonCombatLightMechanoidKind">
+		<defName>AM_PristineStrider</defName>
+		<label>pristine strider</label>
+		<race>AM_PristineStrider</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_PristineStrider/AM_PristineStrider_Clean</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_PristineStrider/AllegianceOverlays/AM_PristineStrider_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3</drawSize>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_PristineStrider/AM_PristineStrider</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_PristineStrider/AllegianceOverlays/AM_PristineStrider_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

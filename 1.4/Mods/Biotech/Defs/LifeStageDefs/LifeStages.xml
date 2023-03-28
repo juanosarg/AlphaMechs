@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <LifeStageDef>
+    <defName>AM_RideableMechanoidFullyFormed</defName>
+    <label>fully-formed</label>
+    <visible>false</visible>
+	<caravanRideable>true</caravanRideable>
+  </LifeStageDef>
+
+
+
+  
+</Defs>

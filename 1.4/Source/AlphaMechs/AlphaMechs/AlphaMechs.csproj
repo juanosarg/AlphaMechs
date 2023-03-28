@@ -301,6 +301,7 @@
     <Compile Include="Harmony\CompShield_Draw.cs" />
     <Compile Include="Harmony\CompProjectileInterceptor_PostDraw.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
+    <Compile Include="Harmony\MassUtility_Capacity.cs" />
     <Compile Include="Options\AlphaMechs_Settings.cs" />
     <Compile Include="Options\AlphaMechs_SettingsController.cs" />
     <Compile Include="Projectiles\Projectile_Bombardment.cs" />
