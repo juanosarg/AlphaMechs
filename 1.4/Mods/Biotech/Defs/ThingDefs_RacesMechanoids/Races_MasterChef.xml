@@ -4,8 +4,8 @@
 	<!-- Master Chef -->
 	<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoid">
 		<defName>AM_Mech_MasterChef</defName>
-		<label>master chef</label>
-		<description>A small mechanoid adept at cooking tasks. Very inefficient in combat.</description>
+		<label>culinarius</label>
+		<description>A small mechanoid adept at cooking tasks. Much better at cooking than a fabricor. Very inefficient in combat.</description>
 		<race>
 			<body>Mech_Light</body>
 			<mechEnabledWorkTypes>
@@ -35,7 +35,7 @@
 	</ThingDef>
 	<PawnKindDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="NonCombatLightMechanoidKind">
 		<defName>AM_Mech_MasterChef</defName>
-		<label>master chef</label>
+		<label>culinarius</label>
 		<race>AM_Mech_MasterChef</race>
 		<lifeStages>
 			<li>

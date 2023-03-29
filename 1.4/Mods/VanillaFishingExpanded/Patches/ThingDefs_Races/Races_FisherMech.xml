@@ -10,8 +10,8 @@
 				<!-- Angler -->
 				<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoid">
 					<defName>AM_Mech_Angler</defName>
-					<label>angler</label>
-					<description>A small mechanoid designed to sow and harvest crops. While it is better suited to labor than combat, it can fight with built-in cutting blades if necessary.</description>
+					<label>oceanus</label>
+					<description>A medium-sized mechanoid.</description>
 					<tools>
 						<li>
 							<label>prow</label>
@@ -51,7 +51,7 @@
 				</ThingDef>
 				<PawnKindDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="NonCombatLightMechanoidKind">
 					<defName>AM_Mech_Angler</defName>
-					<label>angler</label>
+					<label>oceanus</label>
 					<race>AM_Mech_Angler</race>
 					<lifeStages>
 						<li>

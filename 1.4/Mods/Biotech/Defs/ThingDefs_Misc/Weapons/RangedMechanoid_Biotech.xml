@@ -639,7 +639,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>AM_Bullet_Tesla</defaultProjectile>
-				<warmupTime>0.5</warmupTime>
+				<warmupTime>1.5</warmupTime>
 				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
 				<range>15</range>
 
@@ -671,21 +671,118 @@
 		</graphicData>
 		<projectile>
 			<damageDef>EMP</damageDef>
-			<damageAmountBase>15</damageAmountBase>
+			<damageAmountBase>20</damageAmountBase>
 			<speed>140</speed>
 		</projectile>
 		<modExtensions>
 			<li Class="VFEMech.TeslaChainingProps">
 				<maxBounceCount>5</maxBounceCount>
-				<damageDef>EMP</damageDef>
+				<damageDef>Flame</damageDef>
 				<explosionDamageDef>EMP</explosionDamageDef>
 				<impactRadius>1.9</impactRadius>
 				<targetFriendly>false</targetFriendly>
 				<addFire>true</addFire>
-				<bounceRange>8</bounceRange>
+				<bounceRange>5</bounceRange>
 				<maxLifetime>50</maxLifetime>
 				<impactSound>AM_Zap</impactSound>
 			</li>
 		</modExtensions>
 	</ThingDef>
+	
+	<!-- Starfire cannon -->
+	<ThingDef ParentName="BaseGun">
+		<defName>AM_StarfireTurret</defName>
+		<label>starfire cannon</label>
+		<description>A gigantic cannon mounted on top of a siegebreaker chassis. It fires a slow moving unstable singularity that will destroy anything it touches upon impact.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>UI/Invisible</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>2.6</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.92</AccuracyLong>
+			<RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>AM_StarfireTurret</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+			<li>LongShots</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AM_Bullet_Starfire</defaultProjectile>
+				<forcedMissRadius>5</forcedMissRadius>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<warmupTime>15</warmupTime>
+				<range>45</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>AM_Starfire</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+		<ThingDef ParentName="BaseBullet">
+		<defName>AM_Bullet_Starfire</defName>
+		<label>unstable singularity</label>
+		<graphicData>
+			<texPath>Things/Projectiles/AM_Singularity</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.5</drawSize>
+		</graphicData>
+		<thingClass>AlphaMechs.Projectile_Distortion</thingClass>
+		<projectile>
+			<damageDef>Vaporize</damageDef>
+			
+			<speed>5</speed>
+			<explosionRadius>4.9</explosionRadius>
+			<flyOverhead>true</flyOverhead>
+			<screenShakeFactor>1.5</screenShakeFactor>
+			
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AM_Bullet_Starfire_Secondary</defName>
+		<label>energy discharge</label>
+		
+		<drawOffscreen>true</drawOffscreen>
+		<graphicData>
+			<texPath>Things/Projectiles/Proj_Bolt</texPath>
+			<graphicClass>Graphic_Flicker</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+			<drawSize>2.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<speed>50</speed>
+		</projectile>
+		
+	</ThingDef>
+	
 </Defs>
