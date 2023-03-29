@@ -769,7 +769,7 @@
 	<ThingDef ParentName="BaseBullet">
 		<defName>AM_Bullet_Starfire_Secondary</defName>
 		<label>energy discharge</label>
-		
+		<thingClass>Projectile_Explosive</thingClass>
 		<drawOffscreen>true</drawOffscreen>
 		<graphicData>
 			<texPath>Things/Projectiles/Proj_Bolt</texPath>
@@ -779,8 +779,13 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Flame</damageDef>
+			<explosionRadius>0.9</explosionRadius>
 			<damageAmountBase>1</damageAmountBase>
 			<speed>50</speed>
+			<screenShakeFactor>0</screenShakeFactor>
+		
+			<soundExplode>AM_LowZap</soundExplode>
+			
 		</projectile>
 		
 	</ThingDef>
