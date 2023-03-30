@@ -11,7 +11,10 @@
 				<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoid">
 					<defName>AM_Mech_Apiarist</defName>
 					<label>apiarist</label>
-					<description>A small winged bee-shaped mechanoid designed to take care of beekeeping tasks. Almost useless in combat.\n\n&lt;color=#E5E54C&gt;Special abilities:&lt;/color&gt; Hovers over terrain, ignoring terrain movement costs.</description>
+					<description>The Apiarist is a small, bee-shaped machine designed specifically for beekeeping tasks. With its advanced sensors and programming, it can monitor hive health, collect honey, and perform other essential tasks with exceptional precision and efficiency. The Apiarist's compact size and winged design allow it to hover over terrain, ignoring terrain movement costs and accessing hard-to-reach locations. While not designed for combat, its robust construction and ability to move swiftly and nimbly make it difficult to catch.\n\n&lt;color=#E5E54C&gt;Special abilities:&lt;/color&gt; Hovers over terrain, ignoring terrain movement costs.</description>
+					<statBases>
+						<MoveSpeed>5</MoveSpeed>
+					</statBases>
 					<tools>
 						<li>
 							<label>head</label>
@@ -24,6 +27,11 @@
 							<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 						</li>
 					</tools>
+					<comps>
+						<li Class="AnimalBehaviours.CompProperties_Floating">
+
+						</li>
+					</comps>
 					<race>
 						<body>AM_Mech_Winged_Body</body>
 						<mechEnabledWorkTypes>

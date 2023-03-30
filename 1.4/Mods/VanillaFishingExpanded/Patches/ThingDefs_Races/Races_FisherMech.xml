@@ -11,7 +11,7 @@
 				<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoid">
 					<defName>AM_Mech_Angler</defName>
 					<label>oceanus</label>
-					<description>A medium-sized mechanoid.</description>
+					<description>The Oceanus mechanoid is a unique machine, shaped like an old tugboat, that is specialized in fishing. It is equipped with state-of-the-art fishing gear, including nets, hooks, and lines, as well as advanced sonar and radar systems that allow it to locate schools of fish with great precision. Its hull is reinforced with advanced materials, making it impervious to most natural hazards in the sea, and it features a large cargo hold that can store great amounts of fresh fish. It is however pretty useless in combat.</description>
 					<tools>
 						<li>
 							<label>prow</label>
@@ -29,7 +29,7 @@
 							<li>VCEF_Fishing</li>
 						</mechEnabledWorkTypes>
 						<mechWorkTypePriorities>
-							<VCEF_Fishing>2</VCEF_Fishing>
+							<VCEF_Fishing>1</VCEF_Fishing>
 						</mechWorkTypePriorities>
 						<lifeStageAges>
 							<li>
