@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <ThoughtDef>
+    <defName>AM_ApoptosisHateAura</defName>
+    <workerClass>AlphaMechs.ThoughtWorker_GreaterHateAura</workerClass>
+    <effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+	
+    <stages>
+      <li>
+        <label>apoptosis hatred (intense)</label>
+        <description>I can't stand such a deep hatred. It's gnawing at my bones! I'm going to be sick.</description>
+        <baseMoodEffect>-16</baseMoodEffect>
+      </li>
+      <li>
+        <label>apoptosis hatred (strong)</label>
+        <description>I hear its hatred in my mind, speaking directly to me. I'm going to be sick.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>apoptosis hatred (distant)</label>
+        <description>I feel it out there somewhere, like a distant rumble. I'm going to be sick.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+	
+  </ThoughtDef>
+
+  
+ 
+</Defs>

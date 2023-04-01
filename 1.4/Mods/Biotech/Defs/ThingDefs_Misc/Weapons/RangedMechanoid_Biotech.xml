@@ -40,7 +40,7 @@
 				<ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 				<ai_TargetHasRangedAttackScoreOffset>50</ai_TargetHasRangedAttackScoreOffset>
-				<minRange>15</minRange>
+				<minRange>20</minRange>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 					<canTargetPawns>false</canTargetPawns>
@@ -309,7 +309,7 @@
 	<ThingDef ParentName="BaseGun">
 		<defName>AM_Gun_AcidSpewer</defName>
 		<label>acid spewer</label>
-		<description>A mechanoid-built gun that fires toxin-infused metal needles. It can fire long distances and will poison the target in addition to doing physical damage.</description>
+		<description>A devastating weapon designed to unleash a torrent of acidic sludge upon its targets. Equipped with advanced chemical reservoirs and spraying mechanisms, it is capable of spraying a wide area with a potent acid that can dissolve even the most durable materials.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Weapon/AM_AcidSpewer</texPath>
@@ -419,7 +419,7 @@
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>12</damageAmountBase>
-			<armorPenetrationBase>0.60</armorPenetrationBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
 			<stoppingPower>1.5</stoppingPower>
 		</projectile>
 	</ThingDef>
@@ -437,7 +437,7 @@
 	<ThingDef ParentName="BaseGun">
 		<defName>AM_Gun_HeavyLaser</defName>
 		<label>heavy laser</label>
-		<description>.</description>
+		<description>A heavy-duty energy weapon designed to unleash a searing beam of focused light upon its targets that can slice through even the toughest armor.</description>
 		<techLevel>Spacer</techLevel>
 		<thingClass>VanillaWeaponsExpandedLaser.LaserGun</thingClass>
 		<graphicData>
@@ -452,9 +452,9 @@
 			<MarketValue>1500</MarketValue>
 			<Mass>2.6</Mass>
 			<AccuracyTouch>0.70</AccuracyTouch>
-			<AccuracyShort>0.83</AccuracyShort>
-			<AccuracyMedium>0.86</AccuracyMedium>
-			<AccuracyLong>0.72</AccuracyLong>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.9</AccuracyMedium>
+			<AccuracyLong>0.99</AccuracyLong>
 			<RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
@@ -596,7 +596,7 @@
 		<projectile>
 			<damageDef>Flame</damageDef>		
 			<flyOverhead>false</flyOverhead>
-			<damageAmountBase>10</damageAmountBase>
+			<damageAmountBase>30</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
@@ -609,7 +609,7 @@
 	<ThingDef ParentName="BaseGun">
 		<defName>AM_TeslaGun</defName>
 		<label>chain tesla gun</label>
-		<description>.</description>
+		<description>A fearsome energy weapon designed to unleash a cascade of electromagnetic energy upon its targets. Capable of generating a burst of EMP energy that can stun and disable mechanoids with a single shot. At the same time, it unleashes a searing bolt of electrical energy that can burn through organic targets, leaving them smoldering and vulnerable.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Weapon/AM_TeslaGun</texPath>

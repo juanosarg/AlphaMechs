@@ -11,7 +11,7 @@
 				<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoid">
 					<defName>AM_Mech_Geneticor</defName>
 					<label>geneticor</label>
-					<description>A small research mechanoid designed to help with genetic engineering tasks. Very inefficient in combat.</description>
+					<description>The Geneticor mechanoid is a humanoid robot designed for genetic engineering tasks. With advanced sensors and programming, it can analyze and manipulate DNA sequences with exceptional precision and speed. The Geneticor is equipped with a suite of specialized tools and equipment, including gene sequencers, CRISPR/Cas9 gene editing systems, and gene splicers, among others. Its programming includes an extensive database of genetic information and sequences, allowing it to adapt and customize its approach to any given task.</description>
 					<race>
 						<body>Mech_Light</body>
 						<mechEnabledWorkTypes>

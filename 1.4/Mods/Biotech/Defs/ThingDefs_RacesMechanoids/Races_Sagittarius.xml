@@ -8,7 +8,7 @@
   <ThingDef ParentName="BaseMechanoidWalker">
     <defName>AM_Mech_Sagittarius</defName>
     <label>sagittarius</label>
-    <description>Human-sized combat mechanoids .</description>
+    <description>The Sagittarius is a humanoid mechanoid equipped with a powerful tesla gun, a fearsome energy weapon designed to unleash a cascade of electromagnetic energy upon its targets. Capable of generating a burst of EMP energy that can stun and disable mechanoids with a single shot. At the same time, it unleashes a searing bolt of electrical energy that can burn through organic targets, leaving them smoldering and vulnerable.</description>
     <tools>
       <li>
         <label>left fist</label>

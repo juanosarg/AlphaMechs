@@ -4,7 +4,7 @@
 	<ThingDef ParentName="LightMechanoid">
 		<defName>AM_Mech_Guttersnipe</defName>
 		<label>guttersnipe</label>
-		<description>A small, deployable combat mechanoid usually manufactured inside an ultra-heavy war queen mech. War urchins are expendable fighters designed to swarm-attack enemies. They are mounted with short-ranged spiner guns and have a non-rechargeable power source.</description>
+		<description>A small, deployable combat mechanoid usually manufactured inside an ultra-heavy war empress mech. Contrary to War urchins, the Guttersnipe is a melee fighter, using its wicked circular saws to lunge at their targets. They have a non-rechargeable power source.</description>
 		<statBases>
 			<MoveSpeed>4.2</MoveSpeed>
 		</statBases>

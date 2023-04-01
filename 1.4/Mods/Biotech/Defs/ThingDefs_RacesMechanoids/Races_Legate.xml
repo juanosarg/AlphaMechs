@@ -7,7 +7,7 @@
   <ThingDef ParentName="SuperHeavyMechanoid">
     <defName>AM_Mech_Legate</defName>
     <label>legate</label>
-    <description>An ultraheavy mech with a built-in shield bubble generator. The centurion carries a point-defense bulb turret capable of firing while the mechanoid is moving.</description>
+    <description>An ultraheavy mech with a built-in advanced shield bubble generator. The Legate lacks the point-defense bulb turret present in Centurions, but in exchange it is armed with a super heavy charge blaster that is much more dangerous than standard ones.</description>
     <statBases>
       <MoveSpeed>1.6</MoveSpeed>
       <EnergyShieldRechargeRate>0.75</EnergyShieldRechargeRate>

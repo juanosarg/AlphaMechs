@@ -7,7 +7,7 @@
   <ThingDef ParentName="SuperHeavyMechanoid">
     <defName>AM_WarEmpress</defName>
     <label>war empress</label>
-    <description>An ultra-heavy mech with a built-in mech gestator. Fed with appropriate resources, the war queen can form small war urchin combat mechs within its massive carapace and deploy them into combat.\n\nEven more than other mechanoids, the war queen resembles a giant, living insect. All war mechs can be terrifying, but humans tend to find the war queen disturbing on a deeper level.</description>
+    <description>An ultra-heavy mech with a built-in mech gestator. Fed with appropriate resources, the War empress can form swarms of small melee-adept guttersnipe combat mechs within its massive carapace and deploy them into combat. The Empress is armed with a very dangerous and long ranged slug sniper turret that should be avoided at all costs.</description>
     <statBases>
       <MoveSpeed>2.3</MoveSpeed>
       <EnergyShieldRechargeRate>0.6</EnergyShieldRechargeRate>
@@ -56,8 +56,8 @@
         <spawnPawnKind>AM_Mech_Guttersnipe</spawnPawnKind>
         <fixedIngredient>Plasteel</fixedIngredient>
         <costPerPawn>25</costPerPawn>
-        <startingIngredientCount>200</startingIngredientCount>
-        <maxIngredientCount>200</maxIngredientCount>
+        <startingIngredientCount>500</startingIngredientCount>
+        <maxIngredientCount>500</maxIngredientCount>
         <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
         <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
         <attachSpawnedEffecter>true</attachSpawnedEffecter>
@@ -115,7 +115,7 @@
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>AM_Gun_SniperTurret</defName>
     <label>sniper turret</label>
-    <description>.</description>
+    <description>A powerful, long-range defense mechanism designed to take out enemy targets from a distance. Fires depleted uranium slugs at extreme velocities, capable of piercing even the toughest armor.</description>
     <graphicData>
       <texPath>UI/Invisible</texPath>
       <graphicClass>Graphic_Single</graphicClass>
