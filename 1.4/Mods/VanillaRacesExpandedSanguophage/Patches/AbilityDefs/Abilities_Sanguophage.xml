@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+
+				<AbilityDef ParentName="AbilityTouchBase">
+					<defName>AM_ExtractHemogen</defName>
+					<label>extract hemogen</label>
+					<description>Extract hemogen directly from the blood of a downed person. The target will lose blood and get knocked down. A fast-acting coagulant will seal the wound to prevent bleeding.</description>
+					<iconPath>UI/Abilities/AM_ExtractHemogen</iconPath>
+					<cooldownTicksRange>3600</cooldownTicksRange>
+					<displayOrder>110</displayOrder>
+					<warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+					<warmupStartSound>Bloodfeed_Cast</warmupStartSound>
+					<verbProperties>
+						<verbClass>Verb_CastAbilityTouch</verbClass>
+						<drawAimPie>false</drawAimPie>
+						<range>-1</range>
+						<warmupTime>2</warmupTime>
+						<targetParams>
+							<canTargetSelf>false</canTargetSelf>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetMechs>false</canTargetMechs>
+							<canTargetPawns>true</canTargetPawns>
+
+						</targetParams>
+					</verbProperties>
+					<comps>
+						<li Class="AlphaMechs.CompProperties_AbilityExtractHemogen">
+
+						</li>
+						<li Class="CompProperties_AbilityFleckOnTarget">
+							<fleckDef>BloodSplash</fleckDef>
+						</li>
+
+					</comps>
+				</AbilityDef>
+
+
+			</value>
+		</match>
+	</Operation>
+</Patch>
+
+
+

@@ -12,7 +12,10 @@
 <AM_allowGoliath>Allow Goliath</AM_allowGoliath>
 <AM_allowPhalanx>Allow Phalanx</AM_allowPhalanx>
 <AM_allowSiegebreaker>Allow Siegebreaker</AM_allowSiegebreaker>
-
+<AM_CantUseOnNonDowned>Can't use on non-downed persons</AM_CantUseOnNonDowned>
+<AM_EjectHemogen>Eject hemogen packs</AM_EjectHemogen>
+<AM_EjectHemogenDesc>Ejects all the hemogen packs stored inside the mech's storage vats</AM_EjectHemogenDesc>
+<AM_HemogenStored>Hemogen packs stored: {0}</AM_HemogenStored>
 
 
 
