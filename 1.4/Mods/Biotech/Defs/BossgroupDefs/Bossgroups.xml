@@ -121,10 +121,245 @@
       </li>
     </waves>
     <leaderDescription>The {LEADERKIND_label} is equipped with an incredibly dangerous orbital strike targetter. It is very slow to charge, but once fired it will blanket a huge area in explosions.</leaderDescription>
-    <rewardDef>SignalChip</rewardDef>
+    <rewardDef>AM_HyperLinkageChip</rewardDef>
   </BossgroupDef>
 
+ <BossDef>
+    <defName>AM_BossDefWarEmpress</defName>
+    <kindDef>AM_WarEmpress</kindDef>
+    <appearAfterTicks>86400000</appearAfterTicks><!-- 12 years -->
+  </BossDef>
 
+  <BossgroupDef ParentName="BaseBossgroup">
+    <defName>AM_BossGroupDefWarEmpress</defName>
+    <boss>AM_BossDefWarEmpress</boss>
+    <waves>
+      <li> <!-- 0 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <AM_Mech_Munifex>2</AM_Mech_Munifex>
+		  <AM_Goliath>1</AM_Goliath>
+        </escorts>
+		 <bossApparel>
+          <li>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
+          </li>
+        </bossApparel>
+      </li>
+      <li> <!-- 1 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <Mech_Militor>4</Mech_Militor>
+          <Mech_Pikeman>2</Mech_Pikeman>
+        </escorts>
+		 <bossApparel>
+          <li>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
+          </li>
+        </bossApparel>
+      </li>
+      <li> <!-- 2 - Repeat starts here -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <Mech_Militor>7</Mech_Militor>
+          <Mech_Pikeman>2</Mech_Pikeman>
+          <Mech_Tesseron>1</Mech_Tesseron>
+        </escorts>
+        <bossApparel>
+          <li>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
+          </li>
+        </bossApparel>
+      </li>
+      <li> <!-- 3 -->
+        <bossCount>2</bossCount>
+        <escorts>
+          <Mech_Militor>10</Mech_Militor>
+          <Mech_Legionary>3</Mech_Legionary>
+          <Mech_Centurion>1</Mech_Centurion>
+        </escorts>
+        <bossApparel>
+          <li>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
+          </li>
+        </bossApparel>
+      </li>
+      <li> <!-- 4 -->
+        <bossCount>2</bossCount>
+        <escorts>
+          <Mech_Militor>10</Mech_Militor>
+          <Mech_Scyther>5</Mech_Scyther>
+          <Mech_CentipedeGunner>3</Mech_CentipedeGunner>
+        </escorts>
+        <bossApparel>
+          <li>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
+          </li>
+        </bossApparel>
+      </li>
+      <li> <!-- 5 -->
+        <bossCount>2</bossCount>
+        <escorts>
+          <Mech_Militor>15</Mech_Militor>
+          <Mech_Pikeman>8</Mech_Pikeman>
+          <Mech_CentipedeGunner>4</Mech_CentipedeGunner>
+          <Mech_Centurion>1</Mech_Centurion>
+        </escorts>
+        <bossApparel>
+          <li>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
+          </li>
+        </bossApparel>
+      </li>
+      <li> <!-- 6 -->
+        <bossCount>2</bossCount>
+        <escorts>
+          <Mech_Militor>15</Mech_Militor>
+          <Mech_Lancer>10</Mech_Lancer>
+          <Mech_CentipedeGunner>5</Mech_CentipedeGunner>
+        </escorts>
+        <bossApparel>
+          <li>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
+          </li>
+        </bossApparel>
+      </li>
+      <li> <!-- 7 -->
+        <bossCount>3</bossCount>
+        <escorts>
+          <Mech_Militor>15</Mech_Militor>
+          <Mech_Tesseron>10</Mech_Tesseron>
+          <Mech_CentipedeGunner>6</Mech_CentipedeGunner>
+          <Mech_Centurion>1</Mech_Centurion>
+        </escorts>
+        <bossApparel>
+          <li>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
+          </li>
+        </bossApparel>
+      </li>
+    </waves>
+    <leaderDescription>The {LEADERKIND_label} is equipped with a long range slug sniper turret, and will constantly summon Guttersnipes, dangerous close combat mechanoids that will rip anything to shreds.</leaderDescription>
+    <rewardDef>AM_StellarProcessingChip</rewardDef>
+  </BossgroupDef>
   
+   <BossDef>
+    <defName>AM_BossDefApoptosis</defName>
+    <kindDef>AM_Apoptosis</kindDef>
+    <appearAfterTicks>108000000</appearAfterTicks><!-- 15 years -->
+  </BossDef>
+
+  <BossgroupDef ParentName="BaseBossgroup">
+    <defName>AM_BossGroupDefApoptosis</defName>
+    <boss>AM_BossDefApoptosis</boss>
+    <waves>
+      <li> <!-- 0 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <AM_Mech_Munifex>2</AM_Mech_Munifex>
+		  <AM_Goliath>1</AM_Goliath>
+        </escorts>
+		 <bossApparel>
+          <li>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
+          </li>
+        </bossApparel>
+      </li>
+      <li> <!-- 1 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <Mech_Militor>4</Mech_Militor>
+          <Mech_Pikeman>2</Mech_Pikeman>
+        </escorts>
+		 <bossApparel>
+          <li>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
+          </li>
+        </bossApparel>
+      </li>
+      <li> <!-- 2 - Repeat starts here -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <Mech_Militor>7</Mech_Militor>
+          <Mech_Pikeman>2</Mech_Pikeman>
+          <Mech_Tesseron>1</Mech_Tesseron>
+        </escorts>
+        <bossApparel>
+          <li>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
+          </li>
+        </bossApparel>
+      </li>
+      <li> <!-- 3 -->
+        <bossCount>2</bossCount>
+        <escorts>
+          <Mech_Militor>10</Mech_Militor>
+          <Mech_Legionary>3</Mech_Legionary>
+          <Mech_Centurion>1</Mech_Centurion>
+        </escorts>
+        <bossApparel>
+          <li>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
+          </li>
+        </bossApparel>
+      </li>
+      <li> <!-- 4 -->
+        <bossCount>2</bossCount>
+        <escorts>
+          <Mech_Militor>10</Mech_Militor>
+          <Mech_Scyther>5</Mech_Scyther>
+          <Mech_CentipedeGunner>3</Mech_CentipedeGunner>
+        </escorts>
+        <bossApparel>
+          <li>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
+          </li>
+        </bossApparel>
+      </li>
+      <li> <!-- 5 -->
+        <bossCount>2</bossCount>
+        <escorts>
+          <Mech_Militor>15</Mech_Militor>
+          <Mech_Pikeman>8</Mech_Pikeman>
+          <Mech_CentipedeGunner>4</Mech_CentipedeGunner>
+          <Mech_Centurion>1</Mech_Centurion>
+        </escorts>
+        <bossApparel>
+          <li>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
+          </li>
+        </bossApparel>
+      </li>
+      <li> <!-- 6 -->
+        <bossCount>2</bossCount>
+        <escorts>
+          <Mech_Militor>15</Mech_Militor>
+          <Mech_Lancer>10</Mech_Lancer>
+          <Mech_CentipedeGunner>5</Mech_CentipedeGunner>
+        </escorts>
+        <bossApparel>
+          <li>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
+          </li>
+        </bossApparel>
+      </li>
+      <li> <!-- 7 -->
+        <bossCount>3</bossCount>
+        <escorts>
+          <Mech_Militor>15</Mech_Militor>
+          <Mech_Tesseron>10</Mech_Tesseron>
+          <Mech_CentipedeGunner>6</Mech_CentipedeGunner>
+          <Mech_Centurion>1</Mech_Centurion>
+        </escorts>
+        <bossApparel>
+          <li>
+            <thing>AM_Apparel_ExpandedHeavyShield</thing>
+          </li>
+        </bossApparel>
+      </li>
+    </waves>
+    <leaderDescription>The {LEADERKIND_label} is malice incarnate. A towering mechanoid commander armed with both acid and soul draining weapons, it will resurrect mechanoids surrounding it and plunge your colony into despair.</leaderDescription>
+    <rewardDef>AM_QuantumMatrixChip</rewardDef>
+  </BossgroupDef>
 
 </Defs>

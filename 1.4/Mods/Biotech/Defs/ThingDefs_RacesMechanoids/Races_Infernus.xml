@@ -54,7 +54,7 @@
       <MoveSpeed>3</MoveSpeed>
       </statBases>
       <killedLeavingsPlayerHostile>
-        <SignalChip>1</SignalChip>
+        <AM_HyperLinkageChip>1</AM_HyperLinkageChip>
       </killedLeavingsPlayerHostile>
     </ThingDef>
     
