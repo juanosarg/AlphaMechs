@@ -19,6 +19,7 @@
 		<race>
 			<thinkTreeConstant>AM_MechConstant_LightResurrect</thinkTreeConstant>
 			<body>Apocriton</body>
+			<mechWeightClass>UltraHeavy</mechWeightClass>
 			<lifeStageAges Inherit="False">
 				<li>
 					<def>MechanoidFullyFormed</def>
@@ -76,6 +77,13 @@
 			</li>
 			
 		</comps>
+		
+		<modExtensions>
+            <li Class="AlphaMechs.MechSizeExtension">
+                <isBossSizeMech>true</isBossSizeMech>
+            </li>
+        </modExtensions>
+		
 	</ThingDef>
 	<PawnKindDef ParentName="BaseMechanoidKind">
 		<defName>AM_Apoptosis</defName>

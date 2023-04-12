@@ -28,6 +28,10 @@ namespace AlphaMechs
         public static ThingDef AM_PristineStrider;
         [MayRequireBiotech]
         public static ThingDef AM_Bullet_Starfire_Secondary;
+        [MayRequireBiotech]
+        public static ThingDef AM_GreaterRecharger;
+
+        
 
         [MayRequireBiotech]
         public static ThingDef AM_GreaterBandNode;

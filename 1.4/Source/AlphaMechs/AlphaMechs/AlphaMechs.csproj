@@ -302,6 +302,7 @@
     <Compile Include="DeathActionWorkers\DeathActionWorker_BlitzkriegExplosion.cs" />
     <Compile Include="DefExtensions\MechSizeExtension.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
+    <Compile Include="Harmony\Building_MechCharger_IsCompatibleWithCharger.cs" />
     <Compile Include="Harmony\CompShield_Draw.cs" />
     <Compile Include="Harmony\CompProjectileInterceptor_PostDraw.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
