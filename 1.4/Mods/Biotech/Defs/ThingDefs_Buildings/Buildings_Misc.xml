@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
 	<ThingDef ParentName="BuildingBase">
 		<defName>AM_InfernusMechlinkBooster</defName>
 		<label>mechband beamcaster (tier 4)</label>
@@ -70,7 +68,6 @@
 		<tickerType>Normal</tickerType>
 		<filthLeaving>Filth_MachineBits</filthLeaving>
 	</ThingDef>
-	
 	<ThingDef ParentName="BuildingBase">
 		<defName>AM_WarEmpressMechlinkBooster</defName>
 		<label>voidlink relay (tier 5)</label>
@@ -140,7 +137,6 @@
 		<tickerType>Normal</tickerType>
 		<filthLeaving>Filth_MachineBits</filthLeaving>
 	</ThingDef>
-	
 	<ThingDef ParentName="BuildingBase">
 		<defName>AM_ApoptosisMechlinkBooster</defName>
 		<label>quantum pulse complex (tier 6)</label>
@@ -210,24 +206,85 @@
 		<tickerType>Normal</tickerType>
 		<filthLeaving>Filth_MachineBits</filthLeaving>
 	</ThingDef>
-	
+	<ThingDef ParentName="BuildingBase">
+		<defName>AM_GreaterBandNode</defName>
+		<label>beamcaster band node</label>
+		<description>A mechanoid-band signal amplifier. Band nodes must be tuned to a specific mechanitor. This will add 1 bandwidth to that mechanitor's total bandwidth, allowing them to control more mechanoids.\n\nOnce a band node is constructed, it can be quickly tuned to a mechanitor. However, retuning a band node to a different mechanitor takes significantly longer.</description>
+		<tickerType>Normal</tickerType>
+		<rotatable>false</rotatable>
+		<canOverlapZones>false</canOverlapZones>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/AM_GreaterMechband</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(8,8)</drawSize>
+			<shadowData>
+				<volume>(1.5, 0.35, 1.2)</volume>
+				<offset>(0, 0, -0.15)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<buildingTags>
+				<li>Biotech</li>
+			</buildingTags>
+		</building>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designationCategory>Biotech</designationCategory>
+		<uiOrder>2440</uiOrder>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>10000</WorkToBuild>
+			<Mass>40</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(2,2)</size>
+		<costList>
+			<Steel>350</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<researchPrerequisites>
+			<li>AM_VoidLinkConnectivity</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>550</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_BandNode">
+				<hediff>AM_BeamncasterBandNode</hediff>
+				<untunedEffect>BandNodeUntuned</untunedEffect>
+				<tuningEffect>BandNodeTuning</tuningEffect>
+				<tunedEffect>BandNodeTuned</tunedEffect>
+				<retuningEffect>BandNodeRetuning</retuningEffect>
+				<tuningCompleteSound>BandNodeTuning_Complete</tuningCompleteSound>
+				<powerConsumptionIdle>150</powerConsumptionIdle>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>AlphaMechs.PlaceWorker_GreaterBandNode</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+	</ThingDef>
 	
 	<ThingDef ParentName="BuildingBase">
-    <defName>AM_GreaterBandNode</defName>
-    <label>greater band node</label>
-    <description>A mechanoid-band signal amplifier. Band nodes must be tuned to a specific mechanitor. This will add 1 bandwidth to that mechanitor's total bandwidth, allowing them to control more mechanoids.\n\nOnce a band node is constructed, it can be quickly tuned to a mechanitor. However, retuning a band node to a different mechanitor takes significantly longer.</description>
+    <defName>AM_GreaterMechBooster</defName>
+    <label>persistent mech booster</label>
+    <description>A remote energy and computation enhancement device. Any friendly mechanoids in its effect radius will move and work faster.</description>
     <tickerType>Normal</tickerType>
-    <rotatable>false</rotatable>
-    <canOverlapZones>false</canOverlapZones>
-    <drawerType>MapMeshAndRealTime</drawerType>
+    <drawerType>RealtimeOnly</drawerType>
     <fillPercent>0.4</fillPercent>
     <graphicData>
-      <texPath>Things/Building/AM_GreaterMechband</texPath>
+      <texPath>Things/Building/AM_GreaterMechBooster</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(8,8)</drawSize>
+      <drawSize>(3,3)</drawSize>
       <shadowData>
-        <volume>(1.5, 0.35, 1.2)</volume>
-        <offset>(0, 0, -0.15)</offset>
+        <volume>(0.8, 0.35, 0.8)</volume>
+        <offset>(0, 0, -0.2)</offset>
       </shadowData>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
@@ -238,47 +295,43 @@
         <li>Biotech</li>
       </buildingTags>
     </building>
-    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <designationCategory>Biotech</designationCategory>
-    <uiOrder>2440</uiOrder>
+    <uiOrder>2420</uiOrder>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
     <statBases>
-      <MaxHitPoints>300</MaxHitPoints>
-      <WorkToBuild>10000</WorkToBuild>
-      <Mass>40</Mass>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>8000</WorkToBuild>
+      <Mass>25</Mass>
       <Flammability>0.5</Flammability>
     </statBases>
-    <size>(2,2)</size>
+    <size>(3,3)</size>
     <costList>
-      <Steel>200</Steel>
+      <Steel>100</Steel>
       <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <researchPrerequisites>
-      <li>AM_VoidLinkConnectivity</li>
+      <li>HighMechtech</li>
     </researchPrerequisites>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>600</basePowerConsumption>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_CauseHediff_AoE">
+        <range>9.9</range>
+        <onlyTargetMechs>true</onlyTargetMechs>
+        <hediff>MechBoost</hediff>
+        <activeSound>MechBooster_Working</activeSound>
       </li>
       <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_BandNode">
-        <hediff>BandNode</hediff>
-        <untunedEffect>BandNodeUntuned</untunedEffect>
-        <tuningEffect>BandNodeTuning</tuningEffect>
-        <tunedEffect>BandNodeTuned</tunedEffect>
-        <retuningEffect>BandNodeRetuning</retuningEffect>
-        <tuningCompleteSound>BandNodeTuning_Complete</tuningCompleteSound>
-        <powerConsumptionIdle>100</powerConsumptionIdle>
-      </li>
     </comps>
     <placeWorkers>
-      <li>PlaceWorker_BandNode</li>
+      <li>PlaceWorker_ShowCauseHediffAoE</li>
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
   </ThingDef>
-
-
-
-
-
 </Defs>

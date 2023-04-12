@@ -29,6 +29,9 @@ namespace AlphaMechs
         [MayRequireBiotech]
         public static ThingDef AM_Bullet_Starfire_Secondary;
 
+        [MayRequireBiotech]
+        public static ThingDef AM_GreaterBandNode;
+
         static InternalDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(InternalDefOf));
