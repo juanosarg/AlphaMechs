@@ -18,7 +18,7 @@
 		</statBases>
 		<race>
 			<thinkTreeConstant>AM_MechConstant_LightResurrect</thinkTreeConstant>
-			<body>Apocriton</body>
+			<body>AM_ApocritonWinged</body>
 			<mechWeightClass>UltraHeavy</mechWeightClass>
 			<lifeStageAges Inherit="False">
 				<li>
@@ -45,6 +45,17 @@
 			<soundAmbience>Pawn_Mech_Apocriton_Ambience</soundAmbience>
 		</race>
 		<tools>
+			<li>
+				<label>wing blade</label>
+				<capacities>
+					<li>Cut</li>
+					<li>Stab</li>
+				</capacities>
+				<power>23</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>AM_WingBlades</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
 			<li>
 				<label>head</label>
 				<capacities>
@@ -119,7 +130,7 @@
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>9999~9999</techHediffsMoney>
 		<abilities>
-			<li>LongjumpMech</li>
+			<li>AM_LongjumpMech</li>
 			<li>AM_ResurrectionMechSlow</li>
 		</abilities>
 		<skipResistant>true</skipResistant>

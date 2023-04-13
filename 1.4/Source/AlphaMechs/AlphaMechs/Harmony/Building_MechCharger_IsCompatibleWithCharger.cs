@@ -18,7 +18,7 @@ namespace AlphaMechs
     public static class AlphaMechs_Building_MechCharger_IsCompatibleWithCharger_Patch
     {
         [HarmonyPostfix]
-        public static void AddBossMechsToCharger(ThingDef chargerDef, ThingDef mechRace, bool __result)
+        public static void AddBossMechsToCharger(ThingDef chargerDef, ThingDef mechRace, ref bool __result)
 
         {
 
@@ -28,10 +28,16 @@ namespace AlphaMechs
 
                 if (chargerDef == InternalDefOf.AM_GreaterRecharger)
                 {
+                  
                     __result = true;
 
                 }
-                __result = false;
+                else
+                {
+                 
+                    __result = false;
+                }
+               
             }
 
             

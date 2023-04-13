@@ -35,57 +35,83 @@
 			</li>
 		</comps>
 	</AbilityDef>
-	
-	 <AbilityDef>
-    <defName>AM_ResurrectionMechSlow</defName>
-    <label>resurrect mech, minor</label>
-    <description>Resurrect a recently-killed mechanoid by externally supercharging its self-repair processes. The mechanoid will come back with some but not all of its wounds healed. This ability is slower than the one used by the Apocriton.</description>
-    <iconPath>UI/Abilities/MechResurrection</iconPath>
-    <cooldownTicksRange>6000</cooldownTicksRange>
-    <warmupStartSound>MechResurrect_Warmup</warmupStartSound>
-    <warmupEffecter>ApocrionAoeWarmup</warmupEffecter>
-    <jobDef>CastAbilityGoToThing</jobDef>
-    <canUseAoeToGetTargets>true</canUseAoeToGetTargets>
-    <useAverageTargetPositionForWarmupEffecter>true</useAverageTargetPositionForWarmupEffecter>
-    <hostile>false</hostile>
-    <statBases> 
-      <Ability_EffectRadius>4</Ability_EffectRadius>
-    </statBases>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <drawAimPie>true</drawAimPie>
-      <range>6.9</range>
-      <warmupTime>8</warmupTime>
-      <soundCast>MechResurrect_Cast</soundCast>
-      <requireLineOfSight>false</requireLineOfSight>
-      <targetParams>
-        <canTargetPawns>false</canTargetPawns>
-        <canTargetBuildings>false</canTargetBuildings>
-        <canTargetCorpses>true</canTargetCorpses>
-        <canTargetAnimals>false</canTargetAnimals>
-        <canTargetHumans>false</canTargetHumans>
-        <canTargetMechs>true</canTargetMechs>
-      </targetParams>
-    </verbProperties>
-    <comps>
-      <li Class="CompProperties_ResurrectMech">
-        <maxCorpseAgeTicks>3600</maxCorpseAgeTicks><!-- 60 seconds -->
-        <costs>
-          <li>
-            <weightClass>Light</weightClass>
-            <cost>1</cost>
-          </li>
-          <li>
-            <weightClass>Medium</weightClass>
-            <cost>3</cost>
-          </li>
-          <li>
-            <weightClass>Heavy</weightClass>
-            <cost>5</cost>
-          </li>
-        </costs>
-        <appliedEffecterDef>MechResurrected</appliedEffecterDef>
-      </li>
-    </comps>
-  </AbilityDef>
+	<AbilityDef>
+		<defName>AM_ResurrectionMechSlow</defName>
+		<label>resurrect mech, minor</label>
+		<description>Resurrect a recently-killed mechanoid by externally supercharging its self-repair processes. The mechanoid will come back with some but not all of its wounds healed. This ability is slower than the one used by the Apocriton.</description>
+		<iconPath>UI/Abilities/MechResurrection</iconPath>
+		<cooldownTicksRange>6000</cooldownTicksRange>
+		<warmupStartSound>MechResurrect_Warmup</warmupStartSound>
+		<warmupEffecter>ApocrionAoeWarmup</warmupEffecter>
+		<jobDef>CastAbilityGoToThing</jobDef>
+		<canUseAoeToGetTargets>true</canUseAoeToGetTargets>
+		<useAverageTargetPositionForWarmupEffecter>true</useAverageTargetPositionForWarmupEffecter>
+		<hostile>false</hostile>
+		<statBases>
+			<Ability_EffectRadius>4</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<drawAimPie>true</drawAimPie>
+			<range>6.9</range>
+			<warmupTime>8</warmupTime>
+			<soundCast>MechResurrect_Cast</soundCast>
+			<requireLineOfSight>false</requireLineOfSight>
+			<targetParams>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetCorpses>true</canTargetCorpses>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>true</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_ResurrectMech">
+				<maxCorpseAgeTicks>3600</maxCorpseAgeTicks>
+				<!-- 60 seconds -->
+				<costs>
+					<li>
+						<weightClass>Light</weightClass>
+						<cost>1</cost>
+					</li>
+					<li>
+						<weightClass>Medium</weightClass>
+						<cost>3</cost>
+					</li>
+					<li>
+						<weightClass>Heavy</weightClass>
+						<cost>5</cost>
+					</li>
+				</costs>
+				<appliedEffecterDef>MechResurrected</appliedEffecterDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef>
+		<defName>AM_LongjumpMech</defName>
+		<label>enhanced mech longjump</label>
+		<description>Jump to a distant location using special ultrafast mechanoid muscles.</description>
+		<iconPath>UI/Abilities/AM_ApoptosisJump</iconPath>
+		<cooldownTicksRange>480</cooldownTicksRange>
+		<hostile>false</hostile>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityJump</verbClass>
+			<label>jump</label>
+			<violent>false</violent>
+			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			<warmupTime>0.5</warmupTime>
+			<minRange>4</minRange>
+			<range>18</range>
+			<requireLineOfSight>true</requireLineOfSight>
+			<soundCast>Longjump_Jump</soundCast>
+			<soundLanding>Longjump_Land</soundLanding>
+			<flyWithCarriedThing>false</flyWithCarriedThing>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
 </Defs>
