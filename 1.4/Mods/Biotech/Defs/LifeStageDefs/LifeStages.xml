@@ -1,14 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <LifeStageDef>
-    <defName>AM_RideableMechanoidFullyFormed</defName>
-    <label>fully-formed</label>
-    <visible>false</visible>
-	<caravanRideable>true</caravanRideable>
-  </LifeStageDef>
-
-
-
-  
+	<LifeStageDef>
+		<defName>AM_RideableMechanoidFullyFormed</defName>
+		<label>fully-formed</label>
+		<visible>false</visible>
+		<caravanRideable>true</caravanRideable>
+	</LifeStageDef>
+	<LifeStageDef>
+		<defName>AM_MilkableMechanoidFullyFormed</defName>
+		<label>fully-formed</label>
+		<visible>false</visible>
+		<milkable>true</milkable>
+		<shearable>true</shearable>
+	</LifeStageDef>
 </Defs>

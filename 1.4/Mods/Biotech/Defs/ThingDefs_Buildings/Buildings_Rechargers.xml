@@ -51,7 +51,7 @@
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<researchPrerequisites>
-			<li>StandardMechtech</li>
+			<li>AM_MechanoidBeamcasting</li>
 		</researchPrerequisites>
 		<comps>
 			<li Class="CompProperties_ThingContainer">

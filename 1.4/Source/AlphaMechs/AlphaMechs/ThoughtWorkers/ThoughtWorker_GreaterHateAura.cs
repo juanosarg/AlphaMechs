@@ -18,14 +18,14 @@ namespace AlphaMechs
             Distant
         }
 
-        private const float IntenseDistance = 3.9f;
+        private const float IntenseDistance = 8.9f;
 
-        private const float StrongDistance = 8.9f;
+        private const float StrongDistance = 18.9f;
 
         protected override ThoughtState CurrentStateInternal(Pawn p)
         {
             HateAuraLevel hateAuraLevel = HateAuraLevel.None;
-            if (p.Map != null)
+            if (p.Map != null && p.Faction != Faction.OfPlayer)
             {
                 List<Thing> list = p.Map.listerThings.ThingsOfDef(InternalDefOf.AM_Apoptosis);
                 list.SortBy((Thing m) => m.Position.DistanceToSquared(m.Position));

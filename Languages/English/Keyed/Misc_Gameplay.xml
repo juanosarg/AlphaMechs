@@ -17,6 +17,8 @@
 <AM_EjectHemogenDesc>Ejects all the hemogen packs stored inside the mech's storage vats</AM_EjectHemogenDesc>
 <AM_HemogenStored>Hemogen packs stored: {0}</AM_HemogenStored>
 <AM_MustNotBePlacedCloseToAnother>Band nodes and beamcaster band nodes must not be placed close to each other</AM_MustNotBePlacedCloseToAnother>
+<AM_RandomItems>Resource assembly in</AM_RandomItems>
+<AM_MealNutrientPaste>Nutrient paste production</AM_MealNutrientPaste>
 
 
 

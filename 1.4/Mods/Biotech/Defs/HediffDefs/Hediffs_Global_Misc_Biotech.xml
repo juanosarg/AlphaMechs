@@ -31,4 +31,112 @@
 		<description>This mechanitor's bandwidth is being increased thanks to the influence of a beamcaster band node structure.</description>
 		<isBad>false</isBad>
 	</HediffDef>
+	<HediffDef>
+		<defName>AM_GreaterMechBoost</defName>
+		<label>enhanced boost</label>
+		<description>This mechanoid's capacities have been boosted by a nearby persistent mech booster building. This condition will stay on the mechanoid for two hours after leaving the range of the mech booster building, but it will be overwritten if the mech enters the range of a standard mech booster.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<comps>
+			<li Class="AlphaMechs.HediffCompProperties_DeleteAfterTime">
+				<disappearsAfterTicks>7500</disappearsAfterTicks>
+			</li>
+			<li Class="AlphaMechs.HediffCompProperties_DisappearIfOtherFound">
+				<conflictingHediffs>
+					<li>MechBoost</li>
+				</conflictingHediffs>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Link">
+				<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<MoveSpeed>1.5</MoveSpeed>
+					<WorkSpeedGlobal>1.75</WorkSpeedGlobal>
+				</statFactors>
+			</li>
+		</stages>
+		<isBad>false</isBad>
+	</HediffDef>
+	<HediffDef>
+		<defName>AM_EfficiencyMechBoost</defName>
+		<label>efficiency boost</label>
+		<description>This mechanoid's energy efficiency has been improved by a nearby mechanoid efficiency booster building.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>30</disappearsAfterTicks>
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Link">
+				<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<MechEnergyUsageFactor>0.90</MechEnergyUsageFactor>
+				</statFactors>
+			</li>
+		</stages>
+		<isBad>false</isBad>
+	</HediffDef>
+	<HediffDef>
+		<defName>AM_ArmorMechBoost</defName>
+		<label>armor boost</label>
+		<description>This mechanoid's armor has been reinforced by a nearby mechanoid protection booster building.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>30</disappearsAfterTicks>
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Link">
+				<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+				</statOffsets>
+			</li>
+		</stages>
+		<isBad>false</isBad>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>AM_TargettingMechBoost</defName>
+		<label>targetting boost</label>
+		<description>This mechanoid's targetting has been enhanced by a nearby mechanoid targetting booster building.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>30</disappearsAfterTicks>
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Link">
+				<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<RangedCooldownFactor>0.75</RangedCooldownFactor>
+					
+				</statFactors>
+			</li>
+		</stages>
+		<isBad>false</isBad>
+	</HediffDef>
 </Defs>

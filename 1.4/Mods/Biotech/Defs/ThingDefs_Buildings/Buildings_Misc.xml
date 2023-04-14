@@ -270,68 +270,259 @@
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 	</ThingDef>
-	
 	<ThingDef ParentName="BuildingBase">
-    <defName>AM_GreaterMechBooster</defName>
-    <label>persistent mech booster</label>
-    <description>A remote energy and computation enhancement device. Any friendly mechanoids in its effect radius will move and work faster.</description>
-    <tickerType>Normal</tickerType>
-    <drawerType>RealtimeOnly</drawerType>
-    <fillPercent>0.4</fillPercent>
-    <graphicData>
-      <texPath>Things/Building/AM_GreaterMechBooster</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(3,3)</drawSize>
-      <shadowData>
-        <volume>(0.8, 0.35, 0.8)</volume>
-        <offset>(0, 0, -0.2)</offset>
-      </shadowData>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <building>
-      <ai_chillDestination>false</ai_chillDestination>
-      <buildingTags>
-        <li>Biotech</li>
-      </buildingTags>
-    </building>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-    <designationCategory>Biotech</designationCategory>
-    <uiOrder>2420</uiOrder>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <thingCategories>
-      <li>BuildingsMisc</li>
-    </thingCategories>
-    <statBases>
-      <MaxHitPoints>150</MaxHitPoints>
-      <WorkToBuild>8000</WorkToBuild>
-      <Mass>25</Mass>
-      <Flammability>0.5</Flammability>
-    </statBases>
-    <size>(3,3)</size>
-    <costList>
-      <Steel>100</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
-    </costList>
-    <researchPrerequisites>
-      <li>HighMechtech</li>
-    </researchPrerequisites>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>200</basePowerConsumption>
-      </li>
-      <li Class="CompProperties_CauseHediff_AoE">
-        <range>9.9</range>
-        <onlyTargetMechs>true</onlyTargetMechs>
-        <hediff>MechBoost</hediff>
-        <activeSound>MechBooster_Working</activeSound>
-      </li>
-      <li Class="CompProperties_Flickable"/>
-    </comps>
-    <placeWorkers>
-      <li>PlaceWorker_ShowCauseHediffAoE</li>
-    </placeWorkers>
-    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-  </ThingDef>
+		<defName>AM_GreaterMechBooster</defName>
+		<label>persistent mech booster</label>
+		<description>A remote energy and computation enhancement device. Any friendly mechanoids in its effect radius will move and work faster. This boost will be overwritten if the mech enters the range of a standard mech booster. The effect of the persistent mech booster will remain on the mech up to 3 hours after leaving its area of effect.</description>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/AM_GreaterMechBooster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(0.8, 0.35, 0.8)</volume>
+				<offset>(0, 0, -0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<buildingTags>
+				<li>Biotech</li>
+			</buildingTags>
+		</building>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<designationCategory>Biotech</designationCategory>
+		<uiOrder>2420</uiOrder>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>25</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(3,3)</size>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<researchPrerequisites>
+			<li>AM_QuantumPulseMessaging</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="AlphaMechs.CompProperties_CauseHediff_AoE_WithRestrictions">
+				<range>13.9</range>
+				<conflictingHediffs>
+					<li>MechBoost</li>
+				</conflictingHediffs>
+				<onlyTargetMechs>true</onlyTargetMechs>
+				<hediff>AM_GreaterMechBoost</hediff>
+				<activeSound>MechBooster_Working</activeSound>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<placeWorkers>
+			<li>AlphaMechs.PlaceWorker_ShowCauseHediffAoEExpanded</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>AM_MechEfficiencyBooster</defName>
+		<label>mech efficiency booster</label>
+		<description>A remote energy efficiency enhancement device. Any friendly mechanoids in its effect radius will use less energy per day.</description>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/AM_YellowMechBooster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.8, 0.35, 0.8)</volume>
+				<offset>(0, 0, -0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<buildingTags>
+				<li>Biotech</li>
+			</buildingTags>
+		</building>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<designationCategory>Biotech</designationCategory>
+		<uiOrder>2420</uiOrder>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>25</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(2,2)</size>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<researchPrerequisites>
+			<li>AM_VoidLinkConnectivity</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_CauseHediff_AoE">
+				<range>9.9</range>
+				<onlyTargetMechs>true</onlyTargetMechs>
+				<hediff>AM_EfficiencyMechBoost</hediff>
+				<activeSound>MechBooster_Working</activeSound>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowCauseHediffAoE</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>AM_MechArmorBooster</defName>
+		<label>mech protection booster</label>
+		<description>A remote armor reinforcement device. Any friendly mechanoids in its effect radius will have greater protection against attacks.</description>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/AM_RedMechBooster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.8, 0.35, 0.8)</volume>
+				<offset>(0, 0, -0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<buildingTags>
+				<li>Biotech</li>
+			</buildingTags>
+		</building>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<designationCategory>Biotech</designationCategory>
+		<uiOrder>2420</uiOrder>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>25</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(2,2)</size>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<researchPrerequisites>
+			<li>AM_VoidLinkConnectivity</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_CauseHediff_AoE">
+				<range>9.9</range>
+				<onlyTargetMechs>true</onlyTargetMechs>
+				<hediff>AM_ArmorMechBoost</hediff>
+				<activeSound>MechBooster_Working</activeSound>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowCauseHediffAoE</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>AM_MechTargettingBooster</defName>
+		<label>mech targetting booster</label>
+		<description>A remote targetting enhancement device. Any friendly mechanoids in its effect radius will have reduced weapon cooldown.</description>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/AM_GreenMechBooster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.8, 0.35, 0.8)</volume>
+				<offset>(0, 0, -0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<buildingTags>
+				<li>Biotech</li>
+			</buildingTags>
+		</building>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<designationCategory>Biotech</designationCategory>
+		<uiOrder>2420</uiOrder>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>25</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(2,2)</size>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<researchPrerequisites>
+			<li>AM_VoidLinkConnectivity</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_CauseHediff_AoE">
+				<range>9.9</range>
+				<onlyTargetMechs>true</onlyTargetMechs>
+				<hediff>AM_TargettingMechBoost</hediff>
+				<activeSound>MechBooster_Working</activeSound>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowCauseHediffAoE</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+	</ThingDef>
 </Defs>
