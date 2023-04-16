@@ -106,4 +106,21 @@
 		</requiredStudied>
 		<tab>AM_AlphaMechs</tab>
 	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="AM_MechtechBase">
+		<defName>AM_Cryptoharmonization</defName>
+		<label>crypto-harmonization</label>
+		<description>A technology that involves the use of advanced cryptographic algorithms to achieve perfect synchronization and coordination between multiple mechanoid units or systems. It allows for seamless communication, information exchange, and coordination.</description>
+		<baseCost>500</baseCost>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+		<prerequisites>
+			<li>AM_QuantumPulseMessaging</li>
+
+		</prerequisites>
+		<requiredStudied>
+			<li>AM_QuantumMatrixChip</li>
+		</requiredStudied>
+		<tab>AM_AlphaMechs</tab>
+	</ResearchProjectDef>
 </Defs>

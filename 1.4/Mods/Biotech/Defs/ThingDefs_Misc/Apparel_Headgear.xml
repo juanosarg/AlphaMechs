@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ApparelArmorHelmetMechanitorBase">
+		<defName>AM_MechCommanderHelm</defName>
+		<label>mech commander helmet</label>
+		<description>A heavy power armor helmet packed with mechanitor-assistance gear. The mechlord helmet drastically amplifies a mechanitor's bandwidth, while being as protective as a marine helmet.</description>
+		<graphicData>
+			<texPath>Things/Apparel/AM_MechCommanderHelm/AM_MechCommanderHelm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>1.5</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.54</ArmorRating_Heat>
+			<Insulation_Cold>4</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MechBandwidth>18</MechBandwidth>
+		</equippedStatOffsets>
+		<recipeMaker Inherit="False">
+			<researchPrerequisite>AM_MechanoidBeamcasting</researchPrerequisite>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<workSkill>Crafting</workSkill>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+			<displayPriority>520</displayPriority>
+		</recipeMaker>
+		<costList Inherit="False">
+			<Plasteel>160</Plasteel>
+			<ComponentSpacer>7</ComponentSpacer>
+			<NanostructuringChip>1</NanostructuringChip>
+			<PowerfocusChip>1</PowerfocusChip>
+		</costList>
+		<apparel>
+			<tags>
+				<li>RoyalTier7</li>
+				<li>Mechlord</li>
+			</tags>
+			<scoreOffset>4</scoreOffset>
+			<mechanitorApparel>true</mechanitorApparel>
+			<wornGraphicPath>Things/Apparel/AM_MechCommanderHelm/AM_MechCommanderHelm</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	<ThingDef ParentName="ApparelArmorHelmetMechanitorBase">
+		<defName>AM_MechBreakerHelm</defName>
+		<label>mech breaker helmet</label>
+		<description>A modified siegebreaker helmet designed to improve the abilities of a mechanitor even further.</description>
+		<graphicData>
+			<texPath>Things/Apparel/AM_MechBreakerHelm/AM_MechBreakerHelm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>35250</WorkToMake>
+			<Mass>2.5</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>1.18</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.47</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.48</ArmorRating_Heat>
+			<Insulation_Cold>4</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MechBandwidth>24</MechBandwidth>
+			<PainShockThreshold>0.05</PainShockThreshold>
+		</equippedStatOffsets>
+		<recipeMaker Inherit="False">
+			<researchPrerequisite>AM_QuantumPulseMessaging</researchPrerequisite>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<workSkill>Crafting</workSkill>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>14</Crafting>
+			</skillRequirements>
+			<displayPriority>520</displayPriority>
+		</recipeMaker>
+		<costList Inherit="False">
+			<ComponentSpacer>1</ComponentSpacer>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Plasteel>45</Plasteel>
+			<AM_HyperLinkageChip>1</AM_HyperLinkageChip>
+			<AM_StellarProcessingChip>1</AM_StellarProcessingChip>
+		</costList>
+		<apparel>
+			<tags>
+				<li>RoyalTier7</li>
+				<li>Mechlord</li>
+			</tags>
+			<scoreOffset>4</scoreOffset>
+			<mechanitorApparel>true</mechanitorApparel>
+			<wornGraphicPath>Things/Apparel/AM_MechBreakerHelm/AM_MechBreakerHelm</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+</Defs>
