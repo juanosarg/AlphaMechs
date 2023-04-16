@@ -2,8 +2,8 @@
 <Defs>
 	<ThingDef ParentName="ApparelArmorHelmetMechanitorBase">
 		<defName>AM_MechCommanderHelm</defName>
-		<label>mech commander helmet</label>
-		<description>A heavy power armor helmet packed with mechanitor-assistance gear. The mechlord helmet drastically amplifies a mechanitor's bandwidth, while being as protective as a marine helmet.</description>
+		<label>mech master helmet</label>
+		<description>A heavy power armor helmet packed with mechanitor-assistance gear. The mech master helmet drastically amplifies a mechanitor's bandwidth, while being as protective as a marine helmet.</description>
 		<graphicData>
 			<texPath>Things/Apparel/AM_MechCommanderHelm/AM_MechCommanderHelm</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

@@ -2,7 +2,7 @@
 <Defs>
 	<ThingDef ParentName="ApparelArmorPowerBase">
 		<defName>AM_MechCommanderSuit</defName>
-		<label>mech commander suit</label>
+		<label>mech master suit</label>
 		<description>A power-assisted armor suit packed with mechanitor-assistance gear. Greatly amplifies the abilities of a mechanitor, while also being slightly stronger than a suit of marine armor.</description>
 		<recipeMaker>
 			<researchPrerequisite>AM_VoidLinkConnectivity</researchPrerequisite>
