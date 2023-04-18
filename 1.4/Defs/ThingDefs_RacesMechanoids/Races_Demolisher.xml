@@ -12,6 +12,7 @@
 			 <ArmorRating_Blunt>0.22</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.56</ArmorRating_Sharp>
 			<PsychicSensitivity>0.75</PsychicSensitivity>
+			<BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost>
 		</statBases>
 		<tools>
 			<li>
