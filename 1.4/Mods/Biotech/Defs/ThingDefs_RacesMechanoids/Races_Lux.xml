@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- Harpy -->
+	<!-- Lux  -->
 	<ThingDef ParentName="BaseMechanoidWalker">
-		<defName>AM_Mech_Harpy</defName>
-		<label>harpy</label>
-		<description>The Harpy is a sleek and agile humanoid mechanoid designed for fast-paced combat operations. Equipped with a powerful heavy laser weapon, it is capable of dealing devastating damage to both ground and air targets with pinpoint accuracy. The Harpy's agility comes at the cost of durability, and it must rely on its speed and evasion to survive on the battlefield.</description>
+		<defName>AM_Mech_Lux</defName>
+		<label>lux</label>
+		<description>The Lux is a sleek and agile humanoid mechanoid designed for fast-paced combat operations. Equipped with a powerful heavy laser weapon, it is capable of dealing devastating damage to both ground and air targets with pinpoint accuracy. The Lux's agility comes at the cost of durability, and it must rely on its speed and evasion to survive on the battlefield.</description>
 		<tools>
 			<li>
 				<label>left fist</label>
@@ -46,13 +46,13 @@
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
 		</race>
 		<statBases>
-			<BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">5</BandwidthCost>
+			<BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>
 		</statBases>
 	</ThingDef>
 	<PawnKindDef ParentName="BaseMechanoidKind">
-		<defName>AM_Mech_Harpy</defName>
-		<label>harpy</label>
-		<race>AM_Mech_Harpy</race>
+		<defName>AM_Mech_Lux</defName>
+		<label>lux</label>
+		<race>AM_Mech_Lux</race>
 		<combatPower>250</combatPower>
 		<allowInMechClusters>false</allowInMechClusters>
 		<isFighter>false</isFighter>

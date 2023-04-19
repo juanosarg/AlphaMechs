@@ -54,47 +54,25 @@
     </descriptionHyperlinks>
   </RecipeDef>
 
-  <RecipeDef ParentName="LightMechanoidRecipe">
-    <defName>Militor</defName>
-    <label>gestate militor</label>
-    <description>Gestate a militor mechanoid.</description>
+  <RecipeDef ParentName="AM_LightMechanoidRecipe">
+    <defName>AM_BlitzkriegRecipe</defName>
+    <label>gestate blitzkrieg</label>
+    <description>Gestate a blitzkrieg mechanoid.</description>
     <products>
-      <Mech_Militor>1</Mech_Militor>
+      <AM_Blitzkrieg>1</AM_Blitzkrieg>
     </products>
     <descriptionHyperlinks>
-      <ThingDef>Mech_Militor</ThingDef>
+      <ThingDef>AM_Blitzkrieg</ThingDef>
     </descriptionHyperlinks>
   </RecipeDef>
 
-  <RecipeDef ParentName="LightMechanoidRecipe">
-    <defName>Lifter</defName>
-    <label>gestate lifter</label>
-    <description>Gestate a lifter mechanoid.</description>
-    <products>
-      <Mech_Lifter>1</Mech_Lifter>
-    </products>
-    <descriptionHyperlinks>
-      <ThingDef>Mech_Lifter</ThingDef>
-    </descriptionHyperlinks>
-  </RecipeDef>
+ 
 
-  <RecipeDef ParentName="LightMechanoidRecipe">
-    <defName>Constructoid</defName>
-    <label>gestate constructoid</label>
-    <description>Gestate a constructoid mechanoid.</description>
-    <products>
-      <Mech_Constructoid>1</Mech_Constructoid>
-    </products>
-    <descriptionHyperlinks>
-      <ThingDef>Mech_Constructoid</ThingDef>
-    </descriptionHyperlinks>
-  </RecipeDef>
-
-  <RecipeDef ParentName="LightMechanoidRecipe">
-    <defName>Fabricor</defName>
-    <label>gestate fabricor</label>
-    <description>Gestate a fabricor mechanoid.</description>
-    <researchPrerequisite>HighMechtech</researchPrerequisite>
+  <RecipeDef ParentName="AM_LightMechanoidRecipe">
+    <defName>AM_Mech_MasterChefRecipe</defName>
+    <label>gestate culinarius</label>
+    <description>Gestate a culinarius mechanoid.</description>
+  
     <ingredients Inherit="False">
       <li>
         <filter>
@@ -102,7 +80,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>100</count>
+        <count>75</count>
       </li>
       <li>
         <filter>
@@ -114,44 +92,18 @@
       </li>
     </ingredients>
     <products>
-      <Mech_Fabricor>1</Mech_Fabricor>
+      <AM_Mech_MasterChef>1</AM_Mech_MasterChef>
     </products>
     <descriptionHyperlinks>
-      <ThingDef>Mech_Fabricor</ThingDef>
+      <ThingDef>AM_Mech_MasterChef</ThingDef>
     </descriptionHyperlinks>
   </RecipeDef>
-
-  <RecipeDef ParentName="LightMechanoidRecipe">
-    <defName>Agrihand</defName>
-    <label>gestate agrihand</label>
-    <description>Gestate an agrihand mechanoid.</description>
-    <researchPrerequisite>BasicMechtech</researchPrerequisite>
-    <products>
-      <Mech_Agrihand>1</Mech_Agrihand>
-    </products>
-    <descriptionHyperlinks>
-      <ThingDef>Mech_Agrihand</ThingDef>
-    </descriptionHyperlinks>
-  </RecipeDef>
-
-  <RecipeDef ParentName="LightMechanoidRecipe">
-    <defName>Cleansweeper</defName>
-    <label>gestate cleansweeper</label>
-    <description>Gestate a cleansweeper mechanoid.</description>
-    <researchPrerequisite>BasicMechtech</researchPrerequisite>
-    <products>
-      <Mech_Cleansweeper>1</Mech_Cleansweeper>
-    </products>
-    <descriptionHyperlinks>
-      <ThingDef>Mech_Cleansweeper</ThingDef>
-    </descriptionHyperlinks>
-  </RecipeDef>
-
-  <RecipeDef ParentName="LightMechanoidRecipe">
-    <defName>Paramedic</defName>
-    <label>gestate paramedic</label>
-    <description>Gestate a paramedic mechanoid.</description>
-    <researchPrerequisite>HighMechtech</researchPrerequisite>
+  
+    <RecipeDef ParentName="AM_LightMechanoidRecipe">
+    <defName>AM_Mech_TurboCleanerRecipe</defName>
+    <label>gestate turbocleaner</label>
+    <description>Gestate a turbocleaner mechanoid.</description>
+  
     <ingredients Inherit="False">
       <li>
         <filter>
@@ -159,23 +111,25 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>100</count>
+        <count>75</count>
       </li>
       <li>
         <filter>
           <thingDefs>
-            <li>SubcoreHigh</li>
+            <li>SubcoreRegular</li>
           </thingDefs>
         </filter>
         <count>1</count>
       </li>
     </ingredients>
     <products>
-      <Mech_Paramedic>1</Mech_Paramedic>
+      <AM_Mech_TurboCleaner>1</AM_Mech_TurboCleaner>
     </products>
     <descriptionHyperlinks>
-      <ThingDef>Mech_Paramedic</ThingDef>
+      <ThingDef>AM_Mech_TurboCleaner</ThingDef>
     </descriptionHyperlinks>
   </RecipeDef>
+
+ 
 
 </Defs>

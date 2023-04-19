@@ -10,7 +10,7 @@
 			<MoveSpeed>3.8</MoveSpeed>
 			<EnergyShieldRechargeRate>0.35</EnergyShieldRechargeRate>
 			<EnergyShieldEnergyMax>2.5</EnergyShieldEnergyMax>
-			<BandwidthCost>6</BandwidthCost>
+			<BandwidthCost>8</BandwidthCost>
 			<ControlTakingTime>30</ControlTakingTime>
 			<EMPResistance>0.9</EMPResistance>
 			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>

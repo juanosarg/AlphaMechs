@@ -1,167 +1,158 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
- 
-
-  <!-- War empress -->
-  <ThingDef ParentName="SuperHeavyMechanoid">
-    <defName>AM_WarEmpress</defName>
-    <label>war empress</label>
-    <description>An ultra-heavy mech with a built-in mech gestator. Fed with appropriate resources, the War empress can form swarms of small melee-adept guttersnipe combat mechs within its massive carapace and deploy them into combat. The Empress is armed with a very dangerous and long ranged slug sniper turret that should be avoided at all costs.</description>
-    <statBases>
-      <MoveSpeed>2.3</MoveSpeed>
-      <EnergyShieldRechargeRate>0.6</EnergyShieldRechargeRate>
-      <EnergyShieldEnergyMax>4</EnergyShieldEnergyMax>
-      <MeleeDoorDamageFactor>2</MeleeDoorDamageFactor>
-      <EMPResistance>0.75</EMPResistance>
-    </statBases>
-    <race>
-      <body>Mech_Warqueen</body>
-      <baseBodySize>5</baseBodySize>
-      <lifeStageAges>
-        <li>
-          <def>MechanoidFullyFormed</def>
-          <minAge>0</minAge>
-          <soundWounded>Pawn_Mech_Warqueen_Wounded</soundWounded>
-          <soundDeath>Pawn_Mech_Warqueen_Death</soundDeath>
-          <soundCall>Pawn_Mech_Warqueen_Call</soundCall>
-        </li>
-        <li>
-          <def>MechanoidFullyFormed</def>
-          <minAge>100</minAge>
-          <soundWounded>Pawn_Mech_Warqueen_Wounded</soundWounded>
-          <soundDeath>Pawn_Mech_Warqueen_Death</soundDeath>
-          <soundCall>Pawn_Mech_Warqueen_Call</soundCall>
-        </li>
-      </lifeStageAges>
-      <baseHealthScale>6.5</baseHealthScale>
-      <dutyBoss>AM_WarEmpress</dutyBoss>
-    </race>
-    <tools>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>15</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-      </li>
-    </tools>
-    <comps>
-     
-	   <li Class="CompProperties_MechCarrier">
-        <spawnPawnKind>AM_Mech_Guttersnipe</spawnPawnKind>
-        <fixedIngredient>Plasteel</fixedIngredient>
-        <costPerPawn>25</costPerPawn>
-        <startingIngredientCount>500</startingIngredientCount>
-        <maxIngredientCount>500</maxIngredientCount>
-        <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
-        <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
-        <attachSpawnedEffecter>true</attachSpawnedEffecter>
-        <attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
-      </li>
-      <li Class="CompProperties_TurretGun">
-        <turretDef>AM_Gun_SniperTurret</turretDef>
-        <autoAttack>false</autoAttack>
-      </li>
-    </comps>
-    <killedLeavingsPlayerHostile>
-      <AM_StellarProcessingChip>1</AM_StellarProcessingChip>
-    </killedLeavingsPlayerHostile>
-  </ThingDef>
-
-  <PawnKindDef Name="MechWarqueenKind" ParentName="HeavyMechanoidKind">
-    <defName>AM_WarEmpress</defName>
-    <label>war empress</label>
-  
-    <race>AM_WarEmpress</race>
-    <combatPower>850</combatPower>
-    <maxPerGroup>1</maxPerGroup>
-    <allowInMechClusters>false</allowInMechClusters>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Mechanoid/AM_WarEmpress/AM_WarEmpress_Clean</texPath>
-          <maskPath>Things/Pawn/Mechanoid/AM_WarEmpress/AllegianceOverlays/AM_WarEmpress_Overlay</maskPath>
-          <shaderType>CutoutWithOverlay</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>4</drawSize>
-          <shadowData>
-            <volume>(0.7, 0.8, 0.7)</volume>
-          </shadowData>
-        </bodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-           <texPath>Things/Pawn/Mechanoid/AM_WarEmpress/AM_WarEmpress</texPath>
-          <maskPath>Things/Pawn/Mechanoid/AM_WarEmpress/AllegianceOverlays/AM_WarEmpress_Overlay</maskPath>
-          <shaderType>CutoutWithOverlay</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>4</drawSize>
-          <shadowData>
-            <volume>(0.7, 0.8, 0.7)</volume>
-          </shadowData>
-        </bodyGraphicData>
-      </li>
-    </lifeStages>    
-    <controlGroupPortraitZoom>0.7</controlGroupPortraitZoom>  
-  </PawnKindDef>
-  
-
-
-  <ThingDef ParentName="BaseWeaponTurret">
-    <defName>AM_Gun_SniperTurret</defName>
-    <label>sniper turret</label>
-    <description>A powerful, long-range defense mechanism designed to take out enemy targets from a distance. Fires depleted uranium slugs at extreme velocities, capable of piercing even the toughest armor.</description>
-    <graphicData>
-      <texPath>UI/Invisible</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-     
-    </graphicData>
-    <statBases>
-      <AccuracyTouch>0.22</AccuracyTouch>
-      <AccuracyShort>0.33</AccuracyShort>
-      <AccuracyMedium>0.44</AccuracyMedium>
-      <AccuracyLong>0.95</AccuracyLong>
-     
-      <DeteriorationRate>0</DeteriorationRate>
-      <Mass>40</Mass>
-      <Flammability>0</Flammability>
-    </statBases>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <defaultProjectile>AM_Bullet_SniperTurret</defaultProjectile>
-        <warmupTime>0</warmupTime>
-        <minRange>11.9</minRange>
-		<defaultCooldownTime>4.5</defaultCooldownTime>
-        <range>45.9</range>
-        <burstShotCount>1</burstShotCount>
-        <soundCast>AM_Shot</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>18</muzzleFlashScale>
-        <consumeFuelPerShot>1</consumeFuelPerShot>
-      </li>
-    </verbs>
-  </ThingDef>
-  
-     <ThingDef ParentName="BaseBullet">
-    <defName>AM_Bullet_SniperTurret</defName>
-    <label>heavy slug</label>
-    <graphicData>
-      <texPath>Things/Projectiles/AM_Red_Bullet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.4</drawSize>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>55</damageAmountBase>
-      <speed>120</speed>
-    </projectile>
-  </ThingDef>
-
-  
+	<!-- War empress -->
+	<ThingDef ParentName="SuperHeavyMechanoid">
+		<defName>AM_WarEmpress</defName>
+		<label>war empress</label>
+		<description>An ultra-heavy mech with a built-in mech gestator. Fed with appropriate resources, the War empress can form swarms of small melee-adept guttersnipe combat mechs within its massive carapace and deploy them into combat. The Empress is armed with a very dangerous and long ranged slug sniper turret that should be avoided at all costs.</description>
+		<statBases>
+			<MoveSpeed>2.3</MoveSpeed>
+			<EnergyShieldRechargeRate>0.6</EnergyShieldRechargeRate>
+			<EnergyShieldEnergyMax>4</EnergyShieldEnergyMax>
+			<MeleeDoorDamageFactor>2</MeleeDoorDamageFactor>
+			<EMPResistance>0.75</EMPResistance>
+		</statBases>
+		<race>
+			<body>Mech_Warqueen</body>
+			<baseBodySize>5</baseBodySize>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Warqueen_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Warqueen_Death</soundDeath>
+					<soundCall>Pawn_Mech_Warqueen_Call</soundCall>
+				</li>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Warqueen_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Warqueen_Death</soundDeath>
+					<soundCall>Pawn_Mech_Warqueen_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<baseHealthScale>6.5</baseHealthScale>
+			<dutyBoss>AM_WarEmpress</dutyBoss>
+		</race>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_MechCarrier">
+				<spawnPawnKind>AM_Mech_Guttersnipe</spawnPawnKind>
+				<fixedIngredient>Plasteel</fixedIngredient>
+				<costPerPawn>25</costPerPawn>
+				<startingIngredientCount>500</startingIngredientCount>
+				<maxIngredientCount>500</maxIngredientCount>
+				<spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
+				<spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
+				<attachSpawnedEffecter>true</attachSpawnedEffecter>
+				<attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
+			</li>
+			<li Class="CompProperties_TurretGun">
+				<turretDef>AM_Gun_SniperTurret</turretDef>
+				<autoAttack>false</autoAttack>
+			</li>
+		</comps>
+		<killedLeavingsPlayerHostile>
+			<AM_StellarProcessingChip>1</AM_StellarProcessingChip>
+		</killedLeavingsPlayerHostile>
+		<modExtensions>
+			<li Class="AlphaMechs.MechSizeExtension">
+				<isBossSizeMech>true</isBossSizeMech>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="HeavyMechanoidKind">
+		<defName>AM_WarEmpress</defName>
+		<label>war empress</label>
+		<race>AM_WarEmpress</race>
+		<combatPower>850</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+		<allowInMechClusters>false</allowInMechClusters>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_WarEmpress/AM_WarEmpress_Clean</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_WarEmpress/AllegianceOverlays/AM_WarEmpress_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>4</drawSize>
+					<shadowData>
+						<volume>(0.7, 0.8, 0.7)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_WarEmpress/AM_WarEmpress</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_WarEmpress/AllegianceOverlays/AM_WarEmpress_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>4</drawSize>
+					<shadowData>
+						<volume>(0.7, 0.8, 0.7)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<controlGroupPortraitZoom>0.7</controlGroupPortraitZoom>
+	</PawnKindDef>
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>AM_Gun_SniperTurret</defName>
+		<label>sniper turret</label>
+		<description>A powerful, long-range defense mechanism designed to take out enemy targets from a distance. Fires depleted uranium slugs at extreme velocities, capable of piercing even the toughest armor.</description>
+		<graphicData>
+			<texPath>UI/Invisible</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.22</AccuracyTouch>
+			<AccuracyShort>0.33</AccuracyShort>
+			<AccuracyMedium>0.44</AccuracyMedium>
+			<AccuracyLong>0.95</AccuracyLong>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>40</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>AM_Bullet_SniperTurret</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<minRange>11.9</minRange>
+				<defaultCooldownTime>4.5</defaultCooldownTime>
+				<range>45.9</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>AM_Shot</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>18</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+			</li>
+		</verbs>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AM_Bullet_SniperTurret</defName>
+		<label>heavy slug</label>
+		<graphicData>
+			<texPath>Things/Projectiles/AM_Red_Bullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>55</damageAmountBase>
+			<speed>120</speed>
+		</projectile>
+	</ThingDef>
 </Defs>

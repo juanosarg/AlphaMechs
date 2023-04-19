@@ -46,7 +46,7 @@
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
 		</race>
 		<statBases>
-			<BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">5</BandwidthCost>
+			<BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost>
 		</statBases>
 	</ThingDef>
 	<PawnKindDef ParentName="BaseMechanoidKind">

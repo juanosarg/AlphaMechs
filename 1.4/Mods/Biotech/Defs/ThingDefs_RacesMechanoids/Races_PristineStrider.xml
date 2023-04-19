@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- Pristine strider -->
-	<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoid">
+	<ThingDef ParentName="AM_MediumMechanoid">
 		<defName>AM_PristineStrider</defName>
 		<label>pristine strider</label>
 		<description>A more advanced, mechanite-grown version of the autostrider, the pristine strider has a large carrying capacity, making it perfect as a partner on long caravan trips. Can also be ridden by pawns to increase travel speed.</description>

@@ -30,8 +30,8 @@
       <li> <!-- 1 -->
         <bossCount>1</bossCount>
         <escorts>
-          <Mech_Militor>4</Mech_Militor>
-          <Mech_Pikeman>2</Mech_Pikeman>
+          <AM_Mech_Munifex>4</AM_Mech_Munifex>
+          <AM_Mech_Lux>2</AM_Mech_Lux>
         </escorts>
 		 <bossApparel>
           <li>
@@ -42,9 +42,10 @@
       <li> <!-- 2 - Repeat starts here -->
         <bossCount>1</bossCount>
         <escorts>
-          <Mech_Militor>7</Mech_Militor>
-          <Mech_Pikeman>2</Mech_Pikeman>
-          <Mech_Tesseron>1</Mech_Tesseron>
+          <AM_Mech_Munifex>7</AM_Mech_Munifex>
+          <AM_Mech_Lux>2</AM_Mech_Lux>
+          <AM_Mech_Sagittarius>1</AM_Mech_Sagittarius>
+		  <AM_Siegemelter>1</AM_Siegemelter>
         </escorts>
         <bossApparel>
           <li>
@@ -55,9 +56,10 @@
       <li> <!-- 3 -->
         <bossCount>2</bossCount>
         <escorts>
-          <Mech_Militor>10</Mech_Militor>
-          <Mech_Legionary>3</Mech_Legionary>
-          <Mech_Centurion>1</Mech_Centurion>
+          <AM_Mech_Lux>10</AM_Mech_Lux>
+          <AM_Mech_Sagittarius>3</AM_Mech_Sagittarius>
+          <AM_Siegemelter>1</AM_Siegemelter>
+		  <AM_Mech_Legate>1</AM_Mech_Legate>
         </escorts>
         <bossApparel>
           <li>
@@ -68,9 +70,9 @@
       <li> <!-- 4 -->
         <bossCount>2</bossCount>
         <escorts>
-          <Mech_Militor>10</Mech_Militor>
-          <Mech_Scyther>5</Mech_Scyther>
-          <Mech_CentipedeGunner>3</Mech_CentipedeGunner>
+          <Mech_Militor>15</Mech_Militor>
+          <AM_Aura>5</AM_Aura>
+          <AM_Goliath>3</AM_Goliath>
         </escorts>
         <bossApparel>
           <li>
@@ -81,10 +83,10 @@
       <li> <!-- 5 -->
         <bossCount>2</bossCount>
         <escorts>
-          <Mech_Militor>15</Mech_Militor>
-          <Mech_Pikeman>8</Mech_Pikeman>
-          <Mech_CentipedeGunner>4</Mech_CentipedeGunner>
-          <Mech_Centurion>1</Mech_Centurion>
+          <AM_Mech_Munifex>7</AM_Mech_Munifex>
+          <AM_Goliath>5</AM_Goliath>
+          <AM_Mech_Lux>4</AM_Mech_Lux>
+          <AM_Mech_Legate>1</AM_Mech_Legate>
         </escorts>
         <bossApparel>
           <li>
@@ -95,9 +97,10 @@
       <li> <!-- 6 -->
         <bossCount>2</bossCount>
         <escorts>
-          <Mech_Militor>15</Mech_Militor>
+          <AM_Mech_Lux>7</AM_Mech_Lux>
+		  <AM_Mech_Munifex>7</AM_Mech_Munifex>
           <Mech_Lancer>10</Mech_Lancer>
-          <Mech_CentipedeGunner>5</Mech_CentipedeGunner>
+          <AM_Goliath>5</AM_Goliath>
         </escorts>
         <bossApparel>
           <li>
@@ -108,10 +111,11 @@
       <li> <!-- 7 -->
         <bossCount>3</bossCount>
         <escorts>
-          <Mech_Militor>15</Mech_Militor>
+          <AM_Mech_Munifex>5</AM_Mech_Munifex>
           <Mech_Tesseron>10</Mech_Tesseron>
           <Mech_CentipedeGunner>6</Mech_CentipedeGunner>
-          <Mech_Centurion>1</Mech_Centurion>
+          <AM_Mech_Legate>2</AM_Mech_Legate>
+		  <AM_Starfire>1</AM_Starfire>
         </escorts>
         <bossApparel>
           <li>
@@ -137,10 +141,10 @@
       <li> <!-- 0 -->
         <bossCount>1</bossCount>
         <escorts>
+          <AM_Aura>5</AM_Aura>
           <AM_Mech_Munifex>2</AM_Mech_Munifex>
-		  <AM_Goliath>1</AM_Goliath>
         </escorts>
-		 <bossApparel>
+		<bossApparel>
           <li>
             <thing>AM_Apparel_ExpandedHeavyShield</thing>
           </li>
@@ -149,10 +153,12 @@
       <li> <!-- 1 -->
         <bossCount>1</bossCount>
         <escorts>
-          <Mech_Militor>4</Mech_Militor>
-          <Mech_Pikeman>2</Mech_Pikeman>
+          <Mech_Militor>5</Mech_Militor>
+		  <AM_Mech_Lux>3</AM_Mech_Lux>
+          <AM_Siegemelter>2</AM_Siegemelter>
+		  <AM_Fireworm>1</AM_Fireworm>
         </escorts>
-		 <bossApparel>
+        <bossApparel>
           <li>
             <thing>AM_Apparel_ExpandedHeavyShield</thing>
           </li>
@@ -161,9 +167,10 @@
       <li> <!-- 2 - Repeat starts here -->
         <bossCount>1</bossCount>
         <escorts>
-          <Mech_Militor>7</Mech_Militor>
-          <Mech_Pikeman>2</Mech_Pikeman>
-          <Mech_Tesseron>1</Mech_Tesseron>
+          <AM_Phalanx>3</AM_Phalanx>
+		  <AM_Fireworm>2</AM_Fireworm>
+          <AM_Mech_Lux>2</AM_Mech_Lux>
+          <Mech_CentipedeBurner>3</Mech_CentipedeBurner>
         </escorts>
         <bossApparel>
           <li>
@@ -174,9 +181,9 @@
       <li> <!-- 3 -->
         <bossCount>2</bossCount>
         <escorts>
-          <Mech_Militor>10</Mech_Militor>
-          <Mech_Legionary>3</Mech_Legionary>
-          <Mech_Centurion>1</Mech_Centurion>
+          <AM_Mech_Munifex>8</AM_Mech_Munifex>
+          <Mech_Lancer>4</Mech_Lancer>
+          <AM_Goliath>2</AM_Goliath>
         </escorts>
         <bossApparel>
           <li>
@@ -187,9 +194,10 @@
       <li> <!-- 4 -->
         <bossCount>2</bossCount>
         <escorts>
-          <Mech_Militor>10</Mech_Militor>
-          <Mech_Scyther>5</Mech_Scyther>
-          <Mech_CentipedeGunner>3</Mech_CentipedeGunner>
+          <Mech_Pikeman>5</Mech_Pikeman>
+          <AM_Mech_Munifex>5</AM_Mech_Munifex>
+          <Mech_Legionary>3</Mech_Legionary>
+          <AM_Siegebreaker>3</AM_Siegebreaker>
         </escorts>
         <bossApparel>
           <li>
@@ -200,9 +208,9 @@
       <li> <!-- 5 -->
         <bossCount>2</bossCount>
         <escorts>
-          <Mech_Militor>15</Mech_Militor>
-          <Mech_Pikeman>8</Mech_Pikeman>
-          <Mech_CentipedeGunner>4</Mech_CentipedeGunner>
+          <AM_Aura>8</AM_Aura>
+		  <AM_Daggersnout>8</AM_Daggersnout>
+          <AM_Siegebreaker>4</AM_Siegebreaker>
           <Mech_Centurion>1</Mech_Centurion>
         </escorts>
         <bossApparel>
@@ -214,9 +222,9 @@
       <li> <!-- 6 -->
         <bossCount>2</bossCount>
         <escorts>
-          <Mech_Militor>15</Mech_Militor>
-          <Mech_Lancer>10</Mech_Lancer>
-          <Mech_CentipedeGunner>5</Mech_CentipedeGunner>
+          <AM_Starfire>2</AM_Starfire>
+          <Mech_Scorcher>10</Mech_Scorcher>
+		  <AM_Mech_Legate>1</AM_Mech_Legate>
         </escorts>
         <bossApparel>
           <li>
@@ -227,10 +235,12 @@
       <li> <!-- 7 -->
         <bossCount>3</bossCount>
         <escorts>
-          <Mech_Militor>15</Mech_Militor>
-          <Mech_Tesseron>10</Mech_Tesseron>
-          <Mech_CentipedeGunner>6</Mech_CentipedeGunner>
+          <AM_Aura>6</AM_Aura>
+          <Mech_Lancer>6</Mech_Lancer>
+          <Mech_Legionary>3</Mech_Legionary>
+          <AM_Fireworm>6</AM_Fireworm>
           <Mech_Centurion>1</Mech_Centurion>
+		  <AM_Mech_Legate>2</AM_Mech_Legate>
         </escorts>
         <bossApparel>
           <li>
@@ -252,14 +262,14 @@
   <BossgroupDef ParentName="BaseBossgroup">
     <defName>AM_BossGroupDefApoptosis</defName>
     <boss>AM_BossDefApoptosis</boss>
-    <waves>
+     <waves>
       <li> <!-- 0 -->
         <bossCount>1</bossCount>
         <escorts>
-          <AM_Mech_Munifex>2</AM_Mech_Munifex>
-		  <AM_Goliath>1</AM_Goliath>
+          <Mech_Militor>6</Mech_Militor>
+          <AM_Aura>5</AM_Aura>
         </escorts>
-		 <bossApparel>
+        <bossApparel>
           <li>
             <thing>AM_Apparel_ExpandedHeavyShield</thing>
           </li>
@@ -268,10 +278,12 @@
       <li> <!-- 1 -->
         <bossCount>1</bossCount>
         <escorts>
-          <Mech_Militor>4</Mech_Militor>
-          <Mech_Pikeman>2</Mech_Pikeman>
+          <AM_Starfire>2</AM_Starfire>
+          <Mech_Scyther>4</Mech_Scyther>
+          <Mech_Tesseron>4</Mech_Tesseron>
+		  <AM_Fireworm>3</AM_Fireworm>
         </escorts>
-		 <bossApparel>
+        <bossApparel>
           <li>
             <thing>AM_Apparel_ExpandedHeavyShield</thing>
           </li>
@@ -280,9 +292,10 @@
       <li> <!-- 2 - Repeat starts here -->
         <bossCount>1</bossCount>
         <escorts>
-          <Mech_Militor>7</Mech_Militor>
-          <Mech_Pikeman>2</Mech_Pikeman>
-          <Mech_Tesseron>1</Mech_Tesseron>
+          <Mech_Militor>10</Mech_Militor>
+          <Mech_Scyther>3</Mech_Scyther>
+		  <AM_Aura>3</AM_Aura>
+          <AM_Infernus>1</AM_Infernus>
         </escorts>
         <bossApparel>
           <li>
@@ -291,11 +304,11 @@
         </bossApparel>
       </li>
       <li> <!-- 3 -->
-        <bossCount>2</bossCount>
+        <bossCount>1</bossCount>
         <escorts>
           <Mech_Militor>10</Mech_Militor>
-          <Mech_Legionary>3</Mech_Legionary>
-          <Mech_Centurion>1</Mech_Centurion>
+          <Mech_Tunneler>2</Mech_Tunneler>
+          <AM_Infernus>2</AM_Infernus>
         </escorts>
         <bossApparel>
           <li>
@@ -304,11 +317,13 @@
         </bossApparel>
       </li>
       <li> <!-- 4 -->
-        <bossCount>2</bossCount>
+        <bossCount>1</bossCount>
         <escorts>
           <Mech_Militor>10</Mech_Militor>
-          <Mech_Scyther>5</Mech_Scyther>
-          <Mech_CentipedeGunner>3</Mech_CentipedeGunner>
+          <AM_Mech_Munifex>1</AM_Mech_Munifex>
+          <AM_Phalanx>2</AM_Phalanx>
+          <AM_Infernus>1</AM_Infernus>
+          <Mech_Centurion>1</Mech_Centurion>
         </escorts>
         <bossApparel>
           <li>
@@ -317,12 +332,14 @@
         </bossApparel>
       </li>
       <li> <!-- 5 -->
-        <bossCount>2</bossCount>
+        <bossCount>1</bossCount>
         <escorts>
-          <Mech_Militor>15</Mech_Militor>
-          <Mech_Pikeman>8</Mech_Pikeman>
-          <Mech_CentipedeGunner>4</Mech_CentipedeGunner>
-          <Mech_Centurion>1</Mech_Centurion>
+          <Mech_Militor>10</Mech_Militor>
+          <Mech_Scyther>5</Mech_Scyther>
+          <AM_Goliath>2</AM_Goliath>
+          <Mech_Diabolus>2</Mech_Diabolus>
+		  <AM_Infernus>1</AM_Infernus>
+          <AM_Mech_Legate>1</AM_Mech_Legate>
         </escorts>
         <bossApparel>
           <li>
@@ -331,11 +348,13 @@
         </bossApparel>
       </li>
       <li> <!-- 6 -->
-        <bossCount>2</bossCount>
+        <bossCount>1</bossCount>
         <escorts>
-          <Mech_Militor>15</Mech_Militor>
+          <Mech_Militor>12</Mech_Militor>
           <Mech_Lancer>10</Mech_Lancer>
-          <Mech_CentipedeGunner>5</Mech_CentipedeGunner>
+          <Mech_Tunneler>5</Mech_Tunneler>
+          <Mech_CentipedeBlaster>4</Mech_CentipedeBlaster>
+          <AM_WarEmpress>1</AM_WarEmpress>
         </escorts>
         <bossApparel>
           <li>
@@ -344,12 +363,13 @@
         </bossApparel>
       </li>
       <li> <!-- 7 -->
-        <bossCount>3</bossCount>
+        <bossCount>1</bossCount>
         <escorts>
           <Mech_Militor>15</Mech_Militor>
-          <Mech_Tesseron>10</Mech_Tesseron>
-          <Mech_CentipedeGunner>6</Mech_CentipedeGunner>
-          <Mech_Centurion>1</Mech_Centurion>
+          <Mech_Scyther>10</Mech_Scyther>
+          <Mech_CentipedeBlaster>8</Mech_CentipedeBlaster>
+          <AM_Infernus>1</AM_Infernus>
+          <AM_WarEmpress>1</AM_WarEmpress>
         </escorts>
         <bossApparel>
           <li>
