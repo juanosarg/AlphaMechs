@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="VFE_MechanoidWalker">
+		<defName>VFE_Mech_Aura</defName>
+		<label>aura</label>
+		<description>The Aura, also known as Avenging Angels, are angel-shaped mechanoids surrounded by a whirling cloud of six levitating metallic blades. They favour close combat, approaching their victims and engulfing them in an eviscerating whirlwind of slashing death. They also have the ability to regenerate their wounds with fast acting mechanites. This particular unit appears to be freshly manufactured and will operate more robustly.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Auras don't have much health, but they will regenerate damage quite fast. If toggled to not spawn via mod options, they will get replaced by a Scyther.</description>
+		<tools>
+			<li>
+				<label>wing blade</label>
+				<capacities>
+					<li>Cut</li>
+					<li>Stab</li>
+				</capacities>
+				<power>23</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>AM_WingBlades</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="AlphaMechs.CompProperties_ChangeDef">
+				<factionToChangeTo>VFE_Mechanoid</factionToChangeTo>
+				<defToChangeTo>VFE_Mech_Scyther</defToChangeTo>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Regeneration">
+				<rateInTicks>30</rateInTicks>
+			</li>
+		</comps>
+		<race>
+			<body>AM_AuraBody</body>
+			<baseHealthScale>1.5</baseHealthScale>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+	<PawnKindDef ParentName="VFE_MechanoidKind">
+		<defName>VFE_Mech_Aura</defName>
+		<label>aura</label>
+		<race>VFE_Mech_Aura</race>
+		<combatPower>200</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_MechAura/AM_MechAuraClean</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2.6</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>0~0</weaponMoney>
+		<defendPointRadius>0</defendPointRadius>
+	</PawnKindDef>
+</Defs>

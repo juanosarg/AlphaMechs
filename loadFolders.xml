@@ -14,6 +14,8 @@
 		<li IfModActive="VanillaExpanded.VBooksE_copy">1.4/Mods/VanillaBooksExpanded</li>
 		<li IfModActive="vanillaracesexpanded.sanguophage">1.4/Mods/VanillaRacesExpandedSanguophage</li>	
 		<li IfModActive="vanillaracesexpanded.sanguophage_copy">1.4/Mods/VanillaRacesExpandedSanguophage</li>
+		<li IfModActive="OskarPotocki.VFE.Mechanoid">1.4/Mods/VanillaMechanoidsExpanded</li>	
+		<li IfModActive="OskarPotocki.VFE.Mechanoid_copy">1.4/Mods/VanillaMechanoidsExpanded</li>
 		<li IfModActive="Ludeon.RimWorld.Biotech">1.4/Mods/Biotech</li>	
 	</v1.4>
 </loadFolders>

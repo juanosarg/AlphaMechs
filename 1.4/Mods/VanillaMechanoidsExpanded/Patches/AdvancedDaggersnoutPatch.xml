@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="BaseMechanoidWalker">
+					<defName>VFE_Mech_Advanced_Daggersnout_PlayerControlled</defName>
+					<label>eviscerator</label>
+					<description>The eviscerator is a more advanced version of the daggersnout, an insectlike combat mechanoid armed with a vicious sharp blade on its head. It isn't as dangerous as other close-ranged mechanoids, such as scythers, but they usually appear in greater numbers.</description>
+					<statBases>
+						<BandwidthCost>2</BandwidthCost>
+					</statBases>
+					<tools>
+						<li>
+							<label>snout blade</label>
+							<capacities>
+								<li>Cut</li>
+								<li>Stab</li>
+							</capacities>
+							<power>9</power>
+							<cooldownTime>1</cooldownTime>
+							<linkedBodyPartsGroup>AM_NoseBlade</linkedBodyPartsGroup>
+							<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						</li>
+						<li>
+							<label>head</label>
+							<capacities>
+								<li>Blunt</li>
+							</capacities>
+							<power>3</power>
+							<cooldownTime>2</cooldownTime>
+							<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+							<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+							<chanceFactor>0.2</chanceFactor>
+						</li>
+					</tools>
+					<race>
+						<body>AM_DaggerSnoutBody</body>
+						<baseHealthScale>1</baseHealthScale>
+						<soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+						<soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+						<soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+						<mechWeightClass>Light</mechWeightClass>
+					</race>
+				</ThingDef>
+				<PawnKindDef ParentName="BaseMechanoidKind">
+					<defName>VFE_Mech_Advanced_Daggersnout_PlayerControlled</defName>
+					<label>eviscerator</label>
+					<race>VFE_Mech_Advanced_Daggersnout_PlayerControlled</race>
+					<combatPower>115</combatPower>
+					<allowInMechClusters>false</allowInMechClusters>
+					<isFighter>false</isFighter>
+					<lifeStages>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechEviscerator/AM_MechEviscerator</texPath>
+								<graphicClass>Graphic_Multi</graphicClass>
+								<drawSize>2.5</drawSize>
+								<shadowData>
+									<volume>(0.4, 0.8, 0.4)</volume>
+								</shadowData>
+							</bodyGraphicData>
+						</li>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechEviscerator/AM_MechEviscerator</texPath>
+								<graphicClass>Graphic_Multi</graphicClass>
+								<drawSize>2.5</drawSize>
+								<shadowData>
+									<volume>(0.4, 0.8, 0.4)</volume>
+								</shadowData>
+							</bodyGraphicData>
+						</li>
+					</lifeStages>
+					<weaponMoney>0~0</weaponMoney>
+					<defendPointRadius>0</defendPointRadius>
+					<weaponTags/>
+				</PawnKindDef>
+				<RecipeDef ParentName="AM_MediumMechanoidRecipe">
+					<defName>AM_EvisceratorRecipe</defName>
+					<label>gestate eviscerator</label>
+					<researchPrerequisite>AM_AlphaHardwareUpgrade</researchPrerequisite>
+					<description>Gestate an eviscerator mechanoid.</description>
+					<ingredients Inherit="False">
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Steel</li>
+								</thingDefs>
+							</filter>
+							<count>75</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Plasteel</li>
+								</thingDefs>
+							</filter>
+							<count>50</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>3</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>VFE_ComponentMechanoid</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>SubcoreBasic</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<products>
+						<VFE_Mech_Advanced_Daggersnout_PlayerControlled>1</VFE_Mech_Advanced_Daggersnout_PlayerControlled>
+					</products>
+					<descriptionHyperlinks>
+						<ThingDef>VFE_Mech_Advanced_Daggersnout_PlayerControlled</ThingDef>
+					</descriptionHyperlinks>
+				</RecipeDef>
+			</value>
+		</match>
+	</Operation>
+</Patch>

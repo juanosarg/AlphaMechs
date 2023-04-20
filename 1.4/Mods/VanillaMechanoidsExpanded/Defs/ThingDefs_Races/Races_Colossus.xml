@@ -1,19 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-
-	<ThingDef ParentName="BaseMechanoid">
-		<defName>AM_Goliath</defName>
-		<label>goliath</label>
-		<description>The Goliath is a heavy combat mechanoid with a humanoid body plan. They are faster than centipedes, and are usually armed with heavy mechanoid weapons or needle guns.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Faster than a centipede, but weaker due to their weaker weapons. If toggled to not spawn via mod options, they will get replaced by a Centipede Gunner.</description>
+	<ThingDef ParentName="VFE_AdvancedMechanoid">
+		<defName>VFE_Mech_Advanced_Goliath</defName>
+		<label>colossus</label>
+		<description>The Colossus is an advanced version of the Goliath, a heavy combat mechanoid with a humanoid body plan. They are faster than centipedes, and are usually armed with heavy mechanoid weapons or needle guns. Unlike their more ancient and less advanced relatives this particular unit is much more intelligent and will seek cover and prove to be a much more challenging opponent in melee combat.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; If toggled to not spawn via mod options, they will get replaced by an Advanced Centipede.</description>
 		<statBases>
 			<MoveSpeed>2.5</MoveSpeed>
 			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
 			<PsychicSensitivity>0.75</PsychicSensitivity>
-			<BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost>
-			<MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.2</MechEnergyLossPerHP>
 		</statBases>
 		<tools>
 			<li>
@@ -29,8 +24,8 @@
 		</tools>
 		<comps>
 			<li Class="AlphaMechs.CompProperties_ChangeDef">
-				<factionToChangeTo>Mechanoid</factionToChangeTo>
-				<defToChangeTo>Mech_CentipedeBlaster</defToChangeTo>
+				<defToChangeTo>VFE_Mech_AdvancedCentipede</defToChangeTo>
+				<factionToChangeTo>VFE_Mechanoid</factionToChangeTo>
 			</li>
 		</comps>
 		<race>
@@ -47,19 +42,11 @@
 					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
 					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
 				</li>
-				<li MayRequire="Ludeon.RimWorld.Biotech">
-					<def>MechanoidFullyFormed</def>
-					<minAge>100</minAge>
-					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
-					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
-					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
-				</li>
 			</lifeStageAges>
 			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>
 			<soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
-			 <mechWeightClass>Heavy</mechWeightClass>
 		</race>
 		<butcherProducts>
 			<Steel>50</Steel>
@@ -67,31 +54,15 @@
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</butcherProducts>
 	</ThingDef>
-
-	<PawnKindDef ParentName="BaseMechanoidKind">
-		<defName>AM_Goliath</defName>
-		<label>goliath</label>
-		<race>AM_Goliath</race>
+	<PawnKindDef ParentName="VFE_AdvancedMechanoidKind">
+		<defName>VFE_Mech_Advanced_Goliath</defName>
+		<label>colossus</label>
+		<race>VFE_Mech_Advanced_Goliath</race>
 		<combatPower>400</combatPower>
 		<lifeStages>
-			
-			<li MayRequire="Ludeon.Rimworld.Biotech">
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Mechanoid/AM_MechGoliath/AM_MechGoliathClean</texPath>
-					<maskPath>Things/Pawn/Mechanoid/AM_MechGoliath/AllegianceOverlays/AM_MechGoliathOverlay</maskPath>
-					<shaderType>CutoutWithOverlay</shaderType>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>4</drawSize>
-					<shadowData>
-						<volume>(0.6, 0.8, 0.6)</volume>
-					</shadowData>
-				</bodyGraphicData>
-			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Mechanoid/AM_MechGoliath/AM_MechGoliath</texPath>
-					<maskPath>Things/Pawn/Mechanoid/AM_MechGoliath/AllegianceOverlays/AM_MechGoliathOverlay</maskPath>
-					<shaderType>CutoutWithOverlay</shaderType>
+					<texPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechColossus/AM_MechColossus</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>4</drawSize>
 					<shadowData>
@@ -106,8 +77,4 @@
 			<li>AM_Gun_GoliathNeedle</li>
 		</weaponTags>
 	</PawnKindDef>
-
-
-
-
 </Defs>

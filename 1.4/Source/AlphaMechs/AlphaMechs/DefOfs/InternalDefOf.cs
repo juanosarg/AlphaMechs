@@ -16,6 +16,13 @@ namespace AlphaMechs
         public static ThingDef AM_Siegebreaker;
         public static ThingDef AM_Demolisher;
 
+        [MayRequire("OskarPotocki.VFE.Mechanoid")]
+        public static ThingDef VFE_Mech_Aura;
+        [MayRequire("OskarPotocki.VFE.Mechanoid")]
+        public static ThingDef VFE_Mech_Advanced_Aura;
+
+
+
         [MayRequireBiotech]
         public static ThingDef AM_Mech_Legate;
         [MayRequireBiotech]
@@ -30,8 +37,6 @@ namespace AlphaMechs
         public static ThingDef AM_Bullet_Starfire_Secondary;
         [MayRequireBiotech]
         public static ThingDef AM_GreaterRecharger;
-
-        
 
         [MayRequireBiotech]
         public static ThingDef AM_GreaterBandNode;

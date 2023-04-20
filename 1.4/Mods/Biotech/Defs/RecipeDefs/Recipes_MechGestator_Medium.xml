@@ -1,333 +1,321 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <RecipeDef Name="AM_MediumMechanoidRecipe" ParentName="MediumMechanoidRecipe" Abstract="True">
-    
-    <researchPrerequisite>AM_StandardMechtech</researchPrerequisite>
-  </RecipeDef>
-
-  <RecipeDef ParentName="AM_MediumMechanoidRecipe">
-    <defName>AM_AuraRecipe</defName>
-    <label>gestate aura</label>
-    <description>Gestate an aura mechanoid.</description>
-    <ingredients Inherit="False">
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>150</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Plasteel</li>
-          </thingDefs>
-        </filter>
-        <count>100</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>6</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>SubcoreRegular</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <products>
-      <AM_Aura>1</AM_Aura>
-    </products>
-    <descriptionHyperlinks>
-      <ThingDef>AM_Aura</ThingDef>
-    </descriptionHyperlinks>
-  </RecipeDef>
-
-  <RecipeDef ParentName="AM_MediumMechanoidRecipe">
-    <defName>AM_LuxRecipe</defName>
-    <label>gestate lux</label>
-    <description>Gestate a lux mechanoid.</description>
-    <ingredients Inherit="False">
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>150</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Plasteel</li>
-          </thingDefs>
-        </filter>
-        <count>100</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>4</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>SubcoreHigh</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <products>
-      <AM_Mech_Lux>1</AM_Mech_Lux>
-    </products>
-    <descriptionHyperlinks>
-      <ThingDef>AM_Mech_Lux</ThingDef>
-    </descriptionHyperlinks>
-  </RecipeDef>
-  
-   <RecipeDef ParentName="AM_MediumMechanoidRecipe">
-    <defName>AM_MunifexRecipe</defName>
-    <label>gestate munifex</label>
-    <description>Gestate a munifex mechanoid.</description>
-    <ingredients Inherit="False">
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>125</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Plasteel</li>
-          </thingDefs>
-        </filter>
-        <count>175</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>5</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>SubcoreHigh</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <products>
-      <AM_Mech_Munifex>1</AM_Mech_Munifex>
-    </products>
-    <descriptionHyperlinks>
-      <ThingDef>AM_Mech_Munifex</ThingDef>
-    </descriptionHyperlinks>
-  </RecipeDef>
-  
-   <RecipeDef ParentName="AM_MediumMechanoidRecipe">
-    <defName>AM_Mech_SagittariusRecipe</defName>
-    <label>gestate sagittarius</label>
-    <description>Gestate a sagittarius mechanoid.</description>
-    <ingredients Inherit="False">
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>175</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Plasteel</li>
-          </thingDefs>
-        </filter>
-        <count>175</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>7</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>SubcoreHigh</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <products>
-      <AM_Mech_Sagittarius>1</AM_Mech_Sagittarius>
-    </products>
-    <descriptionHyperlinks>
-      <ThingDef>AM_Mech_Sagittarius</ThingDef>
-    </descriptionHyperlinks>
-  </RecipeDef>
-  
-   <RecipeDef ParentName="AM_MediumMechanoidRecipe">
-    <defName>AM_PristineStriderRecipe</defName>
-    <label>gestate pristine strider</label>
-    <description>Gestate a pristine strider mechanoid.</description>
-    <ingredients Inherit="False">
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>220</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Plasteel</li>
-          </thingDefs>
-        </filter>
-        <count>220</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>2</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>SubcoreRegular</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <products>
-      <AM_PristineStrider>1</AM_PristineStrider>
-    </products>
-    <descriptionHyperlinks>
-      <ThingDef>AM_PristineStrider</ThingDef>
-    </descriptionHyperlinks>
-  </RecipeDef>
-  
-  <RecipeDef ParentName="AM_MediumMechanoidRecipe">
-    <defName>AM_PristineAssemblerRecipe</defName>
-    <label>gestate pristine assembler</label>
-    <description>Gestate a pristine assembler mechanoid.</description>
-    <ingredients Inherit="False">
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>260</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Plasteel</li>
-          </thingDefs>
-        </filter>
-        <count>150</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>5</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>SubcoreRegular</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <products>
-      <AM_Mech_PristineAssembler>1</AM_Mech_PristineAssembler>
-    </products>
-    <descriptionHyperlinks>
-      <ThingDef>AM_Mech_PristineAssembler</ThingDef>
-    </descriptionHyperlinks>
-  </RecipeDef>
-  
-    <RecipeDef ParentName="AM_MediumMechanoidRecipe">
-    <defName>AM_PristineSlurrypedeRecipe</defName>
-    <label>gestate slurrypede assembler</label>
-    <description>Gestate a pristine slurrypede mechanoid.</description>
-    <ingredients Inherit="False">
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>260</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Plasteel</li>
-          </thingDefs>
-        </filter>
-        <count>250</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>4</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>SubcoreRegular</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <products>
-      <AM_Mech_PristineSlurrypede>1</AM_Mech_PristineSlurrypede>
-    </products>
-    <descriptionHyperlinks>
-      <ThingDef>AM_Mech_PristineSlurrypede</ThingDef>
-    </descriptionHyperlinks>
-  </RecipeDef>
-
- 
-
+	<RecipeDef Name="AM_MediumMechanoidRecipe" ParentName="MediumMechanoidRecipe" Abstract="True">
+		<researchPrerequisite>AM_StandardMechtech</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="AM_MediumMechanoidRecipe">
+		<defName>AM_AuraRecipe</defName>
+		<label>gestate aura</label>
+		<description>Gestate an aura mechanoid.</description>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>150</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreRegular</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<AM_Aura>1</AM_Aura>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>AM_Aura</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+	<RecipeDef ParentName="AM_MediumMechanoidRecipe">
+		<defName>AM_LuxRecipe</defName>
+		<label>gestate lux</label>
+		<description>Gestate a lux mechanoid.</description>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>150</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreHigh</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<AM_Mech_Lux>1</AM_Mech_Lux>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>AM_Mech_Lux</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+	<RecipeDef ParentName="AM_MediumMechanoidRecipe">
+		<defName>AM_MunifexRecipe</defName>
+		<label>gestate munifex</label>
+		<description>Gestate a munifex mechanoid.</description>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>125</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>175</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreHigh</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<AM_Mech_Munifex>1</AM_Mech_Munifex>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>AM_Mech_Munifex</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+	<RecipeDef ParentName="AM_MediumMechanoidRecipe">
+		<defName>AM_Mech_SagittariusRecipe</defName>
+		<label>gestate sagittarius</label>
+		<description>Gestate a sagittarius mechanoid.</description>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>175</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>175</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>7</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreHigh</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<AM_Mech_Sagittarius>1</AM_Mech_Sagittarius>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>AM_Mech_Sagittarius</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+	<RecipeDef ParentName="AM_MediumMechanoidRecipe">
+		<defName>AM_PristineStriderRecipe</defName>
+		<label>gestate pristine strider</label>
+		<description>Gestate a pristine strider mechanoid.</description>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>220</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>220</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreRegular</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<AM_PristineStrider>1</AM_PristineStrider>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>AM_PristineStrider</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+	<RecipeDef ParentName="AM_MediumMechanoidRecipe">
+		<defName>AM_PristineAssemblerRecipe</defName>
+		<label>gestate pristine assembler</label>
+		<description>Gestate a pristine assembler mechanoid.</description>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>260</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>150</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreRegular</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<AM_Mech_PristineAssembler>1</AM_Mech_PristineAssembler>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>AM_Mech_PristineAssembler</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+	<RecipeDef ParentName="AM_MediumMechanoidRecipe">
+		<defName>AM_PristineSlurrypedeRecipe</defName>
+		<label>gestate pristine slurrypede</label>
+		<description>Gestate a pristine slurrypede mechanoid.</description>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>260</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>250</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreRegular</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<AM_Mech_PristineSlurrypede>1</AM_Mech_PristineSlurrypede>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>AM_Mech_PristineSlurrypede</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
 </Defs>

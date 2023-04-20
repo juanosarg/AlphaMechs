@@ -12,7 +12,7 @@ namespace AlphaMechs
     {
         public int tickCounter = 0;
 
-
+        public List<ThingDef> auraList = new List<ThingDef>() { InternalDefOf.AM_Aura,InternalDefOf.VFE_Mech_Aura,InternalDefOf.VFE_Mech_Advanced_Aura};
 
         public CompProperties_ChangeDef Props
         {
@@ -79,7 +79,7 @@ namespace AlphaMechs
 
         public bool IsMechToggled()
         {
-            if (parent.def == InternalDefOf.AM_Aura)
+            if (auraList.Contains(parent.def))
             {
                 return AlphaMechs_Settings.flagAura;
             } else if (parent.def == InternalDefOf.AM_Daggersnout)

@@ -26,6 +26,7 @@
 		<li>Ludeon.RimWorld.Ideology</li>
 		<li>brrainz.harmony</li>
         <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>OskarPotocki.VFE.Mechanoid</li>
 		
 	</loadAfter>
 	<author>Sarg Bjornson</author>
