@@ -5,7 +5,7 @@
 
   <RecipeDef Name="AM_LightMechanoidRecipe" ParentName="LightMechanoidRecipe" Abstract="True">
     <researchPrerequisite>AM_WorkerStandardMechtech</researchPrerequisite>
-   
+   <recipeUsers><li>MechGestator</li></recipeUsers>
   </RecipeDef>
 
  <RecipeDef ParentName="AM_LightMechanoidRecipe">

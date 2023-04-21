@@ -58,6 +58,8 @@
 						<li>
 							<bodyGraphicData>
 								<texPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechEviscerator/AM_MechEviscerator</texPath>
+								<maskPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechEviscerator/AllegianceOverlays/AM_MechEviscerator_Overlay</maskPath>
+								<shaderType>CutoutWithOverlay</shaderType>
 								<graphicClass>Graphic_Multi</graphicClass>
 								<drawSize>2.5</drawSize>
 								<shadowData>
@@ -68,6 +70,8 @@
 						<li>
 							<bodyGraphicData>
 								<texPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechEviscerator/AM_MechEviscerator</texPath>
+								<maskPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechEviscerator/AllegianceOverlays/AM_MechEviscerator_Overlay</maskPath>
+								<shaderType>CutoutWithOverlay</shaderType>
 								<graphicClass>Graphic_Multi</graphicClass>
 								<drawSize>2.5</drawSize>
 								<shadowData>

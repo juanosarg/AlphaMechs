@@ -2,6 +2,7 @@
 <Defs>
 	<RecipeDef Name="AM_MediumMechanoidRecipe" ParentName="MediumMechanoidRecipe" Abstract="True">
 		<researchPrerequisite>AM_StandardMechtech</researchPrerequisite>
+		<recipeUsers><li>LargeMechGestator</li></recipeUsers>
 	</RecipeDef>
 	<RecipeDef ParentName="AM_MediumMechanoidRecipe">
 		<defName>AM_AuraRecipe</defName>

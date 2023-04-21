@@ -4,7 +4,7 @@
 	<ThingDef ParentName="SuperHeavyMechanoid">
 		<defName>AM_Infernus</defName>
 		<label>infernus</label>
-		<description>An ultra-heavy mechanoid with an incredibly dangerous orbital strike targetter. The targetter won't cause any damage on its own, but a devastating orbital strike will be launched a few seconds after it finishes focusing on a target. This attack takes a long time to charge, and it has a large minimum range. The Infernus accumulates heat constantly due to its enormous size, and it can release it to ignite flammable objects nearby.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Seriously, don't let this thing fire...</description>
+		<description>An ultra-heavy mechanoid with an incredibly dangerous orbital strike targeter. The targeter won't cause any damage on its own, but a devastating orbital strike will be launched a few seconds after it finishes focusing on a target. This attack takes a long time to charge, and it has a large minimum range. The Infernus accumulates heat constantly due to its enormous size, and it can release it to ignite flammable objects nearby.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Seriously, don't let this thing fire...</description>
 		<race>
 			<body>Mech_Diabolus</body>
 			<baseBodySize>4</baseBodySize>

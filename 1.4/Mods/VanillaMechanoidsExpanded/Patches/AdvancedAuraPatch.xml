@@ -63,6 +63,8 @@
 						<li>
 							<bodyGraphicData>
 								<texPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechDominion/AM_MechDominion</texPath>
+								<maskPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechDominion/AllegianceOverlays/AM_MechDominion_Overlay</maskPath>
+								<shaderType>CutoutWithOverlay</shaderType>
 								<graphicClass>Graphic_Multi</graphicClass>
 								<drawSize>2.6</drawSize>
 								<shadowData>
@@ -73,6 +75,8 @@
 						<li>
 							<bodyGraphicData>
 								<texPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechDominion/AM_MechDominion</texPath>
+								<maskPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechDominion/AllegianceOverlays/AM_MechDominion_Overlay</maskPath>
+								<shaderType>CutoutWithOverlay</shaderType>
 								<graphicClass>Graphic_Multi</graphicClass>
 								<drawSize>2.6</drawSize>
 								<shadowData>

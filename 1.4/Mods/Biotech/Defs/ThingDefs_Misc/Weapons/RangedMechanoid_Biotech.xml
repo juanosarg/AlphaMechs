@@ -3,7 +3,7 @@
 	<!-- Orbital strike targetter -->
 	<ThingDef ParentName="BaseGun">
 		<defName>AM_Gun_HellsphereOrbital</defName>
-		<label>orbital strike targetter</label>
+		<label>orbital strike targeter</label>
 		<description>A targetting beam that will select a certain position in the ground for a strike from an orbital missile platform. Very, very slow to select its targets, but with a significant area of effect.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
@@ -70,7 +70,7 @@
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>AM_Bullet_HellsphereCannonGun</defName>
-		<label>hellsphere cannon shot</label>
+		<label>orbital targeter</label>
 		<thingClass>AlphaMechs.Projectile_Bombardment</thingClass>
 		<graphicData>
 			<texPath>UI/Invisible</texPath>
@@ -520,7 +520,7 @@
 	<!-- Siegemelter firethrower -->
 	<ThingDef ParentName="BaseGun">
 		<defName>AM_SiegemelterTurret</defName>
-		<label>siegemelter firethrower</label>
+		<label>siegemelter flamethrower</label>
 		<description>A gigantic flamethrower mounted on top of a siegebreaker chassis. Its fire reaches incredibly high temperatures.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
@@ -596,7 +596,7 @@
 		<projectile>
 			<damageDef>Flame</damageDef>		
 			<flyOverhead>false</flyOverhead>
-			<damageAmountBase>30</damageAmountBase>
+			<damageAmountBase>45</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>

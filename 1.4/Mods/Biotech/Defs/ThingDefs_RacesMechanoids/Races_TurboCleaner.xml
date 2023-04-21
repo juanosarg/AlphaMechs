@@ -4,7 +4,7 @@
 	<ThingDef ParentName="LightMechanoid">
 		<defName>AM_Mech_TurboCleaner</defName>
 		<label>turbocleaner</label>
-		<description>Basically a cleansweeper mounted on two small gyro-stabilized turbine engines. The turbocleaner hovers over terrain, using a vacuum nozzle to suction dirt and other debris. Absurdly useless in combat.</description>
+		<description>Basically a cleansweeper mounted on two small gyro-stabilized turbine engines. The turbocleaner hovers over terrain, using a vacuum nozzle to suction dirt and other debris. Absurdly useless in combat.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Hovers over terrain, ignoring terrain movement costs.</description>
 		<statBases>
 			<CleaningSpeed>0.5</CleaningSpeed>
 		</statBases>

@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BaseMechCharger">
 		<defName>AM_GreaterRecharger</defName>
 		<label>voidlink mech recharger</label>
-		<description>A large mech recharger that acts as a relay for the mechanoid voidlink network orbitting this planet's Sun. This network downloads necessary data to properly recharge ultra-complex mechanoids such as the Infernus, Apoptosis or War Empress. It can also recharge Ultra Heavy mechs. During recharge, this recharger produces toxic wastepacks and stores them internally. Haulers must remove the wastepacks from time to time.</description>
+		<description>A large mech recharger that acts as a relay for the mechanoid voidlink network orbiting this planet's Sun. This network downloads necessary data to properly recharge ultra-complex mechanoids such as the Infernus, Apoptosis, War Empress or Starfire. It can also recharge Ultra Heavy mechs. During recharge, this recharger produces toxic wastepacks and stores them internally. Haulers must remove the wastepacks from time to time.</description>
 		<graphicData>
 			<texPath>Things/Building/AM_GreaterRecharger</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>

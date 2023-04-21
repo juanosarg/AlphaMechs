@@ -76,6 +76,8 @@
 						<li MayRequire="Ludeon.Rimworld.Biotech">
 							<bodyGraphicData>
 								<texPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechHoplite/AM_MechHoplite</texPath>
+								<maskPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechHoplite/AllegianceOverlays/AM_MechHoplite_Overlay</maskPath>
+								<shaderType>CutoutWithOverlay</shaderType>
 								<graphicClass>Graphic_Multi</graphicClass>
 								<drawSize>4</drawSize>
 								<shadowData>
@@ -86,6 +88,8 @@
 						<li>
 							<bodyGraphicData>
 								<texPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechHoplite/AM_MechHoplite</texPath>
+								<maskPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechHoplite/AllegianceOverlays/AM_MechHoplite_Overlay</maskPath>
+								<shaderType>CutoutWithOverlay</shaderType>
 								<graphicClass>Graphic_Multi</graphicClass>
 								<drawSize>4</drawSize>
 								<shadowData>

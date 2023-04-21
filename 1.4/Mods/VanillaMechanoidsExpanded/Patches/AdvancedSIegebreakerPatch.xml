@@ -10,7 +10,7 @@
 				<ThingDef ParentName="BaseMechanoid">
 					<defName>VFE_Mech_Advanced_Siegebreaker_PlayerControlled</defName>
 					<label>siegemaster</label>
-					<description>The Siegemaster is an advanced version of the Siegebreaker, a particularly dangerous tank-shaped mechanoid. Armed with a Siegebreaker Cannon that fires explosives shells, they can detect a hostile presence from hundreds of meters away, acting as unrelenting siege weapons that can obliterate even the strongest defense. Their movement is incredibly slow, and their cannon takes a very long time to recharge, but they should be treated as priority targets in most cases.</description>
+					<description>The Siegemaster is an advanced version of the Siegebreaker, a particularly dangerous tank-shaped mechanoid. Armed with a Siegebreaker Cannon that fires explosive shells, they can detect a hostile presence from hundreds of meters away, acting as unrelenting siege weapons that can obliterate even the strongest defense. Their movement is incredibly slow, and their cannon takes a very long time to recharge, but they should be treated as priority targets in most cases.</description>
 					<statBases>
 						<MoveSpeed>1.5</MoveSpeed>
 						<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
@@ -76,6 +76,8 @@
 						<li>
 							<bodyGraphicData>
 								<texPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechSiegemaster/AM_MechSiegemaster</texPath>
+								<maskPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechSiegemaster/AllegianceOverlays/AM_MechSiegemaster_Overlay</maskPath>
+								<shaderType>CutoutWithOverlay</shaderType>
 								<graphicClass>Graphic_Multi</graphicClass>
 								<drawSize>3.5</drawSize>
 								<shadowData>
@@ -86,6 +88,8 @@
 						<li>
 							<bodyGraphicData>
 								<texPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechSiegemaster/AM_MechSiegemaster</texPath>
+								<maskPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechSiegemaster/AllegianceOverlays/AM_MechSiegemaster_Overlay</maskPath>
+								<shaderType>CutoutWithOverlay</shaderType>
 								<graphicClass>Graphic_Multi</graphicClass>
 								<drawSize>3.5</drawSize>
 								<shadowData>

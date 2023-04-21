@@ -209,7 +209,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>AM_GreaterBandNode</defName>
 		<label>beamcaster band node</label>
-		<description>A mechanoid-band signal amplifier. Band nodes must be tuned to a specific mechanitor. This will add 1 bandwidth to that mechanitor's total bandwidth, allowing them to control more mechanoids.\n\nOnce a band node is constructed, it can be quickly tuned to a mechanitor. However, retuning a band node to a different mechanitor takes significantly longer.</description>
+		<description>A mechanoid-band signal amplifier. Band nodes must be tuned to a specific mechanitor. This will add 2 bandwidth to that mechanitor's total bandwidth, allowing them to control more mechanoids.\n\nOnce a band node is constructed, it can be quickly tuned to a mechanitor. However, retuning a band node to a different mechanitor takes significantly longer.</description>
 		<tickerType>Normal</tickerType>
 		<rotatable>false</rotatable>
 		<canOverlapZones>false</canOverlapZones>
@@ -464,8 +464,8 @@
 	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
 		<defName>AM_MechTargettingBooster</defName>
-		<label>mech targetting booster</label>
-		<description>A remote targetting enhancement device. Any friendly mechanoids in its effect radius will have reduced weapon cooldown.</description>
+		<label>mech targeting booster</label>
+		<description>A remote targeting enhancement device. Any friendly mechanoids in its effect radius will have reduced weapon cooldown.</description>
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType>
 		<fillPercent>0.4</fillPercent>

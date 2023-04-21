@@ -4,6 +4,7 @@
   <RecipeDef Name="AM_SuperHeavyMechanoidRecipe" ParentName="SuperHeavyMechanoidRecipe" Abstract="True">
     <gestationCycles>12</gestationCycles>
     <researchPrerequisite>AM_UltraHeavyMechtech</researchPrerequisite>
+	<recipeUsers><li>LargeMechGestator</li></recipeUsers>
   </RecipeDef>
 
   <RecipeDef ParentName="AM_SuperHeavyMechanoidRecipe">

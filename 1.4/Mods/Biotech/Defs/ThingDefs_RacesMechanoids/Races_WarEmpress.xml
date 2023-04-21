@@ -11,6 +11,7 @@
 			<EnergyShieldEnergyMax>4</EnergyShieldEnergyMax>
 			<MeleeDoorDamageFactor>2</MeleeDoorDamageFactor>
 			<EMPResistance>0.75</EMPResistance>
+			<BandwidthCost>7</BandwidthCost>
 		</statBases>
 		<race>
 			<body>Mech_Warqueen</body>

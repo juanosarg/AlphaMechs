@@ -115,8 +115,8 @@
 	
 	<HediffDef>
 		<defName>AM_TargettingMechBoost</defName>
-		<label>targetting boost</label>
-		<description>This mechanoid's targetting has been enhanced by a nearby mechanoid targetting booster building.</description>
+		<label>targeting boost</label>
+		<description>This mechanoid's targeting has been enhanced by a nearby mechanoid targeting booster building.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 		<comps>

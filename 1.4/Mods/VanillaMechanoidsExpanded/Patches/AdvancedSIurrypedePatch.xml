@@ -62,6 +62,8 @@
 						<li>
 							<bodyGraphicData>
 								<texPath>Things/Pawn/Mechanoid/AM_AdvancedSlurrypede/AM_AdvancedSlurrypede</texPath>
+								<maskPath>Things/Pawn/Mechanoid/AM_AdvancedSlurrypede/AllegianceOverlays/AM_AdvancedSlurrypede_Overlay</maskPath>
+								<shaderType>CutoutWithOverlay</shaderType>
 								<graphicClass>Graphic_Multi</graphicClass>
 								<drawSize>4.3</drawSize>
 								<shadowData>

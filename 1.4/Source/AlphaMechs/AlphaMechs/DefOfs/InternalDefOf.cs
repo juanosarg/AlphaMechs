@@ -21,7 +21,30 @@ namespace AlphaMechs
         [MayRequire("OskarPotocki.VFE.Mechanoid")]
         public static ThingDef VFE_Mech_Advanced_Aura;
 
+        [MayRequire("OskarPotocki.VFE.Mechanoid")]
+        public static ThingDef VFE_Mech_Daggersnout;
+        [MayRequire("OskarPotocki.VFE.Mechanoid")]
+        public static ThingDef VFE_Mech_Advanced_Daggersnout;
 
+        [MayRequire("OskarPotocki.VFE.Mechanoid")]
+        public static ThingDef VFE_Mech_Fireworm;
+        [MayRequire("OskarPotocki.VFE.Mechanoid")]
+        public static ThingDef VFE_Mech_Advanced_Fireworm;
+
+        [MayRequire("OskarPotocki.VFE.Mechanoid")]
+        public static ThingDef VFE_Mech_Goliath;
+        [MayRequire("OskarPotocki.VFE.Mechanoid")]
+        public static ThingDef VFE_Mech_Advanced_Goliath;
+
+        [MayRequire("OskarPotocki.VFE.Mechanoid")]
+        public static ThingDef VFE_Mech_Phalanx;
+        [MayRequire("OskarPotocki.VFE.Mechanoid")]
+        public static ThingDef VFE_Mech_Advanced_Phalanx;
+
+        [MayRequire("OskarPotocki.VFE.Mechanoid")]
+        public static ThingDef VFE_Mech_Siegebreaker;
+        [MayRequire("OskarPotocki.VFE.Mechanoid")]
+        public static ThingDef VFE_Mech_Advanced_Siegebreaker;
 
         [MayRequireBiotech]
         public static ThingDef AM_Mech_Legate;

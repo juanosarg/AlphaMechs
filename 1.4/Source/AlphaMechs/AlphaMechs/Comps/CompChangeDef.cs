@@ -13,6 +13,14 @@ namespace AlphaMechs
         public int tickCounter = 0;
 
         public List<ThingDef> auraList = new List<ThingDef>() { InternalDefOf.AM_Aura,InternalDefOf.VFE_Mech_Aura,InternalDefOf.VFE_Mech_Advanced_Aura};
+        public List<ThingDef> daggersnoutList = new List<ThingDef>() { InternalDefOf.AM_Daggersnout, InternalDefOf.VFE_Mech_Daggersnout, InternalDefOf.VFE_Mech_Advanced_Daggersnout };
+        public List<ThingDef> firewormList = new List<ThingDef>() { InternalDefOf.AM_Fireworm, InternalDefOf.VFE_Mech_Fireworm, InternalDefOf.VFE_Mech_Advanced_Fireworm };
+        public List<ThingDef> goliathList = new List<ThingDef>() { InternalDefOf.AM_Goliath, InternalDefOf.VFE_Mech_Goliath, InternalDefOf.VFE_Mech_Advanced_Goliath };
+        public List<ThingDef> phalanxList = new List<ThingDef>() { InternalDefOf.AM_Phalanx, InternalDefOf.VFE_Mech_Phalanx, InternalDefOf.VFE_Mech_Advanced_Phalanx };
+        public List<ThingDef> siegebreakerList = new List<ThingDef>() { InternalDefOf.AM_Siegebreaker, InternalDefOf.VFE_Mech_Siegebreaker, InternalDefOf.VFE_Mech_Advanced_Siegebreaker };
+
+
+
 
         public CompProperties_ChangeDef Props
         {
@@ -82,23 +90,23 @@ namespace AlphaMechs
             if (auraList.Contains(parent.def))
             {
                 return AlphaMechs_Settings.flagAura;
-            } else if (parent.def == InternalDefOf.AM_Daggersnout)
+            } else if (daggersnoutList.Contains(parent.def))
             {
                 return AlphaMechs_Settings.flagDaggersnout;
             }
-            else if (parent.def == InternalDefOf.AM_Fireworm)
+            else if (firewormList.Contains(parent.def))
             {
                 return AlphaMechs_Settings.flagFireworm;
             }
-            else if (parent.def == InternalDefOf.AM_Goliath)
+            else if (goliathList.Contains(parent.def))
             {
                 return AlphaMechs_Settings.flagGoliath;
             }
-            else if (parent.def == InternalDefOf.AM_Phalanx)
+            else if (phalanxList.Contains(parent.def))
             {
                 return AlphaMechs_Settings.flagPhalanx;
             }
-            else if (parent.def == InternalDefOf.AM_Siegebreaker)
+            else if (siegebreakerList.Contains(parent.def))
             {
                 return AlphaMechs_Settings.flagSiegebreaker;
             }

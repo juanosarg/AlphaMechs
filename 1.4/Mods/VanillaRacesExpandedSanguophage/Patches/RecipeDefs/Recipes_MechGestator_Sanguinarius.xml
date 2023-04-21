@@ -7,14 +7,11 @@
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs</xpath>
 			<value>
-				<RecipeDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoidRecipe">
+				<RecipeDef ParentName="AM_MediumMechanoidRecipe">
 					<defName>AM_Gestate_Sanguinarius</defName>
 					<label>gestate sanguinarius</label>
 					<description>Gestate a sanguinarius mechanoid.</description>
-					<researchPrerequisite>AM_WorkerStandardMechtech</researchPrerequisite>
-					<recipeUsers>
-						<li>MechGestator</li>
-					</recipeUsers>
+					
 					<ingredients Inherit="False">
 						<li>
 							<filter>

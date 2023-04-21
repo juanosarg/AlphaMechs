@@ -10,7 +10,7 @@
 				<!-- Librarian -->
 				<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoid">
 					<defName>AM_Mech_Librarian</defName>
-					<label>scriptomaton </label>
+					<label>scriptomaton</label>
 					<description>The Scriptomaton is a humanoid mechanoid designed for writing and maintaining libraries. It has a vast database of knowledge at its disposal and can quickly and efficiently categorize and organize new information as it becomes available. The Scriptomaton is equipped with advanced writing tools, including pens, pencils, and quills, as well as cutting-edge software that allows it to transcribe written text into digital formats. Its sleek, humanoid form and advanced mobility systems enable it to move swiftly and gracefully through libraries and archives, collecting and preserving valuable documents and artifacts.</description>
 					<race>
 						<body>Mech_Light</body>
