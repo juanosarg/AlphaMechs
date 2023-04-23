@@ -77,6 +77,7 @@
     <combatPower>450</combatPower>
     <maxPerGroup>1</maxPerGroup>
     <allowInMechClusters>false</allowInMechClusters>
+	<isFighter>false</isFighter>
     <lifeStages>
       <li>
         <bodyGraphicData>

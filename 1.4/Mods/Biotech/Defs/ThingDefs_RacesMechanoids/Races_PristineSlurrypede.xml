@@ -59,6 +59,7 @@
 		<label>pristine slurrypede</label>
 		<race>AM_Mech_PristineSlurrypede</race>
 		<allowInMechClusters>false</allowInMechClusters>
+		<isFighter>false</isFighter>
 		<combatPower>250</combatPower>
 		<lifeStages>
 			<li>

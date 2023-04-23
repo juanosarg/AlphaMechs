@@ -83,6 +83,7 @@
 		<label>pristine assembler</label>
 		<race>AM_Mech_PristineAssembler</race>
 		<allowInMechClusters>false</allowInMechClusters>
+		<isFighter>false</isFighter>
 		<combatPower>250</combatPower>
 		<lifeStages>
 			<li>

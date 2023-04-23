@@ -44,6 +44,8 @@
 		<defName>AM_Blitzkrieg</defName>
 		<label>blitzkrieg</label>
 		<race>AM_Blitzkrieg</race>
+		<allowInMechClusters>false</allowInMechClusters>
+		<isFighter>false</isFighter>
 		<combatPower>95</combatPower>
 		<lifeStages>
 			<li>

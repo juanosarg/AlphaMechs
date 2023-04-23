@@ -59,6 +59,7 @@
 		<label>guttersnipe</label>
 		<race>AM_Mech_Guttersnipe</race>
 		<allowInMechClusters>false</allowInMechClusters>
+		<isFighter>false</isFighter>
 		<forceNoDeathNotification>true</forceNoDeathNotification>
 		<lifeStages>
 			<li>
