@@ -53,6 +53,52 @@
       <ThingDef>AM_Daggersnout</ThingDef>
     </descriptionHyperlinks>
   </RecipeDef>
+  
+   <RecipeDef ParentName="AM_LightMechanoidRecipe">
+    <defName>AM_bellicorRecipe</defName>
+    <label>gestate bellicor</label>
+    <description>Gestate a bellicor mechanoid.</description>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <AM_Mech_Bellicor>1</AM_Mech_Bellicor>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AM_Mech_Bellicor</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
 
   <RecipeDef ParentName="AM_LightMechanoidRecipe">
     <defName>AM_BlitzkriegRecipe</defName>

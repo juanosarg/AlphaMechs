@@ -70,7 +70,7 @@
       <li> <!-- 4 -->
         <bossCount>2</bossCount>
         <escorts>
-          <Mech_Militor>15</Mech_Militor>
+          <AM_Mech_Bellicor>12</AM_Mech_Bellicor>
           <AM_Aura>5</AM_Aura>
           <AM_Goliath>3</AM_Goliath>
         </escorts>
@@ -153,7 +153,7 @@
       <li> <!-- 1 -->
         <bossCount>1</bossCount>
         <escorts>
-          <Mech_Militor>5</Mech_Militor>
+          <AM_Mech_Bellicor>5</AM_Mech_Bellicor>
 		  <AM_Mech_Lux>3</AM_Mech_Lux>
           <AM_Siegemelter>2</AM_Siegemelter>
 		  <AM_Fireworm>1</AM_Fireworm>
@@ -266,7 +266,7 @@
       <li> <!-- 0 -->
         <bossCount>1</bossCount>
         <escorts>
-          <Mech_Militor>6</Mech_Militor>
+          <AM_Mech_Bellicor>6</AM_Mech_Bellicor>
           <AM_Aura>5</AM_Aura>
         </escorts>
         <bossApparel>
@@ -292,7 +292,7 @@
       <li> <!-- 2 - Repeat starts here -->
         <bossCount>1</bossCount>
         <escorts>
-          <Mech_Militor>10</Mech_Militor>
+          <AM_Mech_Bellicor>10</AM_Mech_Bellicor>
           <Mech_Scyther>3</Mech_Scyther>
 		  <AM_Aura>3</AM_Aura>
           <AM_Infernus>1</AM_Infernus>
@@ -306,7 +306,7 @@
       <li> <!-- 3 -->
         <bossCount>1</bossCount>
         <escorts>
-          <Mech_Militor>10</Mech_Militor>
+          <AM_Mech_Bellicor>10</AM_Mech_Bellicor>
           <Mech_Tunneler>2</Mech_Tunneler>
           <AM_Infernus>2</AM_Infernus>
         </escorts>
@@ -319,7 +319,7 @@
       <li> <!-- 4 -->
         <bossCount>1</bossCount>
         <escorts>
-          <Mech_Militor>10</Mech_Militor>
+          <AM_Mech_Bellicor>10</AM_Mech_Bellicor>
           <AM_Mech_Munifex>1</AM_Mech_Munifex>
           <AM_Phalanx>2</AM_Phalanx>
           <AM_Infernus>1</AM_Infernus>
@@ -334,7 +334,7 @@
       <li> <!-- 5 -->
         <bossCount>1</bossCount>
         <escorts>
-          <Mech_Militor>10</Mech_Militor>
+          <AM_Mech_Bellicor>10</AM_Mech_Bellicor>
           <Mech_Scyther>5</Mech_Scyther>
           <AM_Goliath>2</AM_Goliath>
           <Mech_Diabolus>2</Mech_Diabolus>
@@ -350,7 +350,7 @@
       <li> <!-- 6 -->
         <bossCount>1</bossCount>
         <escorts>
-          <Mech_Militor>12</Mech_Militor>
+          <AM_Mech_Bellicor>12</AM_Mech_Bellicor>
           <Mech_Lancer>10</Mech_Lancer>
           <Mech_Tunneler>5</Mech_Tunneler>
           <Mech_CentipedeBlaster>4</Mech_CentipedeBlaster>
@@ -365,7 +365,7 @@
       <li> <!-- 7 -->
         <bossCount>1</bossCount>
         <escorts>
-          <Mech_Militor>15</Mech_Militor>
+          <AM_Mech_Bellicor>15</AM_Mech_Bellicor>
           <Mech_Scyther>10</Mech_Scyther>
           <Mech_CentipedeBlaster>8</Mech_CentipedeBlaster>
           <AM_Infernus>1</AM_Infernus>

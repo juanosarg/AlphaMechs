@@ -12,6 +12,7 @@
 			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
 			<MechEnergyLossPerHP>0.75</MechEnergyLossPerHP>
+			 <BandwidthCost>2</BandwidthCost>
 		</statBases>
 		<tools>
 			<li>
