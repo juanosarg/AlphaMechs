@@ -9,6 +9,7 @@
 			<texPath>UI/Invisible</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<uiIconPath>Things/Weapon/AM_FirewormGun</uiIconPath>
 		<statBases>
 			<MarketValue>1400</MarketValue>
 			<Mass>18</Mass>
@@ -318,6 +319,7 @@
 			<texPath>UI/Invisible</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<uiIconPath>Things/Weapon/AM_SiegebreakerGun</uiIconPath>
 		<statBases>
 			<MarketValue>1400</MarketValue>
 			<Mass>18</Mass>
@@ -391,6 +393,7 @@
 			<texPath>UI/Invisible</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<uiIconPath>Things/Weapon/AM_SapperCharges</uiIconPath>
 		<statBases>
 			<MarketValue>1400</MarketValue>
 			<Mass>18</Mass>

@@ -528,6 +528,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<tradeability>None</tradeability>
+		<uiIconPath>Things/Weapon/AM_SiegemelterGun</uiIconPath>
 		<destroyOnDrop>true</destroyOnDrop>
 		<relicChance>0</relicChance>
 		<statBases>
@@ -711,7 +712,7 @@
 			<AccuracyLong>0.92</AccuracyLong>
 			<RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
 		</statBases>
-		<uiIconPath>Things/Weapon/AM_TacticalShotgun</uiIconPath>
+		<uiIconPath>Things/Weapon/AM_StarfireGun</uiIconPath>
 		<weaponTags>
 			<li>AM_StarfireTurret</li>
 		</weaponTags>
