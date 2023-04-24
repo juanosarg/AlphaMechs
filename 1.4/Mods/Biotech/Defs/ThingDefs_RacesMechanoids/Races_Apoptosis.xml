@@ -71,15 +71,7 @@
 			<AM_QuantumMatrixChip>1</AM_QuantumMatrixChip>
 		</killedLeavingsPlayerHostile>
 		<comps>
-			<li Class="CompProperties_Explosive">
-				<wickTicks>0</wickTicks>
-				<explosiveRadius>40.9</explosiveRadius>
-				<explodeOnKilled>true</explodeOnKilled>
-				<explosiveDamageType>MechBandShockwave</explosiveDamageType>
-				<propagationSpeed>0.5</propagationSpeed>
-				<chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
-				<extraInspectStringKey>MechStunPulseWarning</extraInspectStringKey>
-			</li>
+			
 			<li Class="CompProperties_Effecter">
 				<effecterDef>ApocrionAttached</effecterDef>
 			</li>
