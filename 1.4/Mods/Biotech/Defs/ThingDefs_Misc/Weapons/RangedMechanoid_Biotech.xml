@@ -121,7 +121,7 @@
 				<range>30.9</range>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<burstShotCount>3</burstShotCount>
-				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCast>AM_Gauss</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 				<targetParams>
