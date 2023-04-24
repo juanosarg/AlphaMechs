@@ -30,7 +30,8 @@
       <li> <!-- 1 -->
         <bossCount>1</bossCount>
         <escorts>
-          <AM_Mech_Munifex>4</AM_Mech_Munifex>
+          <AM_Mech_Munifex>2</AM_Mech_Munifex>
+		  <AM_Mech_Polychoron>2</AM_Mech_Polychoron>
           <AM_Mech_Lux>2</AM_Mech_Lux>
         </escorts>
 		 <bossApparel>
@@ -83,7 +84,8 @@
       <li> <!-- 5 -->
         <bossCount>2</bossCount>
         <escorts>
-          <AM_Mech_Munifex>7</AM_Mech_Munifex>
+          <AM_Mech_Munifex>3</AM_Mech_Munifex>
+		  <AM_Mech_Polychoron>4</AM_Mech_Polychoron>
           <AM_Goliath>5</AM_Goliath>
           <AM_Mech_Lux>4</AM_Mech_Lux>
           <AM_Mech_Legate>1</AM_Mech_Legate>
@@ -112,7 +114,7 @@
         <bossCount>3</bossCount>
         <escorts>
           <AM_Mech_Munifex>5</AM_Mech_Munifex>
-          <Mech_Tesseron>10</Mech_Tesseron>
+          <AM_Mech_Polychoron>7</AM_Mech_Polychoron>
           <Mech_CentipedeGunner>6</Mech_CentipedeGunner>
           <AM_Mech_Legate>2</AM_Mech_Legate>
 		  <AM_Starfire>1</AM_Starfire>
@@ -153,7 +155,8 @@
       <li> <!-- 1 -->
         <bossCount>1</bossCount>
         <escorts>
-          <AM_Mech_Bellicor>5</AM_Mech_Bellicor>
+          <AM_Mech_Bellicor>3</AM_Mech_Bellicor>
+		  <AM_Mech_Polychoron>2</AM_Mech_Polychoron>
 		  <AM_Mech_Lux>3</AM_Mech_Lux>
           <AM_Siegemelter>2</AM_Siegemelter>
 		  <AM_Fireworm>1</AM_Fireworm>
@@ -182,7 +185,8 @@
         <bossCount>2</bossCount>
         <escorts>
           <AM_Mech_Munifex>8</AM_Mech_Munifex>
-          <Mech_Lancer>4</Mech_Lancer>
+          <Mech_Lancer>2</Mech_Lancer>
+		  <AM_Mech_Optio>2</AM_Mech_Optio>
           <AM_Goliath>2</AM_Goliath>
         </escorts>
         <bossApparel>
@@ -196,7 +200,7 @@
         <escorts>
           <Mech_Pikeman>5</Mech_Pikeman>
           <AM_Mech_Munifex>5</AM_Mech_Munifex>
-          <Mech_Legionary>3</Mech_Legionary>
+          <AM_Mech_Optio>3</AM_Mech_Optio>
           <AM_Siegebreaker>3</AM_Siegebreaker>
         </escorts>
         <bossApparel>
@@ -223,7 +227,8 @@
         <bossCount>2</bossCount>
         <escorts>
           <AM_Starfire>2</AM_Starfire>
-          <Mech_Scorcher>10</Mech_Scorcher>
+          <Mech_Scorcher>5</Mech_Scorcher>
+		  <AM_Mech_Optio>5</AM_Mech_Optio>
 		  <AM_Mech_Legate>1</AM_Mech_Legate>
         </escorts>
         <bossApparel>
@@ -237,7 +242,7 @@
         <escorts>
           <AM_Aura>6</AM_Aura>
           <Mech_Lancer>6</Mech_Lancer>
-          <Mech_Legionary>3</Mech_Legionary>
+          <AM_Mech_Optio>3</AM_Mech_Optio>
           <AM_Fireworm>6</AM_Fireworm>
           <Mech_Centurion>1</Mech_Centurion>
 		  <AM_Mech_Legate>2</AM_Mech_Legate>
@@ -279,8 +284,9 @@
         <bossCount>1</bossCount>
         <escorts>
           <AM_Starfire>2</AM_Starfire>
-          <Mech_Scyther>4</Mech_Scyther>
-          <Mech_Tesseron>4</Mech_Tesseron>
+          <Mech_Scyther>2</Mech_Scyther>
+		  <AM_Mech_Optio>2</AM_Mech_Optio>
+          <AM_Mech_Polychoron>4</AM_Mech_Polychoron>
 		  <AM_Fireworm>3</AM_Fireworm>
         </escorts>
         <bossApparel>
@@ -335,7 +341,8 @@
         <bossCount>1</bossCount>
         <escorts>
           <AM_Mech_Bellicor>10</AM_Mech_Bellicor>
-          <Mech_Scyther>5</Mech_Scyther>
+          <Mech_Scyther>3</Mech_Scyther>
+		  <AM_Mech_Optio>3</AM_Mech_Optio>
           <AM_Goliath>2</AM_Goliath>
           <Mech_Diabolus>2</Mech_Diabolus>
 		  <AM_Infernus>1</AM_Infernus>
@@ -351,7 +358,8 @@
         <bossCount>1</bossCount>
         <escorts>
           <AM_Mech_Bellicor>12</AM_Mech_Bellicor>
-          <Mech_Lancer>10</Mech_Lancer>
+          <Mech_Lancer>5</Mech_Lancer>
+		  <AM_Mech_Polychoron>5</AM_Mech_Polychoron>
           <Mech_Tunneler>5</Mech_Tunneler>
           <Mech_CentipedeBlaster>4</Mech_CentipedeBlaster>
           <AM_WarEmpress>1</AM_WarEmpress>

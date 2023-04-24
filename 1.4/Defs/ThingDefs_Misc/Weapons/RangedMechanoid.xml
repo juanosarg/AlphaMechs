@@ -112,6 +112,7 @@
 		<graphicData>
 			<texPath>Things/Weapon/AM_Gun_GoliathChargeBlaster</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			 <drawSize>1.25</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>1400</MarketValue>
@@ -184,6 +185,7 @@
 		<graphicData>
 			<texPath>Things/Weapon/AM_Gun_GoliathNeedle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			 <drawSize>1.25</drawSize>
 		</graphicData>
 		<tradeability>None</tradeability>
 		<destroyOnDrop>true</destroyOnDrop>
@@ -249,7 +251,7 @@
 	<!-- Cryoweapon -->
 	<ThingDef Abstract="True" ParentName="BaseGunWithQuality" Name="AM_CryogenicGunBase">
 		<label>cryogenic gun</label>
-		<description>A cryogenic gun.</description>
+		<description>A weapon that fires frozen pellets or liquid nitrogen, rapidly lowering the temperature of the target to freeze or immobilize it. Frostbite damage bypasses armor.</description>
 		<graphicData>
 			<texPath>Things/Weapon/AM_CryoCannon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -388,7 +390,7 @@
 
 	<ThingDef Abstract="True" ParentName="BaseGunWithQuality" Name="AM_DemolisherChargeBase">
 		<label>demolisher charges</label>
-		<description>A huge turret that fires explosive warheads.</description>
+		<description>A huge mechanoid-mounted turret that launches high-explosive demolisher charges, capable of taking out even heavily armored fortifications. Obviously also dangerous against living creatures.</description>
 		<graphicData>
 			<texPath>UI/Invisible</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

@@ -13,6 +13,10 @@
 					<description>The eviscerator is a more advanced version of the daggersnout, an insectlike combat mechanoid armed with a vicious sharp blade on its head. It isn't as dangerous as other close-ranged mechanoids, such as scythers, but they usually appear in greater numbers.</description>
 					<statBases>
 						<BandwidthCost>2</BandwidthCost>
+						<MoveSpeed>5.2</MoveSpeed>
+						<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+						<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+
 					</statBases>
 					<tools>
 						<li>

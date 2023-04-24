@@ -59,6 +59,10 @@
 		<label>colossus</label>
 		<race>VFE_Mech_Advanced_Goliath</race>
 		<combatPower>400</combatPower>
+		<abilities>
+			<li>AM_SwapWeapon</li>
+			
+		</abilities>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

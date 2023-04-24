@@ -2,7 +2,9 @@
 <Defs>
 	<RecipeDef Name="AM_MediumMechanoidRecipe" ParentName="MediumMechanoidRecipe" Abstract="True">
 		<researchPrerequisite>AM_StandardMechtech</researchPrerequisite>
-		<recipeUsers><li>LargeMechGestator</li></recipeUsers>
+		<recipeUsers>
+			<li>LargeMechGestator</li>
+		</recipeUsers>
 	</RecipeDef>
 	<RecipeDef ParentName="AM_MediumMechanoidRecipe">
 		<defName>AM_AuraRecipe</defName>
@@ -92,6 +94,80 @@
 		</products>
 		<descriptionHyperlinks>
 			<ThingDef>AM_Mech_Lux</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+	<RecipeDef ParentName="AM_MediumMechanoidRecipe">
+		<defName>AM_PolychoronRecipe</defName>
+		<label>gestate polychoron</label>
+		<description>Gestate a polychoron mechanoid.</description>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>150</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreHigh</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<AM_Mech_Polychoron>1</AM_Mech_Polychoron>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>AM_Mech_Polychoron</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+	<RecipeDef ParentName="AM_MediumMechanoidRecipe">
+		<defName>AM_OptioRecipe</defName>
+		<label>gestate optio</label>
+		<description>Gestate an optio mechanoid.</description>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>155</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreHigh</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<AM_Mech_Optio>1</AM_Mech_Optio>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>AM_Mech_Optio</ThingDef>
 		</descriptionHyperlinks>
 	</RecipeDef>
 	<RecipeDef ParentName="AM_MediumMechanoidRecipe">

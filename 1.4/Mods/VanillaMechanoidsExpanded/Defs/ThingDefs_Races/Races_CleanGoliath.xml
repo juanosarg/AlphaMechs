@@ -76,5 +76,9 @@
 			<li>AM_Gun_GoliathChargeBlaster</li>
 			<li>AM_Gun_GoliathNeedle</li>
 		</weaponTags>
+		<abilities>
+			<li>AM_SwapWeapon</li>
+			
+		</abilities>
 	</PawnKindDef>
 </Defs>

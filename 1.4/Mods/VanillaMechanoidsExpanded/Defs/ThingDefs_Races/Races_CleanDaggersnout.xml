@@ -4,6 +4,10 @@
 		<defName>VFE_Mech_Daggersnout</defName>
 		<label>daggersnout</label>
 		<description>The daggersnout is a fast, insectlike combat mechanoid armed with a vicious sharp blade on its head. It isn't as dangerous as other close-ranged mechanoids, such as scythers, but they usually appear in greater numbers. This particular unit appears to be freshly manufactured and will operate more robustly.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; If toggled to not spawn via mod options, they will get replaced by a Scyther.</description>
+		<statBases>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+		</statBases>   
 		<tools>
 			<li>
 				<label>snout blade</label>

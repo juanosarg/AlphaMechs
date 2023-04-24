@@ -292,7 +292,9 @@
   <ItemGroup>
     <Compile Include="Abilities\CompDetonate.cs" />
     <Compile Include="Abilities\CompExtractHemogen.cs" />
+    <Compile Include="Abilities\CompSwapWeapons.cs" />
     <Compile Include="Abilities\Comps\CompProperties_Detonate.cs" />
+    <Compile Include="Abilities\Comps\CompProperties_SwapWeapons.cs" />
     <Compile Include="Comps\CompCauseHediff_AoE_WithRestrictions.cs" />
     <Compile Include="Comps\CompChangeDef.cs" />
     <Compile Include="Comps\CompTargetingBeamBlue.cs" />

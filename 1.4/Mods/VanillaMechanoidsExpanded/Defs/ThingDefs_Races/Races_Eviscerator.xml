@@ -4,6 +4,11 @@
 		<defName>VFE_Mech_Advanced_Daggersnout</defName>
 		<label>eviscerator</label>
 		<description>The eviscerator is a more advanced version of the daggersnout, an insectlike combat mechanoid armed with a vicious sharp blade on its head. It isn't as dangerous as other close-ranged mechanoids, such as scythers, but they usually appear in greater numbers. Unlike their more ancient and less advanced relatives this particular unit is much more intelligent and will seek cover and prove to be a much more challenging opponent in melee combat.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; If toggled to not spawn via mod options, they will get replaced by an Advanced Scyther.</description>
+		<statBases>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+			<MoveSpeed>5.2</MoveSpeed>
+		</statBases>   
 		<tools>
 			<li>
 				<label>snout blade</label>

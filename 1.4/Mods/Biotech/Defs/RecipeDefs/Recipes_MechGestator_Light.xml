@@ -107,6 +107,24 @@
     <products>
       <AM_Blitzkrieg>1</AM_Blitzkrieg>
     </products>
+	<ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreBasic</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
     <descriptionHyperlinks>
       <ThingDef>AM_Blitzkrieg</ThingDef>
     </descriptionHyperlinks>

@@ -10,7 +10,7 @@
 				<ThingDef ParentName="BaseMechanoidWalker">
 					<defName>VFE_Mech_Advanced_Goliath_PlayerControlled</defName>
 					<label>colossus</label>
-					<description>The Colossus is an advanced version of the Goliath, a heavy combat mechanoid with a humanoid body plan. They are faster than centipedes, and are usually armed with heavy mechanoid weapons or needle guns.</description>
+					<description>The Colossus is an advanced version of the Goliath, a heavy combat mechanoid with a humanoid body plan. They are faster than centipedes, and are usually armed with heavy mechanoid weapons or needle guns. If built by the player, it will have a "Swap weapon" ability to choose between the charge blaster and the Needle gun.</description>
 					<statBases>
 						<MoveSpeed>2.9</MoveSpeed>
 						<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
@@ -97,13 +97,17 @@
 								</shadowData>
 							</bodyGraphicData>
 						</li>
-						
+
 					</lifeStages>
 					<weaponMoney>9999~9999</weaponMoney>
 					<weaponTags>
 						<li>AM_Gun_GoliathChargeBlaster</li>
 						<li>AM_Gun_GoliathNeedle</li>
 					</weaponTags>
+					<abilities>
+						<li>AM_SwapWeapon</li>
+
+					</abilities>
 				</PawnKindDef>
 				<RecipeDef ParentName="AM_HeavyMechanoidRecipe">
 					<defName>AM_ColossusRecipe</defName>
