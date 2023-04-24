@@ -12,6 +12,12 @@ namespace AlphaMechs
             {
                 GenDraw.DrawRadiusRing(center, compProperties.range, Color.white);
             }
+
+            CompProperties_CauseHediff_AoE_WithFaction compProperties2 = def.GetCompProperties<CompProperties_CauseHediff_AoE_WithFaction>();
+            if (compProperties2 != null)
+            {
+                GenDraw.DrawRadiusRing(center, compProperties2.range, Color.white);
+            }
         }
     }
 }

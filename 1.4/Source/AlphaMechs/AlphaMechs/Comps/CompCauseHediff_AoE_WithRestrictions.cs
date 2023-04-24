@@ -29,6 +29,10 @@ namespace AlphaMechs
             {
                 return false;
             }
+            if (target.Faction != parent.Faction)
+            {
+                return false;
+            }
             if (target.Position.DistanceTo(parent.Position) <= Props.range)
             {
                 if (Props.onlyTargetMechs)

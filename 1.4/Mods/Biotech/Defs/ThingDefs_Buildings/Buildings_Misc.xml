@@ -215,6 +215,7 @@
 		<canOverlapZones>false</canOverlapZones>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<fillPercent>0.4</fillPercent>
+		<uiIconScale>0.85</uiIconScale>
 		<graphicData>
 			<texPath>Things/Building/AM_GreaterMechband</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -386,7 +387,7 @@
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>200</basePowerConsumption>
 			</li>
-			<li Class="CompProperties_CauseHediff_AoE">
+			<li Class="AlphaMechs.CompProperties_CauseHediff_AoE_WithFaction">
 				<range>9.9</range>
 				<onlyTargetMechs>true</onlyTargetMechs>
 				<hediff>AM_EfficiencyMechBoost</hediff>
@@ -395,7 +396,7 @@
 			<li Class="CompProperties_Flickable"/>
 		</comps>
 		<placeWorkers>
-			<li>PlaceWorker_ShowCauseHediffAoE</li>
+			<li>AlphaMechs.PlaceWorker_ShowCauseHediffAoEExpanded</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 	</ThingDef>
@@ -449,7 +450,7 @@
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>200</basePowerConsumption>
 			</li>
-			<li Class="CompProperties_CauseHediff_AoE">
+			<li Class="AlphaMechs.CompProperties_CauseHediff_AoE_WithFaction">
 				<range>9.9</range>
 				<onlyTargetMechs>true</onlyTargetMechs>
 				<hediff>AM_ArmorMechBoost</hediff>
@@ -458,7 +459,7 @@
 			<li Class="CompProperties_Flickable"/>
 		</comps>
 		<placeWorkers>
-			<li>PlaceWorker_ShowCauseHediffAoE</li>
+			<li>AlphaMechs.PlaceWorker_ShowCauseHediffAoEExpanded</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 	</ThingDef>
@@ -512,7 +513,7 @@
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>200</basePowerConsumption>
 			</li>
-			<li Class="CompProperties_CauseHediff_AoE">
+			<li Class="AlphaMechs.CompProperties_CauseHediff_AoE_WithFaction">
 				<range>9.9</range>
 				<onlyTargetMechs>true</onlyTargetMechs>
 				<hediff>AM_TargettingMechBoost</hediff>
@@ -521,7 +522,71 @@
 			<li Class="CompProperties_Flickable"/>
 		</comps>
 		<placeWorkers>
-			<li>PlaceWorker_ShowCauseHediffAoE</li>
+			<li>AlphaMechs.PlaceWorker_ShowCauseHediffAoEExpanded</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>AM_MechDisruptor</defName>
+		<label>mech disruptor</label>
+		<description>A remote mech disruption device. Any enemy mechanoids in its effect radius will have reduced agility, movement and targeting skill.</description>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/AM_BlueMechBooster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.8, 0.35, 0.8)</volume>
+				<offset>(0, 0, -0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<buildingTags>
+				<li>Biotech</li>
+			</buildingTags>
+		</building>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<designationCategory>Biotech</designationCategory>
+		<uiOrder>2420</uiOrder>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>25</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(2,2)</size>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<researchPrerequisites>
+			<li>AM_MechanoidBeamcasting</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+			<li Class="AlphaMechs.CompProperties_CauseHediff_AoE_WithFaction">
+				<range>9.9</range>
+				<onlyTargetMechs>true</onlyTargetMechs>
+				<hediff>AM_MechDisruption</hediff>
+				<activeSound>MechBooster_Working</activeSound>
+				<affectMyFaction>false</affectMyFaction>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<placeWorkers>
+			<li>AlphaMechs.PlaceWorker_ShowCauseHediffAoEExpanded</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 	</ThingDef>
