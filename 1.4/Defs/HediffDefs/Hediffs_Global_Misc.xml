@@ -5,7 +5,7 @@
 
 	<HediffDef ParentName="DiseaseBase">
 		<defName>AM_SoulDrain</defName>
-		<description>.</description>
+		<description>Caused by the apoptosis turret, a terrifying weapon designed to drain the souls of its targets. Equipped with soul-draining technology, it is capable of siphoning the life force of organic beings, leaving them weakened and vulnerable. Will eventually disappear.</description>
 		<label>soul drain</label>
 		<lethalSeverity>1</lethalSeverity>
 		<makesSickThought>true</makesSickThought>
