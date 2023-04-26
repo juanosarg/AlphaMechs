@@ -63,6 +63,8 @@ namespace AlphaMechs
 
         [MayRequireBiotech]
         public static ThingDef AM_GreaterBandNode;
+        [MayRequireBiotech]
+        public static ThingDef AM_BeamcasterBandNode;
 
         static InternalDefOf()
         {

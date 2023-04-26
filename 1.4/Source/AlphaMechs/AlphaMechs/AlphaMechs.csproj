@@ -319,7 +319,8 @@
     <Compile Include="HediffComps\HediffComp_DisappearIfOtherFound.cs" />
     <Compile Include="HediffComps\Properties\HediffCompProperties_DeleteAfterTime.cs" />
     <Compile Include="HediffComps\Properties\HediffCompProperties_DisappearIfOtherFound.cs" />
-    <Compile Include="Hediffs\Hediff_GreaterBandNode.cs" />
+    <Compile Include="Hediffs\Hediff_VoidlinkBandNode.cs" />
+    <Compile Include="Hediffs\Hediff_BeamncasterBandNode.cs" />
     <Compile Include="Options\AlphaMechs_Settings.cs" />
     <Compile Include="Options\AlphaMechs_SettingsController.cs" />
     <Compile Include="Pawns\Pawn_HemogenVat.cs" />

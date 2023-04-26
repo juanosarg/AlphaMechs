@@ -4,7 +4,7 @@ using RimWorld;
 using Verse;
 namespace AlphaMechs
 {
-    public class Hediff_GreaterBandNode : Hediff
+    public class Hediff_VoidlinkBandNode : Hediff
     {
         private const int BandNodeCheckInterval = 60;
 
@@ -24,7 +24,7 @@ namespace AlphaMechs
                 {
                     StatModifier statModifier = new StatModifier();
                     statModifier.stat = StatDefOf.MechBandwidth;
-                    statModifier.value = cachedTunedBandNodesCount*2;
+                    statModifier.value = cachedTunedBandNodesCount*5;
                     curStage = new HediffStage();
                     curStage.statOffsets = new List<StatModifier> { statModifier };
                 }

@@ -8,7 +8,7 @@ namespace AlphaMechs
     public class PlaceWorker_GreaterBandNode : PlaceWorker
     {
 
-        List<ThingDef> listBandNodes = new List<ThingDef>() { ThingDefOf.BandNode, InternalDefOf.AM_GreaterBandNode};
+        List<ThingDef> listBandNodes = new List<ThingDef>() { ThingDefOf.BandNode,InternalDefOf.AM_BeamcasterBandNode, InternalDefOf.AM_GreaterBandNode};
 
         public override AcceptanceReport AllowsPlacing(BuildableDef def, IntVec3 center, Rot4 rot, Map map, Thing thingToIgnore = null, Thing thing = null)
         {

@@ -207,9 +207,74 @@
 		<filthLeaving>Filth_MachineBits</filthLeaving>
 	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
-		<defName>AM_GreaterBandNode</defName>
+		<defName>AM_BeamcasterBandNode</defName>
 		<label>beamcaster band node</label>
 		<description>A mechanoid-band signal amplifier. Band nodes must be tuned to a specific mechanitor. This will add 2 bandwidth to that mechanitor's total bandwidth, allowing them to control more mechanoids.\n\nOnce a band node is constructed, it can be quickly tuned to a mechanitor. However, retuning a band node to a different mechanitor takes significantly longer.</description>
+		<tickerType>Normal</tickerType>
+		<rotatable>false</rotatable>
+		<canOverlapZones>false</canOverlapZones>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<fillPercent>0.4</fillPercent>
+		<uiIconScale>0.85</uiIconScale>
+		<graphicData>
+			<texPath>Things/Building/AM_BeamcastingNode</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(1.5, 0.35, 1.2)</volume>
+				<offset>(0, 0, -0.15)</offset>
+			</shadowData>
+		</graphicData>
+		
+		<passability>PassThroughOnly</passability>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<buildingTags>
+				<li>Biotech</li>
+			</buildingTags>
+		</building>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designationCategory>Biotech</designationCategory>
+		<uiOrder>2440</uiOrder>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>10000</WorkToBuild>
+			<Mass>40</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(2,2)</size>
+		<costList>
+			<Steel>350</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<researchPrerequisites>
+			<li>AM_VoidLinkConnectivity</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>550</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_BandNode">
+				<hediff>AM_BeamncasterBandNode</hediff>
+				<untunedEffect>BandNodeUntuned</untunedEffect>
+				<tuningEffect>BandNodeTuning</tuningEffect>
+				<tunedEffect>BandNodeTuned</tunedEffect>
+				<retuningEffect>BandNodeRetuning</retuningEffect>
+				<tuningCompleteSound>BandNodeTuning_Complete</tuningCompleteSound>
+				<powerConsumptionIdle>150</powerConsumptionIdle>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>AlphaMechs.PlaceWorker_GreaterBandNode</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>AM_GreaterBandNode</defName>
+		<label>voidlink band node</label>
+		<description>A voidlink relay band node. Band nodes must be tuned to a specific mechanitor. This will add 5 bandwidth to that mechanitor's total bandwidth, allowing them to control more mechanoids.\n\nOnce a band node is constructed, it can be quickly tuned to a mechanitor. However, retuning a band node to a different mechanitor takes significantly longer.</description>
 		<tickerType>Normal</tickerType>
 		<rotatable>false</rotatable>
 		<canOverlapZones>false</canOverlapZones>
@@ -248,7 +313,7 @@
 			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		<researchPrerequisites>
-			<li>AM_VoidLinkConnectivity</li>
+			<li>AM_Cryptoharmonization</li>
 		</researchPrerequisites>
 		<comps>
 			<li Class="CompProperties_Power">
@@ -257,7 +322,7 @@
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_BandNode">
-				<hediff>AM_BeamncasterBandNode</hediff>
+				<hediff>AM_VoidlinkBandNode</hediff>
 				<untunedEffect>BandNodeUntuned</untunedEffect>
 				<tuningEffect>BandNodeTuning</tuningEffect>
 				<tunedEffect>BandNodeTuned</tunedEffect>

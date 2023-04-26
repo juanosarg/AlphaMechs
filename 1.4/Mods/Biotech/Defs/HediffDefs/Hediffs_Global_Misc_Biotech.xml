@@ -26,9 +26,16 @@
 	</HediffDef>
 	<HediffDef>
 		<defName>AM_BeamncasterBandNode</defName>
-		<hediffClass>AlphaMechs.Hediff_GreaterBandNode</hediffClass>
+		<hediffClass>AlphaMechs.Hediff_BeamncasterBandNode</hediffClass>
 		<label>beamcaster band node (tuned)</label>
-		<description>This mechanitor's bandwidth is being increased thanks to the influence of a beamcaster band node structure.</description>
+		<description>This mechanitor's bandwidth is being increased by 2 per node thanks to the influence of a beamcaster band node structure.</description>
+		<isBad>false</isBad>
+	</HediffDef>
+	<HediffDef>
+		<defName>AM_VoidlinkBandNode</defName>
+		<hediffClass>AlphaMechs.Hediff_VoidlinkBandNode</hediffClass>
+		<label>voidlink band node (tuned)</label>
+		<description>This mechanitor's bandwidth is being increased by 5 per node thanks to the influence of a voidlink band node structure.</description>
 		<isBad>false</isBad>
 	</HediffDef>
 	<HediffDef>
