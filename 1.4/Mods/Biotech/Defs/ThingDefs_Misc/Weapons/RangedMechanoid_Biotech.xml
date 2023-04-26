@@ -86,7 +86,7 @@
 		</projectile>
 	</ThingDef>
 	<!--========== Coil lance ============-->
-	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseGun">
 		<defName>AM_Gun_CoilLance</defName>
 		<label>coil lance</label>
 		<description>A mechanoid lance that electromagnetically accelerates piercing metal shards to enormous speeds.</description>
@@ -104,6 +104,9 @@
 			<AccuracyLong>0.50</AccuracyLong>
 			<RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
 		</statBases>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
 		<costList>
 			<Steel>80</Steel>
 			<Uranium>20</Uranium>
@@ -554,7 +557,7 @@
 				<defaultProjectile>AM_Bullet_Firethrower</defaultProjectile>
 				<warmupTime>0.5</warmupTime>
 				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
-				<range>15</range>
+				<range>25</range>
 
 				<soundCast>AM_PoisonBreath</soundCast>
 				<muzzleFlashScale>2</muzzleFlashScale>
@@ -575,7 +578,7 @@
 	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>AM_Bullet_Firethrower</defName>
 		<label>fire</label>
-		<thingClass>VFECore.ExpandableProjectile</thingClass>
+		<thingClass>VFECore.FlamethrowProjectile</thingClass>
 		<graphicData>
 			<texPath>Things/Projectiles/Proj_Flamethrower</texPath>
 			<texPathFadeOut>Things/Projectiles/FadeOut_Flamethrower</texPathFadeOut>

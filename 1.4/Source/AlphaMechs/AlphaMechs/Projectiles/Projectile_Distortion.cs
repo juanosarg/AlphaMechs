@@ -44,12 +44,17 @@ namespace AlphaMechs
 
         private Thing NextTarget()
         {
-            var things = GenRadial.RadialDistinctThingsAround(this.PositionHeld, Map, 15, false)
-                .Where(t => (t.Faction!=this.launcher.Faction && t as Pawn!=null));
+            if (this.PositionHeld != null && Map != null && this.PositionHeld.InBounds(Map))
+            {
+                var things = GenRadial.RadialDistinctThingsAround(this.PositionHeld, Map, 15, false)
+                .Where(t => (t.Faction != this.launcher?.Faction && t as Pawn != null));
+
+                things = things.OrderBy(t => t.Position.DistanceTo(this.Position));
+                var target = things.FirstOrDefault();
+                return target;
+            }
+            else return null;
             
-            things = things.OrderBy(t => t.Position.DistanceTo(this.Position));
-            var target = things.FirstOrDefault();
-            return target;
         }
 
         public void FireAt(Thing target)

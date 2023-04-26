@@ -7,6 +7,8 @@
 		<description>A small, deployable combat mechanoid usually manufactured inside an ultra-heavy war empress mech. Contrary to War urchins, the Guttersnipe is a melee fighter, using its wicked circular saws to lunge at their targets. They have a non-rechargeable power source.</description>
 		<statBases>
 			<MoveSpeed>4.2</MoveSpeed>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 		</statBases>
 		<tools>
 			<li>

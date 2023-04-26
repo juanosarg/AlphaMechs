@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName = "ResurrectLightMech"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Corpse_AM_Daggersnout</li>
+			<li>Corpse_AM_Mech_Bellicor</li>
+			<li>Corpse_AM_Mech_MasterChef</li>
+			<li>Corpse_AM_Mech_TurboCleaner</li>
+			
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName = "ResurrectMediumMech"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Corpse_AM_Aura</li>
+			<li>Corpse_AM_Mech_Lux</li>
+			<li>Corpse_AM_Mech_Polychoron</li>
+			<li>Corpse_AM_Mech_Optio</li>
+			<li>Corpse_AM_Mech_Munifex</li>
+			<li>Corpse_AM_PristineStrider</li>
+			<li>Corpse_AM_Mech_PristineAssembler</li>
+			<li>Corpse_AM_Mech_PristineSlurrypede</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName = "ResurrectHeavyMech"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Corpse_AM_Demolisher</li>
+			<li>Corpse_AM_Goliath</li>
+			<li>Corpse_AM_Fireworm</li>
+			<li>Corpse_AM_Phalanx</li>
+			
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName = "ResurrectUltraheavyMech"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Corpse_AM_Siegebreaker</li>
+			<li>Corpse_AM_Siegemelter</li>
+			<li>Corpse_AM_Starfire</li>
+			<li>Corpse_AM_Mech_Legate</li>
+			<li>Corpse_AM_Infernus</li>
+			<li>Corpse_AM_WarEmpress</li>
+			<li>Corpse_AM_Apoptosis</li>
+			
+		</value>
+	</Operation>
+	
+</Patch>
