@@ -47,6 +47,7 @@
 		<allowInMechClusters>false</allowInMechClusters>
 		<isFighter>false</isFighter>
 		<combatPower>95</combatPower>
+		<forceNoDeathNotification>true</forceNoDeathNotification>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
