@@ -42,7 +42,7 @@
 				</li>
 			</lifeStageAges>
 			<thinkTreeConstant>WarUrchinConstant</thinkTreeConstant>
-			<baseHealthScale>1.8</baseHealthScale>
+			<baseHealthScale>2.5</baseHealthScale>
 		</race>
 		<comps Inherit="False">
 			<li Class="CompProperties_CanBeDormant"/>

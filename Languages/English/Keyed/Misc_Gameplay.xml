@@ -19,8 +19,11 @@
 <AM_MustNotBePlacedCloseToAnother>Band nodes, beamcaster and voidlink band nodes must not be placed close to each other</AM_MustNotBePlacedCloseToAnother>
 <AM_RandomItems>Resource assembly in</AM_RandomItems>
 <AM_MealNutrientPaste>Nutrient paste production</AM_MealNutrientPaste>
-
-
+<AM_Tier2BandAmount>Bandwidth amount for Beamcaster Band Nodes</AM_Tier2BandAmount>
+<AM_Tier2BandAmountDesc>Each Beamcaster Band Node will increase a pawn's bandwidth by this amount. Only applies if you have Biotech DLC active. Electric power in the nodes will need to be toggled before the changes take effect.</AM_Tier2BandAmountDesc>
+<AM_Tier3BandAmount>Bandwidth amount for Voidlink Band Nodes</AM_Tier3BandAmount>
+<AM_Tier3BandAmountDesc>Each Voidlink Band Node will increase a pawn's bandwidth by this amount. Only applies if you have Biotech DLC active. Electric power in the nodes will need to be toggled before the changes take effect.</AM_Tier3BandAmountDesc>
+<AM_Reset>Reset</AM_Reset>
 
 
 

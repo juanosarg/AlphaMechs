@@ -558,7 +558,10 @@
 				<warmupTime>0.5</warmupTime>
 				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
 				<range>25</range>
-
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+					<canTargetPawns>true</canTargetPawns>
+				</targetParams>
 				<soundCast>AM_PoisonBreath</soundCast>
 				<muzzleFlashScale>2</muzzleFlashScale>
 			</li>
@@ -726,7 +729,10 @@
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
-
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+					<canTargetPawns>true</canTargetPawns>
+				</targetParams>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>AM_Bullet_Starfire</defaultProjectile>
 				<forcedMissRadius>5</forcedMissRadius>

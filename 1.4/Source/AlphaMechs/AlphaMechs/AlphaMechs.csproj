@@ -323,6 +323,7 @@
     <Compile Include="Hediffs\Hediff_BeamncasterBandNode.cs" />
     <Compile Include="Options\AlphaMechs_Settings.cs" />
     <Compile Include="Options\AlphaMechs_SettingsController.cs" />
+    <Compile Include="Options\SettingsHelper.cs" />
     <Compile Include="Pawns\Pawn_HemogenVat.cs" />
     <Compile Include="PlaceWorkers\PlaceWorker_GreaterBandNode.cs" />
     <Compile Include="PlaceWorkers\PlaceWorker_ShowCauseHediffAoEExpanded.cs" />

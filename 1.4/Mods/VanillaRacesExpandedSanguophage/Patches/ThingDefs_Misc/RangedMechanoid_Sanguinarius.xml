@@ -23,10 +23,10 @@
 					<statBases>
 						<MarketValue>1400</MarketValue>
 						<Mass>2.6</Mass>
-						<AccuracyTouch>0.60</AccuracyTouch>
-						<AccuracyShort>0.80</AccuracyShort>
+						<AccuracyTouch>0.9</AccuracyTouch>
+						<AccuracyShort>0.99</AccuracyShort>
 						<AccuracyMedium>0.90</AccuracyMedium>
-						<AccuracyLong>0.92</AccuracyLong>
+						<AccuracyLong>0.8</AccuracyLong>
 						<RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
 					</statBases>
 					<weaponTags>

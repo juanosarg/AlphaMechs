@@ -4,7 +4,7 @@
 	<ThingDef ParentName="SuperHeavyMechanoid">
 		<defName>AM_WarEmpress</defName>
 		<label>war empress</label>
-		<description>An ultra-heavy mech with a built-in mech gestator. Fed with appropriate resources, the War empress can form swarms of small melee-adept guttersnipe combat mechs within its massive carapace and deploy them into combat. The Empress is armed with a very dangerous and long ranged slug sniper turret that should be avoided at all costs.</description>
+		<description>An ultra-heavy mech with a built-in mech gestator. Fed with appropriate resources, the War empress can form swarms of small melee-adept guttersnipe combat mechs within its massive carapace and deploy them into combat. The Empress is armed with a very dangerous and long ranged slug sniper turret that should be avoided at all costs, but the greatest threat comes from her sharp rending claws, which she uses to viciously lash at her targets.</description>
 		<statBases>
 			<MoveSpeed>2.3</MoveSpeed>
 			<EnergyShieldRechargeRate>0.6</EnergyShieldRechargeRate>
@@ -14,7 +14,7 @@
 			<BandwidthCost>7</BandwidthCost>
 		</statBases>
 		<race>
-			<body>Mech_Warqueen</body>
+			<body>AM_Mech_WarEmpress</body>
 			<baseBodySize>5</baseBodySize>
 			<lifeStageAges>
 				<li>
@@ -36,6 +36,26 @@
 			<dutyBoss>AM_WarEmpress</dutyBoss>
 		</race>
 		<tools>
+			<li>
+				<label>left rending claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>LeftPowerClaw</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>right rending claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>RightPowerClaw</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
 			<li>
 				<label>head</label>
 				<capacities>

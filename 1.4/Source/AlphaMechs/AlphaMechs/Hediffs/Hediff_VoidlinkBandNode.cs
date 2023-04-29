@@ -24,7 +24,7 @@ namespace AlphaMechs
                 {
                     StatModifier statModifier = new StatModifier();
                     statModifier.stat = StatDefOf.MechBandwidth;
-                    statModifier.value = cachedTunedBandNodesCount*5;
+                    statModifier.value = cachedTunedBandNodesCount*AlphaMechs_Settings.tier3bandAmount;
                     curStage = new HediffStage();
                     curStage.statOffsets = new List<StatModifier> { statModifier };
                 }
