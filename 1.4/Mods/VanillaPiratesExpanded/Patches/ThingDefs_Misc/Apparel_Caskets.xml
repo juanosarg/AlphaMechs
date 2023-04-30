@@ -9,9 +9,9 @@
 			<value>
 				<VFEPirates.WarcasketDef ParentName="VFEP_WarcasketArmorBase">
 					<defName>VFEP_Warcasket_MechController</defName>
-					<label>mech controller warcasket</label>
+					<label>mech master warcasket</label>
 					<shortDescription>Specialized spacer-tech warcasket shell that enables the wearer to control mechanoids effectively.</shortDescription>
-					<description>The Mech Controller Warcasket is a specialized warcasket shell that enables the wearer to control mechanoids effectively. It is equipped with advanced technology that enhances the wearer's neural mechlink with mechanoids, providing unparalleled control over these machines on the battlefield.\n\nIn addition to its advanced control systems, the Mech Controller Warcasket also features a powerful energy shield that can absorb and deflect incoming attacks, making it an excellent choice for frontline combat situations. Its integrated power systems ensure that the shield remains operational even in the most intense combat situations.</description>
+					<description>The Mech Master Warcasket is a specialized warcasket shell that enables the wearer to control mechanoids effectively. It is equipped with advanced technology that enhances the wearer's neural mechlink with mechanoids, providing unparalleled control over these machines on the battlefield.\n\nIn addition to its advanced control systems, the Mech Master Warcasket also features a powerful energy shield that can absorb and deflect incoming attacks, making it an excellent choice for frontline combat situations. Its integrated power systems ensure that the shield remains operational even in the most intense combat situations.</description>
 					<graphicData>
 						<texPath>Things/Pawn/Warcasketlike/AM_WarcasketMech</texPath>
 					</graphicData>
@@ -78,7 +78,7 @@
 					<modExtensions>
 						<li Class="VFECore.ApparelExtension">
 							<traitsOnEquip>
-								<li>VFEP_WarcasketTrait</li>
+								<li>VFEP_WarcasketTrait_Mech</li>
 							</traitsOnEquip>
 							<traitsOnUnequip>
 								<li>VFEP_Shellcasket</li>
@@ -99,9 +99,9 @@
 				</VFEPirates.WarcasketDef>
 				<VFEPirates.WarcasketDef ParentName="VFEP_WarcasketShoulderPadBase">
 					<defName>VFEP_Warcasket_Shoulders_MechController</defName>
-					<label>mech controller warcasket shoulders</label>
+					<label>mech master warcasket shoulders</label>
 					<shortDescription>Specialized spacer-tech warcasket pauldrons that enable the wearer to control mechanoids effectively.</shortDescription>
-					<description>The Mech Controller Warcasket is a specialized warcasket shell that enables the wearer to control mechanoids effectively. It is equipped with advanced technology that enhances the wearer's neural mechlink with mechanoids, providing unparalleled control over these machines on the battlefield.\n\nIn addition to its advanced control systems, the Mech Controller Warcasket also features a powerful energy shield that can absorb and deflect incoming attacks, making it an excellent choice for frontline combat situations. Its integrated power systems ensure that the shield remains operational even in the most intense combat situations.</description>
+					<description>The Mech Master Warcasket is a specialized warcasket shell that enables the wearer to control mechanoids effectively. It is equipped with advanced technology that enhances the wearer's neural mechlink with mechanoids, providing unparalleled control over these machines on the battlefield.\n\nIn addition to its advanced control systems, the Mech Master Warcasket also features a powerful energy shield that can absorb and deflect incoming attacks, making it an excellent choice for frontline combat situations. Its integrated power systems ensure that the shield remains operational even in the most intense combat situations.</description>
 					<graphicData>
 						<texPath>Things/Pawn/Warcasketlike/AM_WarcasketMechShoulders</texPath>
 					</graphicData>
@@ -148,9 +148,9 @@
 				</VFEPirates.WarcasketDef>
 				<VFEPirates.WarcasketDef ParentName="VFEP_WarcasketHelmetBase">
 					<defName>VFEP_Warcasket_Helmet_MechController</defName>
-					<label>mech controller warcasket helmet</label>
+					<label>mech master warcasket helmet</label>
 					<shortDescription>Specialized spacer-tech warcasket helmet that enables the wearer to control mechanoids effectively.</shortDescription>
-					<description>The Mech Controller Warcasket is a specialized warcasket shell that enables the wearer to control mechanoids effectively. It is equipped with advanced technology that enhances the wearer's neural mechlink with mechanoids, providing unparalleled control over these machines on the battlefield.\n\nIn addition to its advanced control systems, the Mech Controller Warcasket also features a powerful energy shield that can absorb and deflect incoming attacks, making it an excellent choice for frontline combat situations. Its integrated power systems ensure that the shield remains operational even in the most intense combat situations.</description>
+					<description>The Mech Master Warcasket is a specialized warcasket shell that enables the wearer to control mechanoids effectively. It is equipped with advanced technology that enhances the wearer's neural mechlink with mechanoids, providing unparalleled control over these machines on the battlefield.\n\nIn addition to its advanced control systems, the Mech Master Warcasket also features a powerful energy shield that can absorb and deflect incoming attacks, making it an excellent choice for frontline combat situations. Its integrated power systems ensure that the shield remains operational even in the most intense combat situations.</description>
 					<graphicData>
 						<texPath>Things/Pawn/Warcasketlike/AM_WarcasketMechHelmet</texPath>
 					</graphicData>
