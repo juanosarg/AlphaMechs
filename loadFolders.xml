@@ -19,6 +19,8 @@
 		<li IfModActive="Ludeon.RimWorld.Biotech">1.4/Mods/Biotech</li>	
 		<li IfModActive="OskarPotocki.VFE.Pirates">1.4/Mods/VanillaPiratesExpanded</li>	
 		<li IfModActive="OskarPotocki.VFE.Pirates_copy">1.4/Mods/VanillaPiratesExpanded</li>
+		<li IfModActive="Dubwise.Rimatomics">1.4/Mods/Rimatomics</li>	
+		<li IfModActive="Dubwise.Rimatomics_copy">1.4/Mods/Rimatomics</li>
 	</v1.4>
 </loadFolders>
 
