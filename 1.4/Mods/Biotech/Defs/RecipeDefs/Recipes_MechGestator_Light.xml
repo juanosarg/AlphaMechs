@@ -99,6 +99,52 @@
       <ThingDef>AM_Mech_Bellicor</ThingDef>
     </descriptionHyperlinks>
   </RecipeDef>
+  
+   <RecipeDef ParentName="AM_LightMechanoidRecipe">
+    <defName>AM_ArtilleronRecipe</defName>
+    <label>gestate artilleron</label>
+    <description>Gestate an artilleron mechanoid.</description>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>70</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <AM_Mech_Artilleron>1</AM_Mech_Artilleron>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AM_Mech_Artilleron</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
 
   <RecipeDef ParentName="AM_LightMechanoidRecipe">
     <defName>AM_BlitzkriegRecipe</defName>

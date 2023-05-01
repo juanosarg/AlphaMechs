@@ -1030,4 +1030,169 @@
 		</projectile>
 	</ThingDef>
 
+	<!-- Mini needle gun -->
+
+	<ThingDef ParentName="BaseGun" Name="NeedleGunBase">
+		<defName>AM_Gun_MiniNeedle</defName>
+		<label>mini needle gun</label>
+		<description>A long-range weapon used by artillerons. Shoots with great accuracy over very long distances, but does very little damage.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Weapon/AM_MiniSniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<Mass>2.6</Mass>
+			<AccuracyTouch>0.8</AccuracyTouch>
+			<AccuracyShort>0.9</AccuracyShort>
+			<AccuracyMedium>0.95</AccuracyMedium>
+			<AccuracyLong>0.9</AccuracyLong>
+			<RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>AM_MechanoidMiniSniper</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+			<li>LongShots</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AM_Bullet_MiniNeedleGun</defaultProjectile>
+				<warmupTime>2.5</warmupTime>
+				<range>44.9</range>
+				<soundCast>Shot_NeedleGun</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AM_Bullet_MiniNeedleGun</defName>
+		<label>mini needle shot</label>
+		<graphicData>
+			<texPath>Things/Projectile/Needle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+
+			<speed>90</speed>
+		</projectile>
+	</ThingDef>
+
+
+
+
+	<!-- Mortar -->
+	<ThingDef ParentName="BaseGun">
+		<defName>AM_MechanoidMortar</defName>
+		<label>mortar</label>
+		<description>A small mech mounted mortar that fires explosive canisters.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>UI/Invisible</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>2.6</Mass>
+
+			<RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+		</statBases>
+		<uiIconPath>Things/Weapon/AM_MortarCanisters</uiIconPath>
+		<weaponTags>
+			<li>AM_MechanoidMortar</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+			<li>LongShots</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+					<canTargetPawns>true</canTargetPawns>
+				</targetParams>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AM_MortarCanister</defaultProjectile>
+				<forcedMissRadius>3</forcedMissRadius>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<range>30</range>
+				<burstShotCount>1</burstShotCount>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef>
+		<defName>AM_MortarCanister</defName>
+		<label>explosive canister</label>
+		<category>Projectile</category>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Projectile_Explosive</thingClass>
+		
+		<tickerType>Normal</tickerType>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+			<texPath>Things/Projectiles/AM_Canister</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+
+		<projectile>
+			<speed>15</speed>
+			<arcHeightFactor>5</arcHeightFactor>
+			<shadowSize>0.8</shadowSize>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+
+			<explosionRadius>1.9</explosionRadius>
+			<flyOverhead>true</flyOverhead>
+
+		</projectile>
+	</ThingDef>
+
 </Defs>

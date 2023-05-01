@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Artilleron -->
+	<ThingDef ParentName="BaseMechanoid">
+		<defName>AM_Mech_Artilleron</defName>
+		<label>artilleron</label>
+		<description>A variation of the militor and bellicor, the artilleron stands at a height of around 5 feet and it is armed with a powerful mortar that fires explosive canisters with great accuracy. With its reduced durability, the Artilleron can't withstand intense battles and is often deployed in the rear lines to eliminate high priority targets and secure strategic objectives from afar. It can also swap weapons between its mortar and a low damage, high accuracy micro needle gun to avoid causing friendly fire with its explosives.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<MarketValue>1600</MarketValue>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+			<MechEnergyLossPerHP>0.75</MechEnergyLossPerHP>
+			 <BandwidthCost>2</BandwidthCost>
+		</statBases>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+			<body>Mech_Light</body>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<baseBodySize>0.95</baseBodySize>
+			<baseHealthScale>0.75</baseHealthScale>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<mechWeightClass>Light</mechWeightClass>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Militor_Death</soundDeath>
+					<soundCall>Pawn_Mech_Militor_Call</soundCall>
+				</li>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Militor_Death</soundDeath>
+					<soundCall>Pawn_Mech_Militor_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<butcherProducts>
+			<Steel>35</Steel>
+		</butcherProducts>
+	</ThingDef>
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>AM_Mech_Artilleron</defName>
+		<label>artilleron</label>
+		<race>AM_Mech_Artilleron</race>
+		<allowInMechClusters>false</allowInMechClusters>
+		<isFighter>false</isFighter>
+		<combatPower>85</combatPower>
+		<weaponMoney>9999~9999</weaponMoney>
+		<abilities>
+			<li>AM_SwapWeapon_Mortar</li>
+			
+		</abilities>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<controlGroupPortraitZoom>1.8</controlGroupPortraitZoom>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_Bellicor_Mortar/AM_Bellicor_Mortar_Clean</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_Bellicor_Mortar/AllegianceOverlays/AM_Bellicor_Mortar_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_Bellicor_Mortar/AM_Bellicor_Mortar_Clean</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_Bellicor_Mortar/AllegianceOverlays/AM_Bellicor_Mortar_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponTags>
+			<li>AM_MechanoidMortar</li>
+			<li>AM_MechanoidMiniSniper</li>
+		</weaponTags>
+	</PawnKindDef>
+</Defs>
