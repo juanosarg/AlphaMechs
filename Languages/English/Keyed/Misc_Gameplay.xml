@@ -3,7 +3,7 @@
 
 
 
-	<!-- Misc -->
+<!-- Options -->
 	
 <AM_allowAura>Allow Aura</AM_allowAura>
 <AM_allowDaggersnout>Allow Daggersnout</AM_allowDaggersnout>
@@ -12,18 +12,34 @@
 <AM_allowGoliath>Allow Goliath</AM_allowGoliath>
 <AM_allowPhalanx>Allow Phalanx</AM_allowPhalanx>
 <AM_allowSiegebreaker>Allow Siegebreaker</AM_allowSiegebreaker>
-<AM_CantUseOnNonDowned>Can't use on non-downed persons</AM_CantUseOnNonDowned>
-<AM_EjectHemogen>Eject hemogen packs</AM_EjectHemogen>
-<AM_EjectHemogenDesc>Ejects all the hemogen packs stored inside the mech's storage vats</AM_EjectHemogenDesc>
-<AM_HemogenStored>Hemogen packs stored: {0}</AM_HemogenStored>
-<AM_MustNotBePlacedCloseToAnother>Band nodes, beamcaster and voidlink band nodes must not be placed close to each other</AM_MustNotBePlacedCloseToAnother>
-<AM_RandomItems>Resource assembly in</AM_RandomItems>
-<AM_MealNutrientPaste>Nutrient paste production</AM_MealNutrientPaste>
 <AM_Tier2BandAmount>Bandwidth amount for Beamcaster Band Nodes</AM_Tier2BandAmount>
 <AM_Tier2BandAmountDesc>Each Beamcaster Band Node will increase a pawn's bandwidth by this amount. Only applies if you have Biotech DLC active. Electric power in the nodes will need to be toggled before the changes take effect.</AM_Tier2BandAmountDesc>
 <AM_Tier3BandAmount>Bandwidth amount for Voidlink Band Nodes</AM_Tier3BandAmount>
 <AM_Tier3BandAmountDesc>Each Voidlink Band Node will increase a pawn's bandwidth by this amount. Only applies if you have Biotech DLC active. Electric power in the nodes will need to be toggled before the changes take effect.</AM_Tier3BandAmountDesc>
 <AM_Reset>Reset</AM_Reset>
+
+<!-- Abilities -->
+
+<AM_CantUseOnNonMechs>This ability will only works on mechanoids</AM_CantUseOnNonMechs>
+<AM_OnlyMechanitorCanUse>Only a mechanitor can use this ability</AM_OnlyMechanitorCanUse>
+<AM_CantUseOnBossMechs>"Boss" mechanoids have a reinforced IFF system that can't be hacked</AM_CantUseOnBossMechs>
+<AM_NotEnoughBandwidth>Mechanitor doesn't have enough bandwidth to use this ability on a {0}</AM_NotEnoughBandwidth>
+<AM_CantUseVEMechs>This mechanoid is being remotely controlled by a human pilot, and it can't be hacked</AM_CantUseVEMechs>
+<AM_CantUseOnNonDowned>Can't use on non-downed persons</AM_CantUseOnNonDowned>
+<AM_EjectHemogen>Eject hemogen packs</AM_EjectHemogen>
+<AM_EjectHemogenDesc>Ejects all the hemogen packs stored inside the mech's storage vats</AM_EjectHemogenDesc>
+<AM_HemogenStored>Hemogen packs stored: {0}</AM_HemogenStored>
+
+<!-- Placeworkers -->
+
+<AM_MustNotBePlacedCloseToAnother>Band nodes, beamcaster and voidlink band nodes must not be placed close to each other</AM_MustNotBePlacedCloseToAnother>
+
+<!-- Resources -->
+
+<AM_RandomItems>Resource assembly in</AM_RandomItems>
+<AM_MealNutrientPaste>Nutrient paste production</AM_MealNutrientPaste>
+
+
 
 
 

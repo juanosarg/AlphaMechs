@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <VanillaPsycastsExpanded.PsycasterPathDef>
+        <defName>AM_Circuitbinder</defName>
+        <label>circuitbinder</label>
+        <description>A technomancer that manipulates mechanoids to make them do her bidding.</description>
+        <background>UI/Psycasts/PathBG_Circuitbinder</background>
+        <altBackground>UI/Psycasts/PathBG_Circuitbinder_Alternate</altBackground>
+        <tab>Alpha Mechs</tab>
+        <tooltip>A circuitbinder is a psycaster who possesses the ability to manipulate mechanoids, using their understanding of circuitry and technology to bend them to their will. They can override mechanoid programming and force them to do their bidding.</tooltip>
+		<requiredMechanitor>true</requiredMechanitor>
+		<lockedReason>Mechanitor only</lockedReason>
+    </VanillaPsycastsExpanded.PsycasterPathDef>
+	
+	<VanillaPsycastsExpanded.PsycasterPathDef>
+        <defName>AM_Technowraith</defName>
+        <label>technowraith</label>
+        <description>A powerful machinist disciple with the ability to empower and strengthen mechanoids.</description>
+        <background>UI/Psycasts/PathBG_Technowraith</background>
+        <altBackground>UI/Psycasts/PathBG_Technowraith_Alternate</altBackground>
+        <tab>Alpha Mechs</tab>
+        <tooltip>A psycaster who possesses the ability to empower and strengthen mechanoids, using their expertise in technology to enhance their abilities. They can modify and improve the performance of mechanoids, making them more effective in combat and other tasks.</tooltip>
+		<requiredMechanitor>true</requiredMechanitor>
+		<lockedReason>Mechanitor only</lockedReason>
+   </VanillaPsycastsExpanded.PsycasterPathDef>
+	
+	
+   
+</Defs>

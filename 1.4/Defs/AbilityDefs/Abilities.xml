@@ -37,6 +37,33 @@
 			</li>
 		</comps>
 	</AbilityDef>
-
+<AbilityDef>
+		<defName>AM_MechConversion</defName>
+		<label>mech IFF scrambler</label>
+		<description>Remotely hacks the IFF sensors of a mechanoid to temporarily swap its allegiance. This will last for a day, after which the mechanoid will revert to its former allegiance and attack indiscriminately.</description>
+		<iconPath>UI/Abilities/AM_MechConversion</iconPath>
+		<cooldownTicksRange>60000</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>35.9</range>
+			<warmupTime>0.5</warmupTime>
+			<soundCast>PsychicInsanityLanceCast</soundCast>
+			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetMechs>true</canTargetMechs>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="AlphaMechs.CompProperties_MechConversion">
+				
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+		</comps>
+	</AbilityDef>
 
 </Defs>

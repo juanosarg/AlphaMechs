@@ -21,6 +21,8 @@
 		<li IfModActive="OskarPotocki.VFE.Pirates_copy">1.4/Mods/VanillaPiratesExpanded</li>
 		<li IfModActive="Dubwise.Rimatomics">1.4/Mods/Rimatomics</li>	
 		<li IfModActive="Dubwise.Rimatomics_copy">1.4/Mods/Rimatomics</li>
+		<li IfModActive="VanillaExpanded.VPsycastsE">1.4/Mods/VanillaPsycastsExpanded</li>	
+		<li IfModActive="VanillaExpanded.VPsycastsE_copy">1.4/Mods/VanillaPsycastsExpanded</li>
 	</v1.4>
 </loadFolders>
 

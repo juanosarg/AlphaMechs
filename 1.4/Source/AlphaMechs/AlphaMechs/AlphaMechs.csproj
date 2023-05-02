@@ -292,9 +292,11 @@
   <ItemGroup>
     <Compile Include="Abilities\CompDetonate.cs" />
     <Compile Include="Abilities\CompExtractHemogen.cs" />
+    <Compile Include="Abilities\CompMechConversion.cs" />
     <Compile Include="Abilities\CompResurrectMechMinor.cs" />
     <Compile Include="Abilities\CompSwapWeapons.cs" />
     <Compile Include="Abilities\Comps\CompProperties_Detonate.cs" />
+    <Compile Include="Abilities\Comps\CompProperties_MechConversion.cs" />
     <Compile Include="Abilities\Comps\CompProperties_ResurrectMechMinor.cs" />
     <Compile Include="Abilities\Comps\CompProperties_SwapWeapons.cs" />
     <Compile Include="Comps\CompCauseHediff_AoE_WithFaction.cs" />

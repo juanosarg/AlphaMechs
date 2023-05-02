@@ -17,17 +17,19 @@
 					</graphicData>
 					<statBases>
 						<Mass>50</Mass>
-						<ArmorRating_Sharp>2</ArmorRating_Sharp>
+						<ArmorRating_Sharp>1.8</ArmorRating_Sharp>
 						<ArmorRating_Blunt>1.5</ArmorRating_Blunt>
 						<ArmorRating_Heat>1</ArmorRating_Heat>
-						<Insulation_Cold>80</Insulation_Cold>
-						<Insulation_Heat>80</Insulation_Heat>
+						<Insulation_Cold>40</Insulation_Cold>
+						<Insulation_Heat>40</Insulation_Heat>
 						<EquipDelay>1</EquipDelay>
 					</statBases>
 					<equippedStatOffsets>
 						<PsychicSensitivity>-0.5</PsychicSensitivity>
 						<ToxicResistance>0.5</ToxicResistance>
 						<MechBandwidth>24</MechBandwidth>
+						<GlobalWorkSpeed>-0.2</GlobalWorkSpeed>
+						<MechFormingSpeed>0.4</MechFormingSpeed>
 					</equippedStatOffsets>
 					<costList>
 						<ComponentSpacer>2</ComponentSpacer>
@@ -117,6 +119,8 @@
 					<equippedStatOffsets>
 						<MechBandwidth>24</MechBandwidth>
 						<VEF_EnergyShieldEnergyMaxFactor>0.25</VEF_EnergyShieldEnergyMaxFactor>
+						<GlobalWorkSpeed>-0.2</GlobalWorkSpeed>
+						<MechFormingSpeed>0.4</MechFormingSpeed>
 					</equippedStatOffsets>
 					<costList>
 						<Plasteel>60</Plasteel>
@@ -167,6 +171,8 @@
 					<equippedStatOffsets>
 						<ToxicResistance>0.5</ToxicResistance>
 						<MechControlGroups>1</MechControlGroups>
+						<GlobalWorkSpeed>-0.2</GlobalWorkSpeed>
+						<MechFormingSpeed>0.4</MechFormingSpeed>
 					</equippedStatOffsets>
 					<costList>
 						<ComponentSpacer>3</ComponentSpacer>
@@ -190,6 +196,13 @@
 							<li>WarcasketAll</li>
 						</tags>
 					</apparel>
+					<comps>
+						<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+							<abilities>
+								<li>AM_MechConversion</li>
+							</abilities>
+						</li>
+					</comps>
 				</VFEPirates.WarcasketDef>
 			</value>
 		</match>

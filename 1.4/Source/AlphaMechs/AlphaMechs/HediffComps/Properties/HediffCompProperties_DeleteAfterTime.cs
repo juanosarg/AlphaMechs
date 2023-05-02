@@ -5,6 +5,8 @@ namespace AlphaMechs
     public class HediffCompProperties_DeleteAfterTime : HediffCompProperties
     {
         public int disappearsAfterTicks;
+        public bool revertToMechanoid = false;
+       
 
         public HediffCompProperties_DeleteAfterTime()
         {
