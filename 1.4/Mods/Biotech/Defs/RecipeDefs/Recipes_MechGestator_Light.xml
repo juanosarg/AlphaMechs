@@ -55,7 +55,7 @@
   </RecipeDef>
   
    <RecipeDef ParentName="AM_LightMechanoidRecipe">
-    <defName>AM_bellicorRecipe</defName>
+    <defName>AM_BellicorRecipe</defName>
     <label>gestate bellicor</label>
     <description>Gestate a bellicor mechanoid.</description>
     <ingredients Inherit="False">

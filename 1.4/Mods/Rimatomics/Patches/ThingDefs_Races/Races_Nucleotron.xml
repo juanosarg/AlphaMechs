@@ -11,7 +11,7 @@
 				<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoid">
 					<defName>AM_Mech_Nucleotron</defName>
 					<label>nucleotron</label>
-					<description>A specialized Lifter mechanoid designed to transport fissile material inserting and exrtracting it into nuclear reactors. It is equipped with a secure containment unit to prevent any leaks or contamination during transportation. As it is less versatile than a Lifter, it is also quite faster moving.</description>
+					<description>A specialized Lifter mechanoid designed to transport fissile material inserting and extracting it into nuclear reactors. It is equipped with a secure containment unit to prevent any leaks or contamination during transportation. As it is less versatile than a Lifter, it is also quite faster moving.</description>
 					<statBases>
 						<MoveSpeed>5</MoveSpeed>
 					</statBases>

@@ -13,7 +13,7 @@
 					<label>extract hemogen</label>
 					<description>Extract hemogen directly from the blood of a downed person. The target will lose blood and get knocked down. A fast-acting coagulant will seal the wound to prevent bleeding.</description>
 					<iconPath>UI/Abilities/AM_ExtractHemogen</iconPath>
-					<cooldownTicksRange>3600</cooldownTicksRange>
+					<cooldownTicksRange>1800</cooldownTicksRange>
 					<displayOrder>110</displayOrder>
 					<warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
 					<warmupStartSound>Bloodfeed_Cast</warmupStartSound>
