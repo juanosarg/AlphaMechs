@@ -310,7 +310,9 @@
 		<size>(2,2)</size>
 		<costList>
 			<Steel>350</Steel>
-			<ComponentIndustrial>6</ComponentIndustrial>
+			<Plasteel>50</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
 		<researchPrerequisites>
 			<li>AM_Cryptoharmonization</li>
