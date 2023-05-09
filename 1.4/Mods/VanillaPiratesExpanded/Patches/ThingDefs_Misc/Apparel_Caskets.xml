@@ -197,10 +197,8 @@
 						</tags>
 					</apparel>
 					<comps>
-						<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
-							<abilities>
-								<li>AM_MechConversion</li>
-							</abilities>
+						<li Class="AlphaMechs.CompProperties_AddAbility">
+							<ability>AM_MechConversion</ability>
 						</li>
 					</comps>
 				</VFEPirates.WarcasketDef>

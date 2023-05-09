@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
-
 	<AbilityDef>
 		<defName>AM_SwapWeapon</defName>
 		<label>swap gun</label>
@@ -37,7 +35,7 @@
 			</li>
 		</comps>
 	</AbilityDef>
-<AbilityDef>
+	<AbilityDef>
 		<defName>AM_MechConversion</defName>
 		<label>mech IFF scrambler</label>
 		<description>Remotely hacks the IFF sensors of a mechanoid to temporarily swap its allegiance. This will last for a day, after which the mechanoid will revert to its former allegiance and attack indiscriminately.</description>
@@ -65,5 +63,4 @@
 			</li>
 		</comps>
 	</AbilityDef>
-
 </Defs>

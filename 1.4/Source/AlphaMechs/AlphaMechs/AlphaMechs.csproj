@@ -295,6 +295,8 @@
     <Compile Include="Abilities\CompMechConversion.cs" />
     <Compile Include="Abilities\CompResurrectMechMinor.cs" />
     <Compile Include="Abilities\CompSwapWeapons.cs" />
+    <Compile Include="Comps\CompAddAbility.cs" />
+    <Compile Include="Comps\Properties\CompProperties_AddAbility.cs" />
     <Compile Include="Abilities\Comps\CompProperties_Detonate.cs" />
     <Compile Include="Abilities\Comps\CompProperties_MechConversion.cs" />
     <Compile Include="Abilities\Comps\CompProperties_ResurrectMechMinor.cs" />
