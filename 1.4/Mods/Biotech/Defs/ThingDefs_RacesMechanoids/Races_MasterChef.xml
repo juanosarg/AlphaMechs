@@ -5,6 +5,10 @@
 	<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoid">
 		<defName>AM_Mech_MasterChef</defName>
 		<label>culinarius</label>
+		<statBases>
+                        <FoodPoisonChance>0.0</FoodPoisonChance>
+                </statBases>
+
 		<description>Designed for culinary arts, the Culinarius can analyze ingredients and create delicious meals with exceptional precision and consistency. The Culinarius can access an extensive database of recipes, culinary techniques, and flavor profiles, allowing it to adapt and customize its cooking style to suit any cuisine or dietary requirement. Its sturdy metal frame and robust construction make it resistant to heat, moisture, and other common hazards in the kitchen. Much better at cooking than a fabricor, but very inefficient in combat.</description>
 		<race>
 			<body>Mech_Light</body>
