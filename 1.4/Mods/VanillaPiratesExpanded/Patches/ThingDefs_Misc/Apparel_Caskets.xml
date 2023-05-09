@@ -28,7 +28,7 @@
 						<PsychicSensitivity>-0.5</PsychicSensitivity>
 						<ToxicResistance>0.5</ToxicResistance>
 						<MechBandwidth>24</MechBandwidth>
-						<GlobalWorkSpeed>-0.2</GlobalWorkSpeed>
+						<WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
 						<MechFormingSpeed>0.4</MechFormingSpeed>
 					</equippedStatOffsets>
 					<costList>
@@ -119,7 +119,7 @@
 					<equippedStatOffsets>
 						<MechBandwidth>24</MechBandwidth>
 						<VEF_EnergyShieldEnergyMaxFactor>0.25</VEF_EnergyShieldEnergyMaxFactor>
-						<GlobalWorkSpeed>-0.2</GlobalWorkSpeed>
+						<WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
 						<MechFormingSpeed>0.4</MechFormingSpeed>
 					</equippedStatOffsets>
 					<costList>
@@ -171,7 +171,7 @@
 					<equippedStatOffsets>
 						<ToxicResistance>0.5</ToxicResistance>
 						<MechControlGroups>1</MechControlGroups>
-						<GlobalWorkSpeed>-0.2</GlobalWorkSpeed>
+						<WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
 						<MechFormingSpeed>0.4</MechFormingSpeed>
 					</equippedStatOffsets>
 					<costList>
