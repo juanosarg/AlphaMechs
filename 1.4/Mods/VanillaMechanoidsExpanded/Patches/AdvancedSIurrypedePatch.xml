@@ -15,7 +15,7 @@
 						<MoveSpeed>2.3</MoveSpeed>
 						<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
 						<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
-						<BandwidthCost>7</BandwidthCost>
+						<BandwidthCost>2</BandwidthCost>
 					</statBases>
 					<race>
 						<body>AM_SlurrypedeBody</body>

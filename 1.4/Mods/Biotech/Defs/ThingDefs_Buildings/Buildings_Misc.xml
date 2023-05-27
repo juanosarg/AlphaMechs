@@ -345,6 +345,7 @@
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType>
 		<fillPercent>0.4</fillPercent>
+		<rotatable>false</rotatable>
 		<graphicData>
 			<texPath>Things/Building/AM_GreaterMechBooster</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -410,6 +411,7 @@
 		<description>A remote energy efficiency enhancement device. Any friendly mechanoids in its effect radius will use less energy per day.</description>
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType>
+		<rotatable>false</rotatable>
 		<fillPercent>0.4</fillPercent>
 		<graphicData>
 			<texPath>Things/Building/AM_YellowMechBooster</texPath>
@@ -474,6 +476,7 @@
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType>
 		<fillPercent>0.4</fillPercent>
+		<rotatable>false</rotatable>
 		<graphicData>
 			<texPath>Things/Building/AM_RedMechBooster</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -536,6 +539,7 @@
 		<description>A remote targeting enhancement device. Any friendly mechanoids in its effect radius will have reduced weapon cooldown.</description>
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType>
+		<rotatable>false</rotatable>
 		<fillPercent>0.4</fillPercent>
 		<graphicData>
 			<texPath>Things/Building/AM_GreenMechBooster</texPath>
@@ -599,6 +603,7 @@
 		<description>A remote mech disruption device. Any enemy mechanoids in its effect radius will have reduced agility, movement and targeting skill.</description>
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType>
+		<rotatable>false</rotatable>
 		<fillPercent>0.4</fillPercent>
 		<graphicData>
 			<texPath>Things/Building/AM_BlueMechBooster</texPath>

@@ -9,8 +9,8 @@
 		<statBases>
 			<MoveSpeed>4.3</MoveSpeed>
 			<MarketValue>1600</MarketValue>
-			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
 			<MechEnergyLossPerHP>0.75</MechEnergyLossPerHP>
 			 <BandwidthCost>2</BandwidthCost>
 		</statBases>

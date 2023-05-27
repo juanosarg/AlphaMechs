@@ -27,7 +27,7 @@
             <li>Plasteel</li>
           </thingDefs>
         </filter>
-        <count>25</count>
+        <count>5</count>
       </li>
       <li>
         <filter>
@@ -35,7 +35,7 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>3</count>
+        <count>1</count>
       </li>
       <li>
         <filter>

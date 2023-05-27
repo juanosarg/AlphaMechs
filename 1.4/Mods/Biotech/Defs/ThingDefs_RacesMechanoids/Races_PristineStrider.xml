@@ -7,7 +7,7 @@
 		<description>A more advanced, mechanite-grown version of the autostrider, the pristine strider has a large carrying capacity, making it perfect as a partner on long caravan trips. Can also be ridden by pawns to increase travel speed.</description>
 		<statBases>
 			<MoveSpeed>2.1</MoveSpeed>
-			<CaravanRidingSpeedFactor>1.5</CaravanRidingSpeedFactor>
+			<CaravanRidingSpeedFactor>2</CaravanRidingSpeedFactor>
 		</statBases>
 		<race>
 			<body>MechanicalTermite</body>

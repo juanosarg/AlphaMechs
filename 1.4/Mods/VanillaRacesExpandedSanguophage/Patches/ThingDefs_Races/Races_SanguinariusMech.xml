@@ -15,7 +15,7 @@
 					<description>A formidable mechanoid that resembles a Centipede in its body plan, optimized for the efficient collection and processing of hemogen. Its sharp, retractable proboscis makes precise incisions to extract the resource, which is then processed and stored within its internal reservoirs.</description>
 					<statBases>
 						<MoveSpeed>2.5</MoveSpeed>
-						<BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost>
+						<BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>
 					</statBases>
 					<tools>
 						<li>
