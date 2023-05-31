@@ -12,6 +12,7 @@
 					<label>alpha hardware upgrade</label>
 					<description>Researching the mechanoid hardware upgrade will allow you to build all the advanced alpha mechs added in Vanilla Factions Expanded - Mechanoid.</description>
 					<baseCost>1000</baseCost>
+					<techLevel>Ultra</techLevel>
 					<researchViewX>4.00</researchViewX>
 					<researchViewY>0.00</researchViewY>
 					<prerequisites>
