@@ -57,7 +57,7 @@ namespace AlphaMechs
                         if (lord == null)
                         {
                             LordJob_DefendPoint lordJob = new LordJob_DefendPoint(pawn.Position, null, false, true);
-                            lord = LordMaker.MakeNewLord(Find.FactionManager.FirstFactionOfDef(Props.factionToChangeTo), lordJob, Find.CurrentMap, null);
+                            lord = LordMaker.MakeNewLord(Find.FactionManager.FirstFactionOfDef(Props.factionToChangeTo), lordJob, parent.Map, null);
                         }
                         lord.AddPawn(pawn);
 
