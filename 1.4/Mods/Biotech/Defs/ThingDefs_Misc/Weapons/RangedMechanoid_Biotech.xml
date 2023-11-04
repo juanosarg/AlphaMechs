@@ -1032,7 +1032,7 @@
 
 	<!-- Mini needle gun -->
 
-	<ThingDef ParentName="BaseGun" Name="NeedleGunBase">
+	<ThingDef ParentName="BaseGun">
 		<defName>AM_Gun_MiniNeedle</defName>
 		<label>mini needle gun</label>
 		<description>A long-range weapon used by artillerons. Shoots with great accuracy over very long distances, but does very little damage.</description>
