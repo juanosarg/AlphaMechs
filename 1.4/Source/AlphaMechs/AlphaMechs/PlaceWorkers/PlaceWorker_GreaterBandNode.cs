@@ -1,5 +1,4 @@
-﻿
-using RimWorld;
+﻿using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
 using Verse;
@@ -21,6 +20,7 @@ namespace AlphaMechs
                 List<Thing> thingList = item.GetThingList(map);
                 for (int i = 0; i < thingList.Count; i++)
                 {
+                    if (thingList[i].PositionHeld.Equals(center)) continue;
                     if (listBandNodes.Contains(thingList[i].def) || listBandNodes.Contains(thingList[i].def.entityDefToBuild))
                     {
                         return "AM_MustNotBePlacedCloseToAnother".Translate();
