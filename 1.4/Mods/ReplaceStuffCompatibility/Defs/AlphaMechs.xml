@@ -1,6 +1,6 @@
 ﻿<Defs>
 	<Replace_Stuff_Compatibility.InterchangeableItems MayRequire="Ludeon.RimWorld.Biotech">
-		<defName>ReplaceStuffModCompat_AlphaMechs</defName>
+		<defName>AM_ReplaceStuffCompatibility</defName>
 		<replaceLists>
 			<li>
 				<category>Bioetch_Mech_Rechargers</category>
