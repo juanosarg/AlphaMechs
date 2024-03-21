@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<!-- Polychoron -->
+	<ThingDef ParentName="LancerMechanoidWalker">
+		<defName>AM_Mech_Polychoron</defName>
+		<label>polychoron</label>
+		<description>A heavy combat mechanoid with a graser cannon that can deal massive damage to armored targets. Though it lacks agility, its graser cannon is capable of firing focused energy beams that can cut through most shielding and leave enemies defenseless.</description>
+
+		<race>
+			<baseBodySize>1.2</baseBodySize>
+			<baseHealthScale>1.5</baseHealthScale>
+			<lifeStageAges Inherit="False">
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Tesseron_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Tesseron_Death</soundDeath>
+					<soundCall>Pawn_Mech_Tesseron_Call</soundCall>
+				</li>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Tesseron_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Tesseron_Death</soundDeath>
+					<soundCall>Pawn_Mech_Tesseron_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<statBases>
+			<BandwidthCost>4</BandwidthCost>
+			<ControlTakingTime>25</ControlTakingTime>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<MoveSpeed>3.7</MoveSpeed>
+		</statBases>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>AM_Mech_Polychoron</defName>
+		<label>polychoron</label>
+		<race>AM_Mech_Polychoron</race>
+		<combatPower>250</combatPower>
+		<allowInMechClusters>false</allowInMechClusters>
+		<isFighter>false</isFighter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_Polychoron/AM_Polychoron_Clean</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_Polychoron/AllegianceOverlays/AM_Polychoron_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.75</drawSize>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_Polychoron/AM_Polychoron</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_Polychoron/AllegianceOverlays/AM_Polychoron_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.75</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>9999~9999</weaponMoney>
+		<weaponTags>
+			<li>AM_BeamGraserCannon</li>
+		</weaponTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+	</PawnKindDef>
+
+
+
+</Defs>

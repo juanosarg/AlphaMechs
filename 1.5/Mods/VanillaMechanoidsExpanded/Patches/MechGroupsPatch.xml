@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/FactionDef[defName="VFE_Mechanoid"]/pawnGroupMakers/li[1]/options</xpath>
+				<value>
+					<VFE_Mech_Aura>10</VFE_Mech_Aura>
+					<VFE_Mech_Daggersnout>10</VFE_Mech_Daggersnout>
+					<VFE_Mech_Fireworm>5</VFE_Mech_Fireworm>
+					<VFE_Mech_Goliath>10</VFE_Mech_Goliath>
+					<VFE_Mech_Phalanx>5</VFE_Mech_Phalanx>
+					<VFE_Mech_Siegebreaker>5</VFE_Mech_Siegebreaker>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/FactionDef[defName="VFE_Mechanoid"]/pawnGroupMakers/li[2]/options</xpath>
+				<value>
+					<VFE_Mech_Aura>3</VFE_Mech_Aura>
+					<VFE_Mech_Daggersnout>3</VFE_Mech_Daggersnout>
+					<VFE_Mech_Fireworm>3</VFE_Mech_Fireworm>
+					<VFE_Mech_Goliath>10</VFE_Mech_Goliath>
+					<VFE_Mech_Phalanx>3</VFE_Mech_Phalanx>
+					<VFE_Mech_Siegebreaker>10</VFE_Mech_Siegebreaker>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/FactionDef[defName="VFE_Mechanoid"]/pawnGroupMakers/li[3]/options</xpath>
+				<value>
+					<VFE_Mech_Aura>10</VFE_Mech_Aura>
+					<VFE_Mech_Daggersnout>10</VFE_Mech_Daggersnout>
+					<VFE_Mech_Goliath>3</VFE_Mech_Goliath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/FactionDef[defName="VFE_Mechanoid"]/pawnGroupMakers/li[4]/options</xpath>
+				<value>
+					<VFE_Mech_Aura>10</VFE_Mech_Aura>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/FactionDef[defName="VFE_Mechanoid"]/pawnGroupMakers/li[5]/options</xpath>
+				<value>
+					<VFE_Mech_Aura>10</VFE_Mech_Aura>
+					<VFE_Mech_Daggersnout>10</VFE_Mech_Daggersnout>
+					<VFE_Mech_Fireworm>10</VFE_Mech_Fireworm>
+					<VFE_Mech_Goliath>10</VFE_Mech_Goliath>
+					<VFE_Mech_Phalanx>10</VFE_Mech_Phalanx>
+					<VFE_Mech_Siegebreaker>5</VFE_Mech_Siegebreaker>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/FactionDef[defName="VFE_Mechanoid"]/pawnGroupMakers/li[7]/options</xpath>
+				<value>
+					<VFE_Mech_Advanced_Aura>10</VFE_Mech_Advanced_Aura>
+					<VFE_Mech_Advanced_Daggersnout>10</VFE_Mech_Advanced_Daggersnout>
+					<VFE_Mech_Advanced_Fireworm>10</VFE_Mech_Advanced_Fireworm>
+					<VFE_Mech_Advanced_Goliath>10</VFE_Mech_Advanced_Goliath>
+					<VFE_Mech_Advanced_Phalanx>10</VFE_Mech_Advanced_Phalanx>
+					<VFE_Mech_Advanced_Siegebreaker>10</VFE_Mech_Advanced_Siegebreaker>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/FactionDef[defName="VFE_Mechanoid"]/pawnGroupMakers/li[8]/options</xpath>
+				<value>
+					<VFE_Mech_Advanced_Aura>10</VFE_Mech_Advanced_Aura>
+					<VFE_Mech_Advanced_Daggersnout>10</VFE_Mech_Advanced_Daggersnout>
+					<VFE_Mech_Advanced_Goliath>10</VFE_Mech_Advanced_Goliath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/FactionDef[defName="VFE_Mechanoid"]/pawnGroupMakers/li[9]/options</xpath>
+				<value>
+					<VFE_Mech_Advanced_Aura>3</VFE_Mech_Advanced_Aura>
+					<VFE_Mech_Advanced_Daggersnout>3</VFE_Mech_Advanced_Daggersnout>
+					<VFE_Mech_Advanced_Fireworm>3</VFE_Mech_Advanced_Fireworm>
+					<VFE_Mech_Advanced_Goliath>10</VFE_Mech_Advanced_Goliath>
+					<VFE_Mech_Advanced_Phalanx>3</VFE_Mech_Advanced_Phalanx>
+					<VFE_Mech_Advanced_Siegebreaker>10</VFE_Mech_Advanced_Siegebreaker>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/FactionDef[defName="VFE_Mechanoid"]/pawnGroupMakers/li[10]/options</xpath>
+				<value>
+					<VFE_Mech_Advanced_Aura>10</VFE_Mech_Advanced_Aura>
+					<VFE_Mech_Advanced_Daggersnout>10</VFE_Mech_Advanced_Daggersnout>
+					<VFE_Mech_Advanced_Fireworm>10</VFE_Mech_Advanced_Fireworm>
+					<VFE_Mech_Advanced_Goliath>10</VFE_Mech_Advanced_Goliath>
+					<VFE_Mech_Advanced_Phalanx>10</VFE_Mech_Advanced_Phalanx>
+					<VFE_Mech_Advanced_Siegebreaker>10</VFE_Mech_Advanced_Siegebreaker>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

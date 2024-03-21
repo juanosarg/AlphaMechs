@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoidRecipe">
+					<defName>AM_Gestate_Nucleotron</defName>
+					<label>gestate nucleotron</label>
+					<description>Gestate a nucleotron mechanoid.</description>
+					<researchPrerequisite>AM_WorkerStandardMechtech</researchPrerequisite>
+					<recipeUsers>
+						<li>MechGestator</li>
+					</recipeUsers>
+					<products>
+						<AM_Mech_Nucleotron>1</AM_Mech_Nucleotron>
+					</products>
+					<descriptionHyperlinks>
+						<ThingDef>AM_Mech_Nucleotron</ThingDef>
+					</descriptionHyperlinks>
+				</RecipeDef>
+			</value>
+		</match>
+	</Operation>
+</Patch>
+
+

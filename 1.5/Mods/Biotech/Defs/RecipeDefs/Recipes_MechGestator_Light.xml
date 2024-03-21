@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <RecipeDef Name="AM_LightMechanoidRecipe" ParentName="LightMechanoidRecipe" Abstract="True">
+    <researchPrerequisite>AM_WorkerStandardMechtech</researchPrerequisite>
+   <recipeUsers><li>MechGestator</li></recipeUsers>
+  </RecipeDef>
+
+ <RecipeDef ParentName="AM_LightMechanoidRecipe">
+    <defName>AM_DaggersnoutRecipe</defName>
+    <label>gestate daggersnout</label>
+    <description>Gestate a daggersnout mechanoid.</description>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreBasic</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <AM_Daggersnout>1</AM_Daggersnout>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AM_Daggersnout</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+  
+   <RecipeDef ParentName="AM_LightMechanoidRecipe">
+    <defName>AM_BellicorRecipe</defName>
+    <label>gestate bellicor</label>
+    <description>Gestate a bellicor mechanoid.</description>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <AM_Mech_Bellicor>1</AM_Mech_Bellicor>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AM_Mech_Bellicor</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+  
+   <RecipeDef ParentName="AM_LightMechanoidRecipe">
+    <defName>AM_ArtilleronRecipe</defName>
+    <label>gestate artilleron</label>
+    <description>Gestate an artilleron mechanoid.</description>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>70</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <AM_Mech_Artilleron>1</AM_Mech_Artilleron>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AM_Mech_Artilleron</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AM_LightMechanoidRecipe">
+    <defName>AM_BlitzkriegRecipe</defName>
+    <label>gestate blitzkrieg</label>
+    <description>Gestate a blitzkrieg mechanoid.</description>
+    <products>
+      <AM_Blitzkrieg>1</AM_Blitzkrieg>
+    </products>
+	<ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreBasic</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <descriptionHyperlinks>
+      <ThingDef>AM_Blitzkrieg</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+ 
+
+  <RecipeDef ParentName="AM_LightMechanoidRecipe">
+    <defName>AM_Mech_MasterChefRecipe</defName>
+    <label>gestate culinarius</label>
+    <description>Gestate a culinarius mechanoid.</description>
+  
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <AM_Mech_MasterChef>1</AM_Mech_MasterChef>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AM_Mech_MasterChef</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+  
+    <RecipeDef ParentName="AM_LightMechanoidRecipe">
+    <defName>AM_Mech_TurboCleanerRecipe</defName>
+    <label>gestate turbocleaner</label>
+    <description>Gestate a turbocleaner mechanoid.</description>
+  
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <AM_Mech_TurboCleaner>1</AM_Mech_TurboCleaner>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AM_Mech_TurboCleaner</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+ 
+
+</Defs>

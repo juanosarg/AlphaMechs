@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Bellicor -->
+	<ThingDef ParentName="BaseMechanoid">
+		<defName>AM_Mech_Bellicor</defName>
+		<label>bellicor</label>
+		<description>An advanced combat mechanoid designed to excel in high-risk combat situations. With a height of around 5 feet, it is armed with a rapid-firing tactical mechanoid shotgun. Unlike its predecessor, the Militor, the Bellicor is highly durable and has the ability to withstand intense battles. It is often deployed in the front lines to eliminate high priority targets and secure strategic objectives. Due to its advanced capabilities, the Bellicor is more expensive to produce and maintain, but is still highly valued by those who seek to dominate the battlefield.</description>
+		<statBases>
+			<MoveSpeed>4.3</MoveSpeed>
+			<MarketValue>1600</MarketValue>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<MechEnergyLossPerHP>0.75</MechEnergyLossPerHP>
+			 <BandwidthCost>2</BandwidthCost>
+		</statBases>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+			<body>Mech_Light</body>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<baseBodySize>0.95</baseBodySize>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<mechWeightClass>Light</mechWeightClass>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Militor_Death</soundDeath>
+					<soundCall>Pawn_Mech_Militor_Call</soundCall>
+				</li>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Militor_Death</soundDeath>
+					<soundCall>Pawn_Mech_Militor_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<butcherProducts>
+			<Steel>35</Steel>
+		</butcherProducts>
+	</ThingDef>
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>AM_Mech_Bellicor</defName>
+		<label>bellicor</label>
+		<race>AM_Mech_Bellicor</race>
+		<allowInMechClusters>false</allowInMechClusters>
+		<isFighter>false</isFighter>
+		<combatPower>85</combatPower>
+		<weaponMoney>9999~9999</weaponMoney>
+		
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<controlGroupPortraitZoom>1.8</controlGroupPortraitZoom>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_Bellicor/AM_Bellicor_Clean</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_Bellicor/AllegianceOverlays/AM_Bellicor_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_Bellicor/AM_Bellicor</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_Bellicor/AllegianceOverlays/AM_Bellicor_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponTags>
+			<li>AM_MechanoidTacticalShotgun</li>
+		</weaponTags>
+	</PawnKindDef>
+</Defs>

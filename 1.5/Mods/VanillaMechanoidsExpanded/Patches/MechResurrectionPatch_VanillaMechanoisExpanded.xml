@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "ResurrectLightMech"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_VFE_Mech_Advanced_Daggersnout_PlayerControlled</li>
+					
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "ResurrectMediumMech"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_VFE_Mech_Advanced_Aura_PlayerControlled</li>
+						<li>Corpse_AM_Mech_Advanced_PristineSlurrypede_PlayerControlled</li>
+						
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "ResurrectHeavyMech"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_VFE_Mech_Advanced_Fireworm_PlayerControlled</li>
+						<li>Corpse_VFE_Mech_Advanced_Goliath_PlayerControlled</li>
+						<li>Corpse_VFE_Mech_Advanced_Phalanx_PlayerControlled</li>
+						
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "ResurrectUltraheavyMech"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_VFE_Mech_Advanced_Siegebreaker_PlayerControlled</li>
+						
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	
+	
+	
+	
+	
+</Patch>

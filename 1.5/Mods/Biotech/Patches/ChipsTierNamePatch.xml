@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "SignalChip"]/label</xpath>
+		<value>
+			<label>signal chip (tier 1)</label>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "PowerfocusChip"]/label</xpath>
+		<value>
+			<label>powerfocus chip (tier 2)</label>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "NanostructuringChip"]/label</xpath>
+		<value>
+			<label>nano structuring chip (tier 3)</label>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "BurnoutMechlinkBooster"]/label</xpath>
+		<value>
+			<label>mechband antenna (tier 2)</label>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "MechbandDish"]/label</xpath>
+		<value>
+			<label>mechband dish (tier 3)</label>
+		</value>
+	</Operation>
+</Patch>

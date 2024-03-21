@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="VFE_Mechanoid">
+		<defName>VFE_Mech_Siegebreaker</defName>
+		<label>siegebreaker</label>
+		<description>The siegebreaker is a particularly dangerous tank-shaped mechanoid. Armed with a Siegebreaker Cannon that fires explosives shells, they can detect a hostile presence from hundreds of meters away, acting as unrelenting siege weapons that can obliterate even the strongest defense. Their movement is incredibly slow, and their cannon takes a very long time to recharge, but they should be treated as priority targets in most cases. This particular unit appears to be freshly manufactured and will operate more robustly.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Siegebreakers fire from an extremely long range, but they need line of sight, so they can be fooled to enter into close quarters combat, where their cannons are mostly useless. If toggled to not spawn via mod options, they will get replaced by a Centipede Gunner.</description>
+		<statBases>
+			<MoveSpeed>1</MoveSpeed>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+			<PsychicSensitivity>0.75</PsychicSensitivity>
+		</statBases>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<comps>
+			<li Class="AlphaMechs.CompProperties_ChangeDef">
+				<defToChangeTo>VFE_Mech_Centipede</defToChangeTo>
+				<factionToChangeTo>VFE_Mechanoid</factionToChangeTo>
+			</li>
+		</comps>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<body>AM_SiegebreakerBody</body>
+			<baseBodySize>4</baseBodySize>
+			<baseHealthScale>3</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>AM_Siegebreaker_Wounded</soundWounded>
+					<soundDeath>AM_Siegebreaker_Death</soundDeath>
+					<soundCall>AM_Siegebreaker_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+			<Steel>75</Steel>
+			<Plasteel>15</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</butcherProducts>
+	</ThingDef>
+	<PawnKindDef ParentName="VFE_MechanoidKind">
+		<defName>VFE_Mech_Siegebreaker</defName>
+		<label>siegebreaker</label>
+		<race>VFE_Mech_Siegebreaker</race>
+		<combatPower>400</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_MechSiegebreaker/AM_MechSiegebreakerClean</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>9999~9999</weaponMoney>
+		<weaponTags>
+			<li>AM_SiegebreakerTurret</li>
+		</weaponTags>
+	</PawnKindDef>
+</Defs>

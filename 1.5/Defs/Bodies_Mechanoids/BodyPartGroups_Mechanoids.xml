@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartGroupDef>
+    <defName>AM_WingBlades</defName>
+    <label>wing blades</label>
+    <labelShort>wing blade</labelShort>
+  </BodyPartGroupDef>
+  
+    <BodyPartGroupDef>
+    <defName>AM_MechaClaws</defName>
+    <label>mechanoid claws</label>
+    <labelShort>mechanoid claw</labelShort>
+  </BodyPartGroupDef>
+  
+    <BodyPartGroupDef>
+    <defName>AM_NoseBlade</defName>
+    <label>snout blade</label>
+    <labelShort>snout blade</labelShort>
+  </BodyPartGroupDef>
+
+</Defs>

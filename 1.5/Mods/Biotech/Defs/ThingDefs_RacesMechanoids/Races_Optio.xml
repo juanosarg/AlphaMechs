@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Optio -->
+	<ThingDef ParentName="LancerMechanoidWalker">
+		<defName>AM_Mech_Optio</defName>
+		<label>optio</label>
+		<description>An elite combat support mechanoid that employs a rotary needle launcher. Its armor is reinforced to withstand heavy firepower, and it can project a formidable energy shield to protect nearby allies. The Optio is a valuable asset on the battlefield, able to quickly adapt to changing situations and provide crucial support to other mechanoids.</description>
+		<statBases>
+			<MarketValue>1800</MarketValue>
+			<MoveSpeed>4.5</MoveSpeed>
+			<EnergyShieldRechargeRate>0.25</EnergyShieldRechargeRate>
+			<EnergyShieldEnergyMax>1.85</EnergyShieldEnergyMax>
+			<BandwidthCost>3</BandwidthCost>
+			<ControlTakingTime>25</ControlTakingTime>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+		</statBases>
+		<race>
+			<lifeStageAges Inherit="False">
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Legionary_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Legionary_Death</soundDeath>
+					<soundCall>Pawn_Mech_Legionary_Call</soundCall>
+				</li>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Legionary_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Legionary_Death</soundDeath>
+					<soundCall>Pawn_Mech_Legionary_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<comps>
+			<li Class="CompProperties_ProjectileInterceptor">
+				<radius>5</radius>
+				<interceptGroundProjectiles>true</interceptGroundProjectiles>
+				<color>(0.8, 0.4, 0.4)</color>
+				<reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+				<activeSound>BulletShield_Ambience</activeSound>
+				<hitPoints>250</hitPoints>
+				<hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+				<chargeDurationTicks>5400</chargeDurationTicks>
+				<!-- 90s -->
+				<drawWithNoSelection>True</drawWithNoSelection>
+				<disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+				<gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>AM_Mech_Optio</defName>
+		<label>optio</label>
+		<race>AM_Mech_Optio</race>
+		<combatPower>180</combatPower>
+		<allowInMechClusters>false</allowInMechClusters>
+		<isFighter>false</isFighter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_Optio/AM_Optio_Clean</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_Optio/AllegianceOverlays/AM_Optio_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<drawSize>1.75</drawSize>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_Optio/AM_Optio</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_Optio/AllegianceOverlays/AM_Optio_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<drawSize>1.75</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>9999~9999</weaponMoney>
+		<weaponTags>
+			<li>AM_MechanoidGunRotaryNeedle</li>
+		</weaponTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<controlGroupPortraitZoom>1.2</controlGroupPortraitZoom>
+	</PawnKindDef>
+
+
+
+
+</Defs>

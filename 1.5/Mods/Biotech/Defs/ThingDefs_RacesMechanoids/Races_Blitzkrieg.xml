@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="LightMechanoid">
+		<defName>AM_Blitzkrieg</defName>
+		<label>blitzkrieg</label>
+		<description>The Blietzkrieg is a unique mechanoid designed for tactical warfare and area denial. Shaped like a sleek and menacing metallic mine, it is capable of self-propelling itself to the intended target location before detonating in a devastating explosion. However, its indiscriminate detonation makes it a double-edged sword, and careful coordination is required to ensure that it does not harm friendly forces.</description>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<race>
+			<deathAction>
+				<workerClass>AlphaMechs.DeathActionWorker_BlitzkriegExplosion</workerClass>
+			</deathAction>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_WarUrchin_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_WarUrchin_Death</soundDeath>
+					<soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
+				</li>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_WarUrchin_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_WarUrchin_Death</soundDeath>
+					<soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<body>Mech_Light</body>
+			<baseHealthScale>0.01</baseHealthScale>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>AM_Blitzkrieg</defName>
+		<label>blitzkrieg</label>
+		<race>AM_Blitzkrieg</race>
+		<allowInMechClusters>false</allowInMechClusters>
+		<isFighter>false</isFighter>
+		<combatPower>95</combatPower>
+		<forceNoDeathNotification>true</forceNoDeathNotification>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_Blitzkrieg/AM_Blitzkrieg_Clean</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_Blitzkrieg/AllegianceOverlays/AM_Blitzkrieg_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_Blitzkrieg/AM_Blitzkrieg</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_Blitzkrieg/AllegianceOverlays/AM_Blitzkrieg_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<abilities>
+			<li>AM_Detonate</li>
+		</abilities>
+	</PawnKindDef>
+</Defs>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<!-- Nucleotron -->
+				<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoid">
+					<defName>AM_Mech_Nucleotron</defName>
+					<label>nucleotron</label>
+					<description>A specialized Lifter mechanoid designed to transport fissile material inserting and extracting it into nuclear reactors. It is equipped with a secure containment unit to prevent any leaks or contamination during transportation. As it is less versatile than a Lifter, it is also quite faster moving.</description>
+					<statBases>
+						<MoveSpeed>5</MoveSpeed>
+					</statBases>
+
+					<race>
+
+						<mechEnabledWorkTypes>
+							<li>NuclearWork</li>
+						</mechEnabledWorkTypes>
+						<mechWorkTypePriorities>
+							<NuclearWork>1</NuclearWork>
+						</mechWorkTypePriorities>
+						<lifeStageAges>
+							<li>
+								<def>MechanoidFullyFormed</def>
+								<minAge>0</minAge>
+								<soundWounded>Pawn_Mech_Lifter_Wounded</soundWounded>
+								<soundDeath>Pawn_Mech_Lifter_Death</soundDeath>
+								<soundCall>Pawn_Mech_Lifter_Call</soundCall>
+							</li>
+							<li>
+								<def>MechanoidFullyFormed</def>
+								<minAge>100</minAge>
+								<soundWounded>Pawn_Mech_Lifter_Wounded</soundWounded>
+								<soundDeath>Pawn_Mech_Lifter_Death</soundDeath>
+								<soundCall>Pawn_Mech_Lifter_Call</soundCall>
+							</li>
+						</lifeStageAges>
+					</race>
+				</ThingDef>
+				<PawnKindDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="NonCombatLightMechanoidKind">
+					<defName>AM_Mech_Nucleotron</defName>
+					<label>nucleotron</label>
+					<race>AM_Mech_Nucleotron</race>
+					<lifeStages>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Mechanoid/AM_Nucleotron/AM_Nucleotron_Clean</texPath>
+								<maskPath>Things/Pawn/Mechanoid/AM_Nucleotron/AllegianceOverlays/AM_Nucleotron_Overlay</maskPath>
+								<shaderType>CutoutWithOverlay</shaderType>
+								<graphicClass>Graphic_Multi</graphicClass>
+								<drawSize>1.1</drawSize>
+							</bodyGraphicData>
+						</li>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Mechanoid/AM_Nucleotron/AM_Nucleotron</texPath>
+								<maskPath>Things/Pawn/Mechanoid/AM_Nucleotron/AllegianceOverlays/AM_Nucleotron_Overlay</maskPath>
+								<shaderType>CutoutWithOverlay</shaderType>
+								<graphicClass>Graphic_Multi</graphicClass>
+								<drawSize>1.1</drawSize>
+							</bodyGraphicData>
+						</li>
+					</lifeStages>
+				</PawnKindDef>
+			</value>
+		</match>
+	</Operation>
+</Patch>

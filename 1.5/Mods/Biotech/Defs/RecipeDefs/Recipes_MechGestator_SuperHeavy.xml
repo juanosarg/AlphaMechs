@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef Name="AM_SuperHeavyMechanoidRecipe" ParentName="SuperHeavyMechanoidRecipe" Abstract="True">
+    <gestationCycles>12</gestationCycles>
+    <researchPrerequisite>AM_UltraHeavyMechtech</researchPrerequisite>
+	<recipeUsers><li>LargeMechGestator</li></recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AM_SuperHeavyMechanoidRecipe">
+    <defName>AM_SiegebreakerRecipe</defName>
+    <label>gestate siegebreaker</label>
+    <description>Gestate a siegebreaker mechanoid.</description>
+    <products>
+      <AM_Siegebreaker>1</AM_Siegebreaker>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AM_Siegebreaker</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>450</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>175</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PowerfocusChip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+  
+   <RecipeDef ParentName="AM_SuperHeavyMechanoidRecipe">
+    <defName>AM_SiegemelterRecipe</defName>
+    <label>gestate siegemelter</label>
+    <description>Gestate a siegemelter mechanoid.</description>
+    <products>
+      <AM_Siegemelter>1</AM_Siegemelter>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AM_Siegemelter</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>450</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>250</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AM_StellarProcessingChip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+  
+   <RecipeDef ParentName="AM_SuperHeavyMechanoidRecipe">
+    <defName>AM_StarfireRecipe</defName>
+    <label>gestate starfire</label>
+    <description>Gestate a starfire mechanoid.</description>
+    <products>
+      <AM_Starfire>1</AM_Starfire>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AM_Starfire</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>850</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>500</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AM_StellarProcessingChip</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+	   <li>
+        <filter>
+          <thingDefs>
+            <li>AM_QuantumMatrixChip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+  
+   <RecipeDef ParentName="AM_SuperHeavyMechanoidRecipe">
+    <defName>AM_Mech_LegateRecipe</defName>
+    <label>gestate legate</label>
+    <description>Gestate a legate mechanoid.</description>
+    <products>
+      <AM_Mech_Legate>1</AM_Mech_Legate>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AM_Mech_Legate</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>450</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>300</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AM_HyperLinkageChip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+
+ 
+  
+   <RecipeDef ParentName="AM_SuperHeavyMechanoidRecipe">
+    <defName>AM_InfernusRecipe</defName>
+    <label>gestate infernus</label>
+    <description>Gestate an infernus mechanoid.</description>
+    <products>
+      <AM_Infernus>1</AM_Infernus>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AM_Infernus</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>650</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>600</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>AM_HyperLinkageChip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SignalChip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+  
+   <RecipeDef ParentName="AM_SuperHeavyMechanoidRecipe">
+    <defName>AM_WarEmpressRecipe</defName>
+    <label>gestate war empress</label>
+    <description>Gestate a war empress mechanoid.</description>
+    <products>
+      <AM_WarEmpress>1</AM_WarEmpress>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AM_WarEmpress</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>800</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>450</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AM_StellarProcessingChip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	   <li>
+        <filter>
+          <thingDefs>
+            <li>NanostructuringChip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+  
+   <RecipeDef ParentName="AM_SuperHeavyMechanoidRecipe">
+    <defName>AM_ApoptosisRecipe</defName>
+    <label>gestate apoptosis</label>
+    <description>Gestate an apoptosis mechanoid.</description>
+    <products>
+      <AM_Apoptosis>1</AM_Apoptosis>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AM_Apoptosis</ThingDef>
+    </descriptionHyperlinks>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>850</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>450</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AM_QuantumMatrixChip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<VFEPirates.WarcasketDef ParentName="VFEP_WarcasketArmorBase">
+					<defName>VFEP_Warcasket_MechController</defName>
+					<label>mech master warcasket</label>
+					<shortDescription>Specialized spacer-tech warcasket shell that enables the wearer to control mechanoids effectively.</shortDescription>
+					<description>The Mech Master Warcasket is a specialized warcasket shell that enables the wearer to control mechanoids effectively. It is equipped with advanced technology that enhances the wearer's neural mechlink with mechanoids, providing unparalleled control over these machines on the battlefield.\n\nIn addition to its advanced control systems, the Mech Master Warcasket also features a powerful energy shield that can absorb and deflect incoming attacks, making it an excellent choice for frontline combat situations. Its integrated power systems ensure that the shield remains operational even in the most intense combat situations.</description>
+					<graphicData>
+						<texPath>Things/Pawn/Warcasketlike/AM_WarcasketMech</texPath>
+					</graphicData>
+					<statBases>
+						<Mass>50</Mass>
+						<ArmorRating_Sharp>1.8</ArmorRating_Sharp>
+						<ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+						<ArmorRating_Heat>1</ArmorRating_Heat>
+						<Insulation_Cold>40</Insulation_Cold>
+						<Insulation_Heat>40</Insulation_Heat>
+						<EquipDelay>1</EquipDelay>
+					</statBases>
+					<equippedStatOffsets>
+						<PsychicSensitivity>-0.5</PsychicSensitivity>
+						<ToxicResistance>0.5</ToxicResistance>
+						<MechBandwidth>24</MechBandwidth>
+						<WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
+						<MechFormingSpeed>0.4</MechFormingSpeed>
+					</equippedStatOffsets>
+					<costList>
+						<ComponentSpacer>2</ComponentSpacer>
+						<Plasteel>160</Plasteel>
+						<Uranium>50</Uranium>
+						<AM_QuantumMatrixChip>1</AM_QuantumMatrixChip>
+					</costList>
+					<researchPrerequisites>
+						<li>VFEP_SpacerWarcaskets</li>
+						<li>AM_Cryptoharmonization</li>
+					</researchPrerequisites>
+					<apparel>
+						<bodyPartGroups>
+							<li>Torso</li>
+							<li>Legs</li>
+							<li>Feet</li>
+						</bodyPartGroups>
+						<wornGraphicPath>Things/Pawn/Warcasketlike/AM_WarcasketMech</wornGraphicPath>
+						<layers>
+							<li>OnSkin</li>
+							<li>Middle</li>
+							<li>Shell</li>
+						</layers>
+						<tags>
+							<li>WarcasketVeteran</li>
+							<li>WarcasketAll</li>
+						</tags>
+					</apparel>
+					<tickerType>Normal</tickerType>
+					<comps>
+						<li Class="VFECore.CompProperties_ShieldBubble">
+							<compClass>VFECore.CompShieldBubble</compClass>
+							<blockRangedAttack>true</blockRangedAttack>
+							<blockMeleeAttack>false</blockMeleeAttack>
+							<showWhenDrafted>true</showWhenDrafted>
+							<showOnHostiles>true</showOnHostiles>
+							<showOnNeutralInCombat>true</showOnNeutralInCombat>
+							<shieldTexPath>Other/ShieldBubble</shieldTexPath>
+							<EnergyShieldRechargeRate>0.7</EnergyShieldRechargeRate>
+							<EnergyShieldEnergyMax>250</EnergyShieldEnergyMax>
+							<chargeFullyWhenMade>true</chargeFullyWhenMade>
+							<minShieldSize>2.1</minShieldSize>
+							<maxShieldSize>2.7</maxShieldSize>
+							<disableRotation>true</disableRotation>
+							<dontAllowRangedAttack>true</dontAllowRangedAttack>
+						</li>
+					</comps>
+					<modExtensions>
+						<li Class="VFECore.ApparelExtension">
+							<traitsOnEquip>
+								<li>VFEP_WarcasketTrait_Mech</li>
+							</traitsOnEquip>
+							<traitsOnUnequip>
+								<li>VFEP_Shellcasket</li>
+							</traitsOnUnequip>
+							<carryingCapacity>75</carryingCapacity>
+							<pawnCapacityMinLevels>
+								<li>
+									<capacity>Moving</capacity>
+									<minLevel>0.7</minLevel>
+								</li>
+								<li>
+									<capacity>Manipulation</capacity>
+									<minLevel>0.7</minLevel>
+								</li>
+							</pawnCapacityMinLevels>
+						</li>
+					</modExtensions>
+				</VFEPirates.WarcasketDef>
+				<VFEPirates.WarcasketDef ParentName="VFEP_WarcasketShoulderPadBase">
+					<defName>VFEP_Warcasket_Shoulders_MechController</defName>
+					<label>mech master warcasket shoulders</label>
+					<shortDescription>Specialized spacer-tech warcasket pauldrons that enable the wearer to control mechanoids effectively.</shortDescription>
+					<description>The Mech Master Warcasket is a specialized warcasket shell that enables the wearer to control mechanoids effectively. It is equipped with advanced technology that enhances the wearer's neural mechlink with mechanoids, providing unparalleled control over these machines on the battlefield.\n\nIn addition to its advanced control systems, the Mech Master Warcasket also features a powerful energy shield that can absorb and deflect incoming attacks, making it an excellent choice for frontline combat situations. Its integrated power systems ensure that the shield remains operational even in the most intense combat situations.</description>
+					<graphicData>
+						<texPath>Things/Pawn/Warcasketlike/AM_WarcasketMechShoulders</texPath>
+					</graphicData>
+					<statBases>
+						<Mass>20</Mass>
+						<ArmorRating_Sharp>1.85</ArmorRating_Sharp>
+						<ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+						<ArmorRating_Heat>1</ArmorRating_Heat>
+						<Insulation_Cold>22</Insulation_Cold>
+						<Insulation_Heat>22</Insulation_Heat>
+						<EquipDelay>1</EquipDelay>
+					</statBases>
+					<equippedStatOffsets>
+						<MechBandwidth>24</MechBandwidth>
+						<VEF_EnergyShieldEnergyMaxFactor>0.25</VEF_EnergyShieldEnergyMaxFactor>
+						<WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
+						<MechFormingSpeed>0.4</MechFormingSpeed>
+					</equippedStatOffsets>
+					<costList>
+						<Plasteel>60</Plasteel>
+						<ComponentSpacer>2</ComponentSpacer>
+						<AM_StellarProcessingChip>1</AM_StellarProcessingChip>
+					</costList>
+					<researchPrerequisites>
+						<li>VFEP_SpacerWarcaskets</li>
+						<li>AM_QuantumPulseMessaging</li>
+					</researchPrerequisites>
+					<apparel>
+						<bodyPartGroups>
+							<li>Shoulders</li>
+							<li>Arms</li>
+							<li>Hands</li>
+							<li>Neck</li>
+						</bodyPartGroups>
+						<wornGraphicPath>Things/Pawn/Warcasketlike/AM_WarcasketMechShoulders</wornGraphicPath>
+						<layers>
+							<li>OnSkin</li>
+							<li>Middle</li>
+							<li>Shell</li>
+						</layers>
+						<tags>
+							<li>WarcasketVeteran</li>
+							<li>WarcasketAll</li>
+						</tags>
+					</apparel>
+				</VFEPirates.WarcasketDef>
+				<VFEPirates.WarcasketDef ParentName="VFEP_WarcasketHelmetBase">
+					<defName>VFEP_Warcasket_Helmet_MechController</defName>
+					<label>mech master warcasket helmet</label>
+					<shortDescription>Specialized spacer-tech warcasket helmet that enables the wearer to control mechanoids effectively.</shortDescription>
+					<description>The Mech Master Warcasket is a specialized warcasket shell that enables the wearer to control mechanoids effectively. It is equipped with advanced technology that enhances the wearer's neural mechlink with mechanoids, providing unparalleled control over these machines on the battlefield.\n\nIn addition to its advanced control systems, the Mech Master Warcasket also features a powerful energy shield that can absorb and deflect incoming attacks, making it an excellent choice for frontline combat situations. Its integrated power systems ensure that the shield remains operational even in the most intense combat situations.</description>
+					<graphicData>
+						<texPath>Things/Pawn/Warcasketlike/AM_WarcasketMechHelmet</texPath>
+					</graphicData>
+					<uiIconScale>1.25</uiIconScale>
+					<statBases>
+						<Mass>8</Mass>
+						<ArmorRating_Sharp>1.85</ArmorRating_Sharp>
+						<ArmorRating_Blunt>1</ArmorRating_Blunt>
+						<ArmorRating_Heat>1</ArmorRating_Heat>
+						<Insulation_Cold>10</Insulation_Cold>
+						<Insulation_Heat>10</Insulation_Heat>
+						<EquipDelay>1</EquipDelay>
+					</statBases>
+					<equippedStatOffsets>
+						<ToxicResistance>0.5</ToxicResistance>
+						<MechControlGroups>1</MechControlGroups>
+						<WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
+						<MechFormingSpeed>0.4</MechFormingSpeed>
+					</equippedStatOffsets>
+					<costList>
+						<ComponentSpacer>3</ComponentSpacer>
+						<Plasteel>60</Plasteel>
+						<AM_HyperLinkageChip>1</AM_HyperLinkageChip>
+					</costList>
+					<researchPrerequisites>
+						<li>VFEP_SpacerWarcaskets</li>
+						<li>AM_VoidLinkConnectivity</li>
+					</researchPrerequisites>
+					<apparel>
+						<bodyPartGroups>
+							<li>FullHead</li>
+						</bodyPartGroups>
+						<wornGraphicPath>Things/Pawn/Warcasketlike/AM_WarcasketMechHelmet</wornGraphicPath>
+						<layers>
+							<li>Overhead</li>
+						</layers>
+						<tags>
+							<li>WarcasketVeteran</li>
+							<li>WarcasketAll</li>
+						</tags>
+					</apparel>
+					<comps>
+						<li Class="AlphaMechs.CompProperties_AddAbility">
+							<ability>AM_MechConversion</ability>
+						</li>
+					</comps>
+				</VFEPirates.WarcasketDef>
+			</value>
+		</match>
+	</Operation>
+</Patch>

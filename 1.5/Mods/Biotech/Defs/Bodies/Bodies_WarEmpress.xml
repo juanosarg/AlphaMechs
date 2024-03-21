@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+  <BodyDef>
+    <defName>AM_Mech_WarEmpress</defName>
+    <label>war empress</label>
+    <corePart>
+      <def>MechanicalWarqueenBodyFirstRing</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>Torso</li>
+      </groups>
+      <parts>
+        <li>
+          <def>MechanicalHead</def>
+          <coverage>0.1</coverage>
+          <groups>
+            <li>HeadAttackTool</li>
+          </groups>
+          <parts>
+            <li>
+              <def>ArtificialBrain</def>
+              <coverage>0.10</coverage>
+              <depth>Inside</depth>
+            </li>
+            <li>
+              <def>SightSensor</def>
+              <customLabel>left sight sensor</customLabel>
+              <coverage>0.13</coverage>
+            </li>
+            <li>
+              <def>SightSensor</def>
+              <customLabel>right sight sensor</customLabel>
+              <coverage>0.13</coverage>
+            </li>
+            <li>
+              <def>HearingSensor</def>
+              <customLabel>left hearing sensor</customLabel>
+              <coverage>0.10</coverage>
+            </li>
+            <li>
+              <def>HearingSensor</def>
+              <customLabel>right hearing sensor</customLabel>
+              <coverage>0.10</coverage>
+            </li>
+            <li>
+              <def>SmellSensor</def>
+              <coverage>0.10</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalWarqueenBodySecondRing</def>
+          <coverage>0.55</coverage>
+          <parts>
+            <li>
+              <def>Reactor</def>
+              <coverage>0.05</coverage>
+              <depth>Inside</depth>
+            </li>
+            <li>
+              <def>MechanicalWarqueenBodyThirdRing</def>
+              <coverage>0.8</coverage>
+              <parts>
+                <li>
+                  <def>MechanicalWarqueenBodyFourthRing</def>
+                  <coverage>0.7</coverage>
+                  <parts>
+                    <li>
+                      <def>MechanicalWarqueenBodyFifthRing</def>
+                      <coverage>0.6</coverage>
+                      <parts>
+                        <li>
+                          <def>FluidReprocessor</def>
+                          <coverage>0.05</coverage>
+                          <depth>Inside</depth>
+                        </li>
+                        <li>
+                          <def>MechanicalWarqueenFormingPod</def>
+                          <coverage>0.5</coverage>
+                          <height>Middle</height>
+                          <depth>Inside</depth>
+                        </li>
+                      </parts>
+                    </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+		 <li>
+          <def>MechanicalShoulder</def>
+          <customLabel>left shoulder</customLabel>
+          <coverage>0.1</coverage>
+          <parts>
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>left arm</customLabel>
+              <coverage>0.85</coverage>
+              <parts>
+                <li>
+                  <def>PowerClaw</def>
+                  <customLabel>left power claw</customLabel>
+                  <coverage>0.2</coverage>
+                  <height>Bottom</height>
+                  <groups>
+                    <li>LeftPowerClaw</li>
+                  </groups>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalShoulder</def>
+          <customLabel>right shoulder</customLabel>
+          <coverage>0.1</coverage>
+          <parts>
+            <li>
+              <def>MechanicalArm</def>
+              <customLabel>right arm</customLabel>
+              <coverage>0.85</coverage>
+              <parts>
+                <li>
+                  <def>PowerClaw</def>
+                  <customLabel>right power claw</customLabel>
+                  <coverage>0.2</coverage>
+                  <height>Bottom</height>
+                  <groups>
+                    <li>RightPowerClaw</li>
+                  </groups>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>BulbTurret</def>
+          <customLabel>bulb turret</customLabel>
+          <coverage>0.05</coverage>
+          <groups>
+            <li>BulbTurret</li>
+          </groups>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+</Defs>

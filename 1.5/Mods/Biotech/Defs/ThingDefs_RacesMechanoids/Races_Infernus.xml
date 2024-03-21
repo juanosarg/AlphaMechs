@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Infernus -->
+	<ThingDef ParentName="SuperHeavyMechanoid">
+		<defName>AM_Infernus</defName>
+		<label>infernus</label>
+		<description>An ultra-heavy mechanoid with an incredibly dangerous orbital strike targeter. The targeter won't cause any damage on its own, but a devastating orbital strike will be launched a few seconds after it finishes focusing on a target. This attack takes a long time to charge, and it has a large minimum range. The Infernus accumulates heat constantly due to its enormous size, and it can release it to ignite flammable objects nearby.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Seriously, don't let this thing fire...</description>
+		<race>
+			<body>Mech_Diabolus</body>
+			<baseBodySize>4</baseBodySize>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Diabolus_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Diabolus_Death</soundDeath>
+					<soundCall>Pawn_Mech_Diabolus_Call</soundCall>
+				</li>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Diabolus_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Diabolus_Death</soundDeath>
+					<soundCall>Pawn_Mech_Diabolus_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<baseHealthScale>4.5</baseHealthScale>
+		</race>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<comps>
+			<li Class="AlphaMechs.CompProperties_TargetingBeamBlue"/>
+			<li Class="CompProperties_TurretGun">
+				<turretDef>Gun_ChargeBlasterTurret</turretDef>
+				<angleOffset>-90</angleOffset>
+			</li>
+		</comps>
+		<statBases>
+			<BandwidthCost>8</BandwidthCost>
+			<EMPResistance>0.8</EMPResistance>
+			<MoveSpeed>3</MoveSpeed>
+		</statBases>
+		<killedLeavingsPlayerHostile>
+			<AM_HyperLinkageChip>1</AM_HyperLinkageChip>
+		</killedLeavingsPlayerHostile>
+		<modExtensions>
+			<li Class="AlphaMechs.MechSizeExtension">
+				<isBossSizeMech>true</isBossSizeMech>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="HeavyMechanoidKind">
+		<defName>AM_Infernus</defName>
+		<label>infernus</label>
+		<race>AM_Infernus</race>
+		<combatPower>750</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+		<allowInMechClusters>false</allowInMechClusters>
+		<isFighter>false</isFighter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_Infernus/AM_Infernus_Clean</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_Infernus/AllegianceOverlays/AM_Infernus_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>4.5</drawSize>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_Infernus/AM_Infernus</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_Infernus/AllegianceOverlays/AM_Infernus_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>4.5</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponTags>
+			<li>AM_Gun_HellsphereOrbital</li>
+		</weaponTags>
+		<abilities>
+			<li>FireBurst</li>
+		</abilities>
+	</PawnKindDef>
+</Defs>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Master Chef -->
+	<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoid">
+		<defName>AM_Mech_MasterChef</defName>
+		<label>culinarius</label>
+		<description>Designed for culinary arts, the Culinarius can analyze ingredients and create delicious meals with exceptional precision and consistency. The Culinarius can access an extensive database of recipes, culinary techniques, and flavor profiles, allowing it to adapt and customize its cooking style to suit any cuisine or dietary requirement. Its sturdy metal frame and robust construction make it resistant to heat, moisture, and other common hazards in the kitchen. Much better at cooking than a fabricor, but very inefficient in combat.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can do cooking tasks with a cooking skill of 15, as well as 150% work speed.</description>
+		<statBases>
+			<WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+			<FoodPoisonChance>0.001</FoodPoisonChance>
+		</statBases>
+		<race>
+			<body>Mech_Light</body>
+			<mechEnabledWorkTypes>
+				<li>Cooking</li>
+			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Cooking>1</Cooking>
+			</mechWorkTypePriorities>
+			<mechFixedSkillLevel>15</mechFixedSkillLevel>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Fabricor_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Fabricor_Death</soundDeath>
+					<soundCall>Pawn_Mech_Fabricor_Call</soundCall>
+				</li>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Fabricor_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Fabricor_Death</soundDeath>
+					<soundCall>Pawn_Mech_Fabricor_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+	</ThingDef>
+	<PawnKindDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="NonCombatLightMechanoidKind">
+		<defName>AM_Mech_MasterChef</defName>
+		<label>culinarius</label>
+		<race>AM_Mech_MasterChef</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_MasterChef/AM_MasterChef_Clean</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_MasterChef/AllegianceOverlays/AM_MasterChef_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/AM_MasterChef/AM_MasterChef</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AM_MasterChef/AllegianceOverlays/AM_MasterChef_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

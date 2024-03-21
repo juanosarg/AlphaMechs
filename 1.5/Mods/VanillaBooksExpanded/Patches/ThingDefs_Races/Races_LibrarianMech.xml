@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<!-- Librarian -->
+				<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoid">
+					<defName>AM_Mech_Librarian</defName>
+					<label>scriptomaton</label>
+					<description>The Scriptomaton is a humanoid mechanoid designed for writing and maintaining libraries. It has a vast database of knowledge at its disposal and can quickly and efficiently categorize and organize new information as it becomes available. The Scriptomaton is equipped with advanced writing tools, including pens, pencils, and quills, as well as cutting-edge software that allows it to transcribe written text into digital formats. Its sleek, humanoid form and advanced mobility systems enable it to move swiftly and gracefully through libraries and archives, collecting and preserving valuable documents and artifacts.</description>
+					<race>
+						<body>Mech_Light</body>
+						<mechEnabledWorkTypes>
+							<li>VBE_Writing</li>
+						</mechEnabledWorkTypes>
+						<mechWorkTypePriorities>
+							<VBE_Writing>2</VBE_Writing>
+						</mechWorkTypePriorities>
+						<lifeStageAges>
+							<li>
+								<def>MechanoidFullyFormed</def>
+								<minAge>0</minAge>
+								<soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
+								<soundDeath>Pawn_Mech_Militor_Death</soundDeath>
+								<soundCall>Pawn_Mech_Militor_Call</soundCall>
+							</li>
+							<li>
+								<def>MechanoidFullyFormed</def>
+								<minAge>100</minAge>
+								<soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
+								<soundDeath>Pawn_Mech_Militor_Death</soundDeath>
+								<soundCall>Pawn_Mech_Militor_Call</soundCall>
+							</li>
+						</lifeStageAges>
+					</race>
+				</ThingDef>
+				<PawnKindDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="NonCombatLightMechanoidKind">
+					<defName>AM_Mech_Librarian</defName>
+					<label>scriptomaton</label>
+					<race>AM_Mech_Librarian</race>
+					<lifeStages>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Mechanoid/AM_Librarian/AM_Librarian_Clean</texPath>
+								<maskPath>Things/Pawn/Mechanoid/AM_Librarian/AllegianceOverlays/AM_Librarian_Overlay</maskPath>
+								<shaderType>CutoutWithOverlay</shaderType>
+								<graphicClass>Graphic_Multi</graphicClass>
+								<drawSize>2</drawSize>
+							</bodyGraphicData>
+						</li>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Mechanoid/AM_Librarian/AM_Librarian</texPath>
+								<maskPath>Things/Pawn/Mechanoid/AM_Librarian/AllegianceOverlays/AM_Librarian_Overlay</maskPath>
+								<shaderType>CutoutWithOverlay</shaderType>
+								<graphicClass>Graphic_Multi</graphicClass>
+								<drawSize>2</drawSize>
+							</bodyGraphicData>
+						</li>
+					</lifeStages>
+				</PawnKindDef>
+			</value>
+		</match>
+	</Operation>
+</Patch>

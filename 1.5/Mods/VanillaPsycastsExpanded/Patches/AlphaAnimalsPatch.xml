@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Animals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/VanillaPsycastsExpanded.PsycasterPathDef[defName = "AM_Circuitbinder"]/tab</xpath>
+					<value>
+						<tab>Alpha Animals</tab>
+					</value>
+
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/VanillaPsycastsExpanded.PsycasterPathDef[defName = "AM_Technowraith"]/tab</xpath>
+					<value>
+						<tab>Alpha Animals</tab>
+					</value>
+
+				</li>
+
+			</operations>
+
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,4 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaMechs\1.4\Assemblies\AlphaMechs.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaMechs\1.4\Source\AlphaMechs\AlphaMechs\obj\Debug\AlphaMechs.csproj.AssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaMechs\1.4\Source\AlphaMechs\AlphaMechs\obj\Debug\AlphaMechs.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaMechs\1.4\Source\AlphaMechs\AlphaMechs\obj\Debug\AlphaMechs.dll

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+  <!-- Legate -->
+  <ThingDef ParentName="SuperHeavyMechanoid">
+    <defName>AM_Mech_Legate</defName>
+    <label>legate</label>
+    <description>An ultraheavy mech with a built-in advanced shield bubble generator. The Legate lacks the point-defense bulb turret present in Centurions, but in exchange it is armed with a super heavy charge blaster that is much more dangerous than standard ones.</description>
+    <statBases>
+      <MoveSpeed>1.6</MoveSpeed>
+      <EnergyShieldRechargeRate>0.75</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>5</EnergyShieldEnergyMax>
+      <MeleeDoorDamageFactor>1.5</MeleeDoorDamageFactor>
+    </statBases>
+    <race>
+      <body>Mech_Centurion</body>
+      <baseBodySize>3.6</baseBodySize>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Centurion_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centurion_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centurion_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Centurion_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centurion_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centurion_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <baseHealthScale>4</baseHealthScale>
+    </race>
+    <comps>
+      <li Class="CompProperties_ProjectileInterceptor">
+        <radius>6</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.4, 0.4, 0.4)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>450</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+        <chargeDurationTicks>1800</chargeDurationTicks><!-- 30s -->
+        <rechargeHitPointsIntervalTicks>120</rechargeHitPointsIntervalTicks>
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+      
+    </comps>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Demolish</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+  </ThingDef>
+
+ 
+  
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+     <defName>AM_Mech_Legate</defName>
+    <label>legate</label>
+    <race>AM_Mech_Legate</race>
+    <combatPower>450</combatPower>
+    <maxPerGroup>1</maxPerGroup>
+    <allowInMechClusters>false</allowInMechClusters>
+	<isFighter>false</isFighter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/AM_Legate/AM_Legate_Clean</texPath>
+          <maskPath>Things/Pawn/Mechanoid/AM_Legate/AllegianceOverlays/AM_Legate_Overlay</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/AM_Legate/AM_Legate</texPath>
+          <maskPath>Things/Pawn/Mechanoid/AM_Legate/AllegianceOverlays/AM_Legate_Overlay</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>      
+	 <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>AM_Gun_SuperHeavyChargeBlaster</li>
+    </weaponTags>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+  </PawnKindDef>
+
+ 
+
+</Defs>

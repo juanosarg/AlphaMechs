@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+ 
+
+
+  <ThingDef ParentName="MechResourceBase">
+    <defName>AM_HyperLinkageChip</defName>
+    <label>hyper-linkage chip (tier 4)</label>
+    <description>A beamcasting-band synchronization micro-organ. It is necessary to produce certain advanced types of mechanoids and equipment.\n\nA mechanitor can study this chip to help unlock higher tiers of mechtech research. Dropped by the Infernus.</description>
+    <graphicData>
+      <texPath>Things/Item/AM_HyperLinkageChip</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Flammability>0</Flammability>
+	   <MarketValue>1750</MarketValue>
+    </statBases>
+	<comps>
+      <li Class="CompProperties_CompAnalyzableUnlockResearch">
+        <analysisID>10001786</analysisID>
+        <requiresMechanitor>true</requiresMechanitor>
+
+        <!-- Analyzable -->
+
+        <analysisDurationHours>0.5</analysisDurationHours>
+        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        <completedLetterLabel>Hyper-linkage chip studied: {RESEARCH} unlocked</completedLetterLabel>
+        <completedLetter>By studying the hyper-linkage chip, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+        <completedLetterDef>PositiveEvent</completedLetterDef>
+
+        <!-- Interactable -->
+
+        <activateTexPath>UI/Icons/Study</activateTexPath>
+
+        <activateLabelString>Analyze...</activateLabelString>
+        <activateDescString>Analyze the hyper-linkage chip.</activateDescString>
+        <jobString>Analyze hyper-linkage chip</jobString>
+        <guiLabelString>Choose who should analyze this</guiLabelString>
+        <inspectString>Can be analyzed by a colonist.</inspectString>
+
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MechResourceBase">
+    <defName>AM_StellarProcessingChip</defName>
+    <label>stellar processing chip (tier 5)</label>
+    <description>A voidlink-focusing mechanoid micro-organ. It is necessary to produce certain advanced types of mechanoids and equipment.\n\nA mechanitor can study this chip to help unlock higher tiers of mechtech research. Dropped by the War Empress.</description>
+    <graphicData>
+      <texPath>Things/Item/AM_StellarProcessingChip</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+    </statBases>
+	<comps>
+      <li Class="CompProperties_CompAnalyzableUnlockResearch">
+        <analysisID>10001786</analysisID>
+        <requiresMechanitor>true</requiresMechanitor>
+
+        <!-- Analyzable -->
+
+        <analysisDurationHours>0.5</analysisDurationHours>
+        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        <completedLetterLabel>Stellar processing chip studied: {RESEARCH} unlocked</completedLetterLabel>
+        <completedLetter>By studying the stellar processing chip, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+        <completedLetterDef>PositiveEvent</completedLetterDef>
+
+        <!-- Interactable -->
+
+        <activateTexPath>UI/Icons/Study</activateTexPath>
+
+        <activateLabelString>Analyze...</activateLabelString>
+        <activateDescString>Analyze the stellar processing chip.</activateDescString>
+        <jobString>Analyze stellar processing chip</jobString>
+        <guiLabelString>Choose who should analyze this</guiLabelString>
+        <inspectString>Can be analyzed by a colonist.</inspectString>
+
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MechResourceBase">
+    <defName>AM_QuantumMatrixChip</defName>
+    <label>quantum matrix chip (tier 6)</label>
+    <description>A quantum-restructing mechanoid micro-organ. It is necessary to produce certain advanced mechanoids and equipment.\n\nA mechanitor can study this chip to help unlock higher tiers of mechtech research. Dropped by the Apoptosis.</description>
+    <graphicData>
+      <texPath>Things/Item/AM_QuantumMatrixChip</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+    </statBases>
+	<comps>
+      <li Class="CompProperties_CompAnalyzableUnlockResearch">
+        <analysisID>10001786</analysisID>
+        <requiresMechanitor>true</requiresMechanitor>
+
+        <!-- Analyzable -->
+
+        <analysisDurationHours>0.5</analysisDurationHours>
+        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        <completedLetterLabel>Quantum matrix chip studied: {RESEARCH} unlocked</completedLetterLabel>
+        <completedLetter>By studying the quantum matrix chip, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+        <completedLetterDef>PositiveEvent</completedLetterDef>
+
+        <!-- Interactable -->
+
+        <activateTexPath>UI/Icons/Study</activateTexPath>
+
+        <activateLabelString>Analyze...</activateLabelString>
+        <activateDescString>Analyze the quantum matrix chip.</activateDescString>
+        <jobString>Analyze quantum matrix chip</jobString>
+        <guiLabelString>Choose who should analyze this</guiLabelString>
+        <inspectString>Can be analyzed by a colonist.</inspectString>
+
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+      </li>
+    </comps>
+  </ThingDef>
+ 
+
+ 
+
+</Defs>

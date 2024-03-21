@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef Name="AM_HeavyMechanoidRecipe" ParentName="HeavyMechanoidRecipe" Abstract="True">
+		<researchPrerequisite>AM_HeavyMechtech</researchPrerequisite>
+		<recipeUsers><li>LargeMechGestator</li></recipeUsers>
+	</RecipeDef>
+	<RecipeDef ParentName="AM_HeavyMechanoidRecipe">
+		<defName>AM_DemolisherRecipe</defName>
+		<label>gestate demolisher</label>
+		<description>Gestate a demolisher mechanoid.</description>
+		<gestationCycles>6</gestationCycles>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>350</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>215</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreHigh</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<AM_Demolisher>1</AM_Demolisher>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>AM_Demolisher</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AM_HeavyMechanoidRecipe">
+		<defName>AM_GoliathRecipe</defName>
+		<label>gestate goliath</label>
+		<description>Gestate a goliath mechanoid.</description>
+		<gestationCycles>6</gestationCycles>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>240</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>230</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>9</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreHigh</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<AM_Goliath>1</AM_Goliath>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>AM_Goliath</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+	
+	 <RecipeDef ParentName="AM_HeavyMechanoidRecipe">
+    <defName>AM_FirewormRecipe</defName>
+    <label>gestate fireworm</label>
+    <description>Gestate a fireworm mechanoid.</description>
+   
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <AM_Fireworm>1</AM_Fireworm>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AM_Fireworm</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+  
+   <RecipeDef ParentName="AM_HeavyMechanoidRecipe">
+    <defName>AM_PhalanxRecipe</defName>
+    <label>gestate phalanx</label>
+    <description>Gestate a phalanx mechanoid.</description>
+   
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>175</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <AM_Phalanx>1</AM_Phalanx>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AM_Phalanx</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+	
+	
+
+</Defs>
