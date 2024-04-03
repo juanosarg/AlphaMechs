@@ -30,6 +30,7 @@
 						<MechBandwidth>24</MechBandwidth>
 						<WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
 						<MechFormingSpeed>0.4</MechFormingSpeed>
+						<VEF_MassCarryCapacity>75</VEF_MassCarryCapacity>
 					</equippedStatOffsets>
 					<costList>
 						<ComponentSpacer>2</ComponentSpacer>
@@ -62,7 +63,7 @@
 					<comps>
 						<li Class="VFECore.CompProperties_ShieldBubble">
 							<compClass>VFECore.CompShieldBubble</compClass>
-							<blockRangedAttack>true</blockRangedAttack>
+							<blockRangedAttack>false</blockRangedAttack>
 							<blockMeleeAttack>false</blockMeleeAttack>
 							<showWhenDrafted>true</showWhenDrafted>
 							<showOnHostiles>true</showOnHostiles>
@@ -85,7 +86,7 @@
 							<traitsOnUnequip>
 								<li>VFEP_Shellcasket</li>
 							</traitsOnUnequip>
-							<carryingCapacity>75</carryingCapacity>
+							
 							<pawnCapacityMinLevels>
 								<li>
 									<capacity>Moving</capacity>
