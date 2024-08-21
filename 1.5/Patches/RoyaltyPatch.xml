@@ -32,34 +32,5 @@
 			</value>
 		</match>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/FactionDef[defName = "Mechanoid"]/pawnGroupMakers/li[1]/options</xpath>
-		<value>
-			<AM_Aura>10</AM_Aura>
-			<AM_Fireworm>10</AM_Fireworm>
-			<AM_Daggersnout>10</AM_Daggersnout>
-			<AM_Goliath>10</AM_Goliath>
-			<AM_Siegebreaker>10</AM_Siegebreaker>
-			<AM_Phalanx>10</AM_Phalanx>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/FactionDef[defName = "Mechanoid"]/pawnGroupMakers</xpath>
-		<value>
-			<li>
-				<!-- All types-->
-				<kindDef>Combat</kindDef>
-				<commonality>30</commonality>
-				<options>
-					<AM_Goliath>5</AM_Goliath>
-					<AM_Daggersnout>10</AM_Daggersnout>
-					<AM_Aura>7</AM_Aura>
-					<Mech_Scyther>10</Mech_Scyther>
-					<Mech_Lancer>10</Mech_Lancer>
-					<Mech_CentipedeBlaster>10</Mech_CentipedeBlaster>
-					<AM_Phalanx>3</AM_Phalanx>
-				</options>
-			</li>
-		</value>
-	</Operation>
+
 </Patch>

@@ -6,7 +6,7 @@
 	<ThingDef ParentName="BaseMechanoid">
 		<defName>AM_Phalanx</defName>
 		<label>phalanx</label>
-		<description>A hulking mechanoid based on a rhinoceros beetle body plan. The phalanx's plasteel carapace hides a very powerful cryogenic engine capable of constantly producing compacted pellets of supercooled gas. These are fired from an aperture at the mechanoid's head.\n\nThis cryo-weapon has a very low range, but it can be very dangerous for beings susceptible to frostbite.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; If toggled to not spawn via mod options, they will get replaced by a Pikeman.</description>
+		<description>A hulking mechanoid based on a rhinoceros beetle body plan. The phalanx's plasteel carapace hides a very powerful cryogenic engine capable of constantly producing compacted pellets of supercooled gas. These are fired from an aperture at the mechanoid's head.\n\nThis cryo-weapon has a very low range, but it can be very dangerous for beings susceptible to frostbite.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Will explode on death with 10 Frostbite damage on a 2.9 tile radius.\n\nIf toggled to not spawn via mod options, they will get replaced by a Pikeman.</description>
 		<statBases>
 			<MoveSpeed>2.5</MoveSpeed>
 			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
@@ -35,6 +35,14 @@
 			
 		</comps>
 		<race>
+			<deathAction Class="AlphaMechs.DeathActionProperties_Explosion">
+				<radius>2.9</radius>
+				<damType>AM_FreezingBurst</damType>
+				<damAmount>10</damAmount>
+				<chanceToStartFire>0</chanceToStartFire>
+				<sound>AM_IceExplosion</sound>
+				<postExplosionSpawnThingDef>AM_FrostPuff</postExplosionSpawnThingDef>
+			</deathAction>
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Mechanoid</thinkTreeMain>
 			<body>MechanicalCentipede</body>

@@ -57,4 +57,16 @@
 		</additionalHediffs>
 	</DamageDef>
 	
+	<DamageDef>
+		<defName>AM_FreezingBurst</defName>
+		<label>freezing burst</label>
+		<workerClass>AlphaMechs.DamageWorker_Freezing</workerClass>
+		<externalViolence>false</externalViolence>
+		<deathMessage>{0} has succumbed to frostbite.</deathMessage>
+		<hediff>Frostbite</hediff>
+		<defaultDamage>1</defaultDamage>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+	</DamageDef>
+	
 </Defs>

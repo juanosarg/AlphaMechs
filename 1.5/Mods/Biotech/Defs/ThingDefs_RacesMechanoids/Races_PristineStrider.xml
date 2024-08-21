@@ -34,6 +34,18 @@
 				</li>
 			</lifeStageAges>
 		</race>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>50</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
 	</ThingDef>
 	<PawnKindDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="NonCombatLightMechanoidKind">
 		<defName>AM_PristineStrider</defName>

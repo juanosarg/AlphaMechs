@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BaseMechanoid">
 		<defName>AM_Fireworm</defName>
 		<label>fireworm</label>
-		<description>A huge mechanical worm armed with a dangerous chemfuel flamethrower. Their weapon has a very short range, so don't let a fireworm approach your defenses!\n\nThe fireworm superficially resembles a Frostbound Behemoth. A coincidence? Or perhaps mechanoids take living things as a blueprint for their units. If so, you wouldn't want to see what a biological scyther looks like...\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; If toggled to not spawn via mod options, they will get replaced by a Pikeman.</description>
+		<description>A huge mechanical worm armed with a dangerous chemfuel flamethrower. Their weapon has a very short range, so don't let a fireworm approach your defenses!\n\nThe fireworm superficially resembles a Frostbound Behemoth. A coincidence? Or perhaps mechanoids take living things as a blueprint for their units. If so, you wouldn't want to see what a biological scyther looks like...\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Will explode on death with 15 Bomb damage on a 1.9 tile radius.\n\nIf toggled to not spawn via mod options, they will get replaced by a Pikeman.</description>
 		<statBases>
 			<MoveSpeed>2.2</MoveSpeed>
 			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
@@ -25,14 +25,18 @@
 			</li>
 		</tools>
 		<comps>
-			 <li Class="AlphaMechs.CompProperties_ChangeDef">
+			<li Class="AlphaMechs.CompProperties_ChangeDef">
 				<factionToChangeTo>Mechanoid</factionToChangeTo>
 				<defToChangeTo>Mech_Pikeman</defToChangeTo>
 			</li>
-			
 		</comps>
-		
 		<race>
+			<deathAction Class="AlphaMechs.DeathActionProperties_Explosion">
+				<radius>1.9</radius>
+				<damType>Bomb</damType>
+				<damAmount>15</damAmount>
+				<chanceToStartFire>0</chanceToStartFire>
+			</deathAction>
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Mechanoid</thinkTreeMain>
 			<body>MechanicalCentipede</body>
@@ -58,7 +62,7 @@
 			<soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
-			 <mechWeightClass>Heavy</mechWeightClass>
+			<mechWeightClass>Heavy</mechWeightClass>
 		</race>
 		<butcherProducts>
 			<Steel>25</Steel>
@@ -72,7 +76,6 @@
 		<race>AM_Fireworm</race>
 		<combatPower>300</combatPower>
 		<lifeStages>
-			
 			<li MayRequire="Ludeon.Rimworld.Biotech">
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Mechanoid/AM_MechFireworm/AM_MechFirewormClean</texPath>
@@ -102,8 +105,8 @@
 		<weaponTags>
 			<li>AM_MechanoidFlamethrower</li>
 		</weaponTags>
-		 <techHediffsChance MayRequire="Ludeon.RimWorld.Biotech">1</techHediffsChance>
-    <techHediffsMoney>9999~9999</techHediffsMoney>
-    <controlGroupPortraitZoom>0.65</controlGroupPortraitZoom>  
+		<techHediffsChance MayRequire="Ludeon.RimWorld.Biotech">1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<controlGroupPortraitZoom>0.65</controlGroupPortraitZoom>
 	</PawnKindDef>
 </Defs>

@@ -3,7 +3,7 @@
 	<ThingDef ParentName="VFE_MechanoidWalker">
 		<defName>VFE_Mech_Aura</defName>
 		<label>aura</label>
-		<description>The Aura, also known as Avenging Angels, are angel-shaped mechanoids surrounded by a whirling cloud of six levitating metallic blades. They favour close combat, approaching their victims and engulfing them in an eviscerating whirlwind of slashing death. They also have the ability to regenerate their wounds with fast acting mechanites. This particular unit appears to be freshly manufactured and will operate more robustly.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Auras don't have much health, but they will regenerate damage quite fast. If toggled to not spawn via mod options, they will get replaced by a Scyther.</description>
+		<description>The Aura, also known as Avenging Angels, are angel-shaped mechanoids surrounded by a whirling cloud of six levitating metallic blades. They favour close combat, approaching their victims and engulfing them in an eviscerating whirlwind of slashing death. They also have the ability to regenerate their wounds with fast acting mechanites. This particular unit appears to be freshly manufactured and will operate more robustly.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Auras don't have much health, but they will regenerate damage quite fast.\n\nRegeneration is 0.1 damage to a random wound every 10 ticks, 1/6th of a second.\n\nIf toggled to not spawn via mod options, they will get replaced by a Scyther.</description>
 		<tools>
 			<li>
 				<label>wing blade</label>
@@ -34,7 +34,7 @@
 				<defToChangeTo>VFE_Mech_Scyther</defToChangeTo>
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_Regeneration">
-				<rateInTicks>30</rateInTicks>
+				<rateInTicks>10</rateInTicks>
 			</li>
 		</comps>
 		<race>

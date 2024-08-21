@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
+using RimWorld.Planet;
 using UnityEngine;
 using Verse;
 namespace AlphaMechs
@@ -25,12 +26,15 @@ namespace AlphaMechs
             Corpse corpse;
             if (!target.HasThing || (corpse = target.Thing as Corpse) == null)
             {
+                
                 return false;
             }
             if (!CanResurrect(corpse))
             {
+               
                 return false;
             }
+          
             return true;
         }
 
@@ -55,10 +59,13 @@ namespace AlphaMechs
             return true;
         }
 
+
+
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             base.Apply(target, dest);
             Corpse corpse = (Corpse)target.Thing;
+          
             if (CanResurrect(corpse))
             {
                 Pawn innerPawn = corpse.InnerPawn;

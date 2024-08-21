@@ -3,7 +3,7 @@
 	<ThingDef ParentName="VFE_Mechanoid">
 		<defName>VFE_Mech_Fireworm</defName>
 		<label>fireworm</label>
-		<description>A huge mechanical worm armed with a dangerous chemfuel flamethrower. Their weapon has a very short range, so don't let a fireworm approach your defenses!\n\nThe fireworm superficially resembles a Frostbound Behemoth. A coincidence? Or perhaps mechanoids take living things as a blueprint for their units. If so, you wouldn't want to see what a biological scyther looks like... This particular unit appears to be freshly manufactured and will operate more robustly.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; If toggled to not spawn via mod options, they will get replaced by a Pikeman.</description>
+		<description>A huge mechanical worm armed with a dangerous chemfuel flamethrower. Their weapon has a very short range, so don't let a fireworm approach your defenses!\n\nThe fireworm superficially resembles a Frostbound Behemoth. A coincidence? Or perhaps mechanoids take living things as a blueprint for their units. If so, you wouldn't want to see what a biological scyther looks like... This particular unit appears to be freshly manufactured and will operate more robustly.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Will explode on death with 15 Bomb damage on a 1.9 tile radius.\n\nIf toggled to not spawn via mod options, they will get replaced by a Pikeman.</description>
 		<statBases>
 			<MoveSpeed>2.2</MoveSpeed>
 			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
@@ -29,6 +29,12 @@
 			</li>
 		</comps>
 		<race>
+			<deathAction Class="AlphaMechs.DeathActionProperties_Explosion">
+				<radius>1.9</radius>
+				<damType>Bomb</damType>
+				<damAmount>15</damAmount>
+				<chanceToStartFire>0</chanceToStartFire>
+			</deathAction>
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Mechanoid</thinkTreeMain>
 			<body>MechanicalCentipede</body>

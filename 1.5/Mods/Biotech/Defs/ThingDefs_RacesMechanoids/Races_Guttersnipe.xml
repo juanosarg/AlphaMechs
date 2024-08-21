@@ -43,7 +43,11 @@
 			</lifeStageAges>
 			<thinkTreeConstant>WarUrchinConstant</thinkTreeConstant>
 			<baseHealthScale>2.5</baseHealthScale>
+			
 		</race>
+		<butcherProducts>
+				<Plasteel>12</Plasteel>
+			</butcherProducts>
 		<comps Inherit="False">
 			<li Class="CompProperties_CanBeDormant"/>
 			<li Class="CompProperties_WakeUpDormant">

@@ -16,8 +16,11 @@
 			</li>
 		</tools>
 		<race>
-			<deathAction>
-				<workerClass>AlphaMechs.DeathActionWorker_BlitzkriegExplosion</workerClass>
+			<deathAction Class="AlphaMechs.DeathActionProperties_Explosion">
+				<radius>3.9</radius>
+				<damType>Bomb</damType>
+				<damAmount>30</damAmount>
+				<chanceToStartFire>0.5</chanceToStartFire>
 			</deathAction>
 			<lifeStageAges>
 				<li>

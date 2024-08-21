@@ -38,15 +38,20 @@
 	<AbilityDef>
 		<defName>AM_ResurrectionMechSlow</defName>
 		<label>resurrect mech, minor</label>
-		<description>Resurrect a recently-killed mechanoid by externally supercharging its self-repair processes. The mechanoid will come back with some but not all of its wounds healed. This ability is slower than the one used by the Apocriton.</description>
+		<description>Resurrect a recently-killed mechanoid by externally supercharging its self-repair processes. The mechanoid will come back with some but not all of its wounds healed. This ability is slower than the one used by the Apocriton, but doesn't have charges.</description>
 		<iconPath>UI/Abilities/MechResurrection</iconPath>
 		<cooldownTicksRange>60000</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
 		<warmupStartSound>MechResurrect_Warmup</warmupStartSound>
 		<warmupEffecter>ApocrionAoeWarmup</warmupEffecter>
-		<jobDef>CastAbilityGoToThing</jobDef>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<jobDef>CastAbilityOnThing</jobDef>
 		<canUseAoeToGetTargets>true</canUseAoeToGetTargets>
 		<useAverageTargetPositionForWarmupEffecter>true</useAverageTargetPositionForWarmupEffecter>
 		<hostile>false</hostile>
+		<showCastingProgressBar>true</showCastingProgressBar>
 		<statBases>
 			<Ability_EffectRadius>4</Ability_EffectRadius>
 		</statBases>

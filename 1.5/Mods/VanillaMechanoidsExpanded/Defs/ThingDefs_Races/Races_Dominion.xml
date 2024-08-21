@@ -3,7 +3,7 @@
 	<ThingDef ParentName="VFE_AdvancedMechanoidWalker">
 		<defName>VFE_Mech_Advanced_Aura</defName>
 		<label>dominion</label>
-		<description>An improved and strengthened version of the Aura, a Dominion is an angel-shaped mechanoid surrounded by a whirling cloud of six levitating metallic blades. They favour close combat, approaching their victims and engulfing them in an eviscerating whirlwind of slashing death. They also have the ability to regenerate their wounds with fast acting mechanites. Unlike their more ancient and less advanced relatives this particular unit is much more intelligent and will seek cover and prove to be a much more challenging opponent in melee combat.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; If toggled to not spawn via mod options, they will get replaced by an Advanced Scyther.</description>
+		<description>An improved and strengthened version of the Aura, a Dominion is an angel-shaped mechanoid surrounded by a whirling cloud of six levitating metallic blades. They favour close combat, approaching their victims and engulfing them in an eviscerating whirlwind of slashing death. They also have the ability to regenerate their wounds with VERY fast acting mechanites. Unlike their more ancient and less advanced relatives this particular unit is much more intelligent and will seek cover and prove to be a much more challenging opponent in melee combat.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Dominion don't have much health, but they will regenerate damage quite fast.\n\nRegeneration is 0.1 damage to a random wound every 5 ticks, 1/12th of a second.\n\nIf toggled to not spawn via mod options, they will get replaced by an Advanced Scyther.</description>
 		
 		<tools>
 			<li>
@@ -35,7 +35,7 @@
 				<factionToChangeTo>VFE_Mechanoid</factionToChangeTo>
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_Regeneration">
-				<rateInTicks>30</rateInTicks>
+				<rateInTicks>5</rateInTicks>
 			</li>
 		</comps>
 		<race>

@@ -31,7 +31,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>AM_Bullet_HellsphereCannonGun</defaultProjectile>
 				<warmupTime>15.5</warmupTime>
-				<range>30</range>
+				<range>45</range>
 				<soundCast>Shot_HellsphereCannonGun</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -541,7 +541,7 @@
 			<AccuracyShort>0.80</AccuracyShort>
 			<AccuracyMedium>0.90</AccuracyMedium>
 			<AccuracyLong>0.92</AccuracyLong>
-			<RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>4.1</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
 			<li>AM_SiegemelterTurret</li>
@@ -557,7 +557,7 @@
 				<defaultProjectile>AM_Bullet_Firethrower</defaultProjectile>
 				<warmupTime>0.5</warmupTime>
 				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
-				<range>25</range>
+				<range>15</range>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 					<canTargetPawns>true</canTargetPawns>
@@ -603,7 +603,7 @@
 		<projectile>
 			<damageDef>Flame</damageDef>		
 			<flyOverhead>false</flyOverhead>
-			<damageAmountBase>45</damageAmountBase>
+			<damageAmountBase>30</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
@@ -793,7 +793,7 @@
 		<projectile>
 			<damageDef>Flame</damageDef>
 			<explosionRadius>0.9</explosionRadius>
-			<damageAmountBase>1</damageAmountBase>
+			<damageAmountBase>7</damageAmountBase>
 			<speed>50</speed>
 			<screenShakeFactor>0</screenShakeFactor>
 
@@ -990,6 +990,7 @@
 		<description>A versatile weapon that can fire a continuous stream of needle-like projectiles. Its rotating barrel allows for sustained fire, making it effective against swarms of enemies. Although it lacks the pinpoint accuracy of its single-shot counterpart, the rotary needle gun more than compensates with its high rate of fire and capacity for suppressing large areas.</description>
 		<statBases>
 			<Mass>2.6</Mass>
+			<MarketValue>1400</MarketValue>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Weapon/AM_AdvancedNeedleGun</texPath>

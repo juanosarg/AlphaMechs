@@ -12,7 +12,11 @@
 					<Mech_Scyther>10</Mech_Scyther>
 					<Mech_Lancer>10</Mech_Lancer>
 					<Mech_CentipedeBlaster>10</Mech_CentipedeBlaster>
-					<AM_Demolisher>1</AM_Demolisher>
+					<AM_Aura>7</AM_Aura>
+					<AM_Daggersnout>5</AM_Daggersnout>				
+					<AM_Fireworm>7</AM_Fireworm>				
+					<AM_Phalanx>7</AM_Phalanx>
+					<AM_Demolisher>5</AM_Demolisher>
 					<Mech_Militor MayRequire="Ludeon.RimWorld.Biotech">20</Mech_Militor>
 				</options>
 			</li>

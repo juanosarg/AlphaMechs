@@ -15,8 +15,12 @@ namespace AlphaMechs
         public static ThingDef AM_Phalanx;
         public static ThingDef AM_Siegebreaker;
         public static ThingDef AM_Demolisher;
+        public static ThingDef AM_FrostPuff;
 
         public static HediffDef AM_ScrambledIFF;
+        public static HediffDef AM_FreezingBurst;
+
+        public static SoundDef AM_IceExplosion;
 
         [MayRequire("OskarPotocki.VFE.Mechanoid")]
         public static ThingDef VFE_Mech_Aura;

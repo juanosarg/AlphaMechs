@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BaseMechanoidWalker">
 		<defName>AM_Mech_Munifex</defName>
 		<label>munifex</label>
-		<description>The Munifex are formidable human-sized combat mechanoids designed specifically for long-range combat scenarios. They are equipped with advanced coil lances, which are mass driver weapons that fire electromagnetically accelerated slugs at incredible velocities. These projectiles are capable of penetrating through almost any kind of defense, including thick armor plating and reinforced concrete.</description>
+		<description>The Munifex are formidable human-sized combat mechanoids designed specifically for long-range combat scenarios. They are equipped with advanced coil lances, which are mass driver weapons that fire electromagnetically accelerated slugs at incredible velocities. These projectiles are capable of penetrating through almost any kind of defense, including thick armor plating and reinforced concrete.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Yes, this is the friendly fire mech. Yes, this is very much intended. Beware!</description>
 		<tools>
 			<li>
 				<label>left fist</label>

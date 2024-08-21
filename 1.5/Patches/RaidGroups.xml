@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName = "Mechanoid"]/pawnGroupMakers</xpath>
+		<value>
+			<li>
+				<!-- All types-->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<AM_Goliath>5</AM_Goliath>
+					<AM_Daggersnout>10</AM_Daggersnout>
+					<AM_Aura>7</AM_Aura>
+					<Mech_Scyther>10</Mech_Scyther>
+					<Mech_Lancer>10</Mech_Lancer>
+					<Mech_CentipedeBlaster>10</Mech_CentipedeBlaster>
+					<AM_Phalanx>3</AM_Phalanx>
+				</options>
+			</li>
+			<li>
+				<!-- All types-->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Mech_Scyther>10</Mech_Scyther>
+					<AM_Aura>7</AM_Aura>
+					<AM_Daggersnout>5</AM_Daggersnout>
+					<Mech_Pikeman>7</Mech_Pikeman>
+					<AM_Fireworm>7</AM_Fireworm>
+					<Mech_Lancer>10</Mech_Lancer>
+					<AM_Phalanx>7</AM_Phalanx>
+					<Mech_CentipedeBlaster>10</Mech_CentipedeBlaster>
+					<Mech_Militor MayRequire="Ludeon.RimWorld.Biotech">20</Mech_Militor>
+					<Mech_Centurion MayRequire="Ludeon.RimWorld.Biotech">2</Mech_Centurion>
+					<Mech_Warqueen MayRequire="Ludeon.RimWorld.Biotech">1</Mech_Warqueen>
+					<Mech_Apocriton MayRequire="Ludeon.RimWorld.Biotech">1</Mech_Apocriton>
+				</options>
+			</li>
+			<li>
+				<!-- Ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>80</commonality>
+				<options>
+					<Mech_Pikeman>10</Mech_Pikeman>
+					<Mech_Lancer>10</Mech_Lancer>
+					<AM_Siegebreaker>7</AM_Siegebreaker>
+					<Mech_Scorcher MayRequire="Ludeon.RimWorld.Biotech">5</Mech_Scorcher>
+					<Mech_Tesseron MayRequire="Ludeon.RimWorld.Biotech">5</Mech_Tesseron>
+					<Mech_Legionary MayRequire="Ludeon.RimWorld.Biotech">2</Mech_Legionary>
+					<Mech_Diabolus MayRequire="Ludeon.RimWorld.Biotech">1</Mech_Diabolus>
+				</options>
+			</li>
+			<li>
+				<!-- Centipede only -->
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<options>
+					<Mech_CentipedeBlaster>10</Mech_CentipedeBlaster>
+					<Mech_CentipedeGunner>5</Mech_CentipedeGunner>
+					<Mech_CentipedeBurner>5</Mech_CentipedeBurner>
+					<AM_Goliath>10</AM_Goliath>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<!-- militor only -->
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<options>
+					<Mech_Militor>10</Mech_Militor>
+					<AM_Daggersnout>5</AM_Daggersnout>
+				</options>
+			</li>
+			<li>
+				<!-- Melee Only-->
+				<kindDef>Combat</kindDef>
+				<commonality>70</commonality>
+				<options>
+					<AM_Daggersnout>10</AM_Daggersnout>
+					<AM_Aura>7</AM_Aura>
+				</options>
+			</li>
+		</value>
+	</Operation>
+</Patch>

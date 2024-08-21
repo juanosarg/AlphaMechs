@@ -312,7 +312,7 @@
 			</li>
 		</subSounds>
 	</SoundDef>
-		<!-- ======================== Gass shot ======================== -->
+		<!-- ======================== Gauss shot ======================== -->
 	<SoundDef>
 		<defName>AM_Gauss</defName>
 		<context>MapOnly</context>
@@ -322,6 +322,35 @@
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>AM_Gauss</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>45</min>
+					<max>55</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+			<!-- ======================== Ice explosion ======================== -->
+	<SoundDef>
+		<defName>AM_IceExplosion</defName>
+		<context>MapOnly</context>
+		<eventNames/>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AM_IceExplosion</clipPath>
 					</li>
 				</grains>
 				<volumeRange>

@@ -75,7 +75,7 @@
 							<minShieldSize>2.1</minShieldSize>
 							<maxShieldSize>2.7</maxShieldSize>
 							<disableRotation>true</disableRotation>
-							<dontAllowRangedAttack>true</dontAllowRangedAttack>
+					
 						</li>
 					</comps>
 					<modExtensions>

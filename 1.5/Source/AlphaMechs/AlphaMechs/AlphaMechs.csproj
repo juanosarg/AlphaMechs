@@ -310,8 +310,10 @@
     <Compile Include="Comps\Properties\CompProperties_CauseHediff_AoE_WithRestrictions.cs" />
     <Compile Include="Comps\Properties\CompProperties_ChangeDef.cs" />
     <Compile Include="Comps\Properties\CompProperties_TargetingBeamBlue.cs" />
+    <Compile Include="DamageWorkers\DamageWorker_Freezing.cs" />
     <Compile Include="DamageWorkers\DamageWorker_Siege.cs" />
-    <Compile Include="DeathActionWorkers\DeathActionWorker_BlitzkriegExplosion.cs" />
+    <Compile Include="DeathActionWorkers\DeathActionProperties_Explosion.cs" />
+    <Compile Include="DeathActionWorkers\DeathActionWorker_Explosion.cs" />
     <Compile Include="DefExtensions\MechSizeExtension.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Harmony\Building_MechCharger_IsCompatibleWithCharger.cs" />
