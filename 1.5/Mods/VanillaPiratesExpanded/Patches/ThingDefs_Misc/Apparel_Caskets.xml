@@ -63,7 +63,7 @@
 					<comps>
 						<li Class="VFECore.CompProperties_ShieldBubble">
 							<compClass>VFECore.CompShieldBubble</compClass>
-							<blockRangedAttack>false</blockRangedAttack>
+							<dontAllowRangedAttack>false</dontAllowRangedAttack>
 							<blockMeleeAttack>false</blockMeleeAttack>
 							<showWhenDrafted>true</showWhenDrafted>
 							<showOnHostiles>true</showOnHostiles>
