@@ -29,9 +29,9 @@ namespace AlphaMechs
 
         {
 
-            if (ModsConfig.BiotechActive) {
+            if (ModsConfig.BiotechActive && __instance!=null) {
 
-                if (mechsList.Contains(ReflectionCache.PawnOwner(__instance).def) )
+                if (mechsList.Contains(ReflectionCache.PawnOwner(__instance)?.def) )
                 {
                     if (__instance.ShieldState == ShieldState.Active && ReflectionCache.ShouldDisplay(__instance))
                     {
