@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AM_BaseGas">
+		<defName>AM_FrostPuff</defName>
+		<label>frosty air</label>
+		<graphicData>
+			<texPath>Things/Projectiles/AM_Frost</texPath>
+			<drawSize>0.75</drawSize>
+			<color>(255, 255, 255, 170)</color>
+		</graphicData>
+		<gas>
+			<expireSeconds>
+				<min>17</min>
+				<max>20</max>
+			</expireSeconds>
+			<rotationSpeed>10</rotationSpeed>
+		</gas>
+	</ThingDef>
+</Defs>

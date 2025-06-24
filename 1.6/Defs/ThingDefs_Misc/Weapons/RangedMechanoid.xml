@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Flamethrower -->
+
+	<ThingDef Abstract="True" ParentName="BaseGunWithQuality" Name="AM_FlamethrowerBase">
+		<label>flamethrower</label>
+		<description>A chemfuel flamethrower. Short range, but it will cause uncontrollable fires if you let the fireworms come near.</description>
+		<graphicData>
+			<texPath>UI/Invisible</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Weapon/AM_FirewormGun</uiIconPath>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>18</Mass>
+			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<relicChance>0</relicChance>
+		<destroyOnDrop>true</destroyOnDrop>
+		<generateCommonality>0.5</generateCommonality>
+		<tradeability>None</tradeability>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11.7</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_FlamethrowerBase">
+		<defName>AM_Flamethrower</defName>
+		<weaponTags>
+			<li>AM_MechanoidFlamethrower</li>
+		</weaponTags>
+		<verbs>
+			<li>
+
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AM_FlamethrowerBullet</defaultProjectile>
+
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<warmupTime>0.3</warmupTime>
+				<range>8</range>
+				<burstShotCount>2</burstShotCount>
+				<soundCast>ThrowMolotovCocktail</soundCast>
+				<muzzleFlashScale>2</muzzleFlashScale>
+
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef Name="AM_BaseMechProjectile" Abstract="True">
+		<category>Projectile</category>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Projectile_Explosive</thingClass>
+		<label>projectile</label>
+		<tickerType>Normal</tickerType>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<projectile>
+			<speed>15</speed>
+			<flyOverhead>true</flyOverhead>
+		</projectile>
+	</ThingDef>
+
+
+	<VEF.Weapons.ExpandableProjectileDef ParentName="AM_BaseMechProjectile">
+		<defName>AM_FlamethrowerBullet</defName>
+		<label>chemical fire</label>
+		<thingClass>VEF.Weapons.FlamethrowProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/Proj_FireStream</texPath>
+			<texPathFadeOut>Things/Projectiles/Proj_FireStreamFadeOut</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>50</lifeTimeDuration>
+		<widthScaleFactor>0.65</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(0, 0, -2)</startingPositionOffset>
+		<totalSizeScale>2</totalSizeScale>
+		<tickFrameRate>2</tickFrameRate>
+		<finalTickFrameRate>5</finalTickFrameRate>
+		<tickDamageRate>20</tickDamageRate>
+		<dealsDamageOnce>true</dealsDamageOnce>
+		<minDistanceToAffect>2</minDistanceToAffect>
+		<projectile>
+			<damageDef>Flame</damageDef>		
+			<flyOverhead>false</flyOverhead>
+			<damageAmountBase>5</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+			<speed>40</speed>
+		</projectile>
+	</VEF.Weapons.ExpandableProjectileDef>
+	<!-- Goliath charge blaster -->
+	<ThingDef ParentName="BaseGun">
+		<label>goliath charge blaster</label>
+		<defName>AM_Gun_GoliathChargeBlaster</defName>
+		<description>A pulse-charged rapid-fire blaster for area suppressive fire. Heavy cooling allows long, deadly bursts.</description>
+		<graphicData>
+			<texPath>Things/Weapon/AM_Gun_GoliathChargeBlaster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			 <drawSize>1.25</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>22</Mass>
+			<AccuracyTouch>0.18</AccuracyTouch>
+			<AccuracyShort>0.26</AccuracyShort>
+			<AccuracyMedium>0.26</AccuracyMedium>
+			<AccuracyLong>0.18</AccuracyLong>
+			<RangedWeapon_Cooldown>7.4</RangedWeapon_Cooldown>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11.7</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<relicChance>0</relicChance>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_ChargeBlasterHeavy</defaultProjectile>
+				<warmupTime>1.25</warmupTime>
+				<range>26.9</range>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<burstShotCount>24</burstShotCount>
+				<soundCast>Shot_ChargeBlaster</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>AM_Gun_GoliathChargeBlaster</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0.75,0,0)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(0,0,0)</drawOffset>
+					</east>
+					<south>
+						<drawOffset>(-0.75,0,0)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0,0,0)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- Goliath Needlegun -->
+	<ThingDef ParentName="BaseGun">
+		<defName>AM_Gun_GoliathNeedle</defName>
+		<label>goliath needle gun</label>
+		<description>A long-range weapon used by mechanoids. Named after its needle-like projectiles, it fires single shots with great accuracy. While it does less damage than charge weapons, it can reach over very long distances.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Weapon/AM_Gun_GoliathNeedle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			 <drawSize>1.25</drawSize>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>2.6</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.85</AccuracyLong>
+			<RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>AM_Gun_GoliathNeedle</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+			<li>LongShots</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_NeedleGun</defaultProjectile>
+				<warmupTime>2.5</warmupTime>
+				<range>44.9</range>
+				<soundCast>Shot_NeedleGun</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0.75,0,0)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(0,0,0)</drawOffset>
+					</east>
+					<south>
+						<drawOffset>(-0.75,0,0)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0,0,0)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- Cryoweapon -->
+	<ThingDef Abstract="True" ParentName="BaseGunWithQuality" Name="AM_CryogenicGunBase">
+		<label>cryogenic gun</label>
+		<description>A weapon that fires frozen pellets or liquid nitrogen, rapidly lowering the temperature of the target to freeze or immobilize it. Frostbite damage bypasses armor.</description>
+		<graphicData>
+			<texPath>Things/Weapon/AM_CryoCannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>18</Mass>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<relicChance>0</relicChance>
+		<destroyOnDrop>true</destroyOnDrop>
+		<generateCommonality>0.5</generateCommonality>
+		<tradeability>None</tradeability>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11.7</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="AM_CryogenicGunBase">
+		<defName>AM_CryogenicGun</defName>
+		<weaponTags>
+			<li>AM_MechanoidCryoweapon</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AM_CryoBullet</defaultProjectile>
+				<forcedMissRadius>2</forcedMissRadius>
+				<warmupTime>2</warmupTime>
+				<range>10</range>
+				<burstShotCount>4</burstShotCount>
+				<soundCast>AM_Cryogun</soundCast>
+				<muzzleFlashScale>2</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AM_CryoBullet</defName>
+		<label>cryogenic pellet</label>
+		<graphicData>
+			<texPath>Things/Projectiles/AM_Cryo</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<speed>40</speed>
+			<damageDef>Frostbite</damageDef>
+			<damageAmountBase>2</damageAmountBase>
+			<explosionRadius>3</explosionRadius>
+			<soundExplode>AM_Cryogun</soundExplode>
+		</projectile>
+	</ThingDef>
+	<!-- Siegebreaker Turret -->
+	<ThingDef Abstract="True" ParentName="BaseGunWithQuality" Name="AM_SiegeTurretBase">
+		<label>siege turret</label>
+		<description>A huge turret that fires explosive warheads.</description>
+		<graphicData>
+			<texPath>UI/Invisible</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Weapon/AM_SiegebreakerGun</uiIconPath>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>18</Mass>
+			<RangedWeapon_Cooldown>25</RangedWeapon_Cooldown>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<generateCommonality>0.5</generateCommonality>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11.7</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<relicChance>0</relicChance>
+	</ThingDef>
+	<ThingDef ParentName="AM_SiegeTurretBase">
+		<defName>AM_SiegebreakerTurret</defName>
+		<weaponTags>
+			<li>AM_SiegebreakerTurret</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AM_Bullet_Shell_Explosive</defaultProjectile>
+				<forcedMissRadius>5</forcedMissRadius>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<warmupTime>15</warmupTime>
+				<range>250</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AM_Bullet_Shell_Explosive</defName>
+		<label>high-explosive shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/ShellHighExplosive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<!-- damage amount is the damage def default -->
+			<damageAmountBase>30</damageAmountBase>
+			<speed>41</speed>
+			<explosionRadius>3.9</explosionRadius>
+			<flyOverhead>true</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
+	<!-- Demolisher Charges -->
+
+	<ThingDef Abstract="True" ParentName="BaseGunWithQuality" Name="AM_DemolisherChargeBase">
+		<label>demolisher charges</label>
+		<description>A huge mechanoid-mounted turret that launches high-explosive demolisher charges, capable of taking out even heavily armored fortifications. Obviously also dangerous against living creatures.</description>
+		<graphicData>
+			<texPath>UI/Invisible</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Weapon/AM_SapperCharges</uiIconPath>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>18</Mass>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<destroyOnDrop>true</destroyOnDrop>
+		<techLevel>Spacer</techLevel>
+		<relicChance>0</relicChance>
+		<generateCommonality>0.5</generateCommonality>
+		<tradeability>None</tradeability>
+
+	</ThingDef>
+
+	<ThingDef ParentName="AM_DemolisherChargeBase">
+		<defName>AM_DemolisherChargeBase</defName>
+		<weaponTags>
+			<li>AM_MechanoidDemolisherCharges</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AM_Bullet_Shell_Demolisher</defaultProjectile>				
+				<warmupTime>1</warmupTime>
+				<range>3</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>AM_DemolisherCharge</soundCast>
+
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>AM_Bullet_Shell_Demolisher</defName>
+		<label>demolisher charge</label>
+		<thingClass>AlphaMechs.Siege_Projectile</thingClass>
+		<graphicData>
+			<texPath>UI/Invisible</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>AM_SiegeBlunt</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<speed>40</speed>
+		</projectile>
+	</ThingDef>
+</Defs>

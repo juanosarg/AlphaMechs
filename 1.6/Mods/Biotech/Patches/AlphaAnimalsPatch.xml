@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Animals</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AM_Mech_PristineSlurrypede"]/comps/li[@Class = "VEF.AnimalBehaviours.CompProperties_AnimalProduct"]</xpath>
+			<value>
+				<resourceDef>AA_DisgustingMealNutrientPaste</resourceDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<ThingDef Name="AM_MeatMealBase" Abstract="True">
+							<thingClass>ThingWithComps</thingClass>
+							<category>Item</category>
+							<useHitPoints>true</useHitPoints>
+							<selectable>true</selectable>
+							<statBases>
+								<MaxHitPoints>50</MaxHitPoints>
+								<Flammability>1.0</Flammability>
+								<Beauty>0</Beauty>
+								<Mass>0.44</Mass>
+								<DeteriorationRate>10</DeteriorationRate>
+							</statBases>
+							<altitudeLayer>Item</altitudeLayer>
+							<stackLimit>10</stackLimit>
+							<tickerType>Rare</tickerType>
+							<socialPropernessMatters>true</socialPropernessMatters>
+							<thingCategories>
+								<li>FoodMeals</li>
+							</thingCategories>
+							<alwaysHaulable>true</alwaysHaulable>
+							<comps>
+								<li Class="CompProperties_Forbiddable"/>
+								<li Class="CompProperties_Ingredients"/>
+								<li Class="CompProperties_FoodPoisonable"/>
+							</comps>
+							<pathCost>15</pathCost>
+							<resourceReadoutPriority>Last</resourceReadoutPriority>
+							<drawGUIOverlay>true</drawGUIOverlay>
+							<uiIconForStackCount>1</uiIconForStackCount>
+							<ingestible>
+								<foodType>Meat</foodType>
+								<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+								<optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+							</ingestible>
+						</ThingDef>
+						<ThingDef ParentName="AM_MeatMealBase" Name="AM_MeatMealRottable" Abstract="True">
+							<comps>
+								<li Class="CompProperties_Rottable">
+									<daysToRotStart>4</daysToRotStart>
+									<rotDestroys>true</rotDestroys>
+								</li>
+							</comps>
+							<tradeability>Sellable</tradeability>
+						</ThingDef>
+						<ThingDef ParentName="AM_MeatMealRottable">
+							<defName>AM_DisgustingMealNutrientPaste</defName>
+							<label>disgusting nutrient paste meal</label>
+							<description>A synthetic mixture of protein, carbohydrates, and vitamins, amino acids and minerals. Everything the body needs, and absolutely disgusting. This paste is EVEN more disgusting than the paste produced by a nutrient paste dispenser, and people will just outright hate eating it. It was cheap, though!\n\nThis slurry is edible for carnivore and omnivore animals, but barely, and completely indigestible for herbivores.</description>
+							<graphicData>
+								<texPath>Things/Item/AM_NutrientPasteDisgusting</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<statBases>
+								<MarketValue>1</MarketValue>
+								<Nutrition>0.8</Nutrition>
+							</statBases>
+							<tradeability>Sellable</tradeability>
+							<ingestible>
+								<preferability>MealAwful</preferability>
+								<tasteThought>AM_AteSuperAwfulMeal</tasteThought>
+								<ingestEffect>EatVegetarian</ingestEffect>
+								<ingestSound>Meal_Eat</ingestSound>
+							</ingestible>
+						</ThingDef>
+						<ThoughtDef>
+							<defName>AM_AteSuperAwfulMeal</defName>
+							<durationDays>1</durationDays>
+							<stages>
+								<li>
+									<label>ate incredibly awful meal</label>
+									<description>I had to eat something that was processed in the guts of a biomechanical abomination. I haven't eaten a more disgusting meal in my whole life.</description>
+									<baseMoodEffect>-10</baseMoodEffect>
+								</li>
+							</stages>
+						</ThoughtDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AM_Mech_PristineSlurrypede"]/comps/li[@Class = "VEF.AnimalBehaviours.CompProperties_AnimalProduct"]</xpath>
+					<value>
+						<resourceDef>AM_DisgustingMealNutrientPaste</resourceDef>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
+	</Operation>
+</Patch>

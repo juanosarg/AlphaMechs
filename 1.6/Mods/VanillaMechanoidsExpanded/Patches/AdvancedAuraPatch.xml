@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="BaseMechanoidWalker">
+					<defName>VFE_Mech_Advanced_Aura_PlayerControlled</defName>
+					<label>dominion</label>
+					<description>An improved and strengthened version of the Aura, a Dominion is an angel-shaped mechanoid surrounded by a whirling cloud of six levitating metallic blades. They favour close combat, approaching their victims and engulfing them in an eviscerating whirlwind of slashing death. They also have the ability to regenerate their wounds with fast acting mechanites.</description>
+					<statBases>
+						<BandwidthCost>4</BandwidthCost>
+					</statBases>
+					<tools>
+						<li>
+							<label>wing blade</label>
+							<capacities>
+								<li>Cut</li>
+								<li>Stab</li>
+							</capacities>
+							<power>33</power>
+							<cooldownTime>2</cooldownTime>
+							<linkedBodyPartsGroup>AM_WingBlades</linkedBodyPartsGroup>
+							<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						</li>
+						<li>
+							<label>head</label>
+							<capacities>
+								<li>Blunt</li>
+							</capacities>
+							<power>9</power>
+							<cooldownTime>2</cooldownTime>
+							<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+							<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+							<chanceFactor>0.2</chanceFactor>
+						</li>
+					</tools>
+					<comps>
+						<li Class="VEF.AnimalBehaviours.CompProperties_Regeneration">
+							<rateInTicks>30</rateInTicks>
+						</li>
+					</comps>
+					<race>
+						<body>AM_AuraBody</body>
+						<baseHealthScale>1.85</baseHealthScale>
+						<soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+						<soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+						<soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+						<mechWeightClass>Medium</mechWeightClass>
+					</race>
+				</ThingDef>
+				<PawnKindDef ParentName="BaseMechanoidKind">
+					<defName>VFE_Mech_Advanced_Aura_PlayerControlled</defName>
+					<label>dominion</label>
+					<race>VFE_Mech_Advanced_Aura_PlayerControlled</race>
+					<combatPower>200</combatPower>
+					<allowInMechClusters>false</allowInMechClusters>
+					<isFighter>false</isFighter>
+					<lifeStages>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechDominion/AM_MechDominion</texPath>
+								<maskPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechDominion/AllegianceOverlays/AM_MechDominion_Overlay</maskPath>
+								<shaderType>CutoutWithOverlay</shaderType>
+								<graphicClass>Graphic_Multi</graphicClass>
+								<drawSize>2.6</drawSize>
+								<shadowData>
+									<volume>(0.4, 0.8, 0.4)</volume>
+								</shadowData>
+							</bodyGraphicData>
+						</li>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechDominion/AM_MechDominion</texPath>
+								<maskPath>Things/Pawn/Mechanoid/AM_Advanced_Mechs/AM_MechDominion/AllegianceOverlays/AM_MechDominion_Overlay</maskPath>
+								<shaderType>CutoutWithOverlay</shaderType>
+								<graphicClass>Graphic_Multi</graphicClass>
+								<drawSize>2.6</drawSize>
+								<shadowData>
+									<volume>(0.4, 0.8, 0.4)</volume>
+								</shadowData>
+							</bodyGraphicData>
+						</li>
+					</lifeStages>
+					<weaponMoney>0~0</weaponMoney>
+					<defendPointRadius>0</defendPointRadius>
+					<weaponTags/>
+				</PawnKindDef>
+				<RecipeDef ParentName="AM_MediumMechanoidRecipe">
+					<defName>AM_DominionRecipe</defName>
+					<label>gestate dominion</label>
+					<researchPrerequisite>AM_AlphaHardwareUpgrade</researchPrerequisite>
+					<description>Gestate a dominion mechanoid.</description>
+					<ingredients Inherit="False">
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Steel</li>
+								</thingDefs>
+							</filter>
+							<count>250</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Plasteel</li>
+								</thingDefs>
+							</filter>
+							<count>150</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>6</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>VFE_ComponentMechanoid</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>SubcoreRegular</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<products>
+						<VFE_Mech_Advanced_Aura_PlayerControlled>1</VFE_Mech_Advanced_Aura_PlayerControlled>
+					</products>
+					<descriptionHyperlinks>
+						<ThingDef>VFE_Mech_Advanced_Aura_PlayerControlled</ThingDef>
+					</descriptionHyperlinks>
+				</RecipeDef>
+			</value>
+		</match>
+	</Operation>
+</Patch>

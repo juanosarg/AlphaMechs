@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="AM_MediumMechanoid">
+					<defName>AM_Mech_Advanced_PristineSlurrypede_PlayerControlled</defName>
+					<label>pristine slurrymaster</label>
+					<description>The Slurrymaster is an advanced version of the Slurrypede. This extremely rare bio-mechanical creature is the result of a batch of mechanoids receiving a hardware upgrade. The Slurrymaster is a modified bio-mechanoid capable of extracting energy from standard mech rechargers and use it to process inorganic matter into a homogeneous organic slurry. This slurry is virtually indistinguishable from nutrient paste produced in a nutrient paste dispenser.</description>
+					<statBases>
+						<MoveSpeed>2.3</MoveSpeed>
+						<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+						<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+						<BandwidthCost>2</BandwidthCost>
+					</statBases>
+					<race>
+						<body>AM_SlurrypedeBody</body>
+						<baseBodySize>2</baseBodySize>
+						<baseHealthScale>6</baseHealthScale>
+						<lifeStageAges>
+							<li>
+								<def>AM_MilkableMechanoidFullyFormed</def>
+								<minAge>0</minAge>
+								<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+								<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+								<soundCall>Pawn_Mech_Centipede_Call</soundCall>
+							</li>
+						</lifeStageAges>
+					</race>
+					<tools>
+						<li>
+							<label>head</label>
+							<capacities>
+								<li>Blunt</li>
+							</capacities>
+							<power>15</power>
+							<cooldownTime>2.6</cooldownTime>
+							<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+							<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+						</li>
+					</tools>
+					<comps>
+						<li Class="VEF.AnimalBehaviours.CompProperties_AnimalProduct">
+							<resourceDef>MealNutrientPaste</resourceDef>
+							<gatheringIntervalDays>1</gatheringIntervalDays>
+							<resourceAmount>10</resourceAmount>
+							<customResourceString>AM_MealNutrientPaste</customResourceString>
+						</li>
+					</comps>
+				</ThingDef>
+				<PawnKindDef ParentName="AM_MediumMechanoidKind">
+					<defName>AM_Mech_Advanced_PristineSlurrypede_PlayerControlled</defName>
+					<label>pristine slurrymaster</label>
+					<race>AM_Mech_Advanced_PristineSlurrypede_PlayerControlled</race>
+					<allowInMechClusters>false</allowInMechClusters>
+					<combatPower>250</combatPower>
+					<lifeStages>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Mechanoid/AM_AdvancedSlurrypede/AM_AdvancedSlurrypede</texPath>
+								<maskPath>Things/Pawn/Mechanoid/AM_AdvancedSlurrypede/AllegianceOverlays/AM_AdvancedSlurrypede_Overlay</maskPath>
+								<shaderType>CutoutWithOverlay</shaderType>
+								<graphicClass>Graphic_Multi</graphicClass>
+								<drawSize>4.3</drawSize>
+								<shadowData>
+									<volume>(0.8, 0.8, 0.6)</volume>
+								</shadowData>
+							</bodyGraphicData>
+						</li>
+					</lifeStages>
+					<controlGroupPortraitZoom>1</controlGroupPortraitZoom>
+				</PawnKindDef>
+				<RecipeDef ParentName="AM_MediumMechanoidRecipe">
+					<defName>AM_PristineSlurrymasterRecipe</defName>
+					<label>gestate pristine slurrymaster</label>
+					<researchPrerequisite>AM_AlphaHardwareUpgrade</researchPrerequisite>
+					<description>Gestate a pristine slurrymaster mechanoid.</description>
+					<ingredients Inherit="False">
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Steel</li>
+								</thingDefs>
+							</filter>
+							<count>320</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Plasteel</li>
+								</thingDefs>
+							</filter>
+							<count>300</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>4</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>VFE_ComponentMechanoid</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>SubcoreRegular</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<products>
+						<AM_Mech_Advanced_PristineSlurrypede_PlayerControlled>1</AM_Mech_Advanced_PristineSlurrypede_PlayerControlled>
+					</products>
+					<descriptionHyperlinks>
+						<ThingDef>AM_Mech_Advanced_PristineSlurrypede_PlayerControlled</ThingDef>
+					</descriptionHyperlinks>
+				</RecipeDef>
+			</value>
+		</match>
+	</Operation>
+</Patch>

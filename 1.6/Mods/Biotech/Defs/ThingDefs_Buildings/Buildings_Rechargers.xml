@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseMechCharger">
+		<defName>AM_GreaterRecharger</defName>
+		<label>voidlink mech recharger</label>
+		<description>A large mech recharger that acts as a relay for the mechanoid voidlink network orbiting this planet's Sun. This network downloads necessary data to properly recharge ultra-complex mechanoids such as the Infernus, Apoptosis, War Empress or Starfire. It can also recharge Ultra Heavy mechs. During recharge, this recharger produces toxic wastepacks and stores them internally. Haulers must remove the wastepacks from time to time.</description>
+		<graphicData>
+			<texPath>Things/Building/AM_GreaterRecharger</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(2.9, 0.5, 1.9)</volume>
+			</shadowData>
+		</graphicData>
+		<interactionCellOffset>(0,0,2)</interactionCellOffset>
+		<passability>PassThroughOnly</passability>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>25</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(3,3)</size>
+		<building>
+			<requiredMechWeightClasses>
+				<li>UltraHeavy</li>
+			</requiredMechWeightClasses>
+			<barDrawData>
+				<north>
+					<preRotationOffset>(0.002166748,-0.3722534)</preRotationOffset>
+					<size>(0.4398041,0.1365509)</size>
+				</north>
+				<south>
+					<preRotationOffset>(-0.002609305,-0.6002655)</preRotationOffset>
+					<size>(0.4398041,0.121376)</size>
+				</south>
+				<east>
+					<preRotationOffset>(0.04148867,0.6301422)</preRotationOffset>
+					<size>(0.4066238,0.1425552)</size>
+				</east>
+				<west>
+					<preRotationOffset>(-0.02767944,0.6171188)</preRotationOffset>
+					<size>(0.397522,0.1395264)</size>
+				</west>
+			</barDrawData>
+		</building>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<costList>
+			<Steel>350</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<researchPrerequisites>
+			<li>AM_MechanoidBeamcasting</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_ThingContainer">
+				<compClass>CompThingContainer</compClass>
+				<stackLimit>15</stackLimit>
+				<drawContainedThing>false</drawContainedThing>
+				<dropEffecterDef>MechChargerWasteRemoved</dropEffecterDef>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>400</basePowerConsumption>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

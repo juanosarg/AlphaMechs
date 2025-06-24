@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ApparelArmorPowerBase">
+		<defName>AM_MechCommanderSuit</defName>
+		<label>mech master suit</label>
+		<description>A power-assisted armor suit packed with mechanitor-assistance gear. Greatly amplifies the abilities of a mechanitor, while also being slightly stronger than a suit of marine armor.</description>
+		<recipeMaker>
+			<researchPrerequisite>AM_VoidLinkConnectivity</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<displayPriority>530</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Apparel/AM_MechCommanderSuit/AM_MechCommanderSuit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.65</ArmorRating_Heat>
+			<Insulation_Cold>38</Insulation_Cold>
+			<Insulation_Heat>16</Insulation_Heat>
+			<EquipDelay>14</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MechBandwidth>18</MechBandwidth>
+			<MoveSpeed>-0.4</MoveSpeed>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<costList>
+			<NanostructuringChip>1</NanostructuringChip>
+			<PowerfocusChip>1</PowerfocusChip>
+			<AM_HyperLinkageChip>1</AM_HyperLinkageChip>
+			<Plasteel>160</Plasteel>
+			<ComponentSpacer>9</ComponentSpacer>
+		</costList>
+		<apparel>
+			<tags>
+				<li>RoyalTier7</li>
+				<li>Mechlord</li>
+			</tags>
+			<wornGraphicPath>Things/Apparel/AM_MechCommanderSuit/AM_MechCommanderSuit</wornGraphicPath>
+		</apparel>
+		<tradeability>Sellable</tradeability>
+		<tradeTags Inherit="False">
+			<li>HiTechArmor</li>
+		</tradeTags>
+	</ThingDef>
+	<ThingDef ParentName="ApparelArmorPowerBase">
+		<defName>AM_MechBreakerArmor</defName>
+		<label>mech breaker armor</label>
+		<description>A modified suit of siegebreaker armor designed to improve the abilities of a mechanitor even further.</description>
+		<recipeMaker>
+			<researchPrerequisite>AM_Cryptoharmonization</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<displayPriority>530</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Apparel/AM_MechBreakerArmor/AM_MechBreakerArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<ArmorRating_Sharp>1.18</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.47</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.48</ArmorRating_Heat>
+			<Insulation_Cold>35</Insulation_Cold>
+			<Insulation_Heat>18</Insulation_Heat>
+			<EquipDelay>20</EquipDelay>
+			<EnergyShieldRechargeRate>0.02</EnergyShieldRechargeRate>
+			<EnergyShieldEnergyMax>0.4</EnergyShieldEnergyMax>
+		</statBases>
+		<equippedStatOffsets>
+			<MechBandwidth>24</MechBandwidth>
+			<PainShockThreshold>0.05</PainShockThreshold>
+			<MoveSpeed>-1.1</MoveSpeed>
+		</equippedStatOffsets>
+		<costList>
+			<AM_QuantumMatrixChip>1</AM_QuantumMatrixChip>
+			<AM_StellarProcessingChip>1</AM_StellarProcessingChip>
+			<AM_HyperLinkageChip>1</AM_HyperLinkageChip>
+			<ComponentSpacer>7</ComponentSpacer>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Plasteel>220</Plasteel>
+			<Uranium>60</Uranium>
+		</costList>
+		<apparel>
+			<tags>
+				<li>RoyalTier7</li>
+				<li>Mechlord</li>
+			</tags>
+			<wornGraphicPath>Things/Apparel/AM_MechBreakerArmor/AM_MechBreakerArmor</wornGraphicPath>
+		</apparel>
+		<tradeability>Sellable</tradeability>
+		<tradeTags Inherit="False">
+			<li>HiTechArmor</li>
+		</tradeTags>
+		<comps>
+			<li Class="VEF.Apparels.CompProperties_ShieldBubble">
+				<compClass>VEF.Apparels.CompShieldBubble</compClass>
+				<blockRangedAttack>true</blockRangedAttack>
+				<blockMeleeAttack>false</blockMeleeAttack>
+				<showWhenDrafted>true</showWhenDrafted>
+				<showOnHostiles>true</showOnHostiles>
+				<showOnNeutralInCombat>true</showOnNeutralInCombat>
+				<shieldTexPath>Other/ShieldBubble</shieldTexPath>
+				<EnergyShieldRechargeRate>0.1</EnergyShieldRechargeRate>
+				<EnergyShieldEnergyMax>100</EnergyShieldEnergyMax>
+				<minShieldSize>1.4</minShieldSize>
+				<maxShieldSize>1.8</maxShieldSize>
+				<disableRotation>true</disableRotation>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

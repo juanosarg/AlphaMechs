@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<!-- Blood belcher -->
+				<ThingDef ParentName="BaseGun">
+					<defName>AM_Gun_BloodBelcher</defName>
+					<label>blood belcher</label>
+					<description>A fearsome weapon that harnesses the power of boiling, acidic blood. When activated, the Blood Belcher propels a high-pressure stream of acidic hemogen towards its target.</description>
+					<techLevel>Spacer</techLevel>
+					<graphicData>
+						<texPath>Things/Weapon/AM_BloodBelcher</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<tradeability>None</tradeability>
+					<destroyOnDrop>true</destroyOnDrop>
+					<relicChance>0</relicChance>
+					<statBases>
+						<MarketValue>1400</MarketValue>
+						<Mass>2.6</Mass>
+						<AccuracyTouch>0.9</AccuracyTouch>
+						<AccuracyShort>0.99</AccuracyShort>
+						<AccuracyMedium>0.90</AccuracyMedium>
+						<AccuracyLong>0.8</AccuracyLong>
+						<RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
+					</statBases>
+					<weaponTags>
+						<li>AM_Gun_BloodBelcher</li>
+					</weaponTags>
+					<weaponClasses>
+						<li>RangedHeavy</li>
+						<li>LongShots</li>
+					</weaponClasses>
+					<verbs>
+						<li>
+							<verbClass>Verb_Shoot</verbClass>
+							<hasStandardCommand>true</hasStandardCommand>
+							<defaultProjectile>AM_Bullet_BloodBelcher</defaultProjectile>
+							<warmupTime>1.85</warmupTime>
+							<range>15</range>
+							<soundCast>AM_PoisonBreath</soundCast>
+							<muzzleFlashScale>9</muzzleFlashScale>
+						</li>
+					</verbs>
+					<tools>
+						<li>
+							<label>barrel</label>
+							<capacities>
+								<li>Blunt</li>
+								<li>Poke</li>
+							</capacities>
+							<power>9</power>
+							<cooldownTime>2.6</cooldownTime>
+						</li>
+					</tools>
+				</ThingDef>
+				<VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
+					<defName>AM_Bullet_BloodBelcher</defName>
+					<label>boiling hemogen</label>
+					<thingClass>VEF.Weapons.ExpandableProjectile</thingClass>
+					<graphicData>
+						<texPath>Things/Projectiles/Proj_BoilingBlood</texPath>
+						<texPathFadeOut>Things/Projectiles/Proj_BoilingBloodFadeOut</texPathFadeOut>
+
+						<shaderType>MoteGlow</shaderType>
+					</graphicData>
+					<drawOffscreen>true</drawOffscreen>
+					<lifeTimeDuration>50</lifeTimeDuration>
+					<widthScaleFactor>1</widthScaleFactor>
+					<heightScaleFactor>1</heightScaleFactor>
+					<startingPositionOffset>(0, 0, -1)</startingPositionOffset>
+					<totalSizeScale>0.75</totalSizeScale>
+					<tickFrameRate>2</tickFrameRate>		
+					<finalTickFrameRate>5</finalTickFrameRate>
+					<tickDamageRate>20</tickDamageRate>
+					<dealsDamageOnce>true</dealsDamageOnce>
+					<minDistanceToAffect>2</minDistanceToAffect>
+					<reachMaxRangeAlways>true</reachMaxRangeAlways>
+					<projectile>
+						<damageDef>AM_AcidSpit</damageDef>
+						<flyOverhead>false</flyOverhead>
+						<damageAmountBase>10</damageAmountBase>
+						<stoppingPower>1.5</stoppingPower>
+						<speed>40</speed>
+					</projectile>
+				</VEF.Weapons.ExpandableProjectileDef>
+			</value>
+		</match>
+	</Operation>
+</Patch>
