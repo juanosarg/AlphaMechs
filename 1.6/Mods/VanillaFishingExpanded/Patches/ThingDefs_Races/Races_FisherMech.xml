@@ -4,77 +4,163 @@
 		<mods>
 			<li>Biotech</li>
 		</mods>
-		<match Class="PatchOperationAdd">
-			<xpath>/Defs</xpath>
-			<value>
-				<!-- Angler -->
-				<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoid">
-					<defName>AM_Mech_Angler</defName>
-					<label>oceanus</label>
-					<description>The Oceanus mechanoid is a unique machine, shaped like an old tugboat, that is specialized in fishing. It is equipped with state-of-the-art fishing gear, including nets, hooks, and lines, as well as advanced sonar and radar systems that allow it to locate schools of fish with great precision. Its hull is reinforced with advanced materials, making it impervious to most natural hazards in the sea, and it features a large cargo hold that can store great amounts of fresh fish. It is however pretty useless in combat.</description>
-					<tools>
-						<li>
-							<label>prow</label>
-							<capacities>
-								<li>Blunt</li>
-							</capacities>
-							<power>2</power>
-							<cooldownTime>2</cooldownTime>
-							<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-						</li>
-					</tools>
-					<race>
-						<body>Mech_Light</body>
-						<mechEnabledWorkTypes>
-							<li>VCEF_Fishing</li>
-						</mechEnabledWorkTypes>
-						<mechWorkTypePriorities>
-							<VCEF_Fishing>1</VCEF_Fishing>
-						</mechWorkTypePriorities>
-						<lifeStageAges>
-							<li>
-								<def>MechanoidFullyFormed</def>
-								<minAge>0</minAge>
-								<soundWounded>Pawn_Mech_Agrihand_Wounded</soundWounded>
-								<soundDeath>Pawn_Mech_Agrihand_Death</soundDeath>
-								<soundCall>Pawn_Mech_Agrihand_Call</soundCall>
-							</li>
-							<li>
-								<def>MechanoidFullyFormed</def>
-								<minAge>100</minAge>
-								<soundWounded>Pawn_Mech_Agrihand_Wounded</soundWounded>
-								<soundDeath>Pawn_Mech_Agrihand_Death</soundDeath>
-								<soundCall>Pawn_Mech_Agrihand_Call</soundCall>
-							</li>
-						</lifeStageAges>
-					</race>
-				</ThingDef>
-				<PawnKindDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="NonCombatLightMechanoidKind">
-					<defName>AM_Mech_Angler</defName>
-					<label>oceanus</label>
-					<race>AM_Mech_Angler</race>
-					<lifeStages>
-						<li>
-							<bodyGraphicData>
-								<texPath>Things/Pawn/Mechanoid/AM_Mech_Angler/AM_Mech_Angler_Clean</texPath>
-								<maskPath>Things/Pawn/Mechanoid/AM_Mech_Angler/AllegianceOverlays/AM_Mech_Angler_Overlay</maskPath>
-								<shaderType>CutoutWithOverlay</shaderType>
-								<graphicClass>Graphic_Multi</graphicClass>
-								<drawSize>4</drawSize>
-							</bodyGraphicData>
-						</li>
-						<li>
-							<bodyGraphicData>
-								<texPath>Things/Pawn/Mechanoid/AM_Mech_Angler/AM_Mech_Angler</texPath>
-								<maskPath>Things/Pawn/Mechanoid/AM_Mech_Angler/AllegianceOverlays/AM_Mech_Angler_Overlay</maskPath>
-								<shaderType>CutoutWithOverlay</shaderType>
-								<graphicClass>Graphic_Multi</graphicClass>
-								<drawSize>4</drawSize>
-							</bodyGraphicData>
-						</li>
-					</lifeStages>
-				</PawnKindDef>
-			</value>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Odyssey</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<!-- Angler -->
+							<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoid">
+								<defName>AM_Mech_Angler</defName>
+								<label>oceanus</label>
+								<description>The Oceanus mechanoid is a unique machine, shaped like an old tugboat, that is specialized in fishing. It is equipped with state-of-the-art fishing gear, including nets, hooks, and lines, as well as advanced sonar and radar systems that allow it to locate schools of fish with great precision. Its hull is reinforced with advanced materials, making it impervious to most natural hazards in the sea, and it features a large cargo hold that can store great amounts of fresh fish. It is however pretty useless in combat.</description>
+								<tools>
+									<li>
+										<label>prow</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>2</power>
+										<cooldownTime>2</cooldownTime>
+										<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									</li>
+								</tools>
+								<race>
+									<body>Mech_Light</body>
+									<mechEnabledWorkTypes>
+										<li>Hunting</li>
+									</mechEnabledWorkTypes>
+									<mechWorkTypePriorities>
+										<Hunting>1</Hunting>
+									</mechWorkTypePriorities>
+									<lifeStageAges>
+										<li>
+											<def>MechanoidFullyFormed</def>
+											<minAge>0</minAge>
+											<soundWounded>Pawn_Mech_Agrihand_Wounded</soundWounded>
+											<soundDeath>Pawn_Mech_Agrihand_Death</soundDeath>
+											<soundCall>Pawn_Mech_Agrihand_Call</soundCall>
+										</li>
+										<li>
+											<def>MechanoidFullyFormed</def>
+											<minAge>100</minAge>
+											<soundWounded>Pawn_Mech_Agrihand_Wounded</soundWounded>
+											<soundDeath>Pawn_Mech_Agrihand_Death</soundDeath>
+											<soundCall>Pawn_Mech_Agrihand_Call</soundCall>
+										</li>
+									</lifeStageAges>
+								</race>
+							</ThingDef>
+							<PawnKindDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="NonCombatLightMechanoidKind">
+								<defName>AM_Mech_Angler</defName>
+								<label>oceanus</label>
+								<race>AM_Mech_Angler</race>
+								<lifeStages>
+									<li>
+										<bodyGraphicData>
+											<texPath>Things/Pawn/Mechanoid/AM_Mech_Angler/AM_Mech_Angler_Clean</texPath>
+											<maskPath>Things/Pawn/Mechanoid/AM_Mech_Angler/AllegianceOverlays/AM_Mech_Angler_Overlay</maskPath>
+											<shaderType>CutoutWithOverlay</shaderType>
+											<graphicClass>Graphic_Multi</graphicClass>
+											<drawSize>4</drawSize>
+										</bodyGraphicData>
+									</li>
+									<li>
+										<bodyGraphicData>
+											<texPath>Things/Pawn/Mechanoid/AM_Mech_Angler/AM_Mech_Angler</texPath>
+											<maskPath>Things/Pawn/Mechanoid/AM_Mech_Angler/AllegianceOverlays/AM_Mech_Angler_Overlay</maskPath>
+											<shaderType>CutoutWithOverlay</shaderType>
+											<graphicClass>Graphic_Multi</graphicClass>
+											<drawSize>4</drawSize>
+										</bodyGraphicData>
+									</li>
+								</lifeStages>
+							</PawnKindDef>
+						</value>
+					</li>
+				</operations>
+			</match>
+			<nomatch Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<!-- Angler -->
+							<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoid">
+								<defName>AM_Mech_Angler</defName>
+								<label>oceanus</label>
+								<description>The Oceanus mechanoid is a unique machine, shaped like an old tugboat, that is specialized in fishing. It is equipped with state-of-the-art fishing gear, including nets, hooks, and lines, as well as advanced sonar and radar systems that allow it to locate schools of fish with great precision. Its hull is reinforced with advanced materials, making it impervious to most natural hazards in the sea, and it features a large cargo hold that can store great amounts of fresh fish. It is however pretty useless in combat.</description>
+								<tools>
+									<li>
+										<label>prow</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>2</power>
+										<cooldownTime>2</cooldownTime>
+										<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									</li>
+								</tools>
+								<race>
+									<body>Mech_Light</body>
+									<mechEnabledWorkTypes>
+										<li>VCEF_Fishing</li>
+									</mechEnabledWorkTypes>
+									<mechWorkTypePriorities>
+										<VCEF_Fishing>1</VCEF_Fishing>
+									</mechWorkTypePriorities>
+									<lifeStageAges>
+										<li>
+											<def>MechanoidFullyFormed</def>
+											<minAge>0</minAge>
+											<soundWounded>Pawn_Mech_Agrihand_Wounded</soundWounded>
+											<soundDeath>Pawn_Mech_Agrihand_Death</soundDeath>
+											<soundCall>Pawn_Mech_Agrihand_Call</soundCall>
+										</li>
+										<li>
+											<def>MechanoidFullyFormed</def>
+											<minAge>100</minAge>
+											<soundWounded>Pawn_Mech_Agrihand_Wounded</soundWounded>
+											<soundDeath>Pawn_Mech_Agrihand_Death</soundDeath>
+											<soundCall>Pawn_Mech_Agrihand_Call</soundCall>
+										</li>
+									</lifeStageAges>
+								</race>
+							</ThingDef>
+							<PawnKindDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="NonCombatLightMechanoidKind">
+								<defName>AM_Mech_Angler</defName>
+								<label>oceanus</label>
+								<race>AM_Mech_Angler</race>
+								<lifeStages>
+									<li>
+										<bodyGraphicData>
+											<texPath>Things/Pawn/Mechanoid/AM_Mech_Angler/AM_Mech_Angler_Clean</texPath>
+											<maskPath>Things/Pawn/Mechanoid/AM_Mech_Angler/AllegianceOverlays/AM_Mech_Angler_Overlay</maskPath>
+											<shaderType>CutoutWithOverlay</shaderType>
+											<graphicClass>Graphic_Multi</graphicClass>
+											<drawSize>4</drawSize>
+										</bodyGraphicData>
+									</li>
+									<li>
+										<bodyGraphicData>
+											<texPath>Things/Pawn/Mechanoid/AM_Mech_Angler/AM_Mech_Angler</texPath>
+											<maskPath>Things/Pawn/Mechanoid/AM_Mech_Angler/AllegianceOverlays/AM_Mech_Angler_Overlay</maskPath>
+											<shaderType>CutoutWithOverlay</shaderType>
+											<graphicClass>Graphic_Multi</graphicClass>
+											<drawSize>4</drawSize>
+										</bodyGraphicData>
+									</li>
+								</lifeStages>
+							</PawnKindDef>
+						</value>
+					</li>
+				</operations>
+			</nomatch>
 		</match>
+		
 	</Operation>
 </Patch>
