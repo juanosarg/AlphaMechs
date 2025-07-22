@@ -23,6 +23,8 @@
 						<Insulation_Cold>40</Insulation_Cold>
 						<Insulation_Heat>40</Insulation_Heat>
 						<EquipDelay>1</EquipDelay>
+						<EnergyShieldRechargeRate>0.02</EnergyShieldRechargeRate>
+						<EnergyShieldEnergyMax>2.5</EnergyShieldEnergyMax>
 					</statBases>
 					<equippedStatOffsets>
 						<PsychicSensitivity>-0.5</PsychicSensitivity>
@@ -31,6 +33,7 @@
 						<WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
 						<MechFormingSpeed>0.4</MechFormingSpeed>
 						<VEF_MassCarryCapacity>75</VEF_MassCarryCapacity>
+						<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.2</VacuumResistance>
 					</equippedStatOffsets>
 					<costList>
 						<ComponentSpacer>2</ComponentSpacer>
@@ -69,8 +72,7 @@
 							<showOnHostiles>true</showOnHostiles>
 							<showOnNeutralInCombat>true</showOnNeutralInCombat>
 							<shieldTexPath>Other/ShieldBubble</shieldTexPath>
-							<EnergyShieldRechargeRate>0.7</EnergyShieldRechargeRate>
-							<EnergyShieldEnergyMax>250</EnergyShieldEnergyMax>
+						
 							<chargeFullyWhenMade>true</chargeFullyWhenMade>
 							<minShieldSize>2.1</minShieldSize>
 							<maxShieldSize>2.7</maxShieldSize>
@@ -122,6 +124,7 @@
 						<VEF_EnergyShieldEnergyMaxFactor>0.25</VEF_EnergyShieldEnergyMaxFactor>
 						<WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
 						<MechFormingSpeed>0.4</MechFormingSpeed>
+						<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.1</VacuumResistance>
 					</equippedStatOffsets>
 					<costList>
 						<Plasteel>60</Plasteel>
@@ -174,6 +177,7 @@
 						<MechControlGroups>1</MechControlGroups>
 						<WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
 						<MechFormingSpeed>0.4</MechFormingSpeed>
+						<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.7</VacuumResistance>
 					</equippedStatOffsets>
 					<costList>
 						<ComponentSpacer>3</ComponentSpacer>
