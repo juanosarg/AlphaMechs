@@ -23,14 +23,11 @@
 	</modDependencies>
 
 	<loadAfter>
-		<li>Ludeon.RimWorld</li>
-		<li>Ludeon.RimWorld.Royalty</li>
-		<li>Ludeon.RimWorld.Ideology</li>
-		<li>Ludeon.RimWorld.Biotech</li>
-		<li>brrainz.harmony</li>
+		
         <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>OskarPotocki.VFE.Mechanoid</li>
 		<li>VanillaExpanded.VPsycastsE</li>
+		<li>VanillaExpanded.VCEF</li>
 		
 	</loadAfter>
 	<author>Sarg Bjornson</author>
