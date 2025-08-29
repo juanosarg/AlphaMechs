@@ -32,10 +32,10 @@
 								<race>
 									<body>Mech_Light</body>
 									<mechEnabledWorkTypes>
-										<li>Hunting</li>
+										<li>Fishing</li>
 									</mechEnabledWorkTypes>
 									<mechWorkTypePriorities>
-										<Hunting>1</Hunting>
+										<Fishing>1</Fishing>
 									</mechWorkTypePriorities>
 									<lifeStageAges>
 										<li>
@@ -82,29 +82,7 @@
 							</PawnKindDef>
 						</value>
 					</li>
-					<li Class="PatchOperationConditional">
-						<xpath>Defs/WorkTypeDef[defName="VCEF_Fishing"]</xpath>
-						<match Class="PatchOperationSequence">
-							<operations>
-								<li Class="PatchOperationReplace">
-									<xpath>Defs/ThingDef[defName="AM_Mech_Angler"]/race/mechEnabledWorkTypes</xpath>
-									<value>
-										<mechEnabledWorkTypes>
-											<li>VCEF_Fishing</li>
-										</mechEnabledWorkTypes>
-									</value>
-								</li>
-								<li Class="PatchOperationReplace">
-									<xpath>Defs/ThingDef[defName="AM_Mech_Angler"]/race/mechWorkTypePriorities</xpath>
-									<value>
-										<mechWorkTypePriorities>
-											<VCEF_Fishing>1</VCEF_Fishing>
-										</mechWorkTypePriorities>
-									</value>
-								</li>
-							</operations>
-						</match>
-					</li>
+					
 				</operations>
 			</match>
 			<nomatch Class="PatchOperationSequence">
