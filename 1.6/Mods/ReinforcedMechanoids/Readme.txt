@@ -26,11 +26,10 @@ AFFECTED MECHANOIDS:
 TESTING:
 --------
 To verify the fix is working:
-1. Load a save with both mods active
-2. Draft a Goliath or Artilleron mechanoid
-3. Check that the "Swap Weapon" ability button is no longer visible
-4. Check your log file (press Ctrl+F12) - there should be no "primaryInt 
-   equipment" errors when managing mechanoids
+1. Sort mod order
+2. Load save / start new game
+3. Replace Goliath / Artilleron mechs with new ones, so they will get abilities removed
+4. Check that the "Swap Weapon" ability button is no longer visible
 
 NOTES:
 ------
@@ -38,5 +37,3 @@ NOTES:
 - If you remove Reinforced Mechanoids, weapon swapping will work normally again
 - The mechanoids will still be fully functional, just with one weapon type
 - This is an XML-only fix and requires no C# modifications
-
-If you encounter any issues, please report them to the Alpha Mechs mod page.
