@@ -320,7 +320,6 @@
     <Compile Include="Harmony\CompShield_Draw.cs" />
     <Compile Include="Harmony\CompProjectileInterceptor_PostDraw.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
-    <Compile Include="Harmony\MassUtility_Capacity.cs" />
     <Compile Include="HediffComps\HediffComp_DeleteAfterTime.cs" />
     <Compile Include="HediffComps\HediffComp_DisappearIfOtherFound.cs" />
     <Compile Include="HediffComps\Properties\HediffCompProperties_DeleteAfterTime.cs" />

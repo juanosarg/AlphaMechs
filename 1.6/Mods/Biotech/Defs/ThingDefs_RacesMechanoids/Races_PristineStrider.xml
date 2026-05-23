@@ -8,6 +8,7 @@
 		<statBases>
 			<MoveSpeed>2.1</MoveSpeed>
 			<CaravanRidingSpeedFactor>2</CaravanRidingSpeedFactor>
+			<VEF_MassCarryCapacity>245</VEF_MassCarryCapacity>
 		</statBases>
 		<race>
 			<body>MechanicalTermite</body>
