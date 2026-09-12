@@ -316,6 +316,7 @@
     <Compile Include="DeathActionWorkers\DeathActionWorker_Explosion.cs" />
     <Compile Include="DefExtensions\MechSizeExtension.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
+    <Compile Include="Defs\WarcasketAbilityMechBlacklistDef.cs" />
     <Compile Include="Harmony\Building_MechCharger_IsCompatibleWithCharger.cs" />
     <Compile Include="Harmony\CompShield_Draw.cs" />
     <Compile Include="Harmony\CompProjectileInterceptor_PostDraw.cs" />
@@ -337,6 +338,7 @@
     <Compile Include="Projectiles\Siege_Projectile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReflectionCache\ReflectionCache.cs" />
+    <Compile Include="StaticCollections\StaticCollections.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_GreaterHateAura.cs" />
   </ItemGroup>
   <ItemGroup>

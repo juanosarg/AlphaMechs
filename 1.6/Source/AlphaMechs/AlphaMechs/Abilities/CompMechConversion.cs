@@ -1,18 +1,11 @@
-﻿
-using RimWorld;
-using System;
+﻿using RimWorld;
 using Verse;
-using RimWorld.Planet;
-using System.Collections.Generic;
 
 namespace AlphaMechs
 {
     public class CompMechConversion : CompAbilityEffect
     {
-
-        private static List<ThingDef> mechsList = new List<ThingDef>() { InternalDefOf.AM_WarEmpress, InternalDefOf.AM_Infernus, InternalDefOf.AM_Apoptosis, ThingDefOf.Mech_Apocriton, InternalDefOf.Mech_Warqueen, InternalDefOf.Mech_Diabolus };
-
-
+     
         public new CompProperties_MechConversion Props => (CompProperties_MechConversion)props;
 
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
@@ -34,14 +27,8 @@ namespace AlphaMechs
                 mech.GetOverseer()?.relations.RemoveDirectRelation(PawnRelationDefOf.Overseer, mech);
                 parent.pawn.relations.AddDirectRelation(PawnRelationDefOf.Overseer, mech);
                 mech.health.AddHediff(InternalDefOf.AM_ScrambledIFF);
-
             }
-
-
         }
-
-      
-
 
         public override bool CanApplyOn(LocalTargetInfo target, LocalTargetInfo dest)
         {
@@ -64,7 +51,7 @@ namespace AlphaMechs
                 return false;
             }
 
-            if (mechsList.Contains(pawn.def))
+            if (StaticCollections.blacklistedMechs.Contains(pawn.kindDef))
             {
                 if (throwMessages)
                 {
@@ -95,9 +82,6 @@ namespace AlphaMechs
 
 
         }
-
-     
-
 
     }
 }
