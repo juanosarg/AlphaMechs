@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- 
+		Compatibility patch for Alpha Mechs + Reinforced Mechanoids
+		
+		Issue: Reinforced Mechanoids' Gestalt Engine patches mechanoid equipment handling,
+		which conflicts with Alpha Mechs' weapon swap ability, causing duplicate equipment errors.
+		
+		Solution: When Reinforced Mechanoids is active, we disable the weapon swap ability 
+		and ensure mechanoids only get one weapon type to avoid the equipment conflict.
+		
+		This patch handles all Goliath variants (base, Clean, and Colossus/Advanced).
+	-->
+	
+	<!-- ============== BASE GOLIATH WEAPON SWAP FIX ============== -->
+	
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- Remove the weapon swap ability from base Goliath -->
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="AM_Goliath"]/abilities/li[text()="AM_SwapWeapon"]</xpath>
+			</li>
+			
+			<!-- Replace Goliath's weapon tags with only the charge blaster (primary weapon) -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName="AM_Goliath"]/weaponTags</xpath>
+				<value>
+					<weaponTags>
+						<li>AM_Gun_GoliathChargeBlaster</li>
+					</weaponTags>
+				</value>
+			</li>
+			
+			<!-- Update description to note the weapon swap is disabled when RM is active -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="AM_Goliath"]/description</xpath>
+				<value>
+					<description>The Goliath is a heavy combat mechanoid with a humanoid body plan. They are faster than centipedes, and are usually armed with heavy mechanoid weapons or needle guns.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Faster than a centipede, but weaker due to their weaker weapons. Note: Weapon swapping is disabled when using Reinforced Mechanoids mod for compatibility. If toggled to not spawn via mod options, they will get replaced by a Centipede Gunner.</description>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- ============== CLEAN GOLIATH (VFE Mechanoids variant) ============== -->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/PawnKindDef[defName="AM_Mech_CleanGoliath"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="AM_Mech_CleanGoliath"]/abilities/li[text()="AM_SwapWeapon"]</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName="AM_Mech_CleanGoliath"]/weaponTags</xpath>
+				<value>
+					<weaponTags>
+						<li>AM_Gun_GoliathChargeBlaster</li>
+					</weaponTags>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- ============== COLOSSUS/ADVANCED GOLIATH (VFE Mechanoids variant) ============== -->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/PawnKindDef[defName="VFE_Mech_Advanced_Goliath_PlayerControlled"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFE_Mech_Advanced_Goliath_PlayerControlled"]/abilities/li[text()="AM_SwapWeapon"]</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName="VFE_Mech_Advanced_Goliath_PlayerControlled"]/weaponTags</xpath>
+				<value>
+					<weaponTags>
+						<li>AM_Gun_GoliathChargeBlaster</li>
+					</weaponTags>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- ============== ARTILLERON WEAPON SWAP FIX (Biotech only) ============== -->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/PawnKindDef[defName="AM_Mech_Artilleron"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="AM_Mech_Artilleron"]/abilities/li[text()="AM_SwapWeapon_Mortar"]</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName="AM_Mech_Artilleron"]/weaponTags</xpath>
+				<value>
+					<weaponTags>
+						<li>AM_MechanoidMortar</li>
+					</weaponTags>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="AM_Mech_Artilleron"]/description</xpath>
+				<value>
+					<description>A variation of the militor and bellicor, the artilleron stands at a height of around 5 feet and it is armed with a powerful mortar that fires explosive canisters with great accuracy. With its reduced durability, the Artilleron can't withstand intense battles and is often deployed in the rear lines to eliminate high priority targets and secure strategic objectives from afar. Note: Weapon swapping is disabled when using Reinforced Mechanoids mod for compatibility.</description>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
